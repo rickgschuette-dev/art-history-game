@@ -1,0 +1,18 @@
+window.DECKS=[{id:"early-medieval",title:"Early Medieval Art",blurb:"Eight planned cards. One is playable in this prototype.",cards:[
+{id:"EM-01",title:"Building Authority",object:"Palatine Chapel, Aachen"},
+{id:"EM-02",title:"Wealth on Display",object:"Sutton Hoo purse lid"},
+{id:"EM-03",title:"Spot the Style",object:"Lindisfarne Gospels, Matthew cross-carpet page",playable:true,
+ crumb:"Early Medieval Art / Lindisfarne Gospels",
+ place:"Lindisfarne, northern England \u00b7 Around 700",holding:"British Library \u00b7 Cotton MS Nero D IV, f. 26v",
+ image:"public/images/artworks/lindisfarne-f26v-placeholder.svg",
+ imageNote:"Layout placeholder. Replace with the original manuscript image and verify dimensions before testing with students.",
+ size:"Full page: approx. 34 cm / 13.4 in high, 25 cm / 9.8 in wide (verify against the British Library record)",
+ intro:"Look past the cross. Find the patterns that help us recognize this style.",
+ context:"This page is an example of Insular art, made in Britain and Ireland during the early medieval period.",
+ clues:[{id:"interlace",label:"Interlace",def:"Lines woven over and under"},{id:"repeat",label:"Repeated shapes",def:"Knots or spirals used again"},{id:"creatures",label:"Hidden creatures",def:"Animals worked into patterns"}],
+ sources:"Sources: British Library; Smarthistory"},
+{id:"EM-04",title:"Same Patterns, Different Materials",object:"Sutton Hoo purse lid and Lindisfarne page"},
+{id:"EM-05",title:"Lines That Move",object:"Saint Matthew, Ebbo Gospels"},
+{id:"EM-06",title:"Same Writer, Two Styles",object:"Coronation and Ebbo Gospels"},
+{id:"EM-07",title:"Posture in Sculpture",object:"Gero Cross, Cologne"},
+{id:"EM-08",title:"Building a Scene in Bronze",object:"Nativity panel, Bernward Doors"}]}];

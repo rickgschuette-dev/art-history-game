@@ -1,0 +1,16 @@
+:root{--navy:#183348;--ivory:#f6f1e7;--gold:#a87834;--ink:#263746;--line:#d9cfba}
+*{box-sizing:border-box}body{margin:0;font:18px/1.45 Georgia,serif;background:var(--ivory);color:var(--ink)}
+.top{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 1.5rem;background:var(--navy);color:#fff}.top a{color:#e3d4b9}
+main{max-width:1200px;margin:0 auto;padding:1.5rem}h1,h2,h3{color:var(--navy)}h3{color:var(--gold);letter-spacing:.06em;font-size:.9rem;margin:1.2rem 0 .4rem}
+button,.btn{font:inherit;border:2px solid var(--navy);background:#fff;color:var(--navy);border-radius:10px;padding:.5rem 1rem;cursor:pointer}
+button.primary{background:var(--navy);color:#fff}button[aria-pressed=true]{background:var(--navy);color:#fff}button:focus-visible,.art:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:1.5rem}@media(max-width:850px){.grid{grid-template-columns:1fr}}
+.panel{background:#fffcf5;border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem}
+.art{position:relative;display:block;max-width:420px;margin:.5rem auto;border:1px solid var(--line);touch-action:manipulation;cursor:crosshair}.art.big{max-width:100%}.art img{display:block;width:100%}
+.mark{position:absolute;transform:translate(-50%,-50%);width:2rem;height:2rem;border-radius:50%;background:var(--navy);color:#fff;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:1rem}
+.cursor{position:absolute;transform:translate(-50%,-50%);width:1.4rem;height:1.4rem;border:3px dashed var(--gold);border-radius:50%;display:none;pointer-events:none}.art:focus .cursor{display:block}
+.chips{display:grid;gap:.5rem}.chips button{text-align:left}.chips small{display:block;font-weight:normal}
+textarea{width:100%;font:inherit;padding:.5rem;border:1px solid var(--line);border-radius:8px;min-height:3.2rem}
+.note{font-size:.85rem;color:#526575}.msg{min-height:1.5rem;color:#8a4b00}.steps{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.5rem;font-size:.9rem}.steps span{padding:.2rem .7rem;border:1px solid var(--line);border-radius:99px}.steps .on{background:var(--navy);color:#fff}
+.cards{list-style:none;padding:0;display:grid;gap:.6rem}.cards li{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.paper{display:flex;align-items:flex-end;gap:.8rem}.paper div{border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-size:.7rem;text-align:center}
