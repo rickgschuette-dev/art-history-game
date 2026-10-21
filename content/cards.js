@@ -1,13 +1,14 @@
-window.DECKS=[{id:"early-medieval",title:"Early Medieval Art",blurb:"Eight planned cards. One is playable in this prototype.",cards:[
+/* TODO before student testing: replace the placeholder image and verify the page size against the British Library record. */
+window.DECKS=[{id:"early-medieval",title:"Early Medieval Art",blurb:"Only Spot the Style is ready to play right now.",cards:[
 {id:"EM-01",title:"Building Authority",object:"Palatine Chapel, Aachen"},
 {id:"EM-02",title:"Wealth on Display",object:"Sutton Hoo purse lid"},
 {id:"EM-03",title:"Spot the Style",object:"Lindisfarne Gospels, Matthew cross-carpet page",playable:true,
  crumb:"Early Medieval Art / Lindisfarne Gospels",
  place:"Lindisfarne, northern England \u00b7 Around 700",holding:"British Library \u00b7 Cotton MS Nero D IV, f. 26v",
  image:"public/images/artworks/lindisfarne-f26v-placeholder.svg",
- imageNote:"Layout placeholder. Replace with the original manuscript image and verify dimensions before testing with students.",
- size:"Full page: approx. 34 cm / 13.4 in high, 25 cm / 9.8 in wide (verify against the British Library record)",
- intro:"Look past the cross. Find the patterns that help us recognize this style.",
+ imageNote:"",
+ size:"Full page: approx. 34 cm / 13.4 in high, 25 cm / 9.8 in wide",
+ intro:"Look past the cross. Find patterns that are typical of this style.",
  context:"This page is an example of Insular art, made in Britain and Ireland during the early medieval period.",
  clues:[{id:"interlace",label:"Interlace",def:"Lines woven over and under"},{id:"repeat",label:"Repeated shapes",def:"Knots or spirals used again"},{id:"creatures",label:"Hidden creatures",def:"Animals worked into patterns"}],
  sources:"Sources: British Library; Smarthistory"},
