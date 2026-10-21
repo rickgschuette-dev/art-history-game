@@ -1,9 +1,13 @@
-/* TODO before student testing: replace the placeholder image and verify the page size against the British Library record. */
-window.DECKS=[{id:"early-medieval",title:"Early Medieval Art",blurb:"Only Spot the Style is ready to play right now.",cards:[
+/* TODO before student testing: replace the Lindisfarne placeholder image and verify its page size against the British Library record. Confirm the Commons page address for LA-01 in docs/IMAGE_CREDITS.md. */
+window.DECKS=[
+{id:"early-medieval",title:"Early Medieval Art",blurb:"Only Spot the Style is ready to play right now.",cards:[
 {id:"EM-01",title:"Building Authority",object:"Palatine Chapel, Aachen"},
 {id:"EM-02",title:"Wealth on Display",object:"Sutton Hoo purse lid"},
 {id:"EM-03",title:"Spot the Style",object:"Lindisfarne Gospels, Matthew cross-carpet page",playable:true,
  crumb:"Early Medieval Art / Lindisfarne Gospels",
+ headline:"Look closely at the page",
+ alt:"Cross-carpet page from the Lindisfarne Gospels",
+ enlarge:"Enlarge page",
  place:"Lindisfarne, northern England \u00b7 Around 700",holding:"British Library \u00b7 Cotton MS Nero D IV, f. 26v",
  image:"public/images/artworks/lindisfarne-f26v-placeholder.svg",
  imageNote:"",
@@ -11,9 +15,27 @@ window.DECKS=[{id:"early-medieval",title:"Early Medieval Art",blurb:"Only Spot t
  intro:"Look past the cross. Find patterns that are typical of this style.",
  context:"This page is an example of Insular art, made in Britain and Ireland during the early medieval period.",
  clues:[{id:"interlace",label:"Interlace",def:"Lines woven over and under"},{id:"repeat",label:"Repeated shapes",def:"Knots or spirals used again"},{id:"creatures",label:"Hidden creatures",def:"Animals worked into patterns"}],
+ steps:["Choose a clue. Then click the artwork where you see it.","Write one sentence about what you found. Do this for two different clues."],
  sources:"Sources: British Library; Smarthistory"},
 {id:"EM-04",title:"Same Patterns, Different Materials",object:"Sutton Hoo purse lid and Lindisfarne page"},
 {id:"EM-05",title:"Lines That Move",object:"Saint Matthew, Ebbo Gospels"},
 {id:"EM-06",title:"Same Writer, Two Styles",object:"Coronation and Ebbo Gospels"},
 {id:"EM-07",title:"Posture in Sculpture",object:"Gero Cross, Cologne"},
-{id:"EM-08",title:"Building a Scene in Bronze",object:"Nativity panel, Bernward Doors"}]}];
+{id:"EM-08",title:"Building a Scene in Bronze",object:"Nativity panel, Bernward Doors"}]},
+{id:"late-antiquity",title:"Late Antiquity",blurb:"Only Style in Stone is ready to play right now.",cards:[
+{id:"LA-01",title:"Style in Stone",object:"Arch of Constantine, Rome",playable:true,
+ crumb:"Late Antiquity / Arch of Constantine",
+ headline:"Look closely at the figures",
+ alt:"Stone relief from the Arch of Constantine showing rows of soldiers with shields on the left and a walled city with towers on the right.",
+ enlarge:"Enlarge image",wide:true,
+ place:"Arch of Constantine, Rome \u00b7 Stone relief",holding:"Completed about 315 CE",
+ image:"public/images/artworks/Arch_of_Constantine_-_detail_3_(4293299626).jpg",
+ imageNote:"",
+ intro:"Look at the people carved in this stone panel. How did the sculptor shape them?",
+ context:"A relief is a carving that rises from a flat stone surface.",
+ clues:[{id:"blocky",label:"Short and blocky",def:"Stocky bodies, large heads"},{id:"repeated",label:"Repeated poses",def:"Figures that look alike"},{id:"flat",label:"Flat and lined up",def:"Little depth, one row"}],
+ steps:["Choose a clue. Then click the artwork where you see it.","Write one sentence about what you notice in the figures. Do this for two different clues."],
+ closing:"Look again. Do these figures look like real, individual people, or more like symbols? Point to one detail that supports your answer.",
+ sources:"Sources: Smarthistory; Khan Academy",
+ credit:{title:"Arch of Constantine - detail 3",author:"Yellow.Cat",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/"}}]}
+];
