@@ -8,14 +8,12 @@ function decks(){var d=DECKS[0];app.innerHTML='<h1>'+esc(d.title)+'</h1><p>'+esc
 app.querySelectorAll('button[data-id]').forEach(function(b){b.onclick=function(){location.hash='#/card/'+b.dataset.id}})}
 function card(id){var c=DECKS[0].cards.filter(function(x){return x.id===id&&x.playable})[0];if(!c){location.hash='#/decks';return}
 var cl=function(i){return c.clues.filter(function(k){return k.id===i})[0]};
-var step=S.done?'Look again':'Find the clues';
 app.innerHTML='<p class="note">'+esc(c.crumb)+' \u00b7 <strong>YOUR TURN</strong></p><div class="grid"><section><h2>Look closely at the page</h2>'
 +'<div class="art" id="art" tabindex="0" role="application" aria-label="Artwork. Choose a clue, move the cursor with arrow keys, and press Enter to mark."><img src="'+c.image+'" alt="Cross-carpet page from the Lindisfarne Gospels"><span class="cursor" id="cur"></span></div>'
 +'<p><button id="big">Enlarge page</button></p>'+(c.imageNote?'<p class="note">'+esc(c.imageNote)+'</p>':'')+'<p>'+esc(c.size)+'</p><div class="paper"><div style="width:85px;height:110px">Letter paper<br>11 \u00d7 8.5 in</div><div style="width:99px;height:134px">Manuscript page</div></div>'
 +'<p>'+esc(c.place)+'<br>'+esc(c.holding)+'</p></section><section class="panel"><h1>SPOT THE STYLE</h1><p>'+esc(c.intro)+'</p><p class="note">'+esc(c.context)+'</p><h3>CHOOSE A CLUE</h3><div class="chips" id="chips"></div>'
 +'<h3>FIND TWO CLUES</h3><p>Choose a clue. Then click the artwork where you see it.</p><p>Write one sentence about what you found. Do this for two different clues.</p><div class="msg" id="msg" role="status"></div><div id="fields"></div>'
-+'<p><button id="draft">Save draft</button> <button class="primary" id="sub">Submit finds</button></p><p class="note">'+esc(c.sources)+'</p></section></div>'
-+'<div class="steps">'+['Explore','Find the clues','Compare','Look again'].map(function(s){return '<span class="'+(s===step?'on':'')+'">'+s+'</span>'}).join('')+'</div>';
++'<p><button id="draft">Save draft</button> <button class="primary" id="sub">Submit finds</button></p><p class="note">'+esc(c.sources)+'</p></section></div>';
 var art=document.getElementById('art');
 function marks(){art.querySelectorAll('.mark').forEach(function(m){m.remove()});S.finds.forEach(function(f,i){var m=document.createElement('span');m.className='mark';m.textContent=i+1;m.style.left=f.x+'%';m.style.top=f.y+'%';art.appendChild(m)})}
 function chips(){var h=document.getElementById('chips');h.innerHTML='';c.clues.forEach(function(k){var b=document.createElement('button');b.setAttribute('aria-pressed',S.sel===k.id);b.innerHTML=esc(k.label)+'<small>'+esc(k.def)+'</small>';b.onclick=function(){S.sel=k.id;S.msg='';chips();msg()};h.appendChild(b)})}
