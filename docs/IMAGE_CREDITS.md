@@ -72,3 +72,19 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Author: Mike Quinn (via geograph.org.uk)
 - License: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/)
 - Changes: None. Shows a carved figure at the base of one side; used to show relief technique.
+
+## EM-08 Lorscher Kopf: main photo
+- File: public/images/artworks/Lorscher-Kopf.jpg (1,443 x 1,600 px)
+- Source: https://commons.wikimedia.org/wiki/File:Lorscher_Kopf.JPG
+- Author: Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: flagged for Rick's decision.
+- Changes: Resized from the original.
+- Note: dated 9th/11th century by the museum; admitted to Early Medieval by Rick's explicit exception on 2026-10-22, when the cutoff was 800 C.E. The cutoff is now 900 C.E., but the museum's range (9th to 11th century) still runs past it.
+
+## EM-08 Lorscher Kopf: detail image (reconstruction)
+- File: public/images/artworks/Lorscher-Kopf-detail.jpg (1,174 x 1,600 px)
+- Source: https://commons.wikimedia.org/wiki/File:GN-F2632a-Kg-35-28a.jpg
+- Author: Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: flagged for Rick's decision.
+- Changes: Resized from the original.
+- Note: black-and-white reconstruction of the fragmentary window (Commons description credits Heinz Merten); shows the whole face, not the surviving glass.

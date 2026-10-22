@@ -4,7 +4,7 @@ Updated 2026-10-22.
 
 ## Middle School
 - Stage 0 (structure): five period tabs built (Early Medieval, Late Medieval, Renaissance, Baroque, Modern), 30 placeholder case slots each, check boxes, Vasario, points, Next case returning to the list. Not yet committed to GitHub.
-- Early Medieval: 5 of 30 approved (EM-01 The Four Tetrarchs, "Carved to Match"; EM-02 San Vitale apse mosaic, "Floating in Gold"; EM-03 Arch of Constantine, "Old Stone, New Wall"; EM-04 Old St. Peter’s, "Light from Above"; EM-07 Bewcastle Cross, "Vines Carved in Stone"; approved 2026-10-22). EM-05 and EM-06 are drafts awaiting approval.
+- Early Medieval: 6 of 30 approved (EM-08 The Lorscher Kopf, "Pieces of a Face", approved 2026-10-22, admitted under Rick's exception: museum date 9th to 11th century runs past the 900 C.E. end date; period now circa 300 to 900 C.E.; EM-01 The Four Tetrarchs, "Carved to Match"; EM-02 San Vitale apse mosaic, "Floating in Gold"; EM-03 Arch of Constantine, "Old Stone, New Wall"; EM-04 Old St. Peter’s, "Light from Above"; EM-07 Bewcastle Cross, "Vines Carved in Stone"; approved 2026-10-22). EM-05 and EM-06 are drafts awaiting approval.
 - Late Medieval, Renaissance, Baroque, Modern: 0 of 30 approved.
 
 ## Open decisions

@@ -1,5 +1,7 @@
 # Early Medieval candidate works (from the earlier placeholder list)
 
+NOTE (2026-10-22): the Early Medieval end date was raised from 800 C.E. to 900 C.E. The reasons below that cite 800 C.E. are out of date. Palatine Chapel and the Ebbo Gospels and Coronation Gospels entries now fall inside the period and need their dates re-checked. The Gero Cross (late 900s) and Bernward Doors (early 1000s) still fall outside.
+
 These titles were removed from the game's case list when the list pages were built. They are candidates only, not decisions. Dates are approximate and need checking before use.
 
 - Palatine Chapel, Aachen (Building Authority): built around the year 800, so it sits on the 800 C.E. boundary.

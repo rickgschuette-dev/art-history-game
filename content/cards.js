@@ -8,7 +8,7 @@ function placeholders(prefix){
   return a;
 }
 var EM01={id:"EM-01",kind:"Sculpture",title:"Carved to Match",object:"The Four Tetrarchs",playable:true,
- crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"The Four Tetrarchs",date:"circa 300 C.E.",location:"St. Mark’s Basilica, Venice",artist:"artist unknown",
  headline:"Look closely at the four figures",
  alt:"Four armed figures carved in purple-red stone stand in two embracing pairs at the corner of a building. They wear matching short tunics, cloaks and flat-topped caps, and each grips a sword with a bird-headed hilt.",
@@ -27,7 +27,7 @@ var EM01={id:"EM-01",kind:"Sculpture",title:"Carved to Match",object:"The Four T
  sourceNums:[1],
  credit:{url:"https://commons.wikimedia.org/wiki/File:The-tetrarchs.jpg",author:"Wooofer",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 var EM02={id:"EM-02",kind:"Mosaic",wide:true,title:"Floating in Gold",object:"Apse mosaic, San Vitale",playable:true,
- crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Christ with Angels, Saint Vitalis and Bishop Ecclesius (apse mosaic)",date:"circa 547 C.E.",location:"Basilica of San Vitale, Ravenna",artist:"artists unknown",
  headline:"Look closely at the figures",
  alt:"A curved wall covered in tiny glass tiles. Christ sits on a blue globe against a gold background, wearing dark purple and holding a book. Two angels stand beside him, and a saint and a bishop stand at the outer sides, all facing forward on a strip of green ground with flowers.",
@@ -46,7 +46,7 @@ var EM02={id:"EM-02",kind:"Mosaic",wide:true,title:"Floating in Gold",object:"Ap
  sourceNums:[2,3],
  credit:{url:"https://commons.wikimedia.org/wiki/File:Apse_mosaic_-_Basilica_of_San_Vitale_(Ravenna).jpg",author:"Petar Milo\u0161evi\u0107",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 var EM03={id:"EM-03",kind:"Architecture",wide:true,title:"Old Stone, New Wall",object:"Arch of Constantine",playable:true,
- crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Arch of Constantine",date:"dedicated 315 C.E.",location:"Rome",artist:"artists unknown",
  headline:"Look closely at the carved figures",
  alt:"Part of a Roman stone arch. Two round carved panels sit at the top. Below them runs a long, narrow band of small standing figures gathered on both sides of a platform. Under the band, a round arched opening has a reclining figure carved in each upper corner.",
@@ -65,7 +65,7 @@ var EM03={id:"EM-03",kind:"Architecture",wide:true,title:"Old Stone, New Wall",o
  sourceNums:[4,5],
  credit:{url:"https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_102.jpg",author:"bradhostetler",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}};
 var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Light from Above",object:"Old St. Peter's Basilica",playable:true,
- crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Old St. Peter\u2019s Basilica (reconstruction drawing)",date:"begun circa 330 C.E.",location:"Rome",artist:"architect unknown",
  headline:"Look closely at the shapes of the church",
  alt:"A bird\u2019s-eye line drawing of a very long church with a tall central hall and lower side parts. Small round-topped windows sit high on the tall walls. A walled courtyard with covered walkways lies in front, with a bell tower on the right and round buildings at the far left.",
@@ -84,7 +84,7 @@ var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Light from Above",obje
  sourceNums:[6,7],
  credit:{word:"Drawing",url:"https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg",author:"Internet Archive Book Images (from Walter Lowrie, Monuments of the Early Church, 1901)",license:"No known copyright restrictions",licenseUrl:"https://www.flickr.com/commons/usage/",changes:"Resized from the original."}};
 var EM07={id:"EM-07",kind:"Memorial marker",title:"Vines Carved in Stone",object:"Bewcastle Cross",playable:true,
- crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"The Bewcastle Cross",date:"late 7th or early 8th century C.E.",location:"Bewcastle, Cumbria, England",artist:"artist unknown",
  headline:"Look closely at the carved boxes",
  alt:"A tall, narrow stone pillar seen from below, standing beside a stone church tower under a blue sky. The top is broken off. The pillar is carved from top to bottom in separate boxes: curling vines with bunches of grapes and a bird, a round dial-like shape, a square of woven bands, more vines curling around grapes, and a large block of tangled knots near the bottom.",
@@ -102,8 +102,27 @@ var EM07={id:"EM-07",kind:"Memorial marker",title:"Vines Carved in Stone",object
  guide:"Evidence filed. Knotwork, vines with creatures and stacked panels are clues a detective can carry to the next case.",
  sourceNums:[8,9],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Bewcastle_cross_south_perspective_view.jpg",author:"Doug Sim",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Resized from the original."}};
+var EM08={id:"EM-08",kind:"Stained glass",title:"Pieces of a Face",object:"The Lorscher Kopf",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Head of a Bearded Saint (the \u201cLorscher Kopf\u201d)",date:"9th\u201311th century C.E. (scholars disagree)",location:"Hessisches Landesmuseum Darmstadt, Germany (found at Lorsch Abbey)",artist:"artist unknown",
+ headline:"Look closely at the face",
+ alt:"A round arrangement of glass pieces held in thin dark metal strips. Light-blue shards form a ring like a halo. Inside it, orange-brown fragments make up part of a bearded face with large, round eyes. Black gaps show where pieces are missing.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Lorscher-Kopf.jpg",
+ imageNote:"Broken pieces of glass, put back together in modern times. Dark gaps show where pieces are missing.",
+ detail:{image:"public/images/artworks/Lorscher-Kopf-detail.jpg",alt:"A bearded man\u2019s face with huge round eyes, a long straight nose and a beard drawn in many fine lines. A halo made of segments rises behind his head.",caption:"Technique detail: a black-and-white reconstruction of the whole face",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:GN-F2632a-Kg-35-28a.jpg",author:"Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}},
+ size:"Reconstructed panel: about 30 \u00d7 27 cm / 12 \u00d7 10\u00bd in. A little taller than a sheet of notebook paper.",
+ intro:"This face was made of colored glass about 1,000 years ago, then broke into pieces. How did the artist build a face out of glass and lines?",
+ context:"Stained glass is colored glass cut into pieces and held together by thin strips of lead.",
+ clues:[{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"lines",label:"Lines for hair",def:"Hair and beard drawn as many thin, repeated lines"},{id:"outline",label:"Dark outlines",def:"Thick dark lines that separate color from color"}],
+ steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
+ closing:"Why might an artist give a holy figure eyes this large and steady?",
+ bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
+ guide:"Evidence filed. A steady stare, hair drawn in lines and dark outlines are clues a detective can carry to the next case.",
+ sourceNums:[10],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Lorscher_Kopf.JPG",author:"Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 window.DECKS=[
-{id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 800 C.E.",cards:placeholders('EM')},
+{id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 900 C.E.",cards:placeholders('EM')},
 {id:"late-medieval",title:"Late Medieval",span:"",cards:placeholders('LM')},
 {id:"renaissance",title:"Renaissance",span:"",cards:placeholders('RE')},
 {id:"baroque",title:"Baroque",span:"",cards:placeholders('BA')},
@@ -114,3 +133,4 @@ window.DECKS[0].cards[1]=EM02;
 window.DECKS[0].cards[2]=EM03;
 window.DECKS[0].cards[3]=EM04;
 window.DECKS[0].cards[6]=EM07;
+window.DECKS[0].cards[7]=EM08;

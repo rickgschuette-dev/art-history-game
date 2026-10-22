@@ -17,3 +17,6 @@ window.SOURCES.push(
 {n:8,type:"Secondary source",cite:"Britannica Editors. \u201cBewcastle Cross.\u201d Encyclopaedia Britannica.",url:"https://www.britannica.com/print/article/63723"},
 {n:9,type:"Secondary source",cite:"\u201cThe Bewcastle Cross.\u201d Old English course pack, University of Oxford (english.nsms.ox.ac.uk).",url:"https://english.nsms.ox.ac.uk/oecoursepack/rood/context/bewcastle.html"}
 );
+window.SOURCES.push(
+{n:10,type:"Scholarship",cite:"\u201cScherbenkonvolut mit figürlichen Resten (Lorsch, Kloster).\u201d Mittelalterliche Glasmalereien in Hessen (online catalog, Corpus Vitrearum Medii Aevi). LAGIS Hessen.",url:"https://lagis.hessen.de/de/quellen-und-materialien/mittelalterliche-glasmalereien-in-hessen/alle-eintraege/112-1-01-01"}
+);
