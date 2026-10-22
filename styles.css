@@ -97,3 +97,4 @@ ol.src a{word-break:break-all;font-size:.9rem}
 ol.src li .used{display:block;font-size:.8rem;color:#526575;margin-top:.15rem}
 ol.src li.ph-src{color:#526575;font-style:italic}ol.src li.ph-src .tag{font-style:normal}
 ol.src li.ph-src.hl{font-style:italic}
+.art+.note{margin:.5rem 0 .6rem}

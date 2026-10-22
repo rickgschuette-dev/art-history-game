@@ -13,3 +13,7 @@ window.SOURCES.push(
 {n:6,type:"Scholarship",cite:"Kinney, Dale. \u201cOld St. Peter\u2019s Basilica: Description.\u201d Medieval Architecture, Media Center for Art History, Archaeology and Historic Preservation, Columbia University.",url:"https://projects.mcah.columbia.edu/medieval-architecture/htm/kd/ma_kd_discuss_osp_descript.htm"},
 {n:7,type:"Secondary source",cite:"Britannica Editors. \u201cOld Saint Peter\u2019s Basilica.\u201d Encyclopaedia Britannica.",url:"https://www.britannica.com/topic/Old-Saint-Peters-Basilica"}
 );
+window.SOURCES.push(
+{n:8,type:"Secondary source",cite:"Britannica Editors. \u201cBewcastle Cross.\u201d Encyclopaedia Britannica.",url:"https://www.britannica.com/print/article/63723"},
+{n:9,type:"Secondary source",cite:"\u201cThe Bewcastle Cross.\u201d Old English course pack, University of Oxford (english.nsms.ox.ac.uk).",url:"https://english.nsms.ox.ac.uk/oecoursepack/rood/context/bewcastle.html"}
+);

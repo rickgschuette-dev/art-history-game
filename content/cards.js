@@ -83,6 +83,25 @@ var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Light from Above",obje
  guide:"Evidence filed. A tall center, windows up high and an open yard are clues a detective can carry to the next case.",
  sourceNums:[6,7],
  credit:{word:"Drawing",url:"https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg",author:"Internet Archive Book Images (from Walter Lowrie, Monuments of the Early Church, 1901)",license:"No known copyright restrictions",licenseUrl:"https://www.flickr.com/commons/usage/",changes:"Resized from the original."}};
+var EM07={id:"EM-07",kind:"Memorial marker",title:"Vines Carved in Stone",object:"Bewcastle Cross",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ work:"The Bewcastle Cross",date:"late 7th or early 8th century C.E.",location:"Bewcastle, Cumbria, England",artist:"artist unknown",
+ headline:"Look closely at the carved boxes",
+ alt:"A tall, narrow stone pillar seen from below, standing beside a stone church tower under a blue sky. The top is broken off. The pillar is carved from top to bottom in separate boxes: curling vines with bunches of grapes and a bird, a round dial-like shape, a square of woven bands, more vines curling around grapes, and a large block of tangled knots near the bottom.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Bewcastle-Cross.jpg",
+ imageNote:"This is one of the four sides of the shaft, photographed from below. The cross arms at the top are lost.",
+ detail:{image:"public/images/artworks/Bewcastle-detail.jpg",alt:"Close view of the lower part of one side of the stone. A standing figure in a rounded niche holds a bird on one wrist. The reddish sandstone is worn smooth and spotted with pale lichen.",caption:"Technique detail: a figure carved in relief",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:The_7th_C_Bewcastle_Cross_-_St._John_the_Evangelist_-_geograph.org.uk_-_1833425.jpg",author:"Mike Quinn",license:"CC BY-SA 2.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/2.0/",changes:""}},
+ size:"Height of the surviving shaft: about 4.4 m / 14\u00bd ft. About one and a half basketball hoops high.",
+ intro:"This stone pillar has stood in northern England for about 1,300 years. How did carvers cover a whole pillar with vines and knots?",
+ context:"Shaft means the tall upright part of a cross. Here only the shaft survives.",
+ clues:[{id:"knot",label:"Knotwork",def:"Bands that weave over and under"},{id:"vine",label:"Vines and creatures",def:"Curling vines with grapes, birds and animals"},{id:"panels",label:"Stacked panels",def:"Separate boxes of pattern, one above another"}],
+ steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
+ closing:"What might vines and endless knots have said to people who visited this memorial?",
+ bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
+ guide:"Evidence filed. Knotwork, vines with creatures and stacked panels are clues a detective can carry to the next case.",
+ sourceNums:[8,9],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Bewcastle_cross_south_perspective_view.jpg",author:"Doug Sim",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Resized from the original."}};
 window.DECKS=[
 {id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 800 C.E.",cards:placeholders('EM')},
 {id:"late-medieval",title:"Late Medieval",span:"",cards:placeholders('LM')},
@@ -94,3 +113,4 @@ window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
 window.DECKS[0].cards[2]=EM03;
 window.DECKS[0].cards[3]=EM04;
+window.DECKS[0].cards[6]=EM07;

@@ -58,3 +58,17 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Author: A. Rosengarten (Architectural Styles, Fig. 245)
 - License: Public domain
 - Changes: Resized from the original.
+
+## EM-07 Bewcastle Cross: main image
+- File: public/images/artworks/Bewcastle-Cross.jpg (1,200 x 1,600 px)
+- Source: https://commons.wikimedia.org/wiki/File:Bewcastle_cross_south_perspective_view.jpg
+- Author: Doug Sim
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
+- Changes: Resized from the original. Shows the south face of the shaft.
+
+## EM-07 Bewcastle Cross: detail image
+- File: public/images/artworks/Bewcastle-detail.jpg (480 x 640 px, original size)
+- Source: https://commons.wikimedia.org/wiki/File:The_7th_C_Bewcastle_Cross_-_St._John_the_Evangelist_-_geograph.org.uk_-_1833425.jpg
+- Author: Mike Quinn (via geograph.org.uk)
+- License: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/)
+- Changes: None. Shows a carved figure at the base of one side; used to show relief technique.
