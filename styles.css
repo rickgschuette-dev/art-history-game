@@ -84,3 +84,16 @@ h1.ph{font-size:1.35rem;margin:0 0 .1rem}
 .sub{margin:0 0 .35rem}
 .cases a,.cases .row{min-height:1.5rem}
 @media(max-width:600px){.cases a,.cases .row{grid-template-columns:1.3rem 1.6rem 1fr auto;gap:.5rem}.cases .tail{grid-column:auto;font-size:.72rem}}
+
+.closing strong{display:block;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:#526575;margin-bottom:.15rem}.closing p{margin:0}.bonus textarea:disabled{background:#f6f3ec;color:var(--ink)}
+.closing strong span{text-transform:none;letter-spacing:0;font-weight:normal}
+
+.top .rt{display:flex;gap:1.2rem}
+.credits .srcs{margin:.2rem 0}.srcs a{margin:0 .1rem}
+ol.src{padding-left:2rem}ol.src li{margin:.6rem 0;padding:.3rem .5rem;border-radius:6px}ol.src li.hl{background:#f6ecd5;border-left:4px solid var(--gold)}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:#526575;border:1px solid var(--line);border-radius:99px;padding:0 .5rem;margin-right:.3rem}
+ol.src a{word-break:break-all;font-size:.9rem}
+
+ol.src li .used{display:block;font-size:.8rem;color:#526575;margin-top:.15rem}
+ol.src li.ph-src{color:#526575;font-style:italic}ol.src li.ph-src .tag{font-style:normal}
+ol.src li.ph-src.hl{font-style:italic}

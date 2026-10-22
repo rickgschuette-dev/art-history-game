@@ -18,13 +18,13 @@ var EM01={id:"EM-01",title:"Carved to Match",object:"The Four Tetrarchs",playabl
  detail:{image:"public/images/artworks/The-tetrarchs-detail.jpg",alt:"Close view of two of the carved faces and their flat-topped caps. Each face has large, round, deeply cut eyes, and the stone surface is worn and pitted.",caption:"Detail",credit:{url:"https://commons.wikimedia.org/wiki/File:Detail_of_the_Four_Tetrarchs,_ca._300;_Venice_(2).jpg",author:"Prof. Mortel",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}},
  size:"Height: 130 cm / 51 in (4 ft 3 in). About two-thirds the height of a standard 80 in door.",
  intro:"Look at the four figures carved in this red stone. How did the sculptor shape them?",
- context:"Porphyry is a very hard, purple-red stone. It is difficult to carve in fine detail.",
+ context:"Porphyry is a very hard, purple-red stone, which makes fine detail difficult to carve.",
  clues:[{id:"blocky",label:"Blocky bodies",def:"Stiff, boxy shapes, large heads"},{id:"matching",label:"Matching figures",def:"Same size, pose and clothing"},{id:"patterns",label:"Cut patterns",def:"Lines and shapes on cloth and armor"}],
  steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
- closing:"Look again. Do these four look like four different people, or like one shape repeated? Point to one detail that supports your answer.",
+ closing:"Do these four look like four different people, or like one shape repeated?",
  bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
  guide:"Evidence filed. Hard stone, repeated shapes and patterns cut in lines are clues a detective can carry to the next case.",
- sources:"Sources: Smarthistory; Wikipedia",
+ sourceNums:[1],
  credit:{url:"https://commons.wikimedia.org/wiki/File:The-tetrarchs.jpg",author:"Wooofer",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 window.DECKS=[
 {id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 800 C.E.",cards:placeholders('EM')},
