@@ -6,8 +6,8 @@ window.SOURCES=[
 
 /* Placeholder entries below show the page design. Replace each with a real citation when a card uses it. */
 window.SOURCES.push(
-{n:2,type:"Object record",placeholder:true,cite:"Holding institution. Object record: title, date, medium, dimensions, accession number. Full citation to come.",url:""},
-{n:3,type:"Primary document",placeholder:true,cite:"Author of a document from the period. Title. Translator and edition. Year. Full citation to come.",url:""},
+{n:2,type:"Secondary source",cite:"Farber, Allen. \u201cSan Vitale and the Justinian and Theodora Mosaics.\u201d Smarthistory, August 20, 2022.",url:"https://smarthistory.org/san-vitale/"},
+{n:3,type:"Institutional record",cite:"UNESCO World Heritage Centre. \u201cEarly Christian Monuments of Ravenna.\u201d Inscribed 1996.",url:"https://whc.unesco.org/en/list/788"},
 {n:4,type:"Scholarship",placeholder:true,cite:"Author. Title of book. Place: Publisher, year. Full citation to come.",url:""},
 {n:5,type:"Scholarship",placeholder:true,cite:"Author. \u201cTitle of article.\u201d Journal, volume, year, pages. Full citation to come.",url:""},
 {n:6,type:"Object record",placeholder:true,cite:"Holding institution. Collection record or excavation report. Full citation to come.",url:""},

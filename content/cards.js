@@ -26,6 +26,25 @@ var EM01={id:"EM-01",title:"Carved to Match",object:"The Four Tetrarchs",playabl
  guide:"Evidence filed. Hard stone, repeated shapes and patterns cut in lines are clues a detective can carry to the next case.",
  sourceNums:[1],
  credit:{url:"https://commons.wikimedia.org/wiki/File:The-tetrarchs.jpg",author:"Wooofer",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
+var EM02={id:"EM-02",wide:true,title:"Floating in Gold",object:"Apse mosaic, San Vitale",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ work:"Christ with Angels, Saint Vitalis and Bishop Ecclesius (apse mosaic)",date:"circa 547 C.E.",location:"Basilica of San Vitale, Ravenna",artist:"artists unknown",
+ headline:"Look closely at the figures",
+ alt:"A curved wall covered in tiny glass tiles. Christ sits on a blue globe against a gold background, wearing dark purple and holding a book. Two angels stand beside him, and a saint and a bishop stand at the outer sides, all facing forward on a strip of green ground with flowers.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/San-Vitale-apse.jpg",
+ imageNote:"",
+ detail:{image:"public/images/artworks/San-Vitale-apse-detail.jpg",alt:"Close view of small cut pieces of stone in cream, green, black and red-orange, set in curving rows with thin gaps of mortar between them.",caption:"Detail: tesserae",credit:{url:"https://commons.wikimedia.org/wiki/File:Ravenna,_San_Vitale_-_12536853624.jpg",author:"bradhostetler",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}},
+ size:"",
+ intro:"Look at this curved wall covered in tiny pieces of glass. How did the artists make these figures feel holy rather than ordinary?",
+ context:"Tesserae (teh-SER-ee) are the small cut pieces of glass or stone that make up a mosaic.",
+ clues:[{id:"gold",label:"Gold background",def:"Glittering glass tiles instead of a sky"},{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"float",label:"Floating figures",def:"Little weight, shadow or solid ground"}],
+ steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
+ closing:"Does Christ seem to sit in a real place, or somewhere outside of time?",
+ bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
+ guide:"Evidence filed. Gold light, forward-facing figures and bodies that seem to float are clues a detective can carry to the next case.",
+ sourceNums:[2,3],
+ credit:{url:"https://commons.wikimedia.org/wiki/File:Apse_mosaic_-_Basilica_of_San_Vitale_(Ravenna).jpg",author:"Petar Milo\u0161evi\u0107",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 window.DECKS=[
 {id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 800 C.E.",cards:placeholders('EM')},
 {id:"late-medieval",title:"Late Medieval",span:"",cards:placeholders('LM')},
@@ -34,3 +53,4 @@ window.DECKS=[
 {id:"modern",title:"Modern",span:"",cards:placeholders('MO')}
 ];
 window.DECKS[0].cards[0]=EM01;
+window.DECKS[0].cards[1]=EM02;

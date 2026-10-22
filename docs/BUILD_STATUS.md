@@ -4,7 +4,7 @@ Updated 2026-10-22.
 
 ## Middle School
 - Stage 0 (structure): five period tabs built (Early Medieval, Late Medieval, Renaissance, Baroque, Modern), 30 placeholder case slots each, check boxes, Vasario, points, Next case returning to the list. Not yet committed to GitHub.
-- Early Medieval: 1 of 30 approved (EM-01 The Four Tetrarchs, "Carved to Match").
+- Early Medieval: 2 of 30 approved (EM-01 The Four Tetrarchs, "Carved to Match"; EM-02 San Vitale apse mosaic, "Floating in Gold", approved 2026-10-22).
 - Late Medieval, Renaissance, Baroque, Modern: 0 of 30 approved.
 
 ## Open decisions
@@ -13,3 +13,4 @@ Updated 2026-10-22.
 - Card ID prefixes EM, LM, RE, BA, MO (assumed).
 - Header level label is now "Apprentice" (chosen by Rick; echoes the old art-studio system). Later level names are not yet chosen. "Points" label and an optional welcome line from Vasario are still undecided.
 - README is out of date and needs new wording.
+- Planned feature, not built: period case file (traits collected across cases; gives compare cards their job). Needs a design pass first.
