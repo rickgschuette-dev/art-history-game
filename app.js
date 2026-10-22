@@ -2,34 +2,41 @@
 var app=document.getElementById('app'),KEY='ahg.v1';
 var raw=JSON.parse(localStorage.getItem(KEY)||'{}');
 var store={cards:raw.cards||{}};
-if(raw.finds&&!raw.cards){store.cards['EM-03']={finds:raw.finds}}
+var CFG={saveDraft:false};
 var S={finds:[],sel:null,cur:{x:50,y:50},msg:'',done:false,id:null};
-function save(){if(S.id){store.cards[S.id]={finds:S.finds}}localStorage.setItem(KEY,JSON.stringify(store))}
+function save(){if(S.id){store.cards[S.id]={finds:S.finds,bonus:S.bonus||'',points:S.points||0}}localStorage.setItem(KEY,JSON.stringify(store))}
+function words(t){return (t||'').trim().split(/\s+/).filter(Boolean).length}
+function bank(){var n=0;Object.keys(store.cards).forEach(function(k){n+=store.cards[k].points||0});var e=document.getElementById('bank');if(e)e.textContent='Points: '+n}
+function cloud(c){var p=S.points;var l='Case closed. Vasario awards you '+p+' points'+(p>10?' (10 for the case, 5 bonus for your detective\u2019s note)':'')+'.';return '<div class="cloud"><strong>Vasario</strong><p>'+l+'</p>'+(S.bonusMissed?'<p class="note">Add four or more words to your note to earn the 5 bonus points. You can edit it and submit again.</p>':'')+(c.guide?'<p>'+esc(c.guide)+'</p>':'')+'</div>'}
 function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
 function find(id){for(var i=0;i<DECKS.length;i++){var cs=DECKS[i].cards;for(var j=0;j<cs.length;j++){if(cs[j].id===id&&cs[j].playable)return{deck:DECKS[i],card:cs[j]}}}return null}
-function cardList(d){return '<ul class="cards">'+d.cards.map(function(c){return '<li class="panel"><span><strong>'+esc(c.title)+'</strong><br><span class="note">'+esc(c.object)+'</span></span>'+(c.playable?'<button class="primary" data-id="'+c.id+'">Play</button>':'<span class="note">Coming soon</span>')+'</li>'}).join('')+'</ul>'}
-function home(){app.innerHTML='<h1>Welcome</h1><p>Look closely at artworks, mark what you find, and explain it in your own words.</p><button class="primary" id="go">Choose a deck</button>';document.getElementById('go').onclick=function(){location.hash='#/decks'}}
-function decks(){app.innerHTML='<h1>Choose a deck</h1><ul class="cards">'+DECKS.map(function(d){return '<li class="panel"><span><strong>'+esc(d.title)+'</strong><br><span class="note">'+esc(d.blurb)+'</span></span><button class="primary" data-deck="'+d.id+'">Open</button></li>'}).join('')+'</ul>';
-app.querySelectorAll('button[data-deck]').forEach(function(b){b.onclick=function(){location.hash='#/deck/'+b.dataset.deck}})}
-function deck(id){var d=DECKS.filter(function(x){return x.id===id})[0];if(!d){location.hash='#/decks';return}
-app.innerHTML='<p><a class="btn" href="#/decks">Back to decks</a></p><h1>'+esc(d.title)+'</h1><p>'+esc(d.blurb)+'</p>'+cardList(d);
-app.querySelectorAll('button[data-id]').forEach(function(b){b.onclick=function(){location.hash='#/card/'+b.dataset.id}})}
-function credit(c){var k=c.credit;if(!k)return '';return '<p class="note">'+esc(k.title)+' \u2013 photo by '+esc(k.author)+', <a href="'+k.licenseUrl+'">'+esc(k.license)+'</a>, via Wikimedia Commons'+(k.changes?'. '+esc(k.changes):'')+'</p>'}
-function card(id){var f=find(id);if(!f){location.hash='#/decks';return}
-var c=f.card;if(S.id!==id){S.id=id;S.finds=(store.cards[id]||{}).finds||[]}
+function done(c){return ((store.cards[c.id]||{}).points||0)>0}
+function num(i){return (i<9?'0':'')+(i+1)}
+function tabs(cur){return '<nav class="tabs" aria-label="Periods">'+DECKS.map(function(d){return '<a href="#/deck/'+d.id+'"'+(d.id===cur?' aria-current="page"':'')+'>'+esc(d.title)+'</a>'}).join('')+'</nav>'}
+function cardList(d){return '<ol class="cases">'+d.cards.map(function(c,i){var dn=done(c),pts=(store.cards[c.id]||{}).points||0;
+var inner='<span class="box'+(dn?' on':'')+'" aria-hidden="true">'+(dn?'\u2713':'')+'</span><span class="sr">'+(dn?'Completed. ':'Not yet completed. ')+'</span><span class="num">'+num(i)+'</span><span class="ttl"><strong>'+esc(c.title)+'</strong>'+(c.object?'<span class="note">'+esc(c.object)+'</span>':'')+'</span>'+(dn?'<span class="tail pts">'+pts+' points</span>':(c.playable?'<span class="tail go">Play</span>':'<span class="tail soon">Coming soon</span>'));
+return '<li class="'+(c.playable?'ready':'later')+(dn?' done':'')+'">'+(c.playable?'<a href="#/card/'+c.id+'">'+inner+'</a>':'<div class="row">'+inner+'</div>')+'</li>'}).join('')+'</ol>'}
+function home(){app.innerHTML='<h1>Welcome</h1><p>Look closely at artworks, mark what you find, and explain it in your own words.</p><p><a class="btn primary" href="#/deck/'+DECKS[0].id+'">Begin</a></p>'}
+function deck(id){var d=DECKS.filter(function(x){return x.id===id})[0];if(!d){location.hash='#/deck/'+DECKS[0].id;return}
+var nd=d.cards.filter(done).length,ni=-1;d.cards.forEach(function(c,i){if(ni<0&&c.playable&&!done(c))ni=i});
+app.innerHTML=tabs(id)+'<h1 class="ph">'+esc(d.title)+' Period</h1><div class="sub"><span class="prog"><strong>'+nd+' of '+d.cards.length+'</strong> cases completed'+(d.span?' <span class="note">\u00b7 '+esc(d.span)+'</span>':'')+'</span>'+(ni>=0?'<a class="btn primary" href="#/card/'+d.cards[ni].id+'">'+(nd?'Continue with case ':'Start with case ')+(ni+1)+'</a>':'')+'</div>'+cardList(d)}
+function credit(k,word){if(!k)return '';var lead=k.title?esc(k.title)+' – '+word.toLowerCase():(k.url?'<a href="'+k.url+'">'+word+'</a>':word);return '<p class="note">'+lead+' by '+esc(k.author)+', <a href="'+k.licenseUrl+'">'+esc(k.license)+'</a>, via Wikimedia Commons'+(k.changes?'. '+esc(k.changes):'')+'</p>'}
+function card(id){var f=find(id);if(!f){location.hash='#/deck/'+DECKS[0].id;return}
+var c=f.card;if(S.id!==id){S.id=id;S.finds=(store.cards[id]||{}).finds||[];S.bonus=(store.cards[id]||{}).bonus||'';S.points=(store.cards[id]||{}).points||0}
 var cl=function(i){return c.clues.filter(function(k){return k.id===i})[0]};
-var steps=(c.steps||[]).map(function(s){return '<p>'+esc(s)+'</p>'}).join('');
-app.innerHTML='<p><a class="btn" href="#/deck/'+f.deck.id+'">Back to '+esc(f.deck.title)+'</a></p><p class="note">'+esc(c.crumb)+' \u00b7 <strong>YOUR TURN</strong></p><div class="grid"><section><h2>'+esc(c.headline)+'</h2>'
+var LET=['A','B','C'],COL=['#1f6f6b','#a4472b','#5b4b8a'],TINT=['#e3f0ef','#f6e6df','#ebe6f4'];function ci(x){return c.clues.map(function(k){return k.id}).indexOf(x)}
+var st=c.steps||[];
+app.innerHTML='<p class="note">'+esc(c.crumb)+' \u00b7 <strong>YOUR TURN</strong></p>'+(c.work?'<h1 class="work"><strong>'+esc(c.work)+'</strong>; '+esc(c.date)+'; '+esc(c.location)+'; '+esc(c.artist)+'</h1>':'')+'<div class="grid"><section><h2>'+esc(c.headline)+'</h2>'
 +'<div class="art'+(c.wide?' wide':'')+'" id="art" tabindex="0" role="application" aria-label="Artwork. Choose a clue, move the cursor with arrow keys, and press Enter to mark."><img src="'+c.image+'" alt="'+esc(c.alt)+'"><span class="cursor" id="cur"></span></div>'
-+'<p><button id="big">'+esc(c.enlarge||'Enlarge image')+'</button></p>'+(c.imageNote?'<p class="note">'+esc(c.imageNote)+'</p>':'')
-+(c.size?'<p>'+esc(c.size)+'</p><div class="paper"><div style="width:85px;height:110px">Letter paper<br>11 \u00d7 8.5 in</div><div style="width:99px;height:134px">Manuscript page</div></div>':'')
-+'<p>'+esc(c.place)+'<br>'+esc(c.holding)+'</p>'+credit(c)+'</section><section class="panel"><h1>'+esc(c.title.toUpperCase())+'</h1><p>'+esc(c.intro)+'</p><p class="note">'+esc(c.context)+'</p><h3>CHOOSE A CLUE</h3><div class="chips" id="chips"></div>'
-+'<h3>FIND TWO CLUES</h3>'+steps+'<div class="msg" id="msg" role="status"></div>'+(S.done&&c.closing?'<p>'+esc(c.closing)+'</p>':'')+'<div id="fields"></div>'
-+'<p><button id="draft">Save draft</button> <button class="primary" id="sub">Submit finds</button></p><p class="note">'+esc(c.sources)+'</p></section></div>';
++'<p><button id="big">'+esc(c.enlarge||'Enlarge image')+'</button></p>'+(c.imageNote?'<p class="note">'+esc(c.imageNote)+'</p>':'')+(c.detail?'<figure class="detail"><img src="'+c.detail.image+'" alt="'+esc(c.detail.alt)+'"><figcaption class="note">'+esc(c.detail.caption||'Detail')+'</figcaption></figure>':'')
++(c.size?'<p>'+esc(c.size)+'</p>':'')
++(c.place?'<p>'+esc(c.place)+'<br>'+esc(c.holding)+'</p>':'')+'<div id="bslotL"></div></section><section class="panel"><h1>'+esc(c.title.toUpperCase())+'</h1><div class="q">'+esc(c.intro)+'</div><p class="word"><strong>Word to know</strong>'+esc(c.context)+'</p><ol class="how"><li><span class="n">1</span><div><strong>'+esc(st[0])+'</strong><div class="chips" id="chips"></div></div></li><li><span class="n">2</span><div>'+esc(st[1])+'</div></li><li><span class="n">3</span><div>'+esc(st[2])+'</div></li></ol>'
++'<div class="msg" id="msg" role="status"></div><div id="fields"></div><div id="bslotP"></div>'+(c.bonus?'<label class="bonus"><strong>'+esc(c.bonus.prompt)+'</strong><textarea id="bonus" placeholder="'+esc(c.bonus.placeholder||'')+'"></textarea></label>':'')
++(S.done?cloud(c):'')+(S.done&&c.closing?'<p class="closing">'+esc(c.closing)+'</p>':'')+'<div class="btns">'+(CFG.saveDraft?'<button id="draft">Save draft</button>':'')+'<button class="primary" id="sub">Submit finds</button><span id="nextp"></span></div><div class="msg" id="bmsg" role="status"></div><p class="note">'+esc(c.sources)+'</p></section></div><footer class="credits">'+credit(c.credit,'Photo')+(c.detail?credit(c.detail.credit,'Detail photo'):'')+'</footer>';
 var art=document.getElementById('art');
-function marks(){art.querySelectorAll('.mark').forEach(function(m){m.remove()});S.finds.forEach(function(f,i){var m=document.createElement('span');m.className='mark';m.textContent=i+1;m.style.left=f.x+'%';m.style.top=f.y+'%';art.appendChild(m)})}
-function chips(){var h=document.getElementById('chips');h.innerHTML='';c.clues.forEach(function(k){var b=document.createElement('button');b.setAttribute('aria-pressed',S.sel===k.id);b.innerHTML=esc(k.label)+'<small>'+esc(k.def)+'</small>';b.onclick=function(){S.sel=k.id;S.msg='';chips();msg()};h.appendChild(b)})}
-function fields(){var h=document.getElementById('fields');h.innerHTML='';[0,1].forEach(function(i){var f=S.finds[i];var l=document.createElement('label');l.innerHTML='<strong>'+(i+1)+' \u00b7 '+(f?esc(cl(f.clue).label):(i?'Your second find':'Your first find'))+'</strong>';var t=document.createElement('textarea');t.placeholder='I can see\u2026';t.value=f?f.text:'';t.disabled=!f;t.oninput=function(){f.text=t.value;save()};l.appendChild(t);h.appendChild(l)})}
+function marks(){art.querySelectorAll('.mark').forEach(function(m){m.remove()});S.finds.forEach(function(f,i){var m=document.createElement('span');m.className='mark';m.style.setProperty('--cc',COL[ci(f.clue)]);m.textContent=LET[ci(f.clue)];m.style.left=f.x+'%';m.style.top=f.y+'%';art.appendChild(m)})}
+function chips(){var h=document.getElementById('chips');h.innerHTML='';c.clues.forEach(function(k){var b=document.createElement('button');b.setAttribute('aria-pressed',S.sel===k.id);b.style.setProperty('--cc',COL[ci(k.id)]);b.style.setProperty('--ct',TINT[ci(k.id)]);b.innerHTML='<span class="let">'+LET[ci(k.id)]+'</span><span><strong>'+esc(k.label)+'</strong><small>'+esc(k.def)+'</small></span>';b.onclick=function(){S.sel=k.id;S.msg='';chips();msg()};h.appendChild(b)})}
+function fields(){var h=document.getElementById('fields');h.innerHTML='';c.clues.forEach(function(k,j){var f=S.finds.filter(function(x){return x.clue===k.id})[0];var d=document.createElement('div');d.className='ans';d.style.setProperty('--cc',COL[j]);var l=document.createElement('label');l.innerHTML='<strong><b>'+LET[j]+'</b> \u00b7 '+esc(k.label)+'</strong>';var t=document.createElement('textarea');t.placeholder=f?'I can see\u2026':(S.finds.length>=2?'Two clues are enough.':'Choose this clue and mark the artwork first.');t.value=f?f.text:'';t.disabled=!f;t.oninput=function(){f.text=t.value;save()};l.appendChild(t);d.appendChild(l);h.appendChild(d)})}
 function msg(){document.getElementById('msg').textContent=S.msg}
 function place(x,y){if(!S.sel){S.msg='Choose a clue first.';msg();return}
 var i=S.finds.map(function(f){return f.clue}).indexOf(S.sel);
@@ -40,9 +47,11 @@ art.onkeydown=function(e){var d={ArrowLeft:[-2,0],ArrowRight:[2,0],ArrowUp:[0,-2
 if(d){e.preventDefault();S.cur.x=Math.min(100,Math.max(0,S.cur.x+d[0]));S.cur.y=Math.min(100,Math.max(0,S.cur.y+d[1]));var u=document.getElementById('cur');u.style.left=S.cur.x+'%';u.style.top=S.cur.y+'%'}
 else if(e.key==='Enter'||e.key===' '){e.preventDefault();place(S.cur.x,S.cur.y)}};
 document.getElementById('big').onclick=function(){art.classList.toggle('big')};
-document.getElementById('draft').onclick=function(){save();S.msg='Draft saved on this device.';msg()};
-document.getElementById('sub').onclick=function(){if(S.finds.length<2||S.finds.some(function(f){return !f.text.trim()})){S.msg='Mark two clues on the artwork and write a sentence for each.';msg();return}save();S.done=true;card(id);S.msg='Submitted. You can still move a marker or edit a sentence.';msg()};
-marks();chips();fields();msg()}
-function help(){app.innerHTML='<h1>Help</h1><p>Choose a clue. Click or tap the artwork where you see it. Then write what you found.</p><p>Using a keyboard: press Tab until the artwork is outlined, move the dotted circle with the arrow keys, and press Enter to mark.</p><p class="note">Your work is saved only in this browser on this device.</p><a class="btn" href="#/decks">Back to decks</a>'}
-function route(){var h=location.hash.split('/');if(h[1]==='decks')decks();else if(h[1]==='deck')deck(h[2]);else if(h[1]==='card'){S.id=null;S.sel=null;S.msg='';S.done=false;S.cur={x:50,y:50};card(h[2])}else if(h[1]==='help')help();else home();app.focus()}
-window.addEventListener('hashchange',route);route()})();
+function bm(){document.getElementById('bmsg').textContent=S.bmsg||'';var np=document.getElementById('nextp');np.innerHTML='';if(S.after){var b=document.createElement('button');b.className='primary next';b.id='nxt';b.textContent='Next case \u2192';b.onclick=function(){location.hash='#/deck/'+f.deck.id};np.appendChild(b)}}
+var dr=document.getElementById('draft');if(dr)dr.onclick=function(){save();S.bmsg='Draft saved on this device.';S.after=true;bm()};
+document.getElementById('sub').onclick=function(){if(S.finds.length<2||S.finds.some(function(f){return words(f.text)<4})){S.bmsg='Mark two clues on the artwork and write at least four words for each.';bm();return}var ok=c.bonus&&words(S.bonus)>=4;S.points=10+(ok?c.bonus.points:0);S.bonusMissed=!!(c.bonus&&!ok);S.done=true;S.after=true;S.bmsg='';save();card(id);var cb=document.querySelector('.cloud');if(cb&&cb.scrollIntoView)cb.scrollIntoView({block:'center'})};
+var bl=document.querySelector('label.bonus'),sl=document.getElementById('bslotL'),sp=document.getElementById('bslotP'),mq=window.matchMedia('(min-width:851px)');function pb(){if(bl)(mq.matches?sl:sp).appendChild(bl)}pb();mq.onchange=pb;var bt=document.getElementById('bonus');if(bt){bt.value=S.bonus||'';bt.oninput=function(){S.bonus=bt.value;save()}}
+marks();chips();fields();msg();bm();bank()}
+function help(){app.innerHTML='<h1>Help</h1><p>Choose a clue. Click or tap the artwork where you see it. Then write what you found.</p><p>Using a keyboard: press Tab until the artwork is outlined, move the dotted circle with the arrow keys, and press Enter to mark.</p><p class="note">Your work is saved only in this browser on this device.</p><a class="btn" href="#/deck/'+DECKS[0].id+'">Back to the case list</a>'}
+function route(){var h=location.hash.split('/');if(h[1]==='deck')deck(h[2]);else if(h[1]==='card'){S.id=null;S.sel=null;S.msg='';S.done=false;S.after=false;S.bmsg='';S.cur={x:50,y:50};card(h[2])}else if(h[1]==='help')help();else home();app.focus({preventScroll:true});window.scrollTo(0,0)}
+window.addEventListener('hashchange',route);route();bank()})();

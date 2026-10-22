@@ -1,41 +1,36 @@
-/* TODO before student testing: replace the Lindisfarne placeholder image and verify its page size against the British Library record. Confirm the Commons page address for LA-01 in docs/IMAGE_CREDITS.md. */
+/* Art History Game: Middle School content.
+   Five periods, 30 case slots each. A slot with playable:true is a finished card;
+   every other slot is a placeholder until its card is built.
+   Card IDs: EM, LM, RE, BA, MO + two digits. */
+function placeholders(prefix){
+  var a=[];
+  for(var i=1;i<=30;i++){a.push({id:prefix+'-'+(i<10?'0':'')+i,title:'Title to come',playable:false})}
+  return a;
+}
+var EM01={id:"EM-01",title:"Carved to Match",object:"The Four Tetrarchs",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ work:"The Four Tetrarchs",date:"circa 300 C.E.",location:"St. Mark’s Basilica, Venice",artist:"artist unknown",
+ headline:"Look closely at the four figures",
+ alt:"Four armed figures carved in purple-red stone stand in two embracing pairs at the corner of a building. They wear matching short tunics, cloaks and flat-topped caps, and each grips a sword with a bird-headed hilt.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/The-tetrarchs.jpg",
+ imageNote:"",
+ detail:{image:"public/images/artworks/The-tetrarchs-detail.jpg",alt:"Close view of two of the carved faces and their flat-topped caps. Each face has large, round, deeply cut eyes, and the stone surface is worn and pitted.",caption:"Detail",credit:{url:"https://commons.wikimedia.org/wiki/File:Detail_of_the_Four_Tetrarchs,_ca._300;_Venice_(2).jpg",author:"Prof. Mortel",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}},
+ size:"Height: 130 cm / 51 in (4 ft 3 in). About two-thirds the height of a standard 80 in door.",
+ intro:"Look at the four figures carved in this red stone. How did the sculptor shape them?",
+ context:"Porphyry is a very hard, purple-red stone. It is difficult to carve in fine detail.",
+ clues:[{id:"blocky",label:"Blocky bodies",def:"Stiff, boxy shapes, large heads"},{id:"matching",label:"Matching figures",def:"Same size, pose and clothing"},{id:"patterns",label:"Cut patterns",def:"Lines and shapes on cloth and armor"}],
+ steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
+ closing:"Look again. Do these four look like four different people, or like one shape repeated? Point to one detail that supports your answer.",
+ bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
+ guide:"Evidence filed. Hard stone, repeated shapes and patterns cut in lines are clues a detective can carry to the next case.",
+ sources:"Sources: Smarthistory; Wikipedia",
+ credit:{url:"https://commons.wikimedia.org/wiki/File:The-tetrarchs.jpg",author:"Wooofer",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 window.DECKS=[
-{id:"early-medieval",title:"Early Medieval Art",blurb:"Only Spot the Style is ready to play right now.",cards:[
-{id:"EM-01",title:"Building Authority",object:"Palatine Chapel, Aachen"},
-{id:"EM-02",title:"Wealth on Display",object:"Sutton Hoo purse lid"},
-{id:"EM-03",title:"Spot the Style",object:"Lindisfarne Gospels, Matthew cross-carpet page",playable:true,
- crumb:"Early Medieval Art / Lindisfarne Gospels",
- headline:"Look closely at the page",
- alt:"Cross-carpet page from the Lindisfarne Gospels",
- enlarge:"Enlarge page",
- place:"Lindisfarne, northern England \u00b7 Around 700",holding:"British Library \u00b7 Cotton MS Nero D IV, f. 26v",
- image:"public/images/artworks/lindisfarne-f26v-placeholder.svg",
- imageNote:"",
- size:"Full page: approx. 34 cm / 13.4 in high, 25 cm / 9.8 in wide",
- intro:"Look past the cross. Find patterns that are typical of this style.",
- context:"This page is an example of Insular art, made in Britain and Ireland during the early medieval period.",
- clues:[{id:"interlace",label:"Interlace",def:"Lines woven over and under"},{id:"repeat",label:"Repeated shapes",def:"Knots or spirals used again"},{id:"creatures",label:"Hidden creatures",def:"Animals worked into patterns"}],
- steps:["Choose a clue. Then click the artwork where you see it.","Write one sentence about what you found. Do this for two different clues."],
- sources:"Sources: British Library; Smarthistory"},
-{id:"EM-04",title:"Same Patterns, Different Materials",object:"Sutton Hoo purse lid and Lindisfarne page"},
-{id:"EM-05",title:"Lines That Move",object:"Saint Matthew, Ebbo Gospels"},
-{id:"EM-06",title:"Same Writer, Two Styles",object:"Coronation and Ebbo Gospels"},
-{id:"EM-07",title:"Posture in Sculpture",object:"Gero Cross, Cologne"},
-{id:"EM-08",title:"Building a Scene in Bronze",object:"Nativity panel, Bernward Doors"}]},
-{id:"late-antiquity",title:"Late Antiquity",blurb:"Only Style in Stone is ready to play right now.",cards:[
-{id:"LA-01",title:"Style in Stone",object:"Arch of Constantine, Rome",playable:true,
- crumb:"Late Antiquity / Arch of Constantine",
- headline:"Look closely at the figures",
- alt:"Stone relief from the Arch of Constantine showing rows of soldiers with shields on the left and a walled city with towers on the right.",
- enlarge:"Enlarge image",wide:true,
- place:"Arch of Constantine, Rome \u00b7 Stone relief",holding:"Completed about 315 CE",
- image:"public/images/artworks/Arch_of_Constantine_-_detail_3_(4293299626).jpg",
- imageNote:"",
- intro:"Look at the people carved in this stone panel. How did the sculptor shape them?",
- context:"A relief is a carving that rises from a flat stone surface.",
- clues:[{id:"blocky",label:"Short and blocky",def:"Stocky bodies, large heads"},{id:"repeated",label:"Repeated poses",def:"Figures that look alike"},{id:"flat",label:"Flat and lined up",def:"Little depth, one row"}],
- steps:["Choose a clue. Then click the artwork where you see it.","Write one sentence about what you notice in the figures. Do this for two different clues."],
- closing:"Look again. Do these figures look like real, individual people, or more like symbols? Point to one detail that supports your answer.",
- sources:"Sources: Smarthistory; Khan Academy",
- credit:{title:"Arch of Constantine - detail 3",author:"Yellow.Cat",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/"}}]}
+{id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 800 C.E.",cards:placeholders('EM')},
+{id:"late-medieval",title:"Late Medieval",span:"",cards:placeholders('LM')},
+{id:"renaissance",title:"Renaissance",span:"",cards:placeholders('RE')},
+{id:"baroque",title:"Baroque",span:"",cards:placeholders('BA')},
+{id:"modern",title:"Modern",span:"",cards:placeholders('MO')}
 ];
+window.DECKS[0].cards[0]=EM01;

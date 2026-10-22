@@ -11,4 +11,14 @@
 - Christian subject matter is historical context, not assumed belief. No devotional tasks or prior Bible knowledge.
 - Revision is progress. No required generic disclaimers.
 - Removed from deck: Tiny Pieces, Precise Patterns (Sutton Hoo shoulder clasp), judged too elementary.
-- No scoring, timers, accounts, or automatic grading approved yet.
+- Card header (Middle School): work title; date; location; artist, in that order, with 'artist unknown' when not known. Example: The Four Tetrarchs; circa 300 C.E.; St. Mark's Basilica, Venice; artist unknown. The period (for example, Early Medieval Period) shows above the header.
+- Photos: resize every photo to 1,600 pixels on its longest side. The credit line must say 'Resized from the original.'
+- Detail photo (optional): shown under the main photo with the caption 'Detail'. No Enlarge button. Players mark clues on the main photo only. It carries its own credit line.
+- Scoring (Middle School): 10 points for a closed case, plus 5 bonus points for a personal observation. Each sentence needs at least four words. Points are stored once per card. No wrong answers, no timers, no accounts, no automatic grading of content.
+- Guide: Vasario, a scripted character (no live AI at Middle School and High School). Detective framing: Art Detective, cases, clues.
+- Clues are lettered A, B, C. The letter, name and color match on the clue button, the marker on the artwork, and the answer box. Numbers are used only for the three steps.
+- Middle School and High School: no Save draft button. Work is saved silently in the browser. The only buttons on a card are Submit finds and, after a successful submit, Next case.
+- Next case returns the player to the period's case list. The player chooses the next case from there.
+- Each period has an entry page: a tab strip of the five periods, a numbered list of 30 cases, and a check box beside each case that fills in automatically when the case is submitted. A Start or Continue button leads to the first unfinished case.
+- Photo credits sit in a full-width line at the bottom of the card page. The bonus box sits under the detail photo and size line on wide screens, and after the answer boxes on phones.
+- Early Medieval Period dates for Middle School: circa 300 C.E. to 800 C.E. Keep dates consistent across levels. Sub-periods (Byzantine, Merovingian, Carolingian) come at High School and above.
