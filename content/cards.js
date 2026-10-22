@@ -7,7 +7,7 @@ function placeholders(prefix){
   for(var i=1;i<=30;i++){a.push({id:prefix+'-'+(i<10?'0':'')+i,title:'Title to come',playable:false})}
   return a;
 }
-var EM01={id:"EM-01",title:"Carved to Match",object:"The Four Tetrarchs",playable:true,
+var EM01={id:"EM-01",kind:"Sculpture",title:"Carved to Match",object:"The Four Tetrarchs",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
  work:"The Four Tetrarchs",date:"circa 300 C.E.",location:"St. Mark’s Basilica, Venice",artist:"artist unknown",
  headline:"Look closely at the four figures",
@@ -26,7 +26,7 @@ var EM01={id:"EM-01",title:"Carved to Match",object:"The Four Tetrarchs",playabl
  guide:"Evidence filed. Hard stone, repeated shapes and patterns cut in lines are clues a detective can carry to the next case.",
  sourceNums:[1],
  credit:{url:"https://commons.wikimedia.org/wiki/File:The-tetrarchs.jpg",author:"Wooofer",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
-var EM02={id:"EM-02",wide:true,title:"Floating in Gold",object:"Apse mosaic, San Vitale",playable:true,
+var EM02={id:"EM-02",kind:"Mosaic",wide:true,title:"Floating in Gold",object:"Apse mosaic, San Vitale",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
  work:"Christ with Angels, Saint Vitalis and Bishop Ecclesius (apse mosaic)",date:"circa 547 C.E.",location:"Basilica of San Vitale, Ravenna",artist:"artists unknown",
  headline:"Look closely at the figures",
@@ -45,6 +45,44 @@ var EM02={id:"EM-02",wide:true,title:"Floating in Gold",object:"Apse mosaic, San
  guide:"Evidence filed. Gold light, forward-facing figures and bodies that seem to float are clues a detective can carry to the next case.",
  sourceNums:[2,3],
  credit:{url:"https://commons.wikimedia.org/wiki/File:Apse_mosaic_-_Basilica_of_San_Vitale_(Ravenna).jpg",author:"Petar Milo\u0161evi\u0107",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
+var EM03={id:"EM-03",kind:"Architecture",wide:true,title:"Old Stone, New Wall",object:"Arch of Constantine",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ work:"Arch of Constantine",date:"dedicated 315 C.E.",location:"Rome",artist:"artists unknown",
+ headline:"Look closely at the carved figures",
+ alt:"Part of a Roman stone arch. Two round carved panels sit at the top. Below them runs a long, narrow band of small standing figures gathered on both sides of a platform. Under the band, a round arched opening has a reclining figure carved in each upper corner.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Arch-of-Constantine.jpg",
+ imageNote:"",
+ detail:{image:"public/images/artworks/Arch-of-Constantine-detail.jpg",alt:"A carved stone panel. A winged figure holding a wreath flies above four standing figures in armor and robes, in front of a building with columns.",caption:"Technique detail: relief carving",credit:{url:"https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_108.jpg",author:"bradhostetler",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}},
+ size:"Whole arch: about 20 m / 66 ft high. About as tall as a six-story building. This photo shows only a small part.",
+ intro:"Look at this Roman arch. Carvings made at different times sit side by side on it. What differences can you spot?",
+ context:"Spolia (SPOH-lee-uh) means older carvings or building parts reused on a new monument.",
+ clues:[{id:"matching",label:"Matching figures",def:"Same size, pose and clothing"},{id:"blocky",label:"Blocky bodies",def:"Stiff, boxy shapes, large heads"},{id:"two",label:"Two styles",def:"Lifelike panels beside stiff ones"}],
+ steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
+ closing:"Why might builders reuse older carvings on a brand-new monument?",
+ bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
+ guide:"Evidence filed. Rows of matching figures, blocky bodies and two styles on one wall are clues a detective can carry to the next case.",
+ sourceNums:[4,5],
+ credit:{url:"https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_102.jpg",author:"bradhostetler",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}};
+var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Light from Above",object:"Old St. Peter's Basilica",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 800 C.E.",
+ work:"Old St. Peter\u2019s Basilica (reconstruction drawing)",date:"begun circa 330 C.E.",location:"Rome",artist:"architect unknown",
+ headline:"Look closely at the shapes of the church",
+ alt:"A bird\u2019s-eye line drawing of a very long church with a tall central hall and lower side parts. Small round-topped windows sit high on the tall walls. A walled courtyard with covered walkways lies in front, with a bell tower on the right and round buildings at the far left.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Old-St-Peters-detail.jpg",
+ imageNote:"A drawing of how scholars imagined the church. Old St. Peter\u2019s was torn down in the early 1500s.",
+ detail:{image:"public/images/artworks/Old-St-Peters.jpg",alt:"A line drawing of the inside of a very long church. Two rows of columns run down each side of a wide central hall toward a rounded arch at the far end. Above the columns, tall walls rise to a roof of wooden beams.",caption:"Detail: the inside, in a cut-away drawing",credit:{word:"Detail drawing",url:"https://commons.wikimedia.org/wiki/File:Fig_245_Old_St_Peter%27s.jpg",author:"A. Rosengarten",license:"Public domain",licenseUrl:"",changes:"Resized from the original."}},
+ size:"Length: about 123 m / 403 ft from entrance to apse. The nave alone was as long as an American football field.",
+ intro:"This church is gone, but drawings show how it looked from above. How could light reach the middle of such a huge room?",
+ context:"The clerestory (KLEER-stor-ee) is a row of windows high in the wall of a church, above the lower roofs.",
+ clues:[{id:"long",label:"Tall center, low sides",def:"A tall middle with lower parts on each side"},{id:"windows",label:"Windows up high",def:"Openings near the top of the tall wall"},{id:"yard",label:"Open yard",def:"A courtyard with covered walks before the doors"}],
+ steps:["Choose a clue.","Click the artwork where you see it.","Write one sentence about what you notice. Do this for two different clues."],
+ closing:"Where would light fall inside this church, and what would it help you notice?",
+ bonus:{points:5,prompt:"For 5 bonus points, add your personal observation or feeling about this work.",placeholder:"I feel\u2026"},
+ guide:"Evidence filed. A tall center, windows up high and an open yard are clues a detective can carry to the next case.",
+ sourceNums:[6,7],
+ credit:{word:"Drawing",url:"https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg",author:"Internet Archive Book Images (from Walter Lowrie, Monuments of the Early Church, 1901)",license:"No known copyright restrictions",licenseUrl:"https://www.flickr.com/commons/usage/",changes:"Resized from the original."}};
 window.DECKS=[
 {id:"early-medieval",title:"Early Medieval",span:"circa 300 C.E. \u2013 800 C.E.",cards:placeholders('EM')},
 {id:"late-medieval",title:"Late Medieval",span:"",cards:placeholders('LM')},
@@ -54,3 +92,5 @@ window.DECKS=[
 ];
 window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
+window.DECKS[0].cards[2]=EM03;
+window.DECKS[0].cards[3]=EM04;

@@ -30,3 +30,31 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
 - Changes: Resized from the original.
 - Note: shows mosaic technique; the exact location within San Vitale is not confirmed and is not needed (Rick, 2026-10-22).
+
+## EM-03 Arch of Constantine: main photo
+- File: public/images/artworks/Arch-of-Constantine.jpg (1,600 x 1,200 px)
+- Source: https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_102.jpg
+- Author: bradhostetler (Flickr)
+- License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
+- Changes: Resized from the original.
+
+## EM-03 Arch of Constantine: detail photo (technique detail)
+- File: public/images/artworks/Arch-of-Constantine-detail.jpg (1,200 x 1,600 px)
+- Source: https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_108.jpg
+- Author: bradhostetler (Flickr)
+- License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
+- Changes: Resized from the original. Shows relief carving; the panel shown is not identified.
+
+## EM-04 Old St. Peter's: main image (drawing)
+- File: public/images/artworks/Old-St-Peters-detail.jpg (1,600 x 1,027 px)
+- Source: https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg
+- Author: Internet Archive Book Images, from Walter Lowrie, Monuments of the Early Church (1901)
+- License: No known copyright restrictions (https://www.flickr.com/commons/usage/)
+- Changes: Resized from the original.
+
+## EM-04 Old St. Peter's: detail image (drawing)
+- File: public/images/artworks/Old-St-Peters.jpg (1,600 x 1,210 px)
+- Source: https://commons.wikimedia.org/wiki/File:Fig_245_Old_St_Peter%27s.jpg
+- Author: A. Rosengarten (Architectural Styles, Fig. 245)
+- License: Public domain
+- Changes: Resized from the original.

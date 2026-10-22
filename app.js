@@ -20,13 +20,13 @@ function home(){app.innerHTML='<h1>Welcome</h1><p>Look closely at artworks, mark
 function deck(id){var d=DECKS.filter(function(x){return x.id===id})[0];if(!d){location.hash='#/deck/'+DECKS[0].id;return}
 var nd=d.cards.filter(done).length,ni=-1;d.cards.forEach(function(c,i){if(ni<0&&c.playable&&!done(c))ni=i});
 app.innerHTML=tabs(id)+'<h1 class="ph">'+esc(d.title)+' Period</h1><div class="sub"><span class="prog"><strong>'+nd+' of '+d.cards.length+'</strong> cases completed'+(d.span?' <span class="note">\u00b7 '+esc(d.span)+'</span>':'')+'</span>'+(ni>=0?'<a class="btn primary" href="#/card/'+d.cards[ni].id+'">'+(nd?'Continue with case ':'Start with case ')+(ni+1)+'</a>':'')+'</div>'+cardList(d)}
-function credit(k,word){if(!k)return '';var lead=k.title?esc(k.title)+' – '+word.toLowerCase():(k.url?'<a href="'+k.url+'">'+word+'</a>':word);return '<p class="note">'+lead+' by '+esc(k.author)+', <a href="'+k.licenseUrl+'">'+esc(k.license)+'</a>, via Wikimedia Commons'+(k.changes?'. '+esc(k.changes):'')+'</p>'}
+function credit(k,word){if(!k)return '';word=k.word||word;var lead=k.title?esc(k.title)+' – '+word.toLowerCase():(k.url?'<a href="'+k.url+'">'+word+'</a>':word);return '<p class="note">'+lead+' by '+esc(k.author)+', '+(k.licenseUrl?'<a href="'+k.licenseUrl+'">'+esc(k.license)+'</a>':esc(k.license))+', via Wikimedia Commons'+(k.changes?'. '+esc(k.changes):'')+'</p>'}
 function card(id){var f=find(id);if(!f){location.hash='#/deck/'+DECKS[0].id;return}
 var c=f.card;if(S.id!==id){S.id=id;S.finds=(store.cards[id]||{}).finds||[];S.bonus=(store.cards[id]||{}).bonus||'';S.points=(store.cards[id]||{}).points||0}
 var cl=function(i){return c.clues.filter(function(k){return k.id===i})[0]};
 var LET=['A','B','C'],COL=['#1f6f6b','#a4472b','#5b4b8a'],TINT=['#e3f0ef','#f6e6df','#ebe6f4'];function ci(x){return c.clues.map(function(k){return k.id}).indexOf(x)}
 var st=c.steps||[];
-app.innerHTML='<p class="note">'+esc(c.crumb)+' \u00b7 <strong>YOUR TURN</strong></p>'+(c.work?'<h1 class="work"><strong>'+esc(c.work)+'</strong>; '+esc(c.date)+'; '+esc(c.location)+'; '+esc(c.artist)+'</h1>':'')+'<div class="grid"><section><h2>'+esc(c.headline)+'</h2>'
+app.innerHTML='<p class="note">'+esc(c.crumb)+' \u00b7 <strong>YOUR TURN</strong></p>'+(c.work?'<h1 class="work">'+(c.kind?'<span class="kind">'+esc(c.kind)+'</span>':'')+'<strong>'+esc(c.work)+'</strong>; '+esc(c.date)+'; '+esc(c.location)+'; '+esc(c.artist)+'</h1>':'')+'<div class="grid"><section><h2>'+esc(c.headline)+'</h2>'
 +'<div class="art'+(c.wide?' wide':'')+'" id="art" tabindex="0" role="application" aria-label="Artwork. Choose a clue, move the cursor with arrow keys, and press Enter to mark."><img src="'+c.image+'" alt="'+esc(c.alt)+'"><span class="cursor" id="cur"></span></div>'
 +'<p><button id="big">'+esc(c.enlarge||'Enlarge image')+'</button></p>'+(c.imageNote?'<p class="note">'+esc(c.imageNote)+'</p>':'')+(c.detail?'<figure class="detail"><img src="'+c.detail.image+'" alt="'+esc(c.detail.alt)+'"><figcaption class="note">'+esc(c.detail.caption||'Detail')+'</figcaption></figure>':'')
 +(c.size?'<p>'+esc(c.size)+'</p>':'')
