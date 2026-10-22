@@ -29,4 +29,4 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Author: bradhostetler (Flickr)
 - License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
 - Changes: Resized from the original.
-- Note: location of the detail within San Vitale not confirmed; caption says "Detail: tesserae" only.
+- Note: shows mosaic technique; the exact location within San Vitale is not confirmed and is not needed (Rick, 2026-10-22).
