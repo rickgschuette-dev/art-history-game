@@ -99,3 +99,4 @@ ol.src li.ph-src{color:#526575;font-style:italic}ol.src li.ph-src .tag{font-styl
 ol.src li.ph-src.hl{font-style:italic}
 .art+.note{margin:.5rem 0 .6rem}
 .headrow{display:flex;align-items:center;flex-wrap:nowrap;gap:.6rem 1.2rem;margin:0 0 .6rem}.headrow h2{margin:0}.headrow button{flex:none;white-space:nowrap}@media(max-width:600px){.headrow{flex-wrap:wrap}}
+.chips button .ord{margin-left:auto;flex:none;min-width:1.6rem;height:1.6rem;padding:0 .35rem;border-radius:.8rem;background:#fff;border:2px solid var(--cc,var(--navy));color:var(--cc,var(--navy));display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:.85rem}

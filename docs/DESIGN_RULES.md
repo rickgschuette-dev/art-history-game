@@ -34,3 +34,10 @@
 - Image controls (Rick, 2026-10-22): the Enlarge image button sits on the top line, directly beside the headline (for example 'Look closely at the whole page'). The caption of the primary image, when a card has one, sits directly beneath the image. Applies to all cards.
 - Card spacing (Rick, 2026-10-22): extra white space sits between the card title block and the 'Look closely' line, enough to stay clear when the title wraps to a second line, and between the primary image caption and the detail image. These come from the shared page styles, so every existing and future card gets them.
 - Player-facing wording (Rick, 2026-10-23): step 3 reads 'Write at least one sentence about your own observations or what you find most interesting.' An answer box that has no mark yet reads 'Mark the artwork, then write your own observation or point of special interest.' The bonus box reads 'For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.' The earlier line 'Do this for two different clues.' was removed from step 3 and the two-clue rule moved to step 1, which now reads 'Choose any two of the following features.' (Rick, 2026-10-23). Player-facing instructions call the A, B and C items 'features' (step 1, the swap notice in the answer box, the Submit message and the screen-reader label); the card guide's closing line and the code still say 'clues'. The bonus box starts empty, with no ghost text (Rick, 2026-10-23). The two-clue limit is still enforced when the player submits.
+
+## Clue selection interaction (2026-10-23)
+- The player chooses up to two feature boxes first; chosen boxes show order badges 1 and 2.
+- Each click on the artwork places the first waiting letter, so letters land in the order the boxes were chosen.
+- Clicking a chosen box un-chooses it. A third box replaces the one chosen first.
+- The one-box flow still works. To move a placed letter, choose its box, then click the artwork.
+- Step 2 text: "Click the artwork where you see each feature, in the order you chose them."
