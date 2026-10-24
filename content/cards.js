@@ -387,6 +387,199 @@ EM18.zones={
  face:[{cx:44,cy:14.5,rx:7,ry:7}],
  lines:[{x0:23,y0:34,x1:38,y1:62},{x0:28,y0:73,x1:72,y1:81}]
 };
+var EM19={id:"EM-19",kind:"Tableware",title:"Emperor on the Dinner Table",object:"Roselle red-slip cup",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Cup with an emperor in a four-horse chariot (African Red Slip ware)",date:"about 375\u2013430 C.E.",location:"Museo Archeologico e d\u2019Arte della Maremma, Grosseto, Italy (found at the Roman forum of Roselle)",artist:"unknown potter in North Africa",
+ headline:"Look closely at the cup",
+ alt:"A shallow, orange-red clay dish with a broken edge, held upright on clear stands. In the middle, a small figure rides a chariot pulled by four horses, two on each side, raising one arm over the team. The scene stands out from the surface in low relief. Below it sits a leaf-shaped design, and thin grooved circles run around the rim.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Roselle-Quadriga-Bowl.jpg",
+ imageNote:"A cup for use at the table, made in North Africa and found in Italy. The scene shows an emperor driving a four-horse chariot.",
+ detail:{image:"public/images/artworks/Roselle-Quadriga-Detail.jpg",alt:"A close view of the four horses pulling the chariot, with the driver\u2019s lower body above them. The horses lift their front legs, and thin lines mark their harness straps and manes. A chariot wheel shows between the legs.",caption:"Technique detail: horses and wheels raised from the surface in low relief, with thin lines for manes and harness",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Coppa_in_terra_sigillata_africana_con_imperatore_su_quadriga,_375-430_dc_ca,_da_foro_romano_di_roselle.JPG",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Cropped from the Commons file."}},
+ size:"",
+ intro:"This red clay cup was made in North Africa about 1,600 years ago and used at a table in Italy. A tiny emperor drives a chariot across it. How did the potter make a scene stand out from a smooth surface?",
+ context:"Slip is a watery mix of very fine clay that potters brush or dip onto a pot. This kind of pottery is named for its red slip.",
+ clues:[{id:"emperor",label:"The emperor",def:"A figure driving the chariot, one arm raised"},{id:"horses",label:"Four horses",def:"Four horses pulling the chariot, with harness straps"},{id:"leaf",label:"Leaf design",def:"A leaf-shaped pattern in the lower part of the cup"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might a potter put a scene of an emperor on a cup used at an ordinary table?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A raised figure, a team of horses and a leaf design are features a detective can carry to the next case.",
+ sourceNums:[45,46,47],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Coppa_in_terra_sigillata_africana_con_imperatore_su_quadriga,_375-430_dc_ca,_da_foro_romano_di_roselle.JPG",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Resized from the Commons file."}};
+EM19.zones={
+ emperor:[{x0:29,y0:17,x1:58,y1:41}],
+ horses:[{x0:13,y0:30,x1:80,y1:62}],
+ leaf:[{x0:34,y0:66,x1:51,y1:90}]
+};
+var EM20={id:"EM-20",kind:"Burial artifact",title:"Red Stones in Gold",object:"Sutton Hoo purse lid",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Sutton Hoo purse lid",date:"early 7th century C.E.",location:"British Museum, London (found at Sutton Hoo, Suffolk, England)",artist:"unknown Anglo-Saxon craftsman",
+ headline:"Look closely at the lid",
+ alt:"A flat gold lid with a gently curved lower edge, mounted on a pale backing, with three hinges along the top. A border of tiny red cells alternating with blue-and-white checks runs around the edge. In the middle, two curved birds with hooked beaks face each other, each gripping a smaller bird. On either side of them, a figure with a face and arms stands between two curled beasts. Above these, two six-sided panels of fine gold patterns flank a panel of interlaced animals.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/SuttonHoo-PurseLid.jpg",
+ imageNote:"The gold lid of a purse buried in a ship burial in England about 1,400 years ago. The pale backing is a modern display mount.",
+ detail:{image:"public/images/artworks/SuttonHoo-PurseLid-Detail.jpg",alt:"A close view of the two central panels. Each shows a bird of prey with a hooked beak and a round blue-and-white eye, gripping a smaller bird in its claws. The red bodies are set in thin gold walls, and tiny gold feathers fill the gaps.",caption:"Technique detail: two birds built from red stones and glass set inside thin gold walls",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Sutton_hoo_purse_lid02017_(bird_of_pray).JPG",author:"Geni",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Used as provided on Commons."}},
+ size:"About 19 cm / 7\u00bd in long and 8.3 cm / 3\u00bc in tall, not counting the hinges. About as long as a new pencil.",
+ intro:"This gold lid covered a purse placed in an Anglo-Saxon ship burial about 1,400 years ago. The red shapes are tiny pieces of stone set into gold. What do you see in them?",
+ context:"Cloisonn\u00e9 is a technique in which thin gold walls form tiny cells that hold pieces of colored stone or glass.",
+ clues:[{id:"stones",label:"Red stone inlay",def:"Rows and shapes of red stone set in gold"},{id:"birds",label:"Birds of prey",def:"Curved birds with hooked beaks gripping smaller birds"},{id:"man",label:"Man between beasts",def:"A standing figure with an animal on each side"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might a craftsman have put so much gold and stone into the lid of a small purse?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Red stone inlay, birds of prey and a figure between beasts are features a detective can carry to the next case.",
+ sourceNums:[48,49],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Sutton_hoo_(1).JPG",author:"Jononmac46",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Resized from the Commons file."}};
+EM20.zones={
+ stones:[{x0:12,y0:16,x1:88,y1:23},{x0:4,y0:25,x1:11,y1:78},{x0:89,y0:25,x1:96,y1:78},{x0:14,y0:67,x1:88,y1:83}],
+ birds:[{x0:35.5,y0:41,x1:64.5,y1:70}],
+ man:[{x0:16,y0:45,x1:33,y1:71},{x0:68,y0:45,x1:85,y1:71}]
+};
+var EM21={id:"EM-21",kind:"Architecture",wide:false,title:"Layers in Stone",object:"Great Mosque of C\u00f3rdoba",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Puerta de San Esteban, Great Mosque of C\u00f3rdoba",date:"mosque begun about 785 C.E.; doorway remodeled 855 C.E.",location:"C\u00f3rdoba, Spain",artist:"builders unknown; for Abd al-Rahman I and Muhammad I",
+ headline:"Look closely at the doorway",
+ alt:"A tall, weathered wall of tan stone blocks with a stepped, notched top edge against a blue sky. In the center is a doorway with a dark metal door. Above it, a horseshoe-shaped arch is built of alternating red and white wedge-shaped stones, set inside a rectangular carved frame. Carved stone panels are set into the wall on both sides.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Cordoba-SanEsteban.jpg",
+ imageNote:"The Puerta de San Esteban, a doorway in the mosque\u2019s west wall. An inscription dates its remodeling to 855 C.E.",
+ detail:{image:"public/images/artworks/Cordoba-Hall-Detail.jpg",alt:"Inside a huge hall of columns. Rows of arches, striped red and white, rise in two levels over stone columns, with pale light coming from far down the hall.",caption:"Technique detail: two levels of arches built from alternating stone and red brick, resting on reused Roman columns",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Mosque_of_Cordoba_Spain.jpg",author:"Steven J. Dunlop",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Used as provided on Commons."}},
+ size:"",
+ intro:"This doorway belongs to a building begun as a mosque about 1,200 years ago. An inscription dates the doorway\u2019s remodeling to 855 C.E. Can you spot the details that make this entrance special?",
+ context:"A horseshoe arch curves in past its halfway point, like the shape of a horseshoe.",
+ clues:[{id:"arch",label:"Striped arch",def:"A curved arch made of red and white wedge-shaped stones"},{id:"frame",label:"Rectangular frame",def:"A narrow carved band that outlines the arch in a rectangle"},{id:"panels",label:"Carved panels",def:"Stone blocks with carved patterns set into the wall"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might builders have used red brick and pale stone in alternating stripes instead of plain stone?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A striped arch, a framing band and carved panels are features a detective can carry to the next case.",
+ sourceNums:[50,51,52],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Puerta_de_San_Esteban_(Mezquita_de_C%C3%B3rdoba,_Espa%C3%B1a).jpg",author:"Jos\u00e9 Luis Filpo",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the Commons file."}};
+EM21.zones={
+ arch:[{x0:30,y0:42,x1:70,y1:63}],
+ frame:[{x0:26,y0:38,x1:74,y1:42},{x0:25,y0:42,x1:29,y1:62},{x0:71,y0:42,x1:75,y1:62}],
+ panels:[{x0:79,y0:40.5,x1:98,y1:51},{x0:3,y0:40.5,x1:22,y1:52},{x0:38,y0:29,x1:62,y1:37}]
+};
+var EM22={id:"EM-22",kind:"Ship burial",wide:true,title:"A Ship in the Ground",object:"Oseberg ship",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Oseberg ship",date:"built about 820 C.E.; buried 834 C.E.",location:"Museum of the Viking Age, Oslo, Norway (found at Oseberg, Norway)",artist:"Viking shipbuilders and carvers, names unknown",
+ headline:"Look closely at the ship",
+ alt:"A long, dark wooden ship on display inside a white, arched museum hall. Its front end sweeps up in a tall curve and ends in a spiral at the top. Rows of overlapping planks run along its side, and a tall mast stands in the middle of the open deck.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Oseberg-Ship.jpg",
+ imageNote:"The Oseberg ship, photographed in the Viking Ship Museum in Oslo in 2016. It was dug out of its burial mound in 1904.",
+ detail:{image:"public/images/artworks/Oseberg-Carvings-Detail.jpg",alt:"A carved wooden panel in a museum case. Tangled animals with scale-like patterns on their bodies fill the panel, and two round faces look out from among them.",caption:"Technique detail: tangled animals with scaly bodies and round faces, carved in relief from wood",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Grave_goods_from_the_Oseberg_ship_burial._Viking_Ship_Museum,_Oslo,_Norway_(Vikingskipshuset_p%C3%A5_Bygd%C3%B8y)_November_2011.jpg",author:"Bochum1805",license:"CC BY-SA 2.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/2.0/",changes:"Resized from the Commons file."}},
+ size:"About 21 m / 70 ft long and 5 m / 16 ft wide, as measured after it was dug up. Nearly as long as two city buses end to end.",
+ intro:"This wooden ship was buried under a mound of clay and stone in Norway in 834 C.E. Two women and many belongings were buried with it. Its makers shaped the front end with great care. Can you spot the details that were made by hand?",
+ context:"The prow is the front end of a ship.",
+ clues:[{id:"spiral",label:"Spiral curl",def:"A round curl at the very top of the ship\u2019s front end"},{id:"carving",label:"Carved prow",def:"Dark, tightly packed patterns cut into the wood of the front end"},{id:"planks",label:"Overlapping planks",def:"Long boards laid in overlapping rows along the side"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might people have chosen to bury a whole ship along with two women and their belongings?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A spiral curl, a carved prow and overlapping planks are features a detective can carry to the next case.",
+ sourceNums:[53,54],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Osebergskipet_2016.jpg",author:"Petter Ulleland",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}};
+EM22.zones={
+ spiral:[{x0:73,y0:1,x1:83,y1:14}],
+ carving:[{x0:74.5,y0:16,x1:83,y1:62},{x0:70,y0:84,x1:84,y1:98}],
+ planks:[{x0:38,y0:70,x1:78,y1:90}]
+};
+var EM23={id:"EM-23",kind:"Casket",wide:true,title:"A Box of Whale Bone",object:"Franks Casket",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Franks Casket (also called the Auzon Casket)",date:"early 8th century C.E.",location:"British Museum, London (findspot recorded as Auzon, France)",artist:"unknown Anglo-Saxon carver",
+ headline:"Look closely at the casket",
+ alt:"A small casket of pale, carved bone seen from the front, with a clear plastic cover over its lid. Across the front, small figures are carved in low relief in two scenes side by side. Rows of angular runic letters frame the scenes along the top and bottom. A hole with a rough edge sits at the top center, where a metal fitting was once attached.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Franks-Casket.jpg",
+ imageNote:"The front of the Franks Casket. The scene at left comes from a Germanic legend about a smith named Weland. The scene at right shows three kings visiting a mother and child.",
+ detail:{image:"public/images/artworks/Franks-Casket-Weland-Detail.jpg",alt:"A close view of a carved scene in pale bone. A man at the left holds tools beside a low table. Two robed women stand in the middle, and a man at the right reaches toward several birds.",caption:"Technique detail: tiny figures carved in low relief into whale bone, with plant shapes and runes filling the gaps",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Franks_casket_03.jpg",author:"Michel wal",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Cropped from the Commons file."}},
+ size:"About 23 cm / 9 in long, 19 cm / 7\u00bd in wide and 11 cm / 4\u00bc in high. A bit smaller than a shoebox.",
+ intro:"This box was carved from whale bone about 1,300 years ago. Its front tells two stories, and a riddle in runes runs around the edge. Can you find the parts of the front that tell each story?",
+ context:"Runes are angular letters used to write Old English and other early Germanic languages.",
+ clues:[{id:"smith",label:"Smith\u2019s scene",def:"A carved scene at the left, where a figure holds tools"},{id:"kings",label:"Three kings",def:"Three figures in short tunics walking toward a seated mother and child"},{id:"runes",label:"Runic border",def:"Rows of angular letters carved around the scenes"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might the carver have placed a story from Germanic legend and a story from the Bible side by side on the same box?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A smith\u2019s scene, three kings and a border of runes are features a detective can carry to the next case.",
+ sourceNums:[55],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Franks_casket_03.jpg",author:"Michel wal",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Resized from the Commons file."}};
+EM23.zones={
+ smith:[{x0:14,y0:51,x1:49,y1:75}],
+ kings:[{x0:49.5,y0:55,x1:70,y1:76},{x0:71,y0:52,x1:84,y1:76}],
+ runes:[{x0:14,y0:41,x1:37,y1:51},{x0:61,y0:41,x1:86,y1:52},{x0:13,y0:75,x1:84,y1:84}]
+};
+var EM24={id:"EM-24",kind:"Architecture",wide:true,title:"A Dome Above a Rock",object:"Dome of the Rock",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Dome of the Rock (Qubbat al-Sakhra)",date:"completed about 691\u2013692 C.E.",location:"Haram al-Sharif (Temple Mount), Jerusalem",artist:"builders unknown; built for the caliph Abd al-Malik",
+ headline:"Look closely at the building",
+ alt:"An eight-sided building seen from a corner against a deep blue sky. A large, rounded gold dome with a small gold ornament on top rises from its center. The walls have a band of blue tile writing along the top, a row of arched windows set in green and blue tile patterns, and pale stone panels along the bottom. A porch with slender stone columns stands at the left.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Dome-of-the-Rock.jpg",
+ imageNote:"The Dome of the Rock from the outside. The tiles on its walls were added in the 1500s and again in the 1960s, long after the building was finished.",
+ detail:{image:"public/images/artworks/Dome-Mosaic-Detail.jpg",alt:"A close view of a mosaic of tiny colored pieces on a gold background. A jeweled vase with curved handles holds a large plant shape, and green vines with leaves curl around it.",caption:"Technique detail: a jeweled vase and curling vines made of tiny colored pieces, from the mosaics inside the building",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Arabischer_Maler_um_690_001.jpg",author:"Unknown artists (photograph from the Yorck Project)",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Resized from the Commons file."}},
+ size:"The dome is more than 20 m / 65 ft across. About as wide as two school buses are long.",
+ intro:"This eight-sided building in Jerusalem was finished about 1,300 years ago, around a large rock at its center. The tiles on its outside walls are much newer, but the building\u2019s shape is from the beginning. Can you find three parts of the outside?",
+ context:"An octagon is a shape with eight sides.",
+ clues:[{id:"dome",label:"Gold dome",def:"A large, rounded roof covered in gold-colored metal"},{id:"arches",label:"Tiled arches",def:"A row of arched windows set in colorful tile patterns"},{id:"stone",label:"Pale stone wall",def:"Smooth, light-colored stone panels along the bottom of the walls"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might builders have covered the inside of a building with glittering mosaics of jewels and plants, but shown no people or animals?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A gold dome, tiled arches and pale stone walls are features a detective can carry to the next case.",
+ sourceNums:[56,57],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock,_Jerusalem_(16197850416).jpg",author:"yeowatzup",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the Commons file."}};
+EM24.zones={
+ dome:[{x0:32,y0:10,x1:66,y1:40}],
+ arches:[{x0:10,y0:54,x1:94,y1:71}],
+ stone:[{x0:55,y0:71,x1:97,y1:92}]
+};
+var EM25={id:"EM-25",kind:"Wall painting",wide:true,title:"A Painted Wall of Saints",object:"Santa Maria Antiqua frescoes",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Wall paintings in Santa Maria Antiqua (Christ enthroned between saints)",date:"about 757\u2013767 C.E.",location:"Santa Maria Antiqua, Roman Forum, Rome",artist:"unknown painters; painted in the time of Pope Paul I",
+ headline:"Look closely at the wall painting",
+ alt:"A tall, weathered wall covered in paintings. A row of standing saints with gold halos, each holding a book, stretches across the middle, with Christ seated on a throne at the center. Above them are framed story scenes, partly lost. Along the bottom is a band of painted curtains with swags and round ornaments. A small square stone structure stands at the foot of the wall.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Santa-Maria-Antiqua.jpg",
+ imageNote:"A wall of Santa Maria Antiqua in the Roman Forum. Parts of the plaster have fallen away, but much of the paint is still bright.",
+ detail:{image:"public/images/artworks/Santa-Maria-Antiqua-Basil.jpg",flex:29,alt:"A tall painted figure of a bearded saint in a dark robe, with a gold halo and large eyes. He holds a book. Greek letters beside his head give his name.",caption:"Technique detail: Saint Basil, painted on plaster with large eyes, a long face and a gold halo",credit:{word:"Detail photo (Saint Basil)",url:"https://commons.wikimedia.org/wiki/File:Agios_Basileios_Santa_Maria_Antiqua.jpg",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Used as provided on Commons."}},
+ detail2:{image:"public/images/artworks/Santa-Maria-Antiqua-Hierarchs.jpg",alt:"Three standing figures with gold halos, each holding a book. Greek letters between their heads give their names. Plaster is missing in places, and red and dark bands of color surround them.",caption:"Technique detail: the Three Holy Hierarchs, painted on plaster with Greek names beside each head",credit:{word:"Detail photo (three hierarchs)",url:"https://commons.wikimedia.org/wiki/File:Three_Holy_Hierarchs_Santa_Maria_Antiqua.jpg",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Used as provided on Commons."}},
+ size:"",
+ intro:"This wall was painted about 1,250 years ago inside a church in the Roman Forum. The church collapsed in an earthquake in 847 C.E. and was found again in 1900. Much of the paint survived. Can you find three parts of the painted wall?",
+ context:"A halo is a ring of light painted around a holy person\u2019s head.",
+ clues:[{id:"christ",label:"Christ on a throne",def:"A seated figure at the center, holding a book"},{id:"saints",label:"Saints in a row",def:"Standing figures with gold halos, each holding a book"},{id:"curtain",label:"Painted curtain",def:"A band of painted cloth with swags and round ornaments"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might painters have shown saints in a long row, all facing forward, instead of in a lively scene?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A seated Christ, a row of saints and a painted curtain are features a detective can carry to the next case.",
+ sourceNums:[58,59],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:03_Santa_Maria_Antiqua_Mural.jpg",author:"NateBergin",license:"CC BY 4.0",licenseUrl:"https://creativecommons.org/licenses/by/4.0/",changes:"Resized from the Commons file."}};
+EM25.zones={
+ christ:[{x0:44,y0:41,x1:54.5,y1:68}],
+ saints:[{x0:6,y0:41,x1:43.5,y1:68},{x0:54.5,y0:41,x1:99,y1:68}],
+ curtain:[{x0:1,y0:72,x1:99,y1:93}]
+};
+var EM26={id:"EM-26",kind:"Icon painting",wide:false,title:"One Face, Two Sides",object:"Christ Pantocrator icon",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Christ Pantocrator (icon)",date:"6th century C.E. (about 600)",location:"Saint Catherine\u2019s Monastery, Mount Sinai, Egypt",artist:"unknown painter",
+ headline:"Look closely at the painting",
+ alt:"A painting of a man with long dark hair parted in the middle, a dark beard and large dark eyes, in front of a round gold halo. He wears a dark robe, raises one hand, and holds a gold book decorated with a dark cross and white dots. Pale buildings and a blue-gray sky fill the background.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Pantocrator-Sinai.jpg",
+ imageNote:"A painting of Christ on a wooden panel. Look at how the two sides of the face differ.",
+ detail:{image:"public/images/artworks/Pantocrator-Sinai-Face-Detail.jpg",alt:"A close view of a calm, bearded face with large dark eyes and long dark hair, set against a gold halo. The two sides of the face are not quite alike.",caption:"Technique detail: the face, painted in wax-based paint. The left and right halves differ in shape and expression.",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Jesus_Christ_3.jpg",author:"JoeyEspo984",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped from the Commons file."}},
+ size:"About 84 cm / 33 in tall and 45.5 cm / 18 in wide. About as tall as a kitchen counter.",
+ intro:"This painting on a wooden panel was made about 1,400 years ago and is kept at a monastery on Mount Sinai in Egypt. Take a long look at the face. Can you find three parts of the painting?",
+ context:"Pantocrator is a Greek word meaning \u201cAll-Powerful.\u201d",
+ clues:[{id:"face",label:"The face",def:"A calm, bearded face with large eyes"},{id:"hand",label:"Raised hand",def:"A hand lifted at the left, with fingers held up"},{id:"book",label:"Gold book",def:"A book with a gold cover, a dark cross and white dots"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might the painter have made the two sides of the face a little different, instead of perfectly matching?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A face with two different sides, a raised hand and a jeweled book are features a detective can carry to the next case.",
+ sourceNums:[30,31,60,61],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Jesus_Christ_3.jpg",author:"JoeyEspo984",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}};
+EM26.zones={
+ face:[{x0:28.5,y0:21,x1:62,y1:46}],
+ hand:[{x0:17,y0:61.5,x1:38,y1:82}],
+ book:[{x0:44,y0:57.5,x1:97,y1:85}]
+};
 window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
 window.DECKS[0].cards[2]=EM03;
@@ -405,4 +598,12 @@ window.DECKS[0].cards[14]=EM15;
 window.DECKS[0].cards[15]=EM16;
 window.DECKS[0].cards[16]=EM17;
 window.DECKS[0].cards[17]=EM18;
-window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:1,options:[{label:"Another carved work (placeholder)"},{case:"EM-01"},{label:"Another carved work (placeholder)"}]}}];
+window.DECKS[0].cards[18]=EM19;
+window.DECKS[0].cards[19]=EM20;
+window.DECKS[0].cards[20]=EM21;
+window.DECKS[0].cards[21]=EM22;
+window.DECKS[0].cards[22]=EM23;
+window.DECKS[0].cards[23]=EM24;
+window.DECKS[0].cards[24]=EM25;
+window.DECKS[0].cards[25]=EM26;
+window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:1,options:[{label:"Another carved work (placeholder)"},{case:"EM-01"},{label:"Another carved work (placeholder)"}]}},{id:"VOC-02",after:16,word:"Nimbus",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"A solid disk, like a plate or saucer, set behind the head of a holy figure. A halo is only a thin line around the head. A nimbus is a filled disk.",look:["Is the space behind the head a solid disk, or only a thin outline?","Is the disk gold, as it almost always is in early medieval art?","Do any words on or beside the disk name the holy person?"],example:{id:"EM-09",points:["Behind the head of each seated saint is a solid disk, painted in golden yellow, like a plate standing upright. That filled disk is a nimbus. A halo would be just a thin line circling the head.","The two small riders each have a nimbus, too, so you can find five in this one wall painting.","Painted letters run above the small rider at the left. Words placed around or within the nimbus often identify the holy person or the scene."]},sourceNums:[63,64],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:0,options:[{case:"EM-09"},{case:"EM-03"},{case:"EM-08"}]}},{id:"VOC-03",after:24,word:"Attribute",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"An object that goes with a particular person in art, so you can tell who it is.",look:["What is the figure holding, wearing or standing beside?","Does the same object appear with this person in other works?","What might the object tell you about the person\u2019s story?"],example:{id:"EM-05",points:["Saint Peter holds a bundle of keys against his chest, beside a tall cross. The keys are his attribute, so a viewer who knows his story can tell who he is.","Attributes often come from an event in a saint\u2019s life. They helped viewers recognize saints in paintings.","Look for the same attribute object in other works to help identify the subject.","A symbol stands for an idea, like a dove for peace or a dog for loyalty. An attribute is a symbol that belongs to one person, like keys for Saint Peter."]},sourceNums:[62],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:2,options:[{case:"EM-17"},{case:"EM-09"},{case:"EM-05"}]}}];
