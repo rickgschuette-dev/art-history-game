@@ -113,6 +113,5 @@ ol.src li.ph-src.hl{font-style:italic}
 .vword{margin:.3rem 0 .6rem;font-size:2.6rem;text-transform:uppercase;color:var(--navy)}
 .vdef{font-size:1.35rem;line-height:1.45;margin:0 0 1.2rem;padding:.9rem 1.1rem;background:var(--navy);color:#fff;border-radius:10px}
 .vlook h2{font-size:1.1rem;margin:0 0 .3rem;color:var(--navy)}.vlook ul{margin:0 0 1rem;padding-left:1.3rem}.vlook li{margin:.25rem 0}
-.vsee{margin:0 0 1.2rem;padding:.7rem 1rem;background:#f6e9c8;border-left:4px solid var(--gold)}
 .vnext{margin:0}
-.backv{margin:.2rem 0 .3rem;font-size:.95rem}
+.vex{margin:0 0 1.3rem;padding:1rem 1.2rem;background:#f6e9c8;border-left:4px solid var(--gold);border-radius:6px}.vex h2{margin:0 0 .6rem;font-size:1.1rem;color:var(--navy)}.vex figure{margin:0 0 .8rem;text-align:center}.vex img{display:block;max-width:100%;max-height:42vh;margin:0 auto;border:1px solid var(--line)}.vex figcaption{margin-top:.3rem}.vex p{margin:.4rem 0;line-height:1.45}
