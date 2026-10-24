@@ -40,7 +40,7 @@
 - Each click on the artwork places the first waiting letter, so letters land in the order the boxes were chosen.
 - Clicking a chosen box un-chooses it. A third box replaces the one chosen first.
 - The one-box flow still works. To move a placed letter, choose its box, then click the artwork.
-- Step 2 text: "Click the artwork where you see each feature, in the order you chose them."
+- Step 1 text (Rick's wording, 2026-10-24, replacing Option 4): "Click a feature box below, then click where you identify the feature on the image. Choose two." The live prompt under the boxes still appears after a choice, for example "Click the artwork to place A, then B." The write step is step 2.
 
 ## Magnifier and photo size (2026-10-24)
 - There is no Enlarge button. Each photo shows at the largest size its column allows, capped at 78% of the window height.

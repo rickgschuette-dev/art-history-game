@@ -27,5 +27,10 @@ window.SOURCES=[
 {"n":24,"type":"Museum record","cite":"“Five plaques from the front cover of the Lorsch Gospels.” Victoria and Albert Museum, London (record O113554, with notes on the matching back cover in the Vatican).","url":"https://collections.vam.ac.uk/item/O113554/five-plaques-from-the-front-book-cover-unknown/"},
 {"n":25,"type":"Digital library record","cite":"“Lorscher Evangeliar.” Bibliotheca Laureshamensis – digital (Vatican Library, Pal. lat. 50, and Batthyaneum Library, Ms R II 1).","url":"https://bibliotheca-laureshamensis-digital.de/view/lorscher_evangeliar"},
 {"n":27,"type":"Publisher record","cite":"“Lorsch Gospels.” Ziereis Facsimiles (facsimile edition page).","url":"https://www.facsimiles.com/facsimiles/lorsch-gospels"},
-{"n":28,"type":"Museum glossary","cite":"“Composition.” Art Terms. Tate, London.","url":"https://www.tate.org.uk/art/art-terms/c/composition"}
+{"n":28,"type":"Museum glossary","cite":"“Composition.” Art Terms. Tate, London.","url":"https://www.tate.org.uk/art/art-terms/c/composition"},
+{"n":29,"type":"Secondary source","cite":"“Icon of St. Peter, Mount Sinai.” Art and Architecture of the Middle Ages: Exploring a Connected World (Omeka S).","url":"https://artofthemiddleages.com/s/main/item/2565"},
+{"n":30,"type":"Secondary source","cite":"McClanan, Anne. “Saint Catherine’s Monastery, Sinai.” Smarthistory, September 22, 2020.","url":"https://smarthistory.org/saint-catherines-monastery-sinai/"},
+{"n":31,"type":"Secondary source","cite":"Britannica Editors. “Encaustic painting.” Encyclopaedia Britannica.","url":"https://www.britannica.com/art/encaustic-painting"},
+{"n":32,"type":"Library record","cite":"“Cotton MS Nero D IV: Gospel-book (‘Lindisfarne Gospels’).” British Library Archives and Manuscripts Catalogue (interim record).","url":"https://searcharchives.bl.uk/catalog/040-001102725"},
+{"n":33,"type":"Secondary source","cite":"“The Lindisfarne Gospels.” Smarthistory.","url":"https://smarthistory.org/the-lindisfarne-gospels/"}
 ];
