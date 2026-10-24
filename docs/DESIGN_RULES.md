@@ -49,7 +49,7 @@
 
 ## Vocabulary cards (2026-10-24)
 - A "Learn Your Art History Vocabulary" card appears after every 8th case in a period's list (after cases 8, 16, 24). It is an unnumbered gold row marked "Word" and does not count toward the 30 cases.
-- Read only: no points and no check-off. A "Next case" button returns to the case list.
+- Bonus question (2026-10-24, replaces "read only"): the example photo is shown without its name. Below it: "For 5 bonus points, identify this work. You have seen it before." with three choices A, B, C (thumbnail and title, all earlier cases of the same kind). One try only: the first answer is stored with its points and locked, the correct answer is shown, and the work's name, caption and extra source are revealed. A "Next case" button returns to the list. Wrong answers score 0. Until more cases exist, incorrect choices are placeholder text ("Another carved work (placeholder)") to be back-filled with real earlier cases.
 - Content: the word, a one-sentence definition, three "Look for" questions, one example case shown inline, and a Sources line.
 - The example sits at the bottom of the vocabulary page itself, so the player never leaves it: a heading "A good example: <case>", the case's photo with its header line, and a few short comments (example.points in cards.js). Credits and sources are in the page footer. The photo is not clickable and nothing on it is playable.
 - Standing rule (2026-10-24): a vocabulary card follows every 8th case in every period and level (after cases 8, 16, 24), built exactly like VOC-01 with an inline example image. The example image must always come from a case that appears earlier in the list than the vocabulary card, so the player has already met it.
@@ -59,3 +59,4 @@
 - When a case is submitted, only its points are kept on the device. The marked letters and the player's written answers and bonus note are cleared from storage, so reopening the case later (replay) starts with a clean card.
 - The finished card stays on screen as submitted until the player leaves it. The case keeps its check mark and points in the list.
 - A case that was started but not submitted keeps its marks and text when the player leaves and returns.
+- Vocabulary data fields: quiz {prompt, points, correct (0-2), options[{case:"EM-01"} or {label:"..."}]}. The correct option's letter varies from card to card. Answered vocabulary rows show their points in the case list.
