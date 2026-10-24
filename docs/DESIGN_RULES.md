@@ -41,3 +41,14 @@
 - Clicking a chosen box un-chooses it. A third box replaces the one chosen first.
 - The one-box flow still works. To move a placed letter, choose its box, then click the artwork.
 - Step 2 text: "Click the artwork where you see each feature, in the order you chose them."
+
+## Magnifier and photo size (2026-10-24)
+- There is no Enlarge button. Each photo shows at the largest size its column allows, capped at 78% of the window height.
+- A "Magnifier" switch with two buttons, On and Off, sits beside the photo heading. Off is active (red) at the start; On is green.
+- While On, a 187 px round lens follows the pointer at 2.5 times zoom, with a gold centre dot and any placed letters shown inside it. It never appears while Off.
+
+## Vocabulary cards (2026-10-24)
+- A "Learn Your Art History Vocabulary" card appears after every 8th case in a period's list (after cases 8, 16, 24). It is an unnumbered gold row marked "Word" and does not count toward the 30 cases.
+- Read only: no points and no check-off. A "Next case" button returns to the case list.
+- Content: the word, a one-sentence definition, three "Look for" questions, a "Seen in" link to one case, and a Sources line.
+- Data lives in cards.js as DECKS[n].vocab (id, after, word, def, look, example, sourceNums). First card: VOC-01 Composition, after case 8, example EM-01, source 28 (Tate).

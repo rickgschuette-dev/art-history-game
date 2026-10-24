@@ -20,3 +20,6 @@ window.SOURCES.push(
 window.SOURCES.push(
 {n:10,type:"Scholarship",cite:"\u201cScherbenkonvolut mit figürlichen Resten (Lorsch, Kloster).\u201d Mittelalterliche Glasmalereien in Hessen (online catalog, Corpus Vitrearum Medii Aevi). LAGIS Hessen.",url:"https://lagis.hessen.de/de/quellen-und-materialien/mittelalterliche-glasmalereien-in-hessen/alle-eintraege/112-1-01-01"}
 );
+window.SOURCES.push(
+{n:28,type:"Museum glossary",cite:"\u201cComposition.\u201d Art Terms. Tate, London.",url:"https://www.tate.org.uk/art/art-terms/c/composition"}
+);

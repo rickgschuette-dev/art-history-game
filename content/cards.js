@@ -134,3 +134,4 @@ window.DECKS[0].cards[2]=EM03;
 window.DECKS[0].cards[3]=EM04;
 window.DECKS[0].cards[6]=EM07;
 window.DECKS[0].cards[7]=EM08;
+window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",text:"four figures stand in two matching pairs, pressed close together. That grouping is the sculptor\u2019s composition."},sourceNums:[28]}];
