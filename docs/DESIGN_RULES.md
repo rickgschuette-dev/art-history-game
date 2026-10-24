@@ -51,4 +51,5 @@
 - A "Learn Your Art History Vocabulary" card appears after every 8th case in a period's list (after cases 8, 16, 24). It is an unnumbered gold row marked "Word" and does not count toward the 30 cases.
 - Read only: no points and no check-off. A "Next case" button returns to the case list.
 - Content: the word, a one-sentence definition, three "Look for" questions, a "Seen in" link to one case, and a Sources line.
+- The "Seen in" link opens the case with ?from=<vocab id> in its address, which shows a small "\u2190 Back to the vocabulary card" link above the case. A case opened from the list or directly shows no such link.
 - Data lives in cards.js as DECKS[n].vocab (id, after, word, def, look, example, sourceNums). First card: VOC-01 Composition, after case 8, example EM-01, source 28 (Tate).
