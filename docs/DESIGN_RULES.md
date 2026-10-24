@@ -40,7 +40,8 @@
 - Each click on the artwork places the first waiting letter, so letters land in the order the boxes were chosen.
 - Clicking a chosen box un-chooses it. A third box replaces the one chosen first.
 - The one-box flow still works. To move a placed letter, choose its box, then click the artwork.
-- Step 1 text (Rick's wording, 2026-10-24, replacing Option 4): "Click a feature box below, then click where you identify the feature on the image. Choose two." The live prompt under the boxes still appears after a choice, for example "Click the artwork to place A, then B." The write step is step 2.
+- Three-feature flow (Rick, 2026-10-24, replacing the two-feature flow): the player marks ALL THREE features on the artwork. Step 1: "Click a feature box below, then click where you identify the feature on the image. Identify all three features." Step 2: "Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."
+- Submit needs all three marks and at least four words in any two of the three answer boxes; the third answer is optional. Points are unchanged: 10 per closed case plus 5 bonus. The live prompt under the boxes still guides each click, for example "Click the artwork to place A, then B, then C."
 
 ## Magnifier and photo size (2026-10-24)
 - There is no Enlarge button. Each photo shows at the largest size its column allows, capped at 78% of the window height.

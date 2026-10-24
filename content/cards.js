@@ -20,7 +20,7 @@ var EM01={id:"EM-01",kind:"Sculpture",title:"Carved to Match",object:"The Four T
  intro:"Look at the four figures carved in this red stone. How did the sculptor shape them?",
  context:"Porphyry is a very hard, purple-red stone, which makes fine detail difficult to carve.",
  clues:[{id:"blocky",label:"Blocky bodies",def:"Stiff, boxy shapes, large heads"},{id:"matching",label:"Matching figures",def:"Same size, pose and clothing"},{id:"patterns",label:"Cut patterns",def:"Lines and shapes on cloth and armor"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Do these four look like four different people, or like one shape repeated?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Hard stone, repeated shapes and patterns cut in lines are features a detective can carry to the next case.",
@@ -39,7 +39,7 @@ var EM02={id:"EM-02",kind:"Mosaic",wide:true,title:"Floating in Gold",object:"Ap
  intro:"Look at this curved wall covered in tiny pieces of glass. How did the artists make these figures feel holy rather than ordinary?",
  context:"Tesserae (teh-SER-ee) are the small cut pieces of glass or stone that make up a mosaic.",
  clues:[{id:"gold",label:"Gold background",def:"Glittering glass tiles instead of a sky"},{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"float",label:"Floating figures",def:"Little weight, shadow or solid ground"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Does Christ seem to sit in a real place, or somewhere outside of time?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Gold light, forward-facing figures and bodies that seem to float are features a detective can carry to the next case.",
@@ -58,7 +58,7 @@ var EM03={id:"EM-03",kind:"Architecture",wide:true,title:"Old Stone, New Wall",o
  intro:"Look at this Roman arch. Carvings made at different times sit side by side on it. What differences can you spot?",
  context:"Spolia (SPOH-lee-uh) means older carvings or building parts reused on a new monument.",
  clues:[{id:"matching",label:"Matching figures",def:"Same size, pose and clothing"},{id:"blocky",label:"Blocky bodies",def:"Stiff, boxy shapes, large heads"},{id:"two",label:"Two styles",def:"Lifelike panels beside stiff ones"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might builders reuse older carvings on a brand-new monument?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Rows of matching figures, blocky bodies and two styles on one wall are features a detective can carry to the next case.",
@@ -77,7 +77,7 @@ var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Light from Above",obje
  intro:"This church is gone, but drawings show how it looked from above. How could light reach the middle of such a huge room?",
  context:"The clerestory (KLEER-stor-ee) is a row of windows high in the wall of a church, above the lower roofs.",
  clues:[{id:"long",label:"Tall center, low sides",def:"A tall middle with lower parts on each side"},{id:"windows",label:"Windows up high",def:"Openings near the top of the tall wall"},{id:"yard",label:"Open yard",def:"A courtyard with covered walks before the doors"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Where would light fall inside this church, and what would it help you notice?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. A tall center, windows up high and an open yard are features a detective can carry to the next case.",
@@ -96,7 +96,7 @@ var EM07={id:"EM-07",kind:"Memorial marker",title:"Vines Carved in Stone",object
  intro:"This stone pillar has stood in northern England for about 1,300 years. How did carvers cover a whole pillar with vines and knots?",
  context:"Shaft means the tall upright part of a cross. Here only the shaft survives.",
  clues:[{id:"knot",label:"Knotwork",def:"Bands that weave over and under"},{id:"vine",label:"Vines and creatures",def:"Curling vines with grapes, birds and animals"},{id:"panels",label:"Stacked panels",def:"Separate boxes of pattern, one above another"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"What might vines and endless knots have said to people who visited this memorial?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Knotwork, vines with creatures and stacked panels are features a detective can carry to the next case.",
@@ -115,7 +115,7 @@ var EM08={id:"EM-08",kind:"Stained glass",title:"Pieces of a Face",object:"The L
  intro:"This face was made of colored glass about 1,000 years ago, then broke into pieces. How did the artist build a face out of glass and lines?",
  context:"Stained glass is colored glass cut into pieces and held together by thin strips of lead.",
  clues:[{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"lines",label:"Lines for hair",def:"Hair and beard drawn as many thin, repeated lines"},{id:"outline",label:"Dark outlines",def:"Thick dark lines that separate color from color"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might an artist give a holy figure eyes this large and steady?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. A steady stare, hair drawn in lines and dark outlines are features a detective can carry to the next case.",
@@ -134,7 +134,7 @@ var EM10={id:"EM-10",kind:"Stone coffin",wide:true,title:"Ten Stories, Two Rows"
  intro:"This stone coffin was carved more than 1,600 years ago for a Roman city official. How did carvers fit so many stories onto one coffin?",
  context:"A sarcophagus (sar-KOF-uh-gus) is a stone coffin, often carved on the outside.",
  clues:[{id:"boxes",label:"Scenes in boxes",def:"Each story has its own framed space"},{id:"deep",label:"Deep carving",def:"Figures cut so deep they stand out from the stone"},{id:"folds",label:"Robes in folds",def:"Long robes with deep, heavy folds"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might a family carve stories, and not only a name, on a coffin?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Scenes in boxes, deep carving and robes in folds are features a detective can carry to the next case.",
@@ -153,7 +153,7 @@ var EM11={id:"EM-11",kind:"Architecture",wide:true,title:"Plain Outside, Bright 
  intro:"This church has stood on a hill in Rome for about 1,600 years. How did builders make a plain brick building feel so open and bright inside?",
  context:"The apse (APS) is the half-round end of a church, behind the altar.",
  clues:[{id:"long",label:"Tall center, low sides",def:"A tall middle with lower parts on each side"},{id:"windows",label:"Windows up high",def:"Openings near the top of the tall wall"},{id:"apse",label:"Curved end",def:"A half-round wall at one end"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might builders place windows high up, where light can pour down into the room?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. A tall middle with low sides, windows up high and a curved end are features a detective can carry to the next case.",
@@ -172,7 +172,7 @@ var EM12={id:"EM-12",kind:"Architecture",wide:true,title:"A Dome That Floats",ob
  intro:"This building went up in just five years, almost 1,500 years ago. How did builders hold up such a huge roof?",
  context:"A dome is a roof shaped like half of a ball.",
  clues:[{id:"dome",label:"Big round dome",def:"A huge half-ball roof high over the center"},{id:"ring",label:"Ring of windows",def:"Small windows circling the base of the dome"},{id:"step",label:"Domes stepping down",def:"Smaller domes and curves piled below the big one"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might a builder want a huge roof to look as if it floats?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. A big round dome, a ring of windows and domes stepping down are features a detective can carry to the next case.",
@@ -191,7 +191,7 @@ var EM13={id:"EM-13",kind:"Manuscript painting",wide:true,title:"Words Above, St
  intro:"This book was painted about 1,500 years ago on purple-dyed parchment. How did painters tell a whole story on one page?",
  context:"Parchment is a writing surface made from animal skin.",
  clues:[{id:"rows",label:"Rows of figures",def:"Figures lined up in bands, one above another"},{id:"twice",label:"Same person twice",def:"One person shown again at a later moment"},{id:"words",label:"Words above the picture",def:"Lines of writing across the top, picture below"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might a painter show the same person more than once on a single page?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Rows of figures, one person shown twice and words above the picture are features a detective can carry to the next case.",
@@ -210,7 +210,7 @@ var EM09={id:"EM-09",kind:"Wall painting",wide:true,title:"Three in a Row",objec
  intro:"This painting covered the top of a wall in a monastery in Egypt more than 1,300 years ago. How did the painter arrange the saints?",
  context:"A lunette (loo-NET) is a half-circle shaped space on a wall.",
  clues:[{id:"matching",label:"Matching figures",def:"Same size, pose and clothing"},{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"outline",label:"Dark outlines",def:"Thick dark lines that separate color from color"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Do the three saints look like portraits of three different people, or like one figure painted three times?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Matching figures, steady stares and dark outlines are features a detective can carry to the next case.",
@@ -236,7 +236,7 @@ var EM14={id:"EM-14",kind:"Ivory carving",title:"Looking Back to Rome",object:"B
  intro:"This book cover was carved from ivory about 1,200 years ago for a Gospel book made at Charlemagne\u2019s court. What did the carvers copy from the Roman world?",
  context:"Ivory is the hard, cream-colored material of elephant tusks.",
  clues:[{id:"folds",label:"Robes in folds",def:"Long robes with deep, heavy folds"},{id:"plaques",label:"Plaques in a frame",def:"Several carved pieces fitted into one cover"},{id:"arch",label:"Arch and columns",def:"A figure framed by a round arch and tall posts"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might carvers in Charlemagne\u2019s time copy the look of much older Roman ivories?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Heavy robe folds, plaques in a frame and figures under arches are features a detective can carry to the next case.",
@@ -255,7 +255,7 @@ var EM05={id:"EM-05",kind:"Icon painting",title:"Face to Face",object:"Saint Pet
  intro:"This painting of Saint Peter is about 1,400 years old. The painter made a panel that seems to look right back at you. How does it do that?",
  context:"An icon is a holy picture made for prayer. This one is painted in encaustic, which means colored powder mixed into hot wax.",
  clues:[{id:"halo",label:"Gold halo",def:"A large gold disk glowing behind the head"},{id:"stare",label:"Direct stare",def:"Wide eyes that look straight out at you"},{id:"medallions",label:"Small round portraits",def:"Circles above the figure, each holding a face"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"How does the painter make a flat panel feel like a living person who is looking back at you?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. A gold halo, a direct stare and small round portraits are features a detective can carry to the next case.",
@@ -274,12 +274,71 @@ var EM06={id:"EM-06",kind:"Manuscript page",title:"Letters as Pictures",object:"
  intro:"This page opens the Gospel of Matthew in a hand-copied book made on Lindisfarne, an island off the coast of England, about 1,300 years ago. There is no scene on the page. So where is the art?",
  context:"Interlace is a pattern of ribbons that weave over and under each other, with no beginning and no end.",
  clues:[{id:"letters",label:"Giant first letters",def:"The first letters of the line are far bigger than the rest"},{id:"interlace",label:"Interlace knots",def:"Ribbons weaving over and under in tight knots"},{id:"dots",label:"Rows of red dots",def:"Tiny red dots tracing the edges of letters and shapes"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Choose two.","Write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might the maker have decorated the first words of the Gospel more richly than anything else on the page?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Giant letters, interlace knots and red dotted outlines are features a detective can carry to the next case.",
  sourceNums:[32,33],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:LindisfarneFol27rIncipitMatt.jpg",author:"Eadfrith of Lindisfarne (presumed); image from the British Library",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Resized from the Commons file."}};
+var EM15={id:"EM-15",kind:"Metalwork",title:"Patterns in Wire",object:"Ardagh Chalice (copy)",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Ardagh Chalice (early 20th-century copy)",date:"original about 750 C.E.",location:"The Metropolitan Museum of Art, New York (original in Dublin)",artist:"original by an unknown Irish maker",
+ headline:"Look closely at the cup",
+ alt:"A wide silver cup with two handles, seen from a slight angle, standing on a round, flaring foot. A band of gold-colored woven patterns circles the bowl just below the rim, dotted with round blue and red studs. Beside a handle, three larger studs sit on a cloverleaf-shaped panel. The rest of the bowl is smooth, plain silver with faint engraved letters.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Ardagh-Chalice.jpg",
+ imageNote:"A careful copy of the Ardagh Chalice, made in the early 1900s. The original was made in Ireland about 750 C.E.",
+ detail:{image:"public/images/artworks/Ardagh-Chalice-Detail.jpg",alt:"A close view of one handle and the panels around it. Small squares of blue and red enamel are set in rows on the handle. Next to it, three round studs in blue, red and green sit on a cloverleaf panel packed with tiny woven wire patterns.",caption:"Technique detail: on this copy, fine twisted wires form woven panels and colored enamel studs sit beside them, as on the original",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:The_Ardagh_Chalice_MET_tem07658s2.jpg",author:"The Metropolitan Museum of Art (Rogers Fund, 1906)",license:"CC0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",changes:"Cropped from the Commons file."}},
+ size:"This copy: about 16 cm / 6\u00bc in high and 19 cm / 7\u00bd in wide. About the size of a large soup bowl.",
+ intro:"This silver cup was first made in Ireland about 1,250 years ago. The photograph shows a careful copy made in the early 1900s. The maker did not decorate the whole cup. Where did the decoration go, and where was the silver left plain?",
+ context:"Filigree is decoration made from very thin wires of gold or silver, twisted into tiny patterns and fastened to the surface.",
+ clues:[{id:"filigree",label:"Woven wire bands",def:"A band of tiny woven patterns circling the bowl"},{id:"studs",label:"Colored studs",def:"Round blue and red studs set into the metal"},{id:"plain",label:"Smooth silver",def:"Wide areas of plain, unadorned silver"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might the maker have left most of the cup plain and put the richest decoration in a few bands?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Woven wire bands, colored studs and smooth silver beside rich decoration are features a detective can carry to the next case.",
+ sourceNums:[34,35,36],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:The_Ardagh_Chalice_MET_tem07658s2.jpg",author:"The Metropolitan Museum of Art (Rogers Fund, 1906)",license:"CC0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",changes:"Resized from the Commons file."}};
+/* Target zones, in percent of the photo (x, y from the top left). Ellipses use cx, cy, rx, ry; boxes use x0, y0, x1, y1. */
+EM15.zones={
+ filigree:[{x0:36,y0:34,x1:63.5,y1:42},{x0:64.5,y0:30,x1:82,y1:40.5},{x0:17.5,y0:26.5,x1:27.5,y1:35.5},{x0:38,y0:63,x1:58.5,y1:75},{x0:27.5,y0:46,x1:48,y1:59}],
+ studs:[{cx:45.9,cy:38.5,rx:3.8,ry:5},{cx:64.7,cy:37.9,rx:3.8,ry:5},{cx:78.1,cy:33.8,rx:3.8,ry:5},{cx:81.9,cy:27.9,rx:3.5,ry:4.7},{cx:25,cy:34.6,rx:3.8,ry:5},{cx:16.9,cy:27.9,rx:3.5,ry:4.7},{cx:30.3,cy:49.2,rx:5.5,ry:7.2},{cx:41.9,cy:51.7,rx:5.5,ry:7.2},{cx:36.9,cy:62.1,rx:5.5,ry:7.2}],
+ plain:[{x0:48,y0:50,x1:73,y1:62},{x0:30,y0:73,x1:68,y1:86}]
+};
+EM05.zones={
+ halo:[{x0:19.5,y0:24,x1:37,y1:47},{x0:66,y0:24,x1:85,y1:47},{x0:33,y0:18.5,x1:67,y1:26.5}],
+ stare:[{x0:37,y0:36.5,x1:62,y1:43.5}],
+ medallions:[{cx:15.5,cy:9.3,rx:12.5,ry:7.4},{cx:51.7,cy:8.4,rx:13.5,ry:8},{cx:86.3,cy:8.4,rx:12.5,ry:7.6}]
+};
+EM06.zones={
+ letters:[{x0:8.5,y0:2.5,x1:67,y1:43.5}],
+ interlace:[{x0:82.5,y0:12,x1:89,y1:80},{x0:24,y0:76,x1:88,y1:81.5},{x0:10.5,y0:40,x1:24.5,y1:80},{x0:55.5,y0:12,x1:89,y1:16}],
+ dots:[{x0:33,y0:39,x1:84.5,y1:77}]
+};
+var EM16={id:"EM-16",kind:"Manuscript page",title:"Hidden in the Swirls",object:"Book of Kells, Chi Rho page",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. – 900 C.E.",
+ work:"Book of Kells, Chi Rho page (folio 34r)",date:"about 800 C.E.",location:"Trinity College Library, Dublin (made on Iona, Scotland, or at Kells, Ireland)",artist:"unknown Irish or Scottish monks",
+ headline:"Look closely at the page",
+ alt:"A full page from a hand-copied Gospel book, almost completely covered in decoration. Two huge letters, a slanting X and a looped P, spread across the page in purple and gold bands. Round patterns of curling lines like pinwheels fill the spaces around them. Tiny faces and figures are tucked in among the patterns, and a short line of ordinary-size letters sits at the bottom right.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Kells-ChiRho.jpg",
+ imageNote:"The opening of the story of Jesus’s birth in Matthew’s Gospel. The Greek letters Chi and Rho, the first two letters of “Christ,” fill the page.",
+ detail:{image:"public/images/artworks/Kells-ChiRho-Detail.jpg",alt:"A close view of the lower middle of the page. A small human face with curly yellow hair looks out from inside a red-outlined loop. Below it, a cross-shaped panel is filled with fine patterns, and the first letters of the text line begin at the bottom right.",caption:"Technique detail: a small face with curly hair looks out from a loop of the letter P, beside a cross-shaped panel of fine patterns",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:KellsFol034rChiRhoMonogram.jpg",author:"Unknown Irish or Scottish monks; photographic reproduction",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the Commons file."}},
+ size:"Each page is about 33 cm / 13 in high and 25.5 cm / 10 in wide. A little larger than a sheet of printer paper.",
+ intro:"This page opens the story of Jesus’s birth in a hand-copied Gospel book, made about 1,200 years ago. Almost every inch is decorated. Look past the big letters. What else is hiding in the pattern?",
+ context:"A monogram is a design made from letters joined together. Here, the Greek letters Chi (X) and Rho (P) are the first two letters of the word “Christ.”",
+ clues:[{id:"monogram",label:"Giant letters",def:"Two huge letters, Chi and Rho, spread across the page"},{id:"spirals",label:"Swirling spirals",def:"Round patterns of curling lines, like pinwheels"},{id:"hidden",label:"Hidden creatures",def:"Tiny faces, figures and animals tucked into the pattern"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might the makers have hidden tiny faces and animals inside the pattern, where a reader might take a long time to find them?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Giant letters, swirling spirals and hidden creatures are features a detective can carry to the next case.",
+ sourceNums:[37,38,39],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:KellsFol034rChiRhoMonogram.jpg",author:"Unknown Irish or Scottish monks; photographic reproduction",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Resized from the Commons file."}};
+EM16.zones={
+ monogram:[{x0:26,y0:14,x1:50,y1:36},{x0:3,y0:8,x1:30,y1:32},{x0:42,y0:8,x1:80,y1:19},{x0:25,y0:36,x1:39,y1:76}],
+ spirals:[{cx:88.2,cy:6.4,rx:7,ry:5},{cx:57.9,cy:19.9,rx:6.5,ry:5},{cx:61.4,cy:31.8,rx:6,ry:4.8},{cx:87.7,cy:41,rx:7,ry:5.2},{cx:8,cy:41.7,rx:7.5,ry:5.5},{cx:8.9,cy:80.9,rx:7.5,ry:5.5},{cx:29.4,cy:93,rx:7,ry:4}],
+ hidden:[{cx:57.9,cy:60.3,rx:4.2,ry:3.8},{cx:34.3,cy:2.9,rx:3.6,ry:3},{cx:22.7,cy:35,rx:4,ry:3.5},{cx:17.4,cy:49.4,rx:4,ry:4},{cx:21.4,cy:59.4,rx:4,ry:4},{x0:22,y0:83.5,x1:44,y1:91.5}]
+};
 window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
 window.DECKS[0].cards[2]=EM03;
@@ -294,4 +353,6 @@ window.DECKS[0].cards[8]=EM09;
 window.DECKS[0].cards[13]=EM14;
 window.DECKS[0].cards[4]=EM05;
 window.DECKS[0].cards[5]=EM06;
+window.DECKS[0].cards[14]=EM15;
+window.DECKS[0].cards[15]=EM16;
 window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:1,options:[{label:"Another carved work (placeholder)"},{case:"EM-01"},{label:"Another carved work (placeholder)"}]}}];

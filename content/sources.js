@@ -32,5 +32,11 @@ window.SOURCES=[
 {"n":30,"type":"Secondary source","cite":"McClanan, Anne. “Saint Catherine’s Monastery, Sinai.” Smarthistory, September 22, 2020.","url":"https://smarthistory.org/saint-catherines-monastery-sinai/"},
 {"n":31,"type":"Secondary source","cite":"Britannica Editors. “Encaustic painting.” Encyclopaedia Britannica.","url":"https://www.britannica.com/art/encaustic-painting"},
 {"n":32,"type":"Library record","cite":"“Cotton MS Nero D IV: Gospel-book (‘Lindisfarne Gospels’).” British Library Archives and Manuscripts Catalogue (interim record).","url":"https://searcharchives.bl.uk/catalog/040-001102725"},
-{"n":33,"type":"Secondary source","cite":"“The Lindisfarne Gospels.” Smarthistory.","url":"https://smarthistory.org/the-lindisfarne-gospels/"}
+{"n":33,"type":"Secondary source","cite":"“The Lindisfarne Gospels.” Smarthistory.","url":"https://smarthistory.org/the-lindisfarne-gospels/"},
+{"n":34,"type":"Museum record","cite":"“The Ardagh Chalice.” National Museum of Ireland, Dublin (object NMI 1874:99).","url":"https://www.museum.ie/en-IE/Museums/Archaeology/Engage-And-Learn/For-Young-People/Things-to-See-Do/The-Ardagh-Chalice"},
+{"n":35,"type":"Museum record","cite":"“The Ardagh Chalice” (copy, early 20th century; original about 750). The Metropolitan Museum of Art, New York, 07.65.8, Rogers Fund, 1906.","url":"https://www.metmuseum.org/art/collection/search/463050"},
+{"n":36,"type":"Secondary source","cite":"Britannica Editors. “Ardagh Chalice.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Ardagh-Chalice"},
+{"n":37,"type":"Library record","cite":"“The Book of Kells.” Trinity College Library, Dublin (MS 58).","url":"https://www.tcd.ie/library/research-collections/book-of-kells.php"},
+{"n":38,"type":"Library record","cite":"“Symbolism in the Book of Kells: the Chi Rho page.” Trinity College Dublin visitor site.","url":"https://www.visittrinity.ie/?p=20784"},
+{"n":39,"type":"Secondary source","cite":"Britannica Editors. “Book of Kells.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Book-of-Kells"}
 ];
