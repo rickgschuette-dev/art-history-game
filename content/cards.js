@@ -339,6 +339,30 @@ EM16.zones={
  spirals:[{cx:88.2,cy:6.4,rx:7,ry:5},{cx:57.9,cy:19.9,rx:6.5,ry:5},{cx:61.4,cy:31.8,rx:6,ry:4.8},{cx:87.7,cy:41,rx:7,ry:5.2},{cx:8,cy:41.7,rx:7.5,ry:5.5},{cx:8.9,cy:80.9,rx:7.5,ry:5.5},{cx:29.4,cy:93,rx:7,ry:4}],
  hidden:[{cx:57.9,cy:60.3,rx:4.2,ry:3.8},{cx:34.3,cy:2.9,rx:3.6,ry:3},{cx:22.7,cy:35,rx:4,ry:3.5},{cx:17.4,cy:49.4,rx:4,ry:4},{cx:21.4,cy:59.4,rx:4,ry:4},{x0:22,y0:83.5,x1:44,y1:91.5}]
 };
+var EM17={id:"EM-17",kind:"Manuscript page",title:"A Writer in a Hurry",object:"Ebbo Gospels, Saint Matthew",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. – 900 C.E.",
+ work:"Saint Matthew, Ebbo Gospels (folio 18 verso)",date:"about 816–841 C.E.",location:"Bibliothèque municipale, Épernay, France (made at Hautvillers)",artist:"unknown artist",
+ headline:"Look closely at Matthew",
+ alt:"A man with curly golden-brown hair sits hunched on a red cushioned seat, leaning over a large book on a stand. His eyes are wide. He holds a red pen in one hand and a white ink horn in the other. His white robe is covered in quick, jagged gray and white strokes, and a blue cloak hangs behind him. Behind him, hills sweep up to a skyline with columned buildings, a small tree, and a tiny winged figure at the upper right.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Ebbo-Matthew.jpg",
+ imageNote:"Saint Matthew, one of the four writers of the Gospels, at work on his book. Painted in France about 1,200 years ago.",
+ detail:{image:"public/images/artworks/Ebbo-Matthew-Detail.jpg",alt:"A close view of Matthew’s head and hands. He has wild curly hair, wide eyes and a furrowed face. In one hand he holds a white ink horn, and in the other a red pen.",caption:"Technique detail: Matthew’s wild curls and worried face, drawn with quick, thin strokes of gold and brown",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Saint_Matthew2.jpg",author:"Unknown artist; photograph by Giraudon / Art Resource, NY",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the Commons file."}},
+ size:"About 26 cm / 10¼ in high and 21 cm / 8¼ in wide. A little shorter than a sheet of printer paper.",
+ intro:"This portrait opens the Gospel of Matthew in a book made in France about 1,200 years ago, for an archbishop. Matthew is not calm or posed. What makes him seem so alive?",
+ context:"Carolingian describes art made under Charlemagne and his family, when artists studied and copied ancient art.",
+ clues:[{id:"lines",label:"Streaky lines",def:"Quick, jagged strokes of paint across the robe"},{id:"tools",label:"Ink horn and pen",def:"A hollow horn that holds ink, and a pen to dip in it"},{id:"landscape",label:"Landscape behind",def:"Hills, columned buildings and a tiny tree in the distance"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might the artist have drawn Matthew in a rush of restless lines, instead of the calm, smooth poses of ancient Roman art?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Streaky lines, writing tools and a landscape behind the figure are features a detective can carry to the next case.",
+ sourceNums:[40,41,42],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Saint_Matthew2.jpg",author:"Unknown artist; photograph by Giraudon / Art Resource, NY",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Resized from the Commons file."}};
+EM17.zones={
+ lines:[{x0:14,y0:28,x1:68,y1:82}],
+ tools:[{cx:66,cy:29.5,rx:7.5,ry:5.5},{x0:51,y0:32,x1:75,y1:47},{cx:76,cy:22,rx:3,ry:3}],
+ landscape:[{x0:36,y0:0,x1:87,y1:10},{x0:4,y0:1.5,x1:19,y1:17},{x0:84,y0:1,x1:93,y1:13}]
+};
 window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
 window.DECKS[0].cards[2]=EM03;
@@ -355,4 +379,5 @@ window.DECKS[0].cards[4]=EM05;
 window.DECKS[0].cards[5]=EM06;
 window.DECKS[0].cards[14]=EM15;
 window.DECKS[0].cards[15]=EM16;
+window.DECKS[0].cards[16]=EM17;
 window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:1,options:[{label:"Another carved work (placeholder)"},{case:"EM-01"},{label:"Another carved work (placeholder)"}]}}];
