@@ -1,25 +1,31 @@
 /* Master source list. Each source keeps its number permanently; never renumber.
    Cards list the numbers they rely on in sourceNums. Only credible sources are listed. */
 window.SOURCES=[
-{n:1,type:"Secondary source",cite:"Zucker, Steven, and Beth Harris. \u201cPortraits of the Four Tetrarchs.\u201d Smarthistory, December 10, 2015.",url:"https://smarthistory.org/portraits-of-the-four-tetrarchs"}
+{"n":1,"type":"Secondary source","cite":"Zucker, Steven, and Beth Harris. “Portraits of the Four Tetrarchs.” Smarthistory, December 10, 2015.","url":"https://smarthistory.org/portraits-of-the-four-tetrarchs"},
+{"n":2,"type":"Secondary source","cite":"Farber, Allen. “San Vitale and the Justinian and Theodora Mosaics.” Smarthistory, August 20, 2022.","url":"https://smarthistory.org/san-vitale/"},
+{"n":3,"type":"Institutional record","cite":"UNESCO World Heritage Centre. “Early Christian Monuments of Ravenna.” Inscribed 1996.","url":"https://whc.unesco.org/en/list/788"},
+{"n":4,"type":"Secondary source","cite":"Cartwright, Mark. “The Arch of Constantine, Rome.” World History Encyclopedia, June 9, 2013.","url":"https://www.worldhistory.org/article/497/the-arch-of-constantine-rome/"},
+{"n":5,"type":"Secondary source","cite":"Findley, Andrew. “Late Empire: Arch of Constantine.” Survey of Art History Western Tradition Part 1, Module 8. Lumen Learning.","url":"https://courses.lumenlearning.com/suny-ncc-zeliart/chapter/late-empire-arch-of-constantine-2/"},
+{"n":6,"type":"Scholarship","cite":"Kinney, Dale. “Old St. Peter’s Basilica: Description.” Medieval Architecture, Media Center for Art History, Archaeology and Historic Preservation, Columbia University.","url":"https://projects.mcah.columbia.edu/medieval-architecture/htm/kd/ma_kd_discuss_osp_descript.htm"},
+{"n":7,"type":"Secondary source","cite":"Britannica Editors. “Old Saint Peter’s Basilica.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Old-Saint-Peters-Basilica"},
+{"n":8,"type":"Secondary source","cite":"Britannica Editors. “Bewcastle Cross.” Encyclopaedia Britannica.","url":"https://www.britannica.com/print/article/63723"},
+{"n":9,"type":"Secondary source","cite":"“The Bewcastle Cross.” Old English course pack, University of Oxford (english.nsms.ox.ac.uk).","url":"https://english.nsms.ox.ac.uk/oecoursepack/rood/context/bewcastle.html"},
+{"n":10,"type":"Scholarship","cite":"“Scherbenkonvolut mit figürlichen Resten (Lorsch, Kloster).” Mittelalterliche Glasmalereien in Hessen (online catalog, Corpus Vitrearum Medii Aevi). LAGIS Hessen.","url":"https://lagis.hessen.de/de/quellen-und-materialien/mittelalterliche-glasmalereien-in-hessen/alle-eintraege/112-1-01-01"},
+{"n":11,"type":"Scholarship","cite":"“The Honorific Mantle as Furnishing for the Household Memory Theater in Late Antiquity: A Case Study from the Monastery of Apa Apollo at Bawit.” Dumbarton Oaks, Textiles essays.","url":"https://www.doaks.org/resources/textiles/essays/thomas"},
+{"n":12,"type":"Secondary source","cite":"“Wall paintings from Bawit.” Art and Architecture of the Middle Ages: Exploring a Connected World (Omeka S).","url":"https://artofthemiddleages.com/s/main/item/3207"},
+{"n":13,"type":"Secondary source","cite":"“Sarcophagus of Junius Bassus.” Smarthistory.","url":"https://smarthistory.org/?p=1091"},
+{"n":14,"type":"Reference database","cite":"“Sarcophagus of Junius Bassus (CIL VI, 32004).” Judaism and Rome (Heurist database record).","url":"https://heurist.huma-num.fr/heurist/judaism_and_rome/view/50"},
+{"n":15,"type":"Museum record","cite":"“Sarcophagus of Junius Bassus (359 A.D.).” Museo della Civiltà Romana, Room XV (catalog entry for the plaster cast, inventory MCR 553).","url":"https://museociviltaromana.it/en/node/21079"},
+{"n":16,"type":"Secondary source","cite":"“Santa Sabina.” Art History I. Lumen Learning (text by Allen Farber, Khan Academy).","url":"https://courses.lumenlearning.com/suny-arthistory1/?p=484"},
+{"n":17,"type":"Reference database","cite":"“Santa Sabina (Santa Sabina all’Aventino), 422–432.” MIT Libraries Dome (record drawing on Grove Art Online).","url":"https://dome.mit.edu/handle/1721.3/109561"},
+{"n":18,"type":"Secondary source","cite":"Allen, William. “Hagia Sophia, Istanbul.” Smarthistory, 2015.","url":"https://smarthistory.org/hagia-sophia-istanbul/"},
+{"n":19,"type":"Museum essay","cite":"Wegner, Emma. “Hagia Sophia, 532–37.” The Metropolitan Museum of Art, October 2004.","url":"https://www.metmuseum.org/essays/hagia-sophia-532-37"},
+{"n":20,"type":"Secondary source","cite":"Britannica Editors. “Hagia Sophia.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Hagia-Sophia"},
+{"n":21,"type":"Scholarship","cite":"“Vienna Genesis.” Austrian National Library (project blog on the manuscript, 2016).","url":"https://onb.ac.at/mehr/blogs/detail/vienna-genesis"},
+{"n":22,"type":"Publisher record","cite":"“The Vienna Genesis.” Quaternio Verlag Luzern (facsimile edition page; commentary by Barbara Zimmermann, Christian Gastgeber and Christa Hofmann).","url":"https://quaternio.ch/en/?p=12695"},
+{"n":23,"type":"Secondary source","cite":"“Vienna Genesis.” Art and Architecture of the Middle Ages: Exploring a Connected World (Omeka S).","url":"https://artofthemiddleages.com/s/main/item/2313"},
+{"n":24,"type":"Museum record","cite":"“Five plaques from the front cover of the Lorsch Gospels.” Victoria and Albert Museum, London (record O113554, with notes on the matching back cover in the Vatican).","url":"https://collections.vam.ac.uk/item/O113554/five-plaques-from-the-front-book-cover-unknown/"},
+{"n":25,"type":"Digital library record","cite":"“Lorscher Evangeliar.” Bibliotheca Laureshamensis – digital (Vatican Library, Pal. lat. 50, and Batthyaneum Library, Ms R II 1).","url":"https://bibliotheca-laureshamensis-digital.de/view/lorscher_evangeliar"},
+{"n":27,"type":"Publisher record","cite":"“Lorsch Gospels.” Ziereis Facsimiles (facsimile edition page).","url":"https://www.facsimiles.com/facsimiles/lorsch-gospels"},
+{"n":28,"type":"Museum glossary","cite":"“Composition.” Art Terms. Tate, London.","url":"https://www.tate.org.uk/art/art-terms/c/composition"}
 ];
-
-/* Placeholder entries below show the page design. Replace each with a real citation when a card uses it. */
-window.SOURCES.push(
-{n:2,type:"Secondary source",cite:"Farber, Allen. \u201cSan Vitale and the Justinian and Theodora Mosaics.\u201d Smarthistory, August 20, 2022.",url:"https://smarthistory.org/san-vitale/"},
-{n:3,type:"Institutional record",cite:"UNESCO World Heritage Centre. \u201cEarly Christian Monuments of Ravenna.\u201d Inscribed 1996.",url:"https://whc.unesco.org/en/list/788"},
-{n:4,type:"Secondary source",cite:"Cartwright, Mark. \u201cThe Arch of Constantine, Rome.\u201d World History Encyclopedia, June 9, 2013.",url:"https://www.worldhistory.org/article/497/the-arch-of-constantine-rome/"},
-{n:5,type:"Secondary source",cite:"Findley, Andrew. \u201cLate Empire: Arch of Constantine.\u201d Survey of Art History Western Tradition Part 1, Module 8. Lumen Learning.",url:"https://courses.lumenlearning.com/suny-ncc-zeliart/chapter/late-empire-arch-of-constantine-2/"},
-{n:6,type:"Scholarship",cite:"Kinney, Dale. \u201cOld St. Peter\u2019s Basilica: Description.\u201d Medieval Architecture, Media Center for Art History, Archaeology and Historic Preservation, Columbia University.",url:"https://projects.mcah.columbia.edu/medieval-architecture/htm/kd/ma_kd_discuss_osp_descript.htm"},
-{n:7,type:"Secondary source",cite:"Britannica Editors. \u201cOld Saint Peter\u2019s Basilica.\u201d Encyclopaedia Britannica.",url:"https://www.britannica.com/topic/Old-Saint-Peters-Basilica"}
-);
-window.SOURCES.push(
-{n:8,type:"Secondary source",cite:"Britannica Editors. \u201cBewcastle Cross.\u201d Encyclopaedia Britannica.",url:"https://www.britannica.com/print/article/63723"},
-{n:9,type:"Secondary source",cite:"\u201cThe Bewcastle Cross.\u201d Old English course pack, University of Oxford (english.nsms.ox.ac.uk).",url:"https://english.nsms.ox.ac.uk/oecoursepack/rood/context/bewcastle.html"}
-);
-window.SOURCES.push(
-{n:10,type:"Scholarship",cite:"\u201cScherbenkonvolut mit figürlichen Resten (Lorsch, Kloster).\u201d Mittelalterliche Glasmalereien in Hessen (online catalog, Corpus Vitrearum Medii Aevi). LAGIS Hessen.",url:"https://lagis.hessen.de/de/quellen-und-materialien/mittelalterliche-glasmalereien-in-hessen/alle-eintraege/112-1-01-01"}
-);
-window.SOURCES.push(
-{n:28,type:"Museum glossary",cite:"\u201cComposition.\u201d Art Terms. Tate, London.",url:"https://www.tate.org.uk/art/art-terms/c/composition"}
-);
