@@ -52,4 +52,5 @@
 - Read only: no points and no check-off. A "Next case" button returns to the case list.
 - Content: the word, a one-sentence definition, three "Look for" questions, one example case shown inline, and a Sources line.
 - The example sits at the bottom of the vocabulary page itself, so the player never leaves it: a heading "A good example: <case>", the case's photo with its header line, and a few short comments (example.points in cards.js). Credits and sources are in the page footer. The photo is not clickable and nothing on it is playable.
+- Standing rule (2026-10-24): a vocabulary card follows every 8th case in every period and level (after cases 8, 16, 24), built exactly like VOC-01 with an inline example image. The example image must always come from a case that appears earlier in the list than the vocabulary card, so the player has already met it.
 - Data lives in cards.js as DECKS[n].vocab (id, after, word, def, look, example, sourceNums). First card: VOC-01 Composition, after case 8, example EM-01, source 28 (Tate).
