@@ -38,5 +38,10 @@ window.SOURCES=[
 {"n":36,"type":"Secondary source","cite":"Britannica Editors. “Ardagh Chalice.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Ardagh-Chalice"},
 {"n":37,"type":"Library record","cite":"“The Book of Kells.” Trinity College Library, Dublin (MS 58).","url":"https://www.tcd.ie/library/research-collections/book-of-kells.php"},
 {"n":38,"type":"Library record","cite":"“Symbolism in the Book of Kells: the Chi Rho page.” Trinity College Dublin visitor site.","url":"https://www.visittrinity.ie/?p=20784"},
-{"n":39,"type":"Secondary source","cite":"Britannica Editors. “Book of Kells.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Book-of-Kells"}
+{"n":39,"type":"Secondary source","cite":"Britannica Editors. “Book of Kells.” Encyclopaedia Britannica.","url":"https://www.britannica.com/topic/Book-of-Kells"},
+{"n":40,"type":"Secondary source","cite":"“Saint Matthew from the Ebbo Gospels (detail),” folio 18 verso, about 816–35, Hautvillers. Smarthistory (Bibliothèque municipale, Épernay).","url":"https://smarthistory.org/?p=4699"},
+{"n":41,"type":"Secondary source","cite":"“Saint Matthew from the Ebbo Gospels.” Smarthistory (video discussion).","url":"https://smarthistory.org/?p=4698"},
+{"n":42,"type":"Secondary source","cite":"“The Ebbo Gospels, an Unusual, Energetic Style of Illustration.” Jeremy Norman’s History of Information.","url":"https://historyofinformation.com/detail.php?id=1700"},
+{"n":43,"type":"Museum record","cite":"“Anglo-Saxons and Vikings gallery” (Spong Man, cremation urn lid, from Spong Hill). Norwich Castle Museum & Art Gallery, Norfolk Museums Service.","url":"https://www.norwichcastle.norfolk.gov.uk/article/30317/Anglo-Saxons-and-Vikings-gallery"},
+{"n":44,"type":"Secondary source","cite":"“Writing early medieval England: tracing the first echoes of Anglo-Saxon voices.” Current Archaeology.","url":"https://archaeology.co.uk/articles/features/writing-early-medieval-england-tracing-the-first-echoes-of-anglo-saxon-voices.htm"}
 ];

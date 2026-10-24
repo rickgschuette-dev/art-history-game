@@ -363,6 +363,30 @@ EM17.zones={
  tools:[{cx:66,cy:29.5,rx:7.5,ry:5.5},{x0:51,y0:32,x1:75,y1:47},{cx:76,cy:22,rx:3,ry:3}],
  landscape:[{x0:36,y0:0,x1:87,y1:10},{x0:4,y0:1.5,x1:19,y1:17},{x0:84,y0:1,x1:93,y1:13}]
 };
+var EM18={id:"EM-18",kind:"Pottery lid",title:"A Thinker in Clay",object:"Spong Man, urn lid",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Spong Man (cremation urn lid)",date:"about 450\u2013550 C.E.",location:"Norwich Castle Museum & Art Gallery, England (found at Spong Hill, Norfolk)",artist:"unknown Anglo-Saxon potter",
+ headline:"Look closely at the figure",
+ alt:"A small dark brown clay figure of a person seated on a high-backed chair, set on a round, flat lid. The figure holds the head between both hands, with the elbows resting on the knees. The head is bald and rounded, and the face is plain, with two small round eyes and a long, pinched nose. A few fine lines are scratched into the chair back and around the edge of the lid.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Spong-Man.jpg",
+ imageNote:"A clay figure that once sat on top of a pot holding a person\u2019s ashes. Found in Norfolk, England, in 1979.",
+ detail:{image:"public/images/artworks/Spong-Man-Detail.jpg",alt:"A close view of the head. The face is plain, with two small round eyes and a long, pinched nose. Both hands press against the sides of the head.",caption:"Technique detail: the face and hands, shaped by hand from clay with very few marks",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Spong_Man.JPG",author:"Geni",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped from the Commons file."}},
+ size:"",
+ intro:"This small clay figure sat on the lid of a pot that held a person\u2019s ashes, about 1,500 years ago. Very few Anglo-Saxon figures of people made in three dimensions survive. What is the figure doing?",
+ context:"A cremation urn is a pot that holds a person\u2019s ashes after the body has been burned.",
+ clues:[{id:"hands",label:"Hands to the head",def:"Both hands pressed against the sides of the head"},{id:"face",label:"Plain face",def:"A simple face with small round eyes and a long nose"},{id:"lines",label:"Scratched lines",def:"Fine lines cut into the clay with a tool"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might the maker have shaped the lid as a person holding their head in their hands, instead of a plain cover?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A pose, a plain face and scratched lines are features a detective can carry to the next case.",
+ sourceNums:[43,44],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Spong_Man.JPG",author:"Geni",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}};
+EM18.zones={
+ hands:[{cx:36.5,cy:19,rx:5,ry:5},{cx:53,cy:20,rx:4.5,ry:5},{x0:37,y0:22,x1:68,y1:44}],
+ face:[{cx:44,cy:14.5,rx:7,ry:7}],
+ lines:[{x0:23,y0:34,x1:38,y1:62},{x0:28,y0:73,x1:72,y1:81}]
+};
 window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
 window.DECKS[0].cards[2]=EM03;
@@ -380,4 +404,5 @@ window.DECKS[0].cards[5]=EM06;
 window.DECKS[0].cards[14]=EM15;
 window.DECKS[0].cards[15]=EM16;
 window.DECKS[0].cards[16]=EM17;
+window.DECKS[0].cards[17]=EM18;
 window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:1,options:[{label:"Another carved work (placeholder)"},{case:"EM-01"},{label:"Another carved work (placeholder)"}]}}];
