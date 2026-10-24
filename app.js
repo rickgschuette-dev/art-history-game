@@ -4,7 +4,7 @@ var raw=JSON.parse(localStorage.getItem(KEY)||'{}');
 var store={cards:raw.cards||{}};
 var CFG={saveDraft:false};
 var S={finds:[],queue:[],cur:{x:50,y:50},msg:'',done:false,id:null};
-function save(){if(S.id){store.cards[S.id]={finds:S.finds,bonus:S.bonus||'',points:S.points||0}}localStorage.setItem(KEY,JSON.stringify(store))}
+function save(){if(S.id){store.cards[S.id]=S.done?{finds:[],bonus:'',points:S.points||0}:{finds:S.finds,bonus:S.bonus||'',points:S.points||0}}localStorage.setItem(KEY,JSON.stringify(store))}
 function words(t){return (t||'').trim().split(/\s+/).filter(Boolean).length}
 function bank(){var n=0;Object.keys(store.cards).forEach(function(k){n+=store.cards[k].points||0});var e=document.getElementById('bank');if(e)e.textContent='Points: '+n}
 function cloud(c){var p=S.points;var l='Case closed. Vasario awards you '+p+' points'+(p>10?' (10 for the case, 5 bonus for your detective\u2019s note)':'')+'.';return '<div class="cloud"><strong>Vasario</strong><p>'+l+'</p>'+(S.bonusMissed?'<p class="note">Add four or more words to your note to earn the 5 bonus points. You can edit it and submit again.</p>':'')+(c.guide?'<p>'+esc(c.guide)+'</p>':'')+'</div>'}
