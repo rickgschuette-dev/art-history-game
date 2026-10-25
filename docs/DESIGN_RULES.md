@@ -92,3 +92,49 @@ These replace any earlier rule they contradict.
 ### Early Medieval cases (final list)
 EM-01 Four Tetrarchs, EM-02 San Vitale apse, EM-03 Arch of Constantine, EM-04 Old St. Peter's, EM-05 Saint Peter icon, EM-06 Lindisfarne Matthew page, EM-07 Bewcastle Cross, EM-08 Lorscher Kopf, EM-09 Bawit lunette, EM-10 Junius Bassus sarcophagus, EM-11 Santa Sabina, EM-12 Hagia Sophia, EM-13 Vienna Genesis, EM-14 Lorsch ivory cover, EM-15 Ardagh Chalice (copy), EM-16 Kells Chi-Rho, EM-17 Ebbo Gospels Matthew, EM-18 Spong Man, EM-19 Roselle bowl, EM-20 Sutton Hoo purse lid, EM-21 Cordoba mosque, EM-22 Oseberg ship, EM-23 Franks Casket, EM-24 Dome of the Rock, EM-25 Santa Maria Antiqua, EM-26 Christ Pantocrator (Sinai), EM-27 Palatine Chapel, EM-28 Santa Maria del Naranco, EM-29 Flight into Egypt (Mustair), EM-30 Mausoleum of Galla Placidia.
 
+## Deck sequencing (Rick, 2026-10-25)
+The deck is ordered by **how hard the looking is**, not by date. The period span is stated in the tab header, so the cases inside it are free to run in teaching order.
+
+### The four acts of looking
+Each case is rated by what it asks the player to do. The order ramps through them.
+1. **Naming** — find a discrete thing (a gold dome, four horses, an ink horn).
+2. **Describing manner** — say how it was made (blocky bodies, robes in folds, streaky lines).
+3. **Reading arrangement** — see structure across the whole field (matching figures, scenes in boxes, the same person twice).
+4. **Comparing and judging** — hold two things side by side and infer a difference (two styles on one arch; pointed windows in a round-arched building).
+
+### Tiers
+- **Cases 1-8, naming.** Eight quick wins. Media are mixed so it does not read as eight small objects in a row.
+- **Cases 9-16, manner and arrangement.** Ends on the Four Tetrarchs, placed directly after the Junius Bassus sarcophagus so "blocky" has a naturalistic baseline to push against.
+- **Cases 17-24, technique and close looking.** Ends on the two basilica cases, Santa Sabina then Old St. Peter's.
+- **Cases 25-30, capstones.** Each needs a comparison the player can now actually make. The deck closes on the Arch of Constantine, the hardest act of looking in it, with the Palatine Chapel at 29 as its rehearsal.
+
+Media are interleaved within every tier. A pure difficulty ramp would front-load all the easy naming cases and make the first third monotonous.
+
+### Vocabulary placement rule
+**A word arrives immediately after its second encounter.** The first encounter plants the thing, the second confirms a pattern, the word names it, and every later case rewards the player for knowing it. A word that arrives after the pattern is over teaches nothing.
+
+Current placement: Nimbus after 6, Interlace after 12, Composition after 16, Attribute after 20.
+
+### Hard constraints on a vocabulary card
+These are enforced by the deck order and must be rechecked whenever the order changes:
+- Its `example.id` and every `quiz.options[].case` must be a case the player has **already played** at that point in the order.
+- No two vocabulary cards may have the **same correct answer**. A repeat hands the player free points.
+- `after` is a 1-based position in the case list, not a case number.
+
+### Feature threads
+Features are meant to recur so the player accumulates them. The arch thread is the clearest and runs the length of the deck: name an arch (Dome of the Rock, 3), blind arch (Galla Placidia, 7), horseshoe arch (Cordoba, 10), rounded arch (Naranco, 11), arches framing figures (Lorsch ivory, 25), round against pointed (Palatine Chapel, 29).
+
+No two cases should teach the same three concepts. Santa Sabina (23) owns the basilica form; Old St. Peter's (24) was recast onto the courtyard, the approach and the evidence problem to remove the overlap.
+
+## Vocabulary cards that ask the player to locate parts (2026-10-25)
+A vocabulary card may teach more than one word and ask the player to find each on an image, instead of asking a single multiple-choice question. VOC-05 (Nave, Transept and Apse) is the first.
+
+- The card carries a `locate` object in `content/cards.js` instead of `example` and `quiz`: `heading`, `prompt`, `points` (per part), `image`, `alt`, `caption`, `credit`, `creditWord`, `clues[]` and `zones{}`. Zones use the same percentage format as a game case.
+- The mechanic matches a game case: choose a part, click the image, red X on a miss, the zone glows after two misses on the same part.
+- **Scoring: one point per part, awarded only on the first try for that part.** This matches the one-try rule on the other vocabulary cards. A player who misses still places the mark and still learns the answer; they just do not score it. Three parts therefore equal the same 3-point bonus the other vocabulary cards carry.
+- A found part cannot be re-found, so points cannot be farmed by clicking again.
+- Progress is stored under the vocabulary card's own id in `localStorage`, as `{finds, points, done}`, and the deck list shows the earned points once `done` is true.
+- If the teaching image carries printed labels, strip them before use, or the answers are given away. Record the removal in the credit's `changes` field.
+- Crop the image to the parts being taught. A prominent element that is not one of the targets invites a wrong click and raises a question the card does not answer. The Old St. Peter's plan was cropped to the body of the church for exactly this reason, which dropped the narthex and the atrium and made the three targets much larger in the frame.
+- A term earns a place on a vocabulary card only if the player meets it in more than one case, or if it is structurally inseparable from terms that do. Narthex appears in no case in the deck and was left out on that test; transept appears in only one but is inseparable from nave and apse, so it stays. The deck uses plain English ("open yard") where a technical term would not repay the effort.
+

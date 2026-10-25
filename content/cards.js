@@ -64,23 +64,23 @@ var EM03={id:"EM-03",kind:"Architecture",wide:true,title:"Old Stone, New Wall",o
  guide:"Evidence filed. Rows of matching figures, blocky bodies and two styles on one wall are features a detective can carry to the next case.",
  sourceNums:[4,5],
  credit:{url:"https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_102.jpg",author:"bradhostetler",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the original."}};
-var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Light from Above",object:"Old St. Peter's Basilica",playable:true,
+var EM04={id:"EM-04",kind:"Architecture",wide:true,title:"Drawn From Evidence",object:"Old St. Peter's Basilica",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Old St. Peter\u2019s Basilica (reconstruction drawing)",date:"begun circa 330 C.E.",location:"Rome",artist:"architect unknown",
- headline:"Look closely at the shapes of the church",
- alt:"A bird\u2019s-eye line drawing of a very long church with a tall central hall and lower side parts. Small round-topped windows sit high on the tall walls. A walled courtyard with covered walkways lies in front, with a bell tower on the right and round buildings at the far left.",
+ headline:"Look closely at the front of the church",
+ alt:"A bird\u2019s-eye line drawing of a very long church with a tall central hall and lower side parts. Small round-topped windows sit high on the tall walls. A walled courtyard with covered walkways lies in front of the doors, with a fountain in the middle. At the far end, a wide arm runs across the church, with a row of arched windows and a half-round wall beyond it. A tall bell tower stands at the right, and a wide flight of steps climbs to the entrance at the front. Round buildings stand at the far left.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Old-St-Peters-detail.jpg",
  imageNote:"A drawing of how scholars imagined the church. Old St. Peter\u2019s was torn down in the early 1500s.",
- detail:{image:"public/images/artworks/Old-St-Peters.jpg",alt:"A line drawing of the inside of a very long church. Two rows of columns run down each side of a wide central hall toward a rounded arch at the far end. Above the columns, tall walls rise to a roof of wooden beams.",caption:"Detail: the inside, in a cut-away drawing",credit:{word:"Detail drawing",url:"https://commons.wikimedia.org/wiki/File:Fig_245_Old_St_Peter%27s.jpg",author:"A. Rosengarten",license:"Public domain",licenseUrl:"",changes:"Resized from the original."}},
+ detail:{image:"public/images/artworks/Old-St-Peters.jpg",alt:"A line drawing of the inside of a very long church. Two rows of columns run down each side of a wide central hall toward a rounded arch at the far end. Above the columns, tall walls rise to a roof of wooden beams.",caption:"Technique detail: the inside, in a cut-away drawing",credit:{word:"Detail drawing",url:"https://commons.wikimedia.org/wiki/File:Fig_245_Old_St_Peter%27s.jpg",author:"A. Rosengarten",license:"Public domain",licenseUrl:"",changes:"Resized from the original."}},
  size:"Length: about 123 m / 403 ft from entrance to apse. The nave alone was as long as an American football field.",
- intro:"This church is gone, but drawings show how it looked from above. How could light reach the middle of such a huge room?",
- context:"The clerestory (KLEER-stor-ee) is a row of windows high in the wall of a church, above the lower roofs.",
- clues:[{id:"long",label:"Tall center, low sides",def:"A tall middle with lower parts on each side"},{id:"windows",label:"Windows up high",def:"Openings near the top of the tall wall"},{id:"yard",label:"Open yard",def:"A courtyard with covered walks before the doors"}],
+ intro:"This church is gone. It was pulled down in the early 1500s, so no photograph of it exists. Everything in this drawing is a scholar\u2019s best reconstruction, put together from old descriptions, older drawings and what lies buried under the church that replaced it. What can a picture like this still tell you?",
+ context:"A reconstruction is a drawing or model showing how a lost building probably looked, based on descriptions, old drawings and remains.",
+ clues:[{id:"yard",label:"Open yard",def:"A walled courtyard with covered walks before the doors"},{id:"crossing",label:"Crossing arm",def:"A wide arm running across the far end of the church"},{id:"steps",label:"Steps to the doors",def:"A wide flight of steps climbing to the entrance"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
- closing:"Where would light fall inside this church, and what would it help you notice?",
+ closing:"A reconstruction is an argument, not a photograph. Which parts of this drawing would you most want to see evidence for?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. A tall center, windows up high and an open yard are features a detective can carry to the next case.",
+ guide:"Evidence filed. An open yard, a crossing arm and steps to the doors are features a detective can carry to the next case.",
  sourceNums:[6,7],
  credit:{word:"Drawing",url:"https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg",author:"Internet Archive Book Images (from Walter Lowrie, Monuments of the Early Church, 1901)",license:"No known copyright restrictions",licenseUrl:"https://www.flickr.com/commons/usage/",changes:"Resized from the original."}};
 var EM07={id:"EM-07",kind:"Memorial marker",title:"Vines Carved in Stone",object:"Bewcastle Cross",playable:true,
@@ -106,7 +106,7 @@ var EM08={id:"EM-08",kind:"Stained glass",title:"Pieces of a Face",object:"The L
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Head of a Bearded Saint (the \u201cLorscher Kopf\u201d)",date:"9th\u201311th century C.E. (scholars disagree)",location:"Hessisches Landesmuseum Darmstadt, Germany (found at Lorsch Abbey)",artist:"artist unknown",
  headline:"Look closely at the face",
- alt:"A round arrangement of glass pieces held in thin dark metal strips. Light-blue shards form a ring like a halo. Inside it, orange-brown fragments make up part of a bearded face with large, round eyes. Black gaps show where pieces are missing.",
+ alt:"A round arrangement of glass pieces held in thin dark strips of lead. Light-blue shards form a ring like a halo. Inside it, orange-brown fragments make up part of a bearded face with large, round eyes. Black gaps show where pieces are missing.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Lorscher-Kopf.jpg",
  imageNote:"Broken pieces of glass, put back together in modern times. Dark gaps show where pieces are missing.",
@@ -114,11 +114,11 @@ var EM08={id:"EM-08",kind:"Stained glass",title:"Pieces of a Face",object:"The L
  size:"Reconstructed panel: about 30 \u00d7 27 cm / 12 \u00d7 10\u00bd in. A little taller than a sheet of notebook paper.",
  intro:"This face was made of colored glass about 1,000 years ago, then broke into pieces. How did the artist build a face out of glass and lines?",
  context:"Stained glass is colored glass cut into pieces and held together by thin strips of lead.",
- clues:[{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"lines",label:"Lines for hair",def:"Hair and beard drawn as many thin, repeated lines"},{id:"outline",label:"Dark outlines",def:"Thick dark lines that separate color from color"}],
+ clues:[{id:"faces",label:"Forward-facing figures",def:"Stiff poses and wide, steady eyes"},{id:"lines",label:"Lines for hair",def:"Hair and beard drawn as many thin, repeated lines"},{id:"lead",label:"Lead strips",def:"Thin dark strips of lead that hold each piece of glass"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might an artist give a holy figure eyes this large and steady?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. A steady stare, hair drawn in lines and dark outlines are features a detective can carry to the next case.",
+ guide:"Evidence filed. A steady stare, hair drawn in lines and strips of lead are features a detective can carry to the next case.",
  sourceNums:[10],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Lorscher_Kopf.JPG",author:"Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the original."}};
 var EM10={id:"EM-10",kind:"Stone coffin",wide:true,title:"Ten Stories, Two Rows",object:"Sarcophagus of Junius Bassus",playable:true,
@@ -337,7 +337,7 @@ var EM16={id:"EM-16",kind:"Manuscript page",title:"Hidden in the Swirls",object:
 EM16.zones={
  monogram:[{x0:26,y0:14,x1:50,y1:36},{x0:3,y0:8,x1:30,y1:32},{x0:42,y0:8,x1:80,y1:19},{x0:25,y0:36,x1:39,y1:76}],
  spirals:[{cx:88.2,cy:6.4,rx:7,ry:5},{cx:57.9,cy:19.9,rx:6.5,ry:5},{cx:61.4,cy:31.8,rx:6,ry:4.8},{cx:87.7,cy:41,rx:7,ry:5.2},{cx:8,cy:41.7,rx:7.5,ry:5.5},{cx:8.9,cy:80.9,rx:7.5,ry:5.5},{cx:29.4,cy:93,rx:7,ry:4}],
- hidden:[{cx:57.9,cy:60.3,rx:4.2,ry:3.8},{cx:34.3,cy:2.9,rx:3.6,ry:3},{cx:22.7,cy:35,rx:4,ry:3.5},{cx:17.4,cy:49.4,rx:4,ry:4},{cx:21.4,cy:59.4,rx:4,ry:4},{x0:22,y0:83.5,x1:44,y1:91.5}]
+ hidden:[{cx:57.9,cy:60.3,rx:4.2,ry:3.8},{cx:34.3,cy:3.2,rx:3.6,ry:3},{cx:22.7,cy:35,rx:4,ry:3.5},{cx:17.4,cy:49.4,rx:4,ry:4},{cx:21.4,cy:59.4,rx:4,ry:4},{x0:22,y0:83.5,x1:44,y1:91.5}]
 };
 var EM17={id:"EM-17",kind:"Manuscript page",title:"A Writer in a Hurry",object:"Ebbo Gospels, Saint Matthew",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. – 900 C.E.",
@@ -694,9 +694,9 @@ EM03.zones={
  two:[{x0:8,y0:45,x1:32,y1:82},{x0:68,y0:45,x1:95,y1:82},{x0:50,y0:27,x1:92,y1:43}]
 };
 EM04.zones={
- long:[{x0:10,y0:2,x1:58,y1:45}],
- windows:[{x0:22,y0:6,x1:40,y1:25},{x0:40,y0:22,x1:55,y1:42}],
- yard:[{x0:33,y0:36,x1:72,y1:62}]
+ yard:[{x0:33,y0:36,x1:72,y1:62}],
+ crossing:[{x0:8,y0:0,x1:27,y1:18}],
+ steps:[{x0:62,y0:74,x1:98,y1:97}]
 };
 EM07.zones={
  knot:[{x0:36,y0:30,x1:54,y1:40.5},{x0:35,y0:70,x1:55,y1:89}],
@@ -706,7 +706,7 @@ EM07.zones={
 EM08.zones={
  faces:[{x0:28,y0:30,x1:70,y1:62}],
  lines:[{x0:20,y0:35,x1:31,y1:52},{x0:50,y0:20,x1:68,y1:33},{x0:35,y0:62,x1:66,y1:82}],
- outline:[{x0:15,y0:22,x1:30,y1:82},{x0:66,y0:25,x1:86,y1:85},{x0:30,y0:20,x1:66,y1:30}]
+ lead:[{x0:15,y0:22,x1:30,y1:82},{x0:66,y0:25,x1:86,y1:85},{x0:30,y0:20,x1:66,y1:30},{x0:33,y0:83,x1:67,y1:93}]
 };
 EM09.zones={
  matching:[{x0:26,y0:38,x1:70,y1:88}],
@@ -738,34 +738,34 @@ EM14.zones={
  plaques:[{x0:5,y0:3,x1:95,y1:19},{x0:5,y0:22,x1:95,y1:78},{x0:5,y0:80,x1:95,y1:96}],
  arch:[{x0:31,y0:24,x1:67,y1:78}]
 };
-window.DECKS[0].cards[0]=EM01;
-window.DECKS[0].cards[1]=EM02;
-window.DECKS[0].cards[2]=EM03;
-window.DECKS[0].cards[3]=EM04;
-window.DECKS[0].cards[6]=EM07;
-window.DECKS[0].cards[7]=EM08;
-window.DECKS[0].cards[9]=EM10;
-window.DECKS[0].cards[10]=EM11;
-window.DECKS[0].cards[11]=EM12;
-window.DECKS[0].cards[12]=EM13;
-window.DECKS[0].cards[8]=EM09;
-window.DECKS[0].cards[13]=EM14;
+window.DECKS[0].cards[0]=EM19;
+window.DECKS[0].cards[1]=EM18;
+window.DECKS[0].cards[2]=EM24;
+window.DECKS[0].cards[3]=EM22;
 window.DECKS[0].cards[4]=EM05;
-window.DECKS[0].cards[5]=EM06;
-window.DECKS[0].cards[14]=EM15;
-window.DECKS[0].cards[15]=EM16;
-window.DECKS[0].cards[16]=EM17;
-window.DECKS[0].cards[17]=EM18;
-window.DECKS[0].cards[18]=EM19;
-window.DECKS[0].cards[19]=EM20;
-window.DECKS[0].cards[20]=EM21;
-window.DECKS[0].cards[21]=EM22;
-window.DECKS[0].cards[22]=EM23;
-window.DECKS[0].cards[23]=EM24;
-window.DECKS[0].cards[24]=EM25;
-window.DECKS[0].cards[25]=EM26;
-window.DECKS[0].cards[26]=EM27;
-window.DECKS[0].cards[27]=EM28;
-window.DECKS[0].cards[28]=EM29;
-window.DECKS[0].cards[29]=EM30;
-window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"EM-03"},{case:"EM-01"},{case:"EM-07"}]}},{id:"VOC-02",after:16,word:"Nimbus",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"A solid disk, like a plate or saucer, set behind the head of a holy figure. A halo is only a thin line around the head. A nimbus is a filled disk.",look:["Is the space behind the head a solid disk, or only a thin outline?","Is the disk gold, as it almost always is in early medieval art?","Do any words on or beside the disk name the holy person?"],example:{id:"EM-09",points:["Behind the head of each seated saint is a solid disk, painted in golden yellow, like a plate standing upright. That filled disk is a nimbus. A halo would be just a thin line circling the head.","The two small riders each have a nimbus, too, so you can find five in this one wall painting.","Painted letters run above the small rider at the left. Words placed around or within the nimbus often identify the holy person or the scene."]},sourceNums:[63,64],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:0,options:[{case:"EM-09"},{case:"EM-03"},{case:"EM-08"}]}},{id:"VOC-03",after:24,word:"Attribute",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"An object that goes with a particular person in art, so you can tell who it is.",look:["What is the figure holding, wearing or standing beside?","Does the same object appear with this person in other works?","What might the object tell you about the person\u2019s story?"],example:{id:"EM-05",points:["Saint Peter holds a bundle of keys against his chest, beside a tall cross. The keys are his attribute, so a viewer who knows his story can tell who he is.","Attributes often come from an event in a saint\u2019s life. They helped viewers recognize saints in paintings.","Look for the same attribute object in other works to help identify the subject.","A symbol stands for an idea, like a dove for peace or a dog for loyalty. An attribute is a symbol that belongs to one person, like keys for Saint Peter."]},sourceNums:[62],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:2,options:[{case:"EM-17"},{case:"EM-09"},{case:"EM-05"}]}}];
+window.DECKS[0].cards[5]=EM29;
+window.DECKS[0].cards[6]=EM30;
+window.DECKS[0].cards[7]=EM06;
+window.DECKS[0].cards[8]=EM12;
+window.DECKS[0].cards[9]=EM21;
+window.DECKS[0].cards[10]=EM28;
+window.DECKS[0].cards[11]=EM07;
+window.DECKS[0].cards[12]=EM09;
+window.DECKS[0].cards[13]=EM25;
+window.DECKS[0].cards[14]=EM10;
+window.DECKS[0].cards[15]=EM01;
+window.DECKS[0].cards[16]=EM02;
+window.DECKS[0].cards[17]=EM08;
+window.DECKS[0].cards[18]=EM20;
+window.DECKS[0].cards[19]=EM26;
+window.DECKS[0].cards[20]=EM15;
+window.DECKS[0].cards[21]=EM13;
+window.DECKS[0].cards[22]=EM11;
+window.DECKS[0].cards[23]=EM04;
+window.DECKS[0].cards[24]=EM14;
+window.DECKS[0].cards[25]=EM17;
+window.DECKS[0].cards[26]=EM16;
+window.DECKS[0].cards[27]=EM23;
+window.DECKS[0].cards[28]=EM27;
+window.DECKS[0].cards[29]=EM03;
+window.DECKS[0].vocab=[{id:"VOC-01",after:16,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"EM-10"},{case:"EM-01"},{case:"EM-07"}]}},{id:"VOC-02",after:6,word:"Nimbus",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"A solid disk, like a plate or saucer, set behind the head of a holy figure. A halo is only a thin line around the head. A nimbus is a filled disk.",look:["Is the space behind the head a solid disk, or only a thin outline?","Is the disk gold, as it almost always is in early medieval art?","Do any words on or beside the disk name the holy person?"],example:{id:"EM-29",points:["Behind the head of each holy figure sits a solid disk, filled in like a plate standing on edge. That filled disk is a nimbus. A halo would be only a thin line circling the head.","Three figures in this painting have one. Counting them tells you who the painter treated as holy.","The disks are plain inside, with no pattern on them. Their job is to mark the figures as holy, not to decorate the wall."]},sourceNums:[63,64],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"EM-05"},{case:"EM-29"},{case:"EM-18"}]}},{id:"VOC-03",after:20,word:"Attribute",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"An object that goes with a particular person in art, so you can tell who it is.",look:["What is the figure holding, wearing or standing beside?","Does the same object appear with this person in other works?","What might the object tell you about the person\u2019s story?"],example:{id:"EM-05",points:["Saint Peter holds a bundle of keys against his chest, beside a tall cross. The keys are his attribute, so a viewer who knows his story can tell who he is.","Attributes often come from an event in a saint\u2019s life. They helped viewers recognize saints in paintings.","Look for the same attribute object in other works to help identify the subject.","A symbol stands for an idea, like a dove for peace or a dog for loyalty. An attribute is a symbol that belongs to one person, like keys for Saint Peter."]},sourceNums:[62],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:2,options:[{case:"EM-26"},{case:"EM-09"},{case:"EM-05"}]}},{id:"VOC-04",after:12,word:"Interlace",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"A pattern of ribbons or bands that weave over and under one another, usually with no beginning and no end.",look:["Follow one ribbon with your eye. Does it pass over, then under, then over again?","Can you find where a ribbon starts or stops, or does it run on without end?","Do any ribbons turn into animals, with a head, a leg or a tail hidden in the weave?"],example:{id:"EM-06",points:["The panels around the big letters are filled with narrow ribbons that cross over and under each other. Follow one with your eye and it carries you around the panel and back.","The crossings fall at even intervals, so the weave keeps a steady rhythm all the way across a panel.","Interlace shows nothing from the world. It is pure pattern, and here it fills the space that a picture fills in other kinds of painting."]},sourceNums:[77],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"EM-07"},{case:"EM-06"},{case:"EM-22"}]}},{id:"VOC-05",after:24,word:"Nave, Transept and Apse",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"Three parts of an early Christian church. The nave is the long central hall. The transept is the arm that crosses it near the far end. The apse is the half-round recess beyond, behind the altar.",look:["Find the longest space first. The nave runs from the main doors toward the altar, and it is wider than the aisles beside it.","Look for an arm that crosses the building near the far end and juts out past the walls on both sides. That is the transept.","At the very end, look for a wall that curves instead of turning a corner. That is the apse."],locate:{heading:"Find each part",prompt:"For 3 bonus points, click each part on the plan. You earn a point for each one you find on your first try.",points:1,image:"public/images/artworks/OldStPeters-Plan.png",alt:"A floor plan of a long church. Four rows of columns divide a long rectangle into a wide central space with two narrower spaces on each side. Near the right end a tall arm crosses the whole building and juts out past the walls above and below. Beyond it a half-round wall bulges to the right, with a small altar enclosure inside.",caption:"The body of Old St. Peter\u2019s Basilica, Rome, begun circa 330 C.E. You played this building as case 24.",creditWord:"Plan",credit:{word:"Plan",url:"https://commons.wikimedia.org/wiki/File:Old_St_Peters_Basilica_plan.png",author:"Locutus Borg, English labelling by Amandajm",license:"Public domain",licenseUrl:"",changes:"Cropped to the body of the church; printed labels removed so the parts can be identified."},clues:[{id:"nave",label:"Nave",def:"The long central hall, wider than the spaces beside it"},{id:"transept",label:"Transept",def:"The arm crossing the building near the far end"},{id:"apse",label:"Apse",def:"The half-round recess beyond the crossing"}],zones:{nave:[{x0:4,y0:39,x1:61,y1:61}],transept:[{x0:63.5,y0:4,x1:81.5,y1:92}],apse:[{x0:82.5,y0:37,x1:95,y1:64}]}},sourceNums:[6,7]}];
