@@ -15,7 +15,9 @@ function num(i){return (i<9?'0':'')+(i+1)}
 function tabs(cur){return '<nav class="tabs" aria-label="Periods">'+DECKS.map(function(d){return '<a href="#/deck/'+d.id+'"'+(d.id===cur?' aria-current="page"':'')+'>'+esc(d.title)+'</a>'}).join('')+'</nav>'}
 function cardList(d){return '<ol class="cases">'+d.cards.map(function(c,i){var dn=done(c),pts=(store.cards[c.id]||{}).points||0;
 var inner='<span class="box'+(dn?' on':'')+'" aria-hidden="true">'+(dn?'\u2713':'')+'</span><span class="sr">'+(dn?'Completed. ':'Not yet completed. ')+'</span><span class="num">'+num(i)+'</span><span class="ttl"><strong>'+esc(c.title)+'</strong>'+(c.object?'<span class="note">'+esc(c.object)+'</span>':'')+'</span>'+(dn?'<span class="tail pts">'+pts+' points</span>':(c.playable?'<span class="tail go">Play</span>':'<span class="tail soon">Coming soon</span>'));
-return '<li class="'+(c.playable?'ready':'later')+(dn?' done':'')+'">'+(c.playable?'<a href="#/card/'+c.id+'">'+inner+'</a>':'<div class="row">'+inner+'</div>')+'</li>'+vocabRows(d,i+1)}).join('')+'</ol>'}
+return '<li class="'+(c.playable?'ready':'later')+(dn?' done':'')+'">'+(c.playable?'<a href="#/card/'+c.id+'">'+inner+'</a>':'<div class="row">'+inner+'</div>')+'</li>'+vocabRows(d,i+1)}).join('')+reviewRow(d)+'</ol>'}
+function reviewRow(d){var r=d.review;if(!r)return '';var rc=store.cards[r.id],dn=!!(rc&&rc.seen);
+ return '<li class="vocab ready review"><a href="#/review/'+d.id+'"><span class="vtag">File</span><span class="ttl"><strong>'+esc(r.title)+'</strong><span class="note">What the thirty cases add up to</span></span><span class="tail '+(dn?'pts':'go')+'">'+(dn?'Read':'Open')+'</span></a></li>'}
 function vocabRows(d,n){return (d.vocab||[]).filter(function(v){return v.after===n}).map(function(v){return '<li class="vocab ready"><a href="#/vocab/'+v.id+'"><span class="vtag">Word</span><span class="ttl"><strong>Learn Your Art History Vocabulary</strong><span class="note">'+esc(v.word)+'</span></span>'+(function(){var rc=store.cards[v.id];return rc&&(rc.choice!=null||rc.done)?'<span class="tail pts">'+rc.points+' points</span>':'<span class="tail go">Read</span>'})()+'</a></li>'}).join('')}
 function vocabFind(id){var r=null;DECKS.forEach(function(x){(x.vocab||[]).forEach(function(y){if(y.id===id)r={d:x,v:y}})});return r}
 function vocab(id){var r0=vocabFind(id),d=r0&&r0.d,v=r0&&r0.v;if(!v){location.hash='#/deck/'+DECKS[0].id;return}
@@ -69,6 +71,37 @@ va.onmousemove=function(e){if(!vmag){vl.style.display='none';return}var r=va.get
 va.onmouseleave=function(){vl.style.display='none'};
 function vset(on){vmag=on;document.getElementById('magon').setAttribute('aria-pressed',on);document.getElementById('magoff').setAttribute('aria-pressed',!on);document.getElementById('vhint').hidden=!on;vl.style.display='none'}
 document.getElementById('magon').onclick=function(){vset(true)};document.getElementById('magoff').onclick=function(){vset(false)}}}
+draw()}
+function review(did){var d=DECKS.filter(function(x){return x.id===did})[0];var r=d&&d.review;
+if(!r){location.hash='#/deck/'+DECKS[0].id;return}
+function rec(){return store.cards[r.id]||{seen:true,text:'',shown:false}}
+function put(o){store.cards[r.id]=o;localStorage.setItem(KEY,JSON.stringify(store))}
+var st=rec();st.seen=true;put(st);
+function pos(cid){for(var i=0;i<d.cards.length;i++)if(d.cards[i].id===cid)return i+1;return 0}
+function draw(){var rc=rec(),w=r.work;
+var tr=r.traits.map(function(t){
+  var ps=t.cases.map(function(c){return {id:c,n:pos(c),done:done(find(c).card)}}).sort(function(a,b){return a.n-b.n});
+  var dn=ps.filter(function(x){return x.done}).length;
+  return '<div class="trait"><h3>'+esc(t.claim)+'</h3><p>'+esc(t.note)+'</p>'
+   +'<p class="note tcases">'+(dn?'You have closed '+dn+' of the '+ps.length+' cases where this appears':'Appears in '+ps.length+' cases')
+   +' \u00b7 '+ps.map(function(x){return '<a href="#/card/'+esc(x.id)+'"'+(x.done?' class="dn"':'')+'>'+num(x.n-1)+'</a>'}).join(' ')+'</p></div>'}).join('');
+var fig=function(o,cls){return '<figure class="'+cls+'"><img src="'+esc(o.image)+'" alt="'+esc(o.alt)+'"><figcaption class="note">'+esc(o.caption)+'</figcaption></figure>'};
+app.innerHTML='<p class="note">'+esc(r.crumb)+' \u00b7 <strong>CASE FILE</strong></p><div class="vbox revbox">'
+ +'<p class="vkick">Case closed</p><h1 class="vword">'+esc(r.title)+'</h1><p class="vdef">'+esc(r.lead)+'</p>'
+ +'<h2 class="revh">'+esc(r.traitsHead)+'</h2><div class="traits">'+tr+'</div>'
+ +'<div class="vex revwork"><h2>'+esc(w.head)+'</h2><p><strong>'+esc(w.kicker)+'</strong> '+esc(w.lede)+'</p>'
+ +fig(w,'revmain')+'<div class="revdets">'+fig(w.detail,'revdet')+fig(w.detail2,'revdet')+'</div>'
+ +'<label class="bonus"><strong>'+esc(w.prompt)+'</strong><textarea id="revtx" placeholder="'+esc(w.placeholder)+'">'+esc(rc.text||'')+'</textarea></label>'
+ +(rc.shown?'<div class="reveal">'+w.reveal.map(function(t){return '<p>'+esc(t)+'</p>'}).join('')+'<p class="revclose"><strong>'+esc(w.closing)+'</strong></p></div>'
+   :'<p class="btns"><button class="primary" id="revbtn">'+esc(w.revealBtn)+'</button></p>')
+ +'</div><p class="vnext"><a class="btn primary" href="#/deck/'+d.id+'">Back to the list</a></p>'
+ +(rc.shown&&r.outro?'<p class="note revoutro">'+esc(r.outro)+'</p>':'')
+ +'</div><footer class="credits">'+credit(w.credit,'Photo')+credit(w.detail.credit,'Detail photo')+credit(w.detail2.credit,'Detail photo')
+ +((r.sourceNums||[]).length?'<p class="note srcs">Sources: '+r.sourceNums.map(function(n){return '<a href="#/sources/'+n+'">'+n+'</a>'}).join(', ')+'</p>':'')+'</footer>';
+var tx=document.getElementById('revtx');
+if(tx)tx.oninput=function(){var o=rec();o.text=tx.value;o.seen=true;put(o)};
+var b=document.getElementById('revbtn');
+if(b)b.onclick=function(){var o=rec();o.shown=true;put(o);draw();var e=document.querySelector('.reveal');if(e&&e.scrollIntoView)e.scrollIntoView({block:'start'})}}
 draw()}
 function home(){app.innerHTML='<h1>Welcome</h1><p>Look closely at artworks, mark what you find, and explain it in your own words.</p><p><a class="btn primary" href="#/deck/'+DECKS[0].id+'">Begin</a></p>'}
 function deck(id){var d=DECKS.filter(function(x){return x.id===id})[0];if(!d){location.hash='#/deck/'+DECKS[0].id;return}
@@ -139,5 +172,5 @@ var t=n&&document.getElementById('src-'+n);if(t){t.classList.add('hl');if(t.scro
 function help(){app.innerHTML='<h1>Help</h1><p>Click a feature box, then click or tap the artwork where you see that feature. Do this for every feature box. If a mark is not on the feature, a red X appears; after two tries the right area glows. Then write about any two features (both, if the case has only two).</p><p>To look closer, turn the Magnifier on above the photo, then move the pointer over the photo. Turn it off the same way.</p><p>Using a keyboard: press Tab until the artwork is outlined, move the dotted circle with the arrow keys, and press Enter to mark.</p><p class="note">Your work is saved only in this browser on this device.</p><a class="btn" href="#/deck/'+DECKS[0].id+'">Back to the case list</a>'}
 function goodbye(){app.innerHTML='<div class="bye"><h1>Thanks for playing</h1><p>Your progress is saved on this device. You may now close this browser tab.</p><p><a class="btn primary" href="#/deck/'+DECKS[0].id+'">Return to the game</a></p></div>'}
 function lvlBtn(h){var x=document.getElementById('exitgame');if(x){x.hidden=h[1]!=='deck';x.onclick=function(){location.hash='#/goodbye'}}var b=document.getElementById('savelvl');if(!b)return;var on=h[1]==='card'||h[1]==='vocab';b.hidden=!on;b.onclick=function(){if(h[1]==='card'&&S.id)save();var r=h[1]==='card'?find(h[2]):vocabFind(h[2]),dk=r&&r.deck?r.deck:(r&&r.d)||DECKS[0];S.saved=true;location.hash='#/deck/'+dk.id}}
-function route(){var h=location.hash.split('/');if(h[1]==='deck')deck(h[2]);else if(h[1]==='card'){S.id=null;S.queue=[];S.miss={};S.msg='';S.done=false;S.after=false;S.bmsg='';S.cur={x:50,y:50};card(h[2])}else if(h[1]==='vocab'){vocab(h[2])}else if(h[1]==='goodbye'){goodbye()}else if(h[1]==='sources'){sources(h[2])}else if(h[1]==='help')help();else home();lvlBtn(h);app.focus({preventScroll:true});window.scrollTo(0,0)}
+function route(){var h=location.hash.split('/');if(h[1]==='deck')deck(h[2]);else if(h[1]==='card'){S.id=null;S.queue=[];S.miss={};S.msg='';S.done=false;S.after=false;S.bmsg='';S.cur={x:50,y:50};card(h[2])}else if(h[1]==='vocab'){vocab(h[2])}else if(h[1]==='review'){review(h[2])}else if(h[1]==='goodbye'){goodbye()}else if(h[1]==='sources'){sources(h[2])}else if(h[1]==='help')help();else home();lvlBtn(h);app.focus({preventScroll:true});window.scrollTo(0,0)}
 window.addEventListener('hashchange',route);route();bank()})();

@@ -138,3 +138,22 @@ A vocabulary card may teach more than one word and ask the player to find each o
 - Crop the image to the parts being taught. A prominent element that is not one of the targets invites a wrong click and raises a question the card does not answer. The Old St. Peter's plan was cropped to the body of the church for exactly this reason, which dropped the narthex and the atrium and made the three targets much larger in the frame.
 - A term earns a place on a vocabulary card only if the player meets it in more than one case, or if it is structurally inseparable from terms that do. Narthex appears in no case in the deck and was left out on that test; transept appears in only one but is inseparable from nave and apse, so it stays. The deck uses plain English ("open yard") where a technical term would not repay the effort.
 
+## The closing Case File (2026-10-25)
+Each period deck ends with one review page, reached at `#/review/<deckId>` and listed as the final row of the deck list. It is a **synthesis, not an assessment**: no score, no right answers, no quiz.
+
+It has two movements.
+
+**1. What the evidence shows.** Seven traits of the period, each stated plainly in one line, with a short note and the cases where it appears. Case numbers render as chips, filled for cases the player has closed and outlined for those they have not, so the page shows their own progress without a progress bar. The wording adapts: "You have closed 6 of the 8 cases where this appears" once they have played some, "Appears in 8 cases" before that.
+
+**A constraint worth knowing:** `save()` clears a case's `finds` once the case is submitted, so the page cannot report *which* features a player marked. Marking all three is compulsory anyway, so there is no selectivity to report. Counts are therefore over **completed cases**, which is the honest measure.
+
+**2. One last work.** A work the player has never seen, chosen to carry as many of the period's traits as possible in one image. The player writes what they recognize — unscored, saved — then presses a button to reveal what an art historian would say. The reveal names each trait in the new work and ends with one line about what they can now do.
+
+Rules for the closing work:
+- It must be outside the deck. Re-using a played case tests memory, not transfer.
+- Pick for trait coverage first and fame second. San Zeno at Santa Prassede carries all seven.
+- A detail that carries a trait the main image cannot is worth including. The San Zeno doorway was chosen because "artists kept looking back to Rome" is the one trait with no marked features behind it anywhere in the deck; at the doorway the reused Roman stone is physically visible rather than argued.
+- Details sit side by side rather than stacked, so the page uses its width.
+
+Stored under the review id in `localStorage` as `{seen, text, shown}`.
+

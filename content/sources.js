@@ -75,5 +75,6 @@ window.SOURCES=[
 {"n":74,"type":"Secondary source","cite":"“Visit the Mausoleum of Galla Placidia in Ravenna.” European Traveler.","url":"https://www.european-traveler.com/?p=7033"},
 {"n":75,"type":"Heritage listing","cite":"“Early Christian Monuments of Ravenna.” UNESCO World Heritage Centre, list no. 788.","url":"https://whc.unesco.org/en/list/788"},
 {"n":76,"type":"Secondary source","cite":"“Take a sneak peek into the upcoming Museum of the Viking Age in Norway.” The Viking Herald.","url":"https://thevikingherald.com/article/take-a-sneak-peek-into-the-upcoming-museum-of-the-viking-age-in-norway/852"},
-{"n":77,"type":"Museum glossary","cite":"“Interlace.” Lexicon, Hill Museum & Manuscript Library (HMML School).","url":"https://hmmlschool.org/lexicon/14596/"}
+{"n":77,"type":"Museum glossary","cite":"“Interlace.” Lexicon, Hill Museum & Manuscript Library (HMML School).","url":"https://hmmlschool.org/lexicon/14596/"},
+{"n":78,"type":"Scholarship","cite":"Mackie, Gillian. “The Zeno Chapel: A Prayer for Salvation.” Papers of the British School at Rome 57 (1989): 172–199.","url":"https://doi.org/10.1017/S0068246200009132"}
 ];

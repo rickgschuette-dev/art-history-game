@@ -129,3 +129,19 @@ ol.src li.ph-src.hl{font-style:italic}
 @media(prefers-reduced-motion:reduce){.zglow{animation:none}.xmark{animation-duration:2s}}
 
 .vart{position:relative;display:block;width:fit-content;max-width:100%;margin:0 auto}.vex .headrow{margin:0 0 .6rem;justify-content:space-between}.vex .headrow h2{margin:0}.vex figure .note{margin:.4rem 0 0}
+.revbox .revh{margin:1.6rem 0 .5rem;font-size:1.15rem}
+.traits{display:grid;gap:1rem}
+.trait{border-left:4px solid var(--navy);padding:.1rem 0 .1rem .9rem}
+.trait h3{margin:0 0 .3rem;font-size:1.05rem;line-height:1.3}
+.trait p{margin:0 0 .35rem}
+.tcases a{display:inline-block;min-width:1.5rem;padding:0 .25rem;margin-right:.15rem;text-align:center;border-radius:.3rem;border:1px solid #c9bda4;text-decoration:none}
+.tcases a.dn{background:var(--navy);color:#fff;border-color:var(--navy)}
+.revwork{margin-top:1.8rem}
+.revwork figure{margin:0 0 1rem}
+.revwork img{display:block;width:100%;height:auto;border-radius:4px}
+.revdets{display:grid;gap:1rem;grid-template-columns:1fr 1fr;align-items:start}
+.reveal{margin-top:1rem;border-top:2px solid #c9bda4;padding-top:.9rem}
+.revclose{margin-top:.9rem}
+.revoutro{margin-top:1rem;text-align:center;font-style:italic}
+@media(max-width:700px){.revdets{grid-template-columns:1fr}}
+
