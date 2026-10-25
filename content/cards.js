@@ -168,7 +168,7 @@ var EM12={id:"EM-12",kind:"Architecture",wide:true,title:"A Dome That Floats",ob
  image:"public/images/artworks/Hagia-Sophia.jpg",
  imageNote:"The thin towers, called minarets, were added after 1453, when the building became a mosque.",
  detail:{image:"public/images/artworks/Hagia-Sophia-section.jpg",alt:"A black-and-white drawing of the church sliced down the middle, so the inside shows. A big dome with a ring of small windows at its base rises over the center. Smaller domes and half-domes step down on both sides above rows of arches and columns. At the right, a porch and a statue of a rider on a horse stand beside the building.",caption:"Technique detail: a 1908 reconstruction drawing that slices the building open to show how the domes and arches fit together",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Hagia-Sophia-Laengsschnitt.jpg",author:"Wilhelm L\u00fcbke and Max Semrau, Grundri\u00df der Kunstgeschichte (1908)",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Resized from the Commons file."}},
- size:"The dome: about 31 m wide and about 48.5 m high / 101 ft wide and 160 ft high. About as tall as a 16-story building.",
+ size:"The dome: about 32 m / 105 ft across. A little longer than a basketball court.",
  intro:"This building went up in just five years, almost 1,500 years ago. How did builders hold up such a huge roof?",
  context:"A dome is a roof shaped like half of a ball.",
  clues:[{id:"dome",label:"Big round dome",def:"A huge half-ball roof high over the center"},{id:"ring",label:"Ring of windows",def:"Small windows circling the base of the dome"},{id:"step",label:"Domes stepping down",def:"Smaller domes and curves piled below the big one"}],
@@ -246,7 +246,7 @@ var EM05={id:"EM-05",kind:"Icon painting",title:"Face to Face",object:"Saint Pet
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Saint Peter (icon)",date:"about 600 C.E.",location:"Saint Catherine\u2019s Monastery, Mount Sinai, Egypt",artist:"artist unknown",
  headline:"Look closely at the saint\u2019s face",
- alt:"A painting of a gray-haired, bearded man shown from the chest up, facing the viewer. A large gold halo glows behind his head. He wears a white robe and holds a tall staff with a cross and a bundle of keys. Above him, three small round portraits sit in a row against a dark background, with carved columns at each side.",
+ alt:"A painting of a gray-haired, bearded man shown from the chest up, facing the viewer. A large gold nimbus glows behind his head. He wears a white robe and holds a tall staff with a cross and a bundle of keys. Above him, three small round portraits sit in a row against a dark background, with carved columns at each side.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Saint-Peter-Sinai.jpg",
  imageNote:"Saint Peter, painted in colored wax on a panel, with three small round portraits above his head.",
@@ -254,11 +254,11 @@ var EM05={id:"EM-05",kind:"Icon painting",title:"Face to Face",object:"Saint Pet
  size:"Panel: about 93 \u00d7 54 cm / 37 \u00d7 21 in. About as tall as a kitchen counter.",
  intro:"This painting of Saint Peter is about 1,400 years old. The painter made a panel that seems to look right back at you. How does it do that?",
  context:"An icon is a holy picture made for prayer. This one is painted in encaustic, which means colored powder mixed into hot wax.",
- clues:[{id:"halo",label:"Gold halo",def:"A large gold disk glowing behind the head"},{id:"stare",label:"Direct stare",def:"Wide eyes that look straight out at you"},{id:"medallions",label:"Small round portraits",def:"Circles above the figure, each holding a face"}],
+ clues:[{id:"halo",label:"Gold nimbus",def:"A large gold disk glowing behind the head"},{id:"stare",label:"Direct stare",def:"Wide eyes that look straight out at you"},{id:"medallions",label:"Small round portraits",def:"Circles above the figure, each holding a face"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"How does the painter make a flat panel feel like a living person who is looking back at you?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. A gold halo, a direct stare and small round portraits are features a detective can carry to the next case.",
+ guide:"Evidence filed. A gold nimbus, a direct stare and small round portraits are features a detective can carry to the next case.",
  sourceNums:[29,30,31],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Saint_Peter-Sinai_(6th_Century).jpg",author:"Unknown artist (photograph by Michel Bakni)",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Resized from the Commons file."}};
 var EM06={id:"EM-06",kind:"Manuscript page",title:"Letters as Pictures",object:"Lindisfarne Gospels, Matthew page",playable:true,
@@ -269,7 +269,7 @@ var EM06={id:"EM-06",kind:"Manuscript page",title:"Letters as Pictures",object:"
  enlarge:"Enlarge image",
  image:"public/images/artworks/Lindisfarne-Incipit.jpg",
  imageNote:"The opening of Matthew\u2019s Gospel. The first letters of the Latin word Liber, meaning \u201cbook,\u201d fill the page.",
- detail:{image:"public/images/artworks/Lindisfarne-Matthew.jpg",alt:"A page from the same book. A seated man with a gray-blue beard and a gold halo draws on a board. He wears a green robe marked with red fold lines and a purple sleeve, and sits on an orange cushion. A winged figure with a trumpet hovers above him, and a second figure peers out from behind a red curtain.",caption:"Technique detail: Saint Matthew from the same book, drawn with strong outlines and filled with flat color, with red strokes for the folds of his robe",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:St._Matthew_-_Lindisfarne_Gospels_(710-721),_f.25v_-_BL_Cotton_MS_Nero_D_IV.jpg",author:"Eadfrith of Lindisfarne (presumed); image from the British Library",license:"CC0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",changes:"Resized from the Commons file."}},
+ detail:{image:"public/images/artworks/Lindisfarne-Matthew.jpg",alt:"A page from the same book. A seated man with a gray-blue beard and a gold nimbus draws on a board. He wears a green robe marked with red fold lines and a purple sleeve, and sits on an orange cushion. A winged figure with a trumpet hovers above him, and a second figure peers out from behind a red curtain.",caption:"Technique detail: Saint Matthew from the same book, drawn with strong outlines and filled with flat color, with red strokes for the folds of his robe",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:St._Matthew_-_Lindisfarne_Gospels_(710-721),_f.25v_-_BL_Cotton_MS_Nero_D_IV.jpg",author:"Eadfrith of Lindisfarne (presumed); image from the British Library",license:"CC0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",changes:"Resized from the Commons file."}},
  size:"",
  intro:"This page opens the Gospel of Matthew in a hand-copied book made on Lindisfarne, an island off the coast of England, about 1,300 years ago. There is no scene on the page. So where is the art?",
  context:"Interlace is a pattern of ribbons that weave over and under each other, with no beginning and no end.",
@@ -466,7 +466,7 @@ var EM22={id:"EM-22",kind:"Ship burial",wide:true,title:"A Ship in the Ground",o
  alt:"A long, dark wooden ship on display inside a white, arched museum hall. Its front end sweeps up in a tall curve and ends in a spiral at the top. Rows of overlapping planks run along its side, and a tall mast stands in the middle of the open deck.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Oseberg-Ship.jpg",
- imageNote:"The Oseberg ship, photographed in the Viking Ship Museum in Oslo in 2016. It was dug out of its burial mound in 1904.",
+ imageNote:"The Oseberg ship, photographed in the Viking Ship Museum in Oslo in 2016. It was dug out of its burial mound in 1904. The museum is closed for rebuilding and is due to reopen in 2027 as the Museum of the Viking Age.",
  detail:{image:"public/images/artworks/Oseberg-Carvings-Detail.jpg",alt:"A carved wooden panel in a museum case. Tangled animals with scale-like patterns on their bodies fill the panel, and two round faces look out from among them.",caption:"Technique detail: tangled animals with scaly bodies and round faces, carved in relief from wood",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Grave_goods_from_the_Oseberg_ship_burial._Viking_Ship_Museum,_Oslo,_Norway_(Vikingskipshuset_p%C3%A5_Bygd%C3%B8y)_November_2011.jpg",author:"Bochum1805",license:"CC BY-SA 2.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/2.0/",changes:"Resized from the Commons file."}},
  size:"About 21 m / 70 ft long and 5 m / 16 ft wide, as measured after it was dug up. Nearly as long as two city buses end to end.",
  intro:"This wooden ship was buried under a mound of clay and stone in Norway in 834 C.E. Two women and many belongings were buried with it. Its makers shaped the front end with great care. Can you spot the details that were made by hand?",
@@ -476,7 +476,7 @@ var EM22={id:"EM-22",kind:"Ship burial",wide:true,title:"A Ship in the Ground",o
  closing:"Why might people have chosen to bury a whole ship along with two women and their belongings?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. A spiral curl, a carved prow and overlapping planks are features a detective can carry to the next case.",
- sourceNums:[53,54],
+ sourceNums:[53,54,76],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Osebergskipet_2016.jpg",author:"Petter Ulleland",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}};
 EM22.zones={
  spiral:[{x0:73,y0:1,x1:83,y1:14}],
@@ -535,16 +535,16 @@ var EM25={id:"EM-25",kind:"Wall painting",wide:true,title:"A Painted Wall of Sai
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Wall paintings in Santa Maria Antiqua (Christ enthroned between saints)",date:"about 757\u2013767 C.E.",location:"Santa Maria Antiqua, Roman Forum, Rome",artist:"unknown painters; painted in the time of Pope Paul I",
  headline:"Look closely at the wall painting",
- alt:"A tall, weathered wall covered in paintings. A row of standing saints with gold halos, each holding a book, stretches across the middle, with Christ seated on a throne at the center. Above them are framed story scenes, partly lost. Along the bottom is a band of painted curtains with swags and round ornaments. A small square stone structure stands at the foot of the wall.",
+ alt:"A tall, weathered wall covered in paintings. A row of standing saints with gold nimbuses, each holding a book, stretches across the middle, with Christ seated on a throne at the center. Above them are framed story scenes, partly lost. Along the bottom is a band of painted curtains with swags and round ornaments. A small square stone structure stands at the foot of the wall.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Santa-Maria-Antiqua.jpg",
  imageNote:"A wall of Santa Maria Antiqua in the Roman Forum. Parts of the plaster have fallen away, but much of the paint is still bright.",
- detail:{image:"public/images/artworks/Santa-Maria-Antiqua-Basil.jpg",flex:29,alt:"A tall painted figure of a bearded saint in a dark robe, with a gold halo and large eyes. He holds a book. Greek letters beside his head give his name.",caption:"Technique detail: Saint Basil, painted on plaster with large eyes, a long face and a gold halo",credit:{word:"Detail photo (Saint Basil)",url:"https://commons.wikimedia.org/wiki/File:Agios_Basileios_Santa_Maria_Antiqua.jpg",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Used as provided on Commons."}},
- detail2:{image:"public/images/artworks/Santa-Maria-Antiqua-Hierarchs.jpg",alt:"Three standing figures with gold halos, each holding a book. Greek letters between their heads give their names. Plaster is missing in places, and red and dark bands of color surround them.",caption:"Technique detail: the Three Holy Hierarchs, painted on plaster with Greek names beside each head",credit:{word:"Detail photo (three hierarchs)",url:"https://commons.wikimedia.org/wiki/File:Three_Holy_Hierarchs_Santa_Maria_Antiqua.jpg",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Used as provided on Commons."}},
+ detail:{image:"public/images/artworks/Santa-Maria-Antiqua-Basil.jpg",flex:29,alt:"A tall painted figure of a bearded saint in a dark robe, with a gold nimbus and large eyes. He holds a book. Greek letters beside his head give his name.",caption:"Technique detail: Saint Basil, painted on plaster with large eyes, a long face and a gold nimbus",credit:{word:"Detail photo (Saint Basil)",url:"https://commons.wikimedia.org/wiki/File:Agios_Basileios_Santa_Maria_Antiqua.jpg",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Used as provided on Commons."}},
+ detail2:{image:"public/images/artworks/Santa-Maria-Antiqua-Hierarchs.jpg",alt:"Three standing figures with gold nimbuses, each holding a book. Greek letters between their heads give their names. Plaster is missing in places, and red and dark bands of color surround them.",caption:"Technique detail: the Three Holy Hierarchs, painted on plaster with Greek names beside each head",credit:{word:"Detail photo (three hierarchs)",url:"https://commons.wikimedia.org/wiki/File:Three_Holy_Hierarchs_Santa_Maria_Antiqua.jpg",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Used as provided on Commons."}},
  size:"",
  intro:"This wall was painted about 1,250 years ago inside a church in the Roman Forum. The church collapsed in an earthquake in 847 C.E. and was found again in 1900. Much of the paint survived. Can you find three parts of the painted wall?",
- context:"A halo is a ring of light painted around a holy person\u2019s head.",
- clues:[{id:"christ",label:"Christ on a throne",def:"A seated figure at the center, holding a book"},{id:"saints",label:"Saints in a row",def:"Standing figures with gold halos, each holding a book"},{id:"curtain",label:"Painted curtain",def:"A band of painted cloth with swags and round ornaments"}],
+ context:"A nimbus is a solid gold disk painted behind a holy person\u2019s head.",
+ clues:[{id:"christ",label:"Christ on a throne",def:"A seated figure at the center, holding a book"},{id:"saints",label:"Saints in a row",def:"Standing figures with gold nimbuses, each holding a book"},{id:"curtain",label:"Painted curtain",def:"A band of painted cloth with swags and round ornaments"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might painters have shown saints in a long row, all facing forward, instead of in a lively scene?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
@@ -560,11 +560,11 @@ var EM26={id:"EM-26",kind:"Icon painting",wide:false,title:"One Face, Two Sides"
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Christ Pantocrator (icon)",date:"6th century C.E. (about 600)",location:"Saint Catherine\u2019s Monastery, Mount Sinai, Egypt",artist:"unknown painter",
  headline:"Look closely at the painting",
- alt:"A painting of a man with long dark hair parted in the middle, a dark beard and large dark eyes, in front of a round gold halo. He wears a dark robe, raises one hand, and holds a gold book decorated with a dark cross and white dots. Pale buildings and a blue-gray sky fill the background.",
+ alt:"A painting of a man with long dark hair parted in the middle, a dark beard and large dark eyes, in front of a round gold nimbus. He wears a dark robe, raises one hand, and holds a gold book decorated with a dark cross and white dots. Pale buildings and a blue-gray sky fill the background.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Pantocrator-Sinai.jpg",
  imageNote:"A painting of Christ on a wooden panel. Look at how the two sides of the face differ.",
- detail:{image:"public/images/artworks/Pantocrator-Sinai-Face-Detail.jpg",alt:"A close view of a calm, bearded face with large dark eyes and long dark hair, set against a gold halo. The two sides of the face are not quite alike.",caption:"Technique detail: the face, painted in wax-based paint. The left and right halves differ in shape and expression.",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Jesus_Christ_3.jpg",author:"JoeyEspo984",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped from the Commons file."}},
+ detail:{image:"public/images/artworks/Pantocrator-Sinai-Face-Detail.jpg",alt:"A close view of a calm, bearded face with large dark eyes and long dark hair, set against a gold nimbus. The two sides of the face are not quite alike.",caption:"Technique detail: the face, painted in wax-based paint. The left and right halves differ in shape and expression.",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Jesus_Christ_3.jpg",author:"JoeyEspo984",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped from the Commons file."}},
  size:"About 84 cm / 33 in tall and 45.5 cm / 18 in wide. About as tall as a kitchen counter.",
  intro:"This painting on a wooden panel was made about 1,400 years ago and is kept at a monastery on Mount Sinai in Egypt. Take a long look at the face. Can you find three parts of the painting?",
  context:"Pantocrator is a Greek word meaning \u201cAll-Powerful.\u201d",
@@ -579,6 +579,164 @@ EM26.zones={
  face:[{x0:28.5,y0:21,x1:62,y1:46}],
  hand:[{x0:17,y0:61.5,x1:38,y1:82}],
  book:[{x0:44,y0:57.5,x1:97,y1:85}]
+};
+var EM27={id:"EM-27",kind:"Architecture",wide:true,title:"Rounded Core, Pointed Edges",object:"Palatine Chapel, Aachen",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Palatine Chapel (Aachen Cathedral)",date:"begun about 790\u2013800 C.E.; consecrated 805 C.E.",location:"Aachen, Germany",artist:"Odo of Metz; built for Charlemagne",
+ headline:"Look closely at the building",
+ alt:"A large stone church seen from one side against a clear blue sky. In the middle stands an eight-sided building with a rounded, silvery-gray dome and a small lantern on top. A band of small rounded arches runs just below the dome. Around it rise tall, pointed windows with stone tracery, steep gray roofs, and a tall spire on a tower at the right. Houses and a leafy tree stand in the foreground.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Aachen-Palatine-Chapel.jpg",
+ imageNote:"The domed octagon in the middle is Charlemagne\u2019s chapel. The tall pointed parts around it were added from the 1300s on.",
+ detail:{image:"public/images/artworks/Aachen-Interior-Detail.jpg",alt:"The inside of an eight-sided church. Rounded arches built of alternating light and dark stones rest on thick piers faced with gray and white marble slabs. A large gold chandelier hangs in the center, an upper gallery with dark metal railings rises above it, and rows of wooden chairs and visitors fill the foreground.",caption:"Technique detail: arches built from alternating light and dark stones, resting on piers faced with marble slabs",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Cathedral_in_Aachen_7.jpg",author:"Leon petrosyan",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:""}},
+ size:"Height to the top of the cupola: about 31 m / 101 ft. About as tall as a ten-story building.",
+ intro:"Charlemagne, the ruler of a large European empire, had this chapel built beside his palace more than 1,200 years ago. Later builders added new parts around it, so one photo shows more than one period. Can you find three parts of the outside?",
+ context:"A palatine chapel is a church built beside a ruler\u2019s palace.",
+ clues:[{id:"dome",label:"Domed roof",def:"A rounded roof with a small lantern on top"},{id:"arches",label:"Rounded arches",def:"A band of small, rounded arches just below the dome"},{id:"pointed",label:"Pointed windows",def:"Tall windows that end in a point, added in the 1300s or later"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"Why might a ruler choose to build a church whose shape and columns recall faraway Ravenna and Rome?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A domed roof, rounded arches and pointed windows are features a detective can carry to the next case.",
+ sourceNums:[65,66],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Aachen_Cathedral_And_Palatine_Chapel,_Germany.jpg",author:"Jim Linwood",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Resized from the Commons file."}};
+EM27.zones={
+ dome:[{x0:41,y0:18,x1:59,y1:46}],
+ arches:[{x0:41,y0:46,x1:59,y1:52}],
+ pointed:[{x0:56.5,y0:63,x1:69.5,y1:76.5},{x0:70,y0:63,x1:79,y1:87},{x0:23.5,y0:42,x1:38.5,y1:58}]
+};
+var EM28={id:"EM-28",kind:"Architecture",wide:false,title:"A Hall Built for a King",object:"Santa Mar\u00eda del Naranco",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Santa Mar\u00eda del Naranco (royal hall of King Ramiro I)",date:"about 842\u2013850 C.E.",location:"Mount Naranco, Oviedo, Asturias, Spain",artist:"builders unknown; built for King Ramiro I",
+ headline:"Look closely at the building",
+ alt:"A tall stone building of two floors seen from a corner, with a low pitched roof of red tiles. The upper floor at the left opens to the air through three rounded arches on slender columns with twisted shafts. Below them, three small arched niches are set into the wall. Along the long side at the right, tall, thick strips of stone stand against the wall, and a flight of stone steps climbs to a doorway on the upper floor. Gray cloud fills the sky.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Naranco-Exterior.jpg",
+ imageNote:"The building was restored in 1929\u20131934.",
+ detail:{image:"public/images/artworks/Naranco-Nave.jpg",flex:38,alt:"The long upper hall seen from one end. A rounded stone vault covers the room, held up by rounded arches that cross it. Tall columns with twisted, rope-like shafts stand along both walls, and round carved medallions decorate the stone above the arches. At the far end, three arched openings let in daylight.",caption:"Technique detail: the vaulted upper hall, with rounded arches, columns with twisted shafts and round carved medallions",credit:{word:"Detail photo (interior)",url:"https://commons.wikimedia.org/wiki/File:Nave_superior_de_Santa_Mar%C3%ADa_del_Naranco_(Oviedo).jpg",author:"Jl FilpoC",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}},
+ detail2:{image:"public/images/artworks/Naranco-Plan.png",flex:62,alt:"A flat drawing of the building\u2019s floor plan. A long rectangular room fills the middle, with a smaller room at each end shaded orange. Thick black squares and bars mark the piers and walls around the outside, and a set of steps shows along the top edge.",caption:"Technique detail: a floor plan showing a long central room with a smaller room at each end, ringed by thick piers and buttresses",credit:{word:"Detail photo (plan)",url:"https://commons.wikimedia.org/wiki/File:Planta_de_Santa_Mar%C3%ADa_del_Naranco.gif",author:"Jos\u00e9-Manuel Benito",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Converted from GIF to PNG."}},
+ size:"",
+ intro:"This stone building near Oviedo in Spain was built for King Ramiro I about 1,200 years ago, probably as a royal hall. It was used as a church only later. Can you find three parts of the outside?",
+ context:"A buttress is a thick stone support built against a wall.",
+ clues:[{id:"arches",label:"Rounded arches",def:"Three rounded arches that open the upper floor to the air"},{id:"buttress",label:"Buttresses",def:"Tall, thick strips of stone built against the long wall"},{id:"stairs",label:"Stone stairway",def:"A flight of steps that climbs to a doorway on the upper floor"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"The upper floor has open arches and windows on all sides, but the lower floor has almost none. Why might a builder put the grandest room above, in the light?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Rounded arches, thick buttresses and a stone stairway are features a detective can carry to the next case.",
+ sourceNums:[67,68],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Iglesia_de_Santa_Maria_de_Naranco_2-501.jpg",author:"Emilio Rubio Villanueva (edited by MenkinAlRire)",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}};
+EM28.zones={
+ arches:[{x0:20,y0:39,x1:37.5,y1:65}],
+ buttress:[{x0:49,y0:22,x1:65,y1:70},{x0:80,y0:47,x1:87,y1:85}],
+ stairs:[{x0:59.5,y0:70,x1:76,y1:89}]
+};
+var EM29={id:"EM-29",kind:"Wall painting",wide:true,title:"A Family on the Move",object:"The Flight into Egypt, Monastery of Saint John, M\u00fcstair",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"The Flight into Egypt (north wall of the nave, Monastery of Saint John)",date:"first half of the 9th century C.E.",location:"M\u00fcstair, Graub\u00fcnden, Switzerland",artist:"painters unknown",
+ headline:"Look closely at the painting",
+ alt:"A wall painting in orange, brown and cream. A wide band shaped like a rounded arch curves across the top. Under it, a woman in an orange robe holds a small child, and a solid orange disk is set behind each of their heads. At the right, a man with a beard and a third disk behind his head holds a rope that loops around the nose and neck of a brown animal. At the far left, another man carries a large bundle on his shoulder. Dark tall shapes of buildings stand behind the animal.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Mustair-Flight.jpg",
+ imageNote:"Scanned from a printed book, so the colors may differ from the painting itself.",
+ detail:{image:"public/images/artworks/Mustair-Mary-Detail.jpg",alt:"A close view of a woman with large dark eyes, wrapped in an orange cloth. A solid orange disk is set behind her head. She holds a small child, who has a smaller orange disk behind his head and points one hand outward. Dark outlines draw both faces.",caption:"Technique detail: Mary and the Child, each with a solid nimbus and dark painted outlines",credit:{word:"Detail",url:"https://commons.wikimedia.org/wiki/File:Meister_von_M%C3%BCstair_003.jpg",author:"James Steakley",license:"Public domain (flat reproduction of a 9th-century painting)",licenseUrl:"https://commons.wikimedia.org/wiki/File:Meister_von_M%C3%BCstair_003.jpg",changes:"Cropped from the photo above."}},
+ size:"",
+ intro:"This painting was made on the north wall of a monastery church in Switzerland more than 1,100 years ago. It shows the Flight into Egypt, the Gospel story of a family fleeing from danger. Can you find three features?",
+ context:"A nimbus is a solid disk set behind the head of a holy figure.",
+ clues:[{id:"nimbus",label:"Nimbus",def:"A solid disk behind a holy head; three figures here have one"},{id:"arch",label:"Rounded arch",def:"A wide, curved band across the top of the scene"},{id:"rope",label:"Rope",def:"A rope looped around the animal\u2019s nose and neck"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"The painter has not shown the road, the sky or the distance, only the figures and a few buildings. What do you think the painter wanted you to notice first?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A nimbus, a rounded arch and a lead rope are features a detective can carry to the next case.",
+ sourceNums:[70,71,72],
+ credit:{word:"Scan",url:"https://commons.wikimedia.org/wiki/File:Meister_von_M%C3%BCstair_003.jpg",author:"James Steakley (scan of a book plate; painter unknown)",license:"Public domain (flat reproduction of a 9th-century painting)",licenseUrl:"https://commons.wikimedia.org/wiki/File:Meister_von_M%C3%BCstair_003.jpg",changes:"Scanned from Jean Hubert et al., Europe in the Dark Ages (Thames & Hudson, 1969), p. 150. Resized."}};
+EM29.zones={
+ nimbus:[{cx:39.4,cy:17.3,rx:9.7,ry:8.6},{cx:47.9,cy:28.4,rx:5.9,ry:5.8},{cx:89.2,cy:29.8,rx:8.6,ry:9.3}],
+ arch:[{x0:8.4,y0:0,x1:61,y1:21}],
+ rope:[{x0:62.5,y0:37.4,x1:87.5,y1:59.7}]
+};
+var EM30={id:"EM-30",kind:"Architecture",wide:true,title:"Plain Outside, Starry Inside",object:"Mausoleum of Galla Placidia",playable:true,
+ crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
+ work:"Mausoleum of Galla Placidia",date:"about 425 C.E.",location:"Ravenna, Italy",artist:"builders unknown; built during the rule of Galla Placidia",
+ headline:"Look closely at the building",
+ alt:"A small building of reddish-brown brick seen from a corner, on a lawn under a pale sky. Two low wings with triangular gable ends and red tile roofs meet in front of a taller square block that rises behind them. A row of rounded arches is set into the brick walls, most with a narrow slit and none with a door. Tall pine trees stand behind.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/GallaPlacidia-Exterior.jpg",
+ imageNote:"",
+ detail:{image:"public/images/artworks/GallaPlacidia-Interior.jpg",flex:60,alt:"The inside of one arm of the building. A rounded, tunnel-shaped ceiling is covered in deep blue mosaic scattered with gold stars and flower-like circles. A wide band of green leaves and fruit frames the ceiling, with a small gold cross at its top. Below, a half-circle mosaic shows a seated figure among white sheep.",caption:"Technique detail: inside, a rounded ceiling covered in mosaic stars, with a Good Shepherd mosaic below",credit:{word:"Detail photo (interior)",url:"https://commons.wikimedia.org/wiki/File:Galla_Placidia_Ravenna_05.JPG",author:"Superchilum",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}},
+ detail2:{image:"public/images/artworks/GallaPlacidia-Plan.png",flex:40,alt:"A flat black-and-white drawing of a floor plan in the shape of a cross, with four arms drawn in thick black walls and a few small rectangles inside. The label Plan K is printed below.",caption:"Technique detail: a floor plan in the shape of a cross",credit:{word:"Detail (plan)",url:"https://commons.wikimedia.org/wiki/File:Plan_of_Mausoleum_of_Galla_Placidia_(Ravenna)_by_A_history_of_architecture_on_the_comparative_method,_London_1905,_crop_page_181.jpg",author:"Banister Fletcher (crop by Paolo Villa)",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped and converted to PNG."}},
+ size:"",
+ intro:"This small brick building in Ravenna, Italy, was built about 1,600 years ago as a mausoleum, a building made to hold a tomb. Can you find three features of the outside?",
+ context:"A blind arch is an arch built into a wall, with no opening through it.",
+ clues:[{id:"arches",label:"Blind arches",def:"Rounded arches set into the brick walls, most with no door"},{id:"gables",label:"Gable ends",def:"Triangular walls under the tile roofs of the two low wings"},{id:"tower",label:"Square tower",def:"A tall square block of brick rising behind the lower roofs"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ closing:"The outside is plain brick, but the inside glitters with mosaic. Why might a builder keep the outside simple and save the richest decoration for inside?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Blind arches, gable ends and a square tower are features a detective can carry to the next case.",
+ sourceNums:[73,74,75],
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Mausoleum_of_Galla_Placidia_in_Ravenna.JPG",author:"Petar Milo\u0161evi\u0107",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Resized from the Commons file."}};
+EM30.zones={
+ arches:[{x0:15.6,y0:64.6,x1:31.3,y1:85.4},{x0:36.3,y0:63.5,x1:62.5,y1:85.4},{x0:67.5,y0:63.8,x1:87.5,y1:84.6}],
+ gables:[{x0:12.5,y0:44.6,x1:32.5,y1:58.5},{x0:66.3,y0:44.2,x1:88.8,y1:56.9}],
+ tower:[{x0:30,y0:19,x1:77,y1:53}]
+};
+EM01.zones={
+ blocky:[{x0:8,y0:5,x1:82,y1:78}],
+ matching:[{x0:10,y0:2,x1:78,y1:24}],
+ patterns:[{x0:8,y0:50,x1:78,y1:64},{x0:8,y0:30,x1:78,y1:50}]
+};
+EM02.zones={
+ gold:[{x0:27,y0:9,x1:67,y1:29},{x0:70,y0:20,x1:88,y1:34}],
+ faces:[{x0:33,y0:31,x1:67,y1:52}],
+ float:[{x0:10,y0:50,x1:88,y1:88}]
+};
+EM03.zones={
+ matching:[{x0:8,y0:27,x1:92,y1:43}],
+ blocky:[{x0:8,y0:27,x1:50,y1:43}],
+ two:[{x0:8,y0:45,x1:32,y1:82},{x0:68,y0:45,x1:95,y1:82},{x0:50,y0:27,x1:92,y1:43}]
+};
+EM04.zones={
+ long:[{x0:10,y0:2,x1:58,y1:45}],
+ windows:[{x0:22,y0:6,x1:40,y1:25},{x0:40,y0:22,x1:55,y1:42}],
+ yard:[{x0:33,y0:36,x1:72,y1:62}]
+};
+EM07.zones={
+ knot:[{x0:36,y0:30,x1:54,y1:40.5},{x0:35,y0:70,x1:55,y1:89}],
+ vine:[{x0:39,y0:41,x1:54,y1:70},{x0:43,y0:8,x1:54,y1:29}],
+ panels:[{x0:34,y0:5,x1:55,y1:90}]
+};
+EM08.zones={
+ faces:[{x0:28,y0:30,x1:70,y1:62}],
+ lines:[{x0:20,y0:35,x1:31,y1:52},{x0:50,y0:20,x1:68,y1:33},{x0:35,y0:62,x1:66,y1:82}],
+ outline:[{x0:15,y0:22,x1:30,y1:82},{x0:66,y0:25,x1:86,y1:85},{x0:30,y0:20,x1:66,y1:30}]
+};
+EM09.zones={
+ matching:[{x0:26,y0:38,x1:70,y1:88}],
+ faces:[{x0:28,y0:38,x1:68,y1:52}],
+ outline:[{x0:8,y0:52,x1:32,y1:88},{x0:26,y0:38,x1:70,y1:88},{x0:70,y0:50,x1:90,y1:88}]
+};
+EM10.zones={
+ boxes:[{x0:4,y0:36,x1:96,y1:62},{x0:4,y0:65,x1:96,y1:92}],
+ deep:[{x0:10,y0:37,x1:60,y1:60},{x0:26,y0:66,x1:58,y1:90}],
+ folds:[{x0:60,y0:37,x1:92,y1:60},{x0:62,y0:66,x1:96,y1:90}]
+};
+EM11.zones={
+ long:[{x0:14,y0:16,x1:78,y1:66}],
+ windows:[{x0:16,y0:28,x1:50,y1:48}],
+ apse:[{x0:52,y0:17,x1:78,y1:64}]
+};
+EM12.zones={
+ dome:[{x0:40,y0:25,x1:61,y1:37}],
+ ring:[{x0:38,y0:34,x1:62,y1:41}],
+ step:[{x0:28,y0:42,x1:72,y1:58}]
+};
+EM13.zones={
+ rows:[{x0:3,y0:20,x1:88,y1:58},{x0:3,y0:58,x1:97,y1:96}],
+ twice:[{x0:16,y0:32,x1:24,y1:56},{x0:48,y0:32,x1:57,y1:56},{x0:44,y0:78,x1:52,y1:92}],
+ words:[{x0:5,y0:0,x1:92,y1:16}]
+};
+EM14.zones={
+ folds:[{x0:5,y0:30,x1:28,y1:76},{x0:36,y0:30,x1:60,y1:76},{x0:70,y0:30,x1:92,y1:76}],
+ plaques:[{x0:5,y0:3,x1:95,y1:19},{x0:5,y0:22,x1:95,y1:78},{x0:5,y0:80,x1:95,y1:96}],
+ arch:[{x0:31,y0:24,x1:67,y1:78}]
 };
 window.DECKS[0].cards[0]=EM01;
 window.DECKS[0].cards[1]=EM02;
@@ -606,4 +764,8 @@ window.DECKS[0].cards[22]=EM23;
 window.DECKS[0].cards[23]=EM24;
 window.DECKS[0].cards[24]=EM25;
 window.DECKS[0].cards[25]=EM26;
-window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:1,options:[{case:"EM-03"},{case:"EM-01"},{case:"EM-07"}]}},{id:"VOC-02",after:16,word:"Nimbus",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"A solid disk, like a plate or saucer, set behind the head of a holy figure. A halo is only a thin line around the head. A nimbus is a filled disk.",look:["Is the space behind the head a solid disk, or only a thin outline?","Is the disk gold, as it almost always is in early medieval art?","Do any words on or beside the disk name the holy person?"],example:{id:"EM-09",points:["Behind the head of each seated saint is a solid disk, painted in golden yellow, like a plate standing upright. That filled disk is a nimbus. A halo would be just a thin line circling the head.","The two small riders each have a nimbus, too, so you can find five in this one wall painting.","Painted letters run above the small rider at the left. Words placed around or within the nimbus often identify the holy person or the scene."]},sourceNums:[63,64],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:0,options:[{case:"EM-09"},{case:"EM-03"},{case:"EM-08"}]}},{id:"VOC-03",after:24,word:"Attribute",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"An object that goes with a particular person in art, so you can tell who it is.",look:["What is the figure holding, wearing or standing beside?","Does the same object appear with this person in other works?","What might the object tell you about the person\u2019s story?"],example:{id:"EM-05",points:["Saint Peter holds a bundle of keys against his chest, beside a tall cross. The keys are his attribute, so a viewer who knows his story can tell who he is.","Attributes often come from an event in a saint\u2019s life. They helped viewers recognize saints in paintings.","Look for the same attribute object in other works to help identify the subject.","A symbol stands for an idea, like a dove for peace or a dog for loyalty. An attribute is a symbol that belongs to one person, like keys for Saint Peter."]},sourceNums:[62],quiz:{prompt:"For 5 bonus points, identify this work. You have seen it before.",points:5,correct:2,options:[{case:"EM-17"},{case:"EM-09"},{case:"EM-05"}]}}];
+window.DECKS[0].cards[26]=EM27;
+window.DECKS[0].cards[27]=EM28;
+window.DECKS[0].cards[28]=EM29;
+window.DECKS[0].cards[29]=EM30;
+window.DECKS[0].vocab=[{id:"VOC-01",after:8,word:"Composition",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"How an artist arranges the parts of a work so they fit together within its space.",look:["Where do the biggest or brightest parts sit?","Which lines or shapes lead your eye from one part to the next?","Is the arrangement balanced, with similar parts on each side, or does one side feel heavier?"],example:{id:"EM-01",points:["The four figures are arranged in two pairs. In each pair the figures embrace, which ties them together.","The two pairs match in size, clothing and stance. No one figure takes the center, so the arrangement feels balanced and steady.","The group is packed into one compact block, so it reads as a single unit rather than four separate people."]},sourceNums:[28],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"EM-03"},{case:"EM-01"},{case:"EM-07"}]}},{id:"VOC-02",after:16,word:"Nimbus",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"A solid disk, like a plate or saucer, set behind the head of a holy figure. A halo is only a thin line around the head. A nimbus is a filled disk.",look:["Is the space behind the head a solid disk, or only a thin outline?","Is the disk gold, as it almost always is in early medieval art?","Do any words on or beside the disk name the holy person?"],example:{id:"EM-09",points:["Behind the head of each seated saint is a solid disk, painted in golden yellow, like a plate standing upright. That filled disk is a nimbus. A halo would be just a thin line circling the head.","The two small riders each have a nimbus, too, so you can find five in this one wall painting.","Painted letters run above the small rider at the left. Words placed around or within the nimbus often identify the holy person or the scene."]},sourceNums:[63,64],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:0,options:[{case:"EM-09"},{case:"EM-03"},{case:"EM-08"}]}},{id:"VOC-03",after:24,word:"Attribute",crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",def:"An object that goes with a particular person in art, so you can tell who it is.",look:["What is the figure holding, wearing or standing beside?","Does the same object appear with this person in other works?","What might the object tell you about the person\u2019s story?"],example:{id:"EM-05",points:["Saint Peter holds a bundle of keys against his chest, beside a tall cross. The keys are his attribute, so a viewer who knows his story can tell who he is.","Attributes often come from an event in a saint\u2019s life. They helped viewers recognize saints in paintings.","Look for the same attribute object in other works to help identify the subject.","A symbol stands for an idea, like a dove for peace or a dog for loyalty. An attribute is a symbol that belongs to one person, like keys for Saint Peter."]},sourceNums:[62],quiz:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:2,options:[{case:"EM-17"},{case:"EM-09"},{case:"EM-05"}]}}];

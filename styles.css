@@ -127,3 +127,5 @@ ol.src li.ph-src.hl{font-style:italic}
 .xmark{position:absolute;transform:translate(-50%,-50%);color:#b3261e;font:bold 2.2rem/1 sans-serif;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 6px #fff;pointer-events:none;z-index:6;animation:xf 1.3s ease-out forwards}@keyframes xf{0%{opacity:1;transform:translate(-50%,-50%) scale(1.4)}60%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0}}
 .zglow{position:absolute;pointer-events:none;box-sizing:border-box;border:3px solid #e0a82e;background:rgba(224,168,46,.2);box-shadow:0 0 12px 3px rgba(224,168,46,.8);z-index:4;animation:zp 1.4s ease-in-out infinite}@keyframes zp{50%{box-shadow:0 0 20px 7px rgba(224,168,46,1)}}
 @media(prefers-reduced-motion:reduce){.zglow{animation:none}.xmark{animation-duration:2s}}
+
+.vart{position:relative;display:block;width:fit-content;max-width:100%;margin:0 auto}.vex .headrow{margin:0 0 .6rem;justify-content:space-between}.vex .headrow h2{margin:0}.vex figure .note{margin:.4rem 0 0}

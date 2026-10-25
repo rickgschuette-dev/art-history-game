@@ -61,3 +61,34 @@
 - The finished card stays on screen as submitted until the player leaves it. The case keeps its check mark and points in the list.
 - A case that was started but not submitted keeps its marks and text when the player leaves and returns.
 - Vocabulary data fields: quiz {prompt, points, correct (0-2), options[{case:"EM-01"} or {label:"..."}]}. The correct option's letter varies from card to card. Answered vocabulary rows show their points in the case list.
+
+## Updates and standing rules (Rick, 2026-10-24)
+These replace any earlier rule they contradict.
+
+### Cards
+- Three features (A, B, C) by default. A card may use two features only with two written answers.
+- A player marks all three features on the photo, then writes about any two (at least four words in each of two answer boxes). The third answer is optional. Step texts are fixed and are not rewritten card by card.
+- Click zones: every feature has one or more zones (stored as percentages of the photo in `EMnn.zones` in `content/cards.js`). A click outside the chosen feature's zone shows a red X and the message "Not quite. Try another spot."; after two misses on a feature, its zone glows. Give features distinct zones so a later mark does not land on an earlier one.
+- Details: a detail photo must be a component of its main work (a close view, a crop of the same photo, or another part of the same monument). A card may carry a second detail (`detail2`), for example a floor plan. Detail captions begin "Technique detail:". Details are shown at native size or cropped; main photos are resized to at most 1,600 px on the longest side.
+- Size line: shown only when verified from a credible source (object record, museum or encyclopedia). An unverified size line stays empty.
+- Photo notes and captions state facts plainly. Do not hedge ("the date follows the photographer's caption"). Put source questions in `IMAGE_CREDITS.md` and the Sources page, not on the card.
+- Wikipedia is used for orientation only and is never listed as a source.
+
+### Photo licences
+- Accepted with visible credit: public domain, CC0, CC BY, CC BY-SA. Avoid files flagged "disputed copyright" on Commons.
+- Flat reproductions of old paintings (for example scans of book plates) are accepted as public domain on Rick's reasoning, with the book named in the credit (EM-29).
+- Each photo gets an entry in `docs/IMAGE_CREDITS.md`.
+
+### Sources
+- Source numbers are permanent. A retired source leaves a gap (26 and 69 are retired). New sources take the next free number.
+- Link addresses must open the page that supports the claim. Check them when a source is added.
+
+### Vocabulary cards (replaces the earlier vocabulary-bonus wording)
+- The bonus question is worth 3 points (the case bonus stays 5). Prompt: "For 3 bonus points, identify this work. You have seen it before." One try; the first answer is stored and locked.
+- The answer choices show only the letter and the case name. No thumbnails (they give the answer away). Choices are real earlier cases; placeholder options are gone.
+- The example photo on the vocabulary page has a Magnifier (On/Off switch, right-aligned in the "A good example" heading row; 2.5x lens, 187 px), the same control as the game cards.
+- Vocabulary words so far: Composition (after case 8), Nimbus (after case 16), Attribute (after case 24). Nimbus: a solid disk behind the head of a holy figure; a halo is only a thin line.
+
+### Early Medieval cases (final list)
+EM-01 Four Tetrarchs, EM-02 San Vitale apse, EM-03 Arch of Constantine, EM-04 Old St. Peter's, EM-05 Saint Peter icon, EM-06 Lindisfarne Matthew page, EM-07 Bewcastle Cross, EM-08 Lorscher Kopf, EM-09 Bawit lunette, EM-10 Junius Bassus sarcophagus, EM-11 Santa Sabina, EM-12 Hagia Sophia, EM-13 Vienna Genesis, EM-14 Lorsch ivory cover, EM-15 Ardagh Chalice (copy), EM-16 Kells Chi-Rho, EM-17 Ebbo Gospels Matthew, EM-18 Spong Man, EM-19 Roselle bowl, EM-20 Sutton Hoo purse lid, EM-21 Cordoba mosque, EM-22 Oseberg ship, EM-23 Franks Casket, EM-24 Dome of the Rock, EM-25 Santa Maria Antiqua, EM-26 Christ Pantocrator (Sinai), EM-27 Palatine Chapel, EM-28 Santa Maria del Naranco, EM-29 Flight into Egypt (Mustair), EM-30 Mausoleum of Galla Placidia.
+
