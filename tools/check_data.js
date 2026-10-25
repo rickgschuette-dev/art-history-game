@@ -32,10 +32,10 @@ window.DECKS.forEach(d=>{
     const seen=ids.slice(0,v.after);
     const refs=[];
     if(v.example) refs.push(v.example.id);
-    if(v.quiz) v.quiz.options.forEach(o=>refs.push(o.case));
+    if(v.recognize) v.recognize.options.forEach(o=>refs.push(o.case));
     refs.filter(Boolean).forEach(r=>{if(!seen.includes(r)) fail(v.id,'references',r,'which is not played until later')});
-    if(v.quiz){
-      const ans=v.quiz.options[v.quiz.correct] && v.quiz.options[v.quiz.correct].case;
+    if(v.recognize){
+      const ans=v.recognize.options[v.recognize.correct] && v.recognize.options[v.recognize.correct].case;
       if(seenCorrect.has(ans)) fail(v.id,'has the same correct answer as',seenCorrect.get(ans),'-',ans);
       seenCorrect.set(ans,v.id);
     }

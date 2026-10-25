@@ -60,7 +60,7 @@
 - When a case is submitted, only its points are kept on the device. The marked letters and the player's written answers and bonus note are cleared from storage, so reopening the case later (replay) starts with a clean card.
 - The finished card stays on screen as submitted until the player leaves it. The case keeps its check mark and points in the list.
 - A case that was started but not submitted keeps its marks and text when the player leaves and returns.
-- Vocabulary data fields: quiz {prompt, points, correct (0-2), options[{case:"EM-01"} or {label:"..."}]}. The correct option's letter varies from card to card. Answered vocabulary rows show their points in the case list.
+- Vocabulary data fields: recognize {prompt, points, correct (0-2), options[{case:"EM-01"} or {label:"..."}]}. The correct option's letter varies from card to card. Answered vocabulary rows show their points in the case list.
 
 ## Updates and standing rules (Rick, 2026-10-24)
 These replace any earlier rule they contradict.
@@ -117,7 +117,7 @@ Current placement: Nimbus after 6, Interlace after 12, Composition after 16, Att
 
 ### Hard constraints on a vocabulary card
 These are enforced by the deck order and must be rechecked whenever the order changes:
-- Its `example.id` and every `quiz.options[].case` must be a case the player has **already played** at that point in the order.
+- Its `example.id` and every `recognize.options[].case` must be a case the player has **already played** at that point in the order.
 - No two vocabulary cards may have the **same correct answer**. A repeat hands the player free points.
 - `after` is a 1-based position in the case list, not a case number.
 
@@ -129,7 +129,7 @@ No two cases should teach the same three concepts. Santa Sabina (23) owns the ba
 ## Vocabulary cards that ask the player to locate parts (2026-10-25)
 A vocabulary card may teach more than one word and ask the player to find each on an image, instead of asking a single multiple-choice question. VOC-05 (Nave, Transept and Apse) is the first.
 
-- The card carries a `locate` object in `content/cards.js` instead of `example` and `quiz`: `heading`, `prompt`, `points` (per part), `image`, `alt`, `caption`, `credit`, `creditWord`, `clues[]` and `zones{}`. Zones use the same percentage format as a game case.
+- The card carries a `locate` object in `content/cards.js` instead of `example` and `recognize`: `heading`, `prompt`, `points` (per part), `image`, `alt`, `caption`, `credit`, `creditWord`, `clues[]` and `zones{}`. Zones use the same percentage format as a game case.
 - The mechanic matches a game case: choose a part, click the image, red X on a miss, the zone glows after two misses on the same part.
 - **Scoring: one point per part, awarded only on the first try for that part.** This matches the one-try rule on the other vocabulary cards. A player who misses still places the mark and still learns the answer; they just do not score it. Three parts therefore equal the same 3-point bonus the other vocabulary cards carry.
 - A found part cannot be re-found, so points cannot be farmed by clicking again.
@@ -139,7 +139,7 @@ A vocabulary card may teach more than one word and ask the player to find each o
 - A term earns a place on a vocabulary card only if the player meets it in more than one case, or if it is structurally inseparable from terms that do. Narthex appears in no case in the deck and was left out on that test; transept appears in only one but is inseparable from nave and apse, so it stays. The deck uses plain English ("open yard") where a technical term would not repay the effort.
 
 ## The closing Case File (2026-10-25)
-Each period deck ends with one review page, reached at `#/review/<deckId>` and listed as the final row of the deck list. It is a **synthesis, not an assessment**: no score, no right answers, no quiz.
+Each period deck ends with one review page, reached at `#/review/<deckId>` and listed as the final row of the deck list. It is a **synthesis, not an assessment**: no score, no right answers, nothing to get wrong.
 
 It has two movements.
 
@@ -157,3 +157,6 @@ Rules for the closing work:
 
 Stored under the review id in `localStorage` as `{seen, text, shown}`.
 
+
+## Terminology rule: no "quiz" (2026-10-25)
+The word "quiz" is never used anywhere in this project — not in player-facing text, not in data field names, CSS classes, or docs. The game must read as a welcoming, fascinating entry point into art history as a field of study, not a testing tool. The bonus multiple-choice identification mechanic (previously called "quiz") is called **recognize** (data field `recognize`, CSS class `.vrecog`).

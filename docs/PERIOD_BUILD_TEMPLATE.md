@@ -48,16 +48,16 @@ A term earns a card only if the player meets it in **more than one case**, or if
 
 ### Hard constraints, rechecked whenever the order changes
 - `after` is a **1-based position in the case list**, not a case number and not an array index.
-- The card's `example.id` and **every** `quiz.options[].case` must be a case the player has **already played** at that point in the order.
+- The card's `example.id` and **every** `recognize.options[].case` must be a case the player has **already played** at that point in the order.
 - **No two vocabulary cards may share a correct answer.** A repeat hands the player free points. This nearly shipped in Early Medieval: moving Nimbus earlier left it and Attribute both answering "Saint Peter icon".
 - Bonus is **3 points**, one try, answer stored and locked.
 - Options show the letter and the case name only. **No thumbnails** — they give the answer away.
 
 ### Two card types
 
-**Type A, the quiz card.** `example:{id, points[]}` plus `quiz:{prompt, points, correct, options:[{case}]}`. The example image is pulled from the referenced case.
+**Type A, the recognize card.** `example:{id, points[]}` plus `recognize:{prompt, points, correct, options:[{case}]}`. The example image is pulled from the referenced case.
 
-**Type B, the locate card.** Teaches several related terms and asks the player to find each on one image. Carries a `locate` object instead of `example`/`quiz`:
+**Type B, the locate card.** Teaches several related terms and asks the player to find each on one image. Carries a `locate` object instead of `example`/`recognize`:
 
 ```
 locate:{ heading, prompt, points,          // points is PER PART
@@ -66,7 +66,7 @@ locate:{ heading, prompt, points,          // points is PER PART
          zones:{ id:[{x0,y0,x1,y1}] } }
 ```
 
-Scoring: **one point per part, awarded only on the first try for that part.** A player who misses still places the mark and still learns, but does not score it. A found part cannot be re-found, so points cannot be farmed. Three parts therefore equal the same 3-point bonus the quiz cards carry.
+Scoring: **one point per part, awarded only on the first try for that part.** A player who misses still places the mark and still learns, but does not score it. A found part cannot be re-found, so points cannot be farmed. Three parts therefore equal the same 3-point bonus the recognize cards carry.
 
 If the teaching image carries printed labels, **strip them**, or the answers are given away. **Crop to the parts being taught** — a prominent element that is not a target invites a wrong click and raises a question the card does not answer. Record both edits in the credit's `changes` field.
 
@@ -74,7 +74,7 @@ If the teaching image carries printed labels, **strip them**, or the answers are
 
 ## 4. The closing Case File
 
-One review page per period at `#/review/<deckId>`, listed as the final row of the deck list. It is a **synthesis, not an assessment**: no score, no right answers, no quiz.
+One review page per period at `#/review/<deckId>`, listed as the final row of the deck list. It is a **synthesis, not an assessment**: no score, no right answers, nothing to get wrong.
 
 ### Movement 1 — what the evidence shows
 Six or seven traits of the period, each one line, with a short note and the cases where it appears. Case numbers render as chips, filled for cases the player has closed, outlined for the rest. Wording adapts: "You have closed 6 of the 8 cases where this appears" once they have played some, "Appears in 8 cases" before that.
@@ -127,6 +127,7 @@ Zones live separately as `XXnn.zones={clueId:[{x0,y0,x1,y1}|{cx,cy,rx,ry}]}`, in
 
 ## 6. Terminology
 
+- **Never use the word "quiz" anywhere — player-facing or internal.** The game must read as a welcoming, fascinating entry point into art history as a field of study, not a testing tool. The bonus multiple-choice identification mechanic is called **recognize** (data field `recognize`, CSS class `.vrecog`); the review page already avoided the word and stays that way. Check prose, data field names, CSS classes and docs — not just player-facing text.
 - **"Halo" is not used in Early Medieval content.** The thin ring of light is a later form; in this period the mark is a solid disk and the word is **nimbus**. Apply the same discipline in every period: do not use a term before the thing exists. Check alt text and internal ids too — the word was hiding in a clue id and a zone key.
 - A source's real title is not deck language. Britannica's article is titled "Halo" and remains cited under that title. **Never alter a citation to fit a style rule.**
 - Prefer plain English in feature labels unless a vocabulary card teaches the term.
