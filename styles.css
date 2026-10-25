@@ -145,3 +145,21 @@ ol.src li.ph-src.hl{font-style:italic}
 .revoutro{margin-top:1rem;text-align:center;font-style:italic}
 @media(max-width:700px){.revdets{grid-template-columns:1fr}}
 
+
+.lvls{display:flex;gap:.3rem;align-items:center}
+.lvls a{padding:.3rem .7rem;border-radius:6px;text-decoration:none;color:#e3d4b9;font-size:.95rem}
+.lvls a[aria-current=page]{background:#e3d4b9;color:var(--navy);font-weight:bold}
+.lvls a:hover,.lvls a:focus-visible{background:rgba(255,255,255,.18)}
+.hero{max-width:760px;margin:0 auto 1.6rem}
+.hero .lead{font-size:1.1rem;margin:.6rem 0 1.2rem}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:.8rem 0 2rem}
+.mosaic .tmg{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.mosaic .tmg img{display:block;width:100%;height:220px;object-fit:cover}
+.lvltiles{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:.8rem 0}
+.tile{display:block;text-decoration:none;color:inherit;background:#fffcf5;border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.tile h3{margin:0 0 .1rem}
+.tile .tag{display:inline-block;margin-top:.6rem;font-size:.8rem;font-weight:bold;letter-spacing:.05em;text-transform:uppercase;padding:.2rem .6rem;border-radius:99px}
+.tile.open .tag{background:var(--navy);color:#fff}
+.tile.soon .tag{background:#e9e2cf;color:#7a5420}
+.tile.soon{opacity:.85}
+@media(max-width:850px){.mosaic,.lvltiles{grid-template-columns:repeat(2,1fr)}}
