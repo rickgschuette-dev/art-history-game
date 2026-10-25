@@ -2,6 +2,9 @@
 
 Updated 2026-10-25.
 
+## Next period
+Early Medieval is the agreed template for the remaining Apprentice periods. Before building Late Medieval, read `docs/PERIOD_BUILD_TEMPLATE.md`; it carries the sequencing method, the vocabulary placement and gating rules, the closing Case File, the terminology rules and the traps. Run `node tools/check_data.js` after every content edit.
+
 ## Middle School
 - Early Medieval: 30 of 30 cases approved (EM-01 to EM-30) and 5 vocabulary cards (VOC-01 Composition, VOC-02 Nimbus, VOC-03 Attribute, VOC-04 Interlace, VOC-05 Nave/Transept/Apse). Approved PNGs are in the shared Drive folder Cards / Middle School / Early Medieval.
 - Click zones (where a feature really is on the photo) now exist for all 30 cases. A click outside the chosen feature's zone shows a red X; after two misses the zone glows.
