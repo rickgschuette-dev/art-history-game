@@ -928,3 +928,108 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - The earlier detail 2 was the only close view of the stamped gold pattern. The new photo shows the gold only at the top edge. The stamped gold is now seen in the main image; the feature text and the intro still introduce gold leaf. [INFERRED] from the photo.
 - Credit label "Detail photo (badges)" is used because "Detail photo (angels)" is already the label for detail 1.
 - Fine cracks cross the paint in the new photo; the alt text mentions them.
+
+## LM-16 revision v04 (Rick, 2026-10-25: "I asked you to swap the wrong detail. 3) with this new 3)")
+- [ASSUMPTION] Rick's numbers refer to his original links: link 2 (Mary and the Child, Edward of Angouleme file) is replaced by the "angeli_4" photo, and link 3 (the king) is replaced by the "angeli_3" photo. In v03 only the king photo had been replaced.
+- Detail 1 (card field "detail") is now public/images/artworks/Wilton-Angels.jpg: Commons file "..._06_madonna_col_bambino_e_11_angeli_4.jpg", Sailko, CC BY 3.0, resized from 4,926 x 3,648 px to 1,600 x 1,185 px.
+- Detail 2 (card field "detail2") is now public/images/artworks/Wilton-Madonna.jpg (1,067 x 1,600 px): Commons file "..._06_madonna_col_bambino_e_11_angeli_3.jpg", Sailko (photographed 1 March 2017; Commons "Own work"; collection National Gallery), CC BY 3.0, resized from 3,648 x 5,472 px. Credit and licence link shown on the card.
+- Commons description for the angeli_3 file lists depicted people as Christ Child, Mary, John the Baptist and Richard II and gives dimensions of 36.8 x 26.7 cm; these refer to the right-hand panel only partly and are not used. The card describes only what the photo shows.
+- The photo shows stamped patterns in the gold at the top, and rays and patterns in the nimbuses; the detail 2 caption names the stamped gold leaf.
+- No longer used by any card (files remain in public/images/artworks/): Wilton-Mary.jpg (Public domain, Edward_of_Angouleme.jpg) and Wilton-King.jpg. The detail 1 credit label is "Detail photo (angels)" and the detail 2 label is "Detail photo (gold)".
+- Supersedes the v03 note: the stamped gold close-up is back as detail 2.
+
+## LM-18 Long Bodies, an Almond Frame and Bands: main photo
+- File: public/images/artworks/Autun-Portal.jpg (1,600 x 1,330 px)
+- Source: https://commons.wikimedia.org/wiki/File:Autun_-_Cath%C3%A9drale_Saint-Lazare_-_Portail_principal_-_01.jpg
+- Author: Benjamin Smith (5 August 2025; Commons "Own work")
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/); the file is also offered under GFDL and older CC BY-SA versions. Credit and licence link shown on the card.
+- Changes: Resized from the Commons file (5,179 x 4,304 px).
+
+## LM-18 Long Bodies, an Almond Frame and Bands: detail photo (figures)
+- File: public/images/artworks/Autun-Lintel.jpg (850 x 567 px)
+- Source: https://commons.wikimedia.org/wiki/File:Autun,_Cath%C3%A9drale_Saint-Lazare_PM_48394.jpg
+- Author: PMRMaeyaert (20 May 2010; Commons "Own work")
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Credit and licence link shown on the card.
+- Changes: shown at its original size (the Commons file is only 850 px wide).
+
+## LM-18 Long Bodies, an Almond Frame and Bands: detail photo (arch)
+- File: public/images/artworks/Autun-Arch.jpg (1,600 x 1,200 px)
+- Source: https://commons.wikimedia.org/wiki/File:Cathedral_of_St._Lazare,_Autun,_France_--_Relief_sculpture_-_Vanderbilt_ACT_-_Autun35.jpg
+- Author: Anne C. Richardson and Jim Womack (photographed 12 August 2003; Vanderbilt Divinity Library "Art in the Christian Tradition", via Jean and Alexander Heard Libraries)
+- License: CC BY-SA 4.0. Credit and licence link shown on the card. The Commons page also carries a public-domain statement for the sculpture itself; the photo is credited under CC BY-SA 4.0, the more restrictive of the two.
+- Changes: Resized from the Commons file (2,560 x 1,920 px).
+
+## LM-18 source notes
+- Links from Rick: 1) and 2) were first sent as the same file (Portail principal 01). Rick then sent a different link 2 (PM 48394). Link 3 is the arch photo. Used as given: link 1 main, link 2 detail, link 3 detail 2.
+- Artist: the card says "Artist unknown". Source 112 says the artist is unrecorded and that the inscription "Gislebertus hoc fecit" was once read as a signature, with recent scholarship suggesting the name may be a duke tied to the arrival of Saint Lazarus's relics. Other pages fetched (artofthemiddleages.com item 140; the unattributed Illinois Wesleyan page) treat Gislebertus as the signed sculptor. The doubt is not stated on the card. Flag to Rick.
+- Date: Rick gave c. 1130-1146, which matches source 112. Other pages give ca. 1130 (artofthemiddleages.com), 1130-1135 (Illinois Wesleyan page, unattributed) and 1135-1140 (the Commons description of link 2). The card uses c. 1130-1146 C.E.
+- Material: Rick wrote "stone relief"; source 112 says carved stone. Kind label "Stone relief".
+- Features: "stretched-out figures" is Rick's wording; source 112 describes Christ and the angels as stretched and twisting with linear pattern, and Christ as elongated. "Christ in an almond frame": source 112 describes the almond-shaped mandorla, with Christ's hands, nimbus and feet breaking its edge, and it is already used as the Word to Know at LM-06. "Bands of figures": source 112 describes the lintel below the tympanum with the dead emerging, and the figures arranged in rows; the card describes only what is visible. 
+- Plaster and head: source 113 says the tympanum was plastered over around 1766, Christ's head was cut off so the plaster would be smooth, the plaster was removed in 1837, and the head was found in the 20th century, authenticated and restored in 1948, with a visible break in the neck. An unattributed Illinois Wesleyan page agrees (head returned in 1948). The card says the head was cut off "in the 1700s" and put back "in 1948". Source 113 is a blog by an art historian (the blog's About page names Monica Bowen; [ASSUMPTION] she is the author of this post). Not a museum record.
+- Archivolts: neither fetched source describes the carved arches; the card describes only what the detail photo shows (round frames with animals, leafy scrolls). No claim is made about zodiac signs or labours of the months.
+- Size line left empty. Source 113 gives the base of the tympanum as about 21 feet long; this is a blog figure and was not used.
+- Word to know "relief": general definition, findable in the image; not sourced above.
+- Closing question links to LM-06 (Taüll, c. 1123): a painted and a carved almond frame.
+- Detail 1 photo shows a Latin inscription carved above the lower band; the card does not translate it.
+- Detail 2 photo has a pigeon on the stone, mentioned in the alt text; the main photo has pigeons as well.
+
+## LM-19 A Face, a Collar and a Crown: main photo
+- File: public/images/artworks/Uta-Naumburg.jpg (1,067 x 1,600 px)
+- Source: https://commons.wikimedia.org/wiki/File:Naumburg_2013-08-04j.jpg
+- Author: Rabe! (4 August 2013; Commons "Own work")
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Credit and licence link shown on the card.
+- Changes: Resized from the Commons file (3,456 x 5,184 px).
+
+## LM-19 A Face, a Collar and a Crown: detail photo
+- File: public/images/artworks/Uta-Detail.jpg (1,195 x 1,600 px)
+- Source: https://commons.wikimedia.org/wiki/File:Naumburg_2013-08-04k.jpg
+- Author: Rabe! (4 August 2013; Commons "Own work")
+- License: CC BY-SA 4.0. Credit and licence link shown on the card.
+- Changes: Resized from the Commons file (2,762 x 3,697 px).
+
+## LM-19 source notes
+- Links from Rick: 1) wider view of Uta and Ekkehard; 2) close view of Uta. Used as given: link 1 main, link 2 detail. The card has one detail.
+- Date: Rick gave c. 1250. Source 114 says the figures were carved around the middle of the 13th century and dates Uta's figure to between 1243 and 1250; source 115 gives between 1245 and 1250. The card says c. 1250 C.E.
+- Artist: both sources name the Naumburg Master (an art-historical name; real name unknown). The card says "Naumburg Master (real name unknown)".
+- Material and paint: source 114 says the twelve founder figures are sandstone and were originally painted in bright polychromy. Source 115 lists marble, rock, metal and gold leaf as tags and does not mention paint; these tags conflict with source 114 on the stone and are not used. The card says "painted stone statue". [ASSUMPTION] The paint seen in the photos is original or restored original; neither source says how much is original. The detail alt text says paint has worn away in patches, which is visible in the photo.
+- Features: "individual face", "hand raising the collar" and "painted crown" are Rick's wording. Source 114 describes Uta holding her coat collar with her right hand, partly shielding her face, wearing a gilded hood, a lily crown and a linen band marking her as married. The card says "gold paint" and "small leaf-like shapes" and does not claim a lily design or a gilded hood. The ring on her hand is visible in the detail photo and is mentioned in source 114.
+- Ekkehard: the image note names Ekkehard as Uta's husband, as source 115 says she was married to Ekkehard II and source 114 places Margrave Ekkehard II beside her holding a sword. Whether the left statue in the photo is Ekkehard is [INFERRED] from the sword and shield and source 114.
+- Where the figures stand (the west choir, source 114) is not stated on the card.
+- Size line left empty. Source 114 says life-size with no measurement.
+- Word to know "cloak": general definition, findable in the photo (the long cloak she holds); not sourced above. "Collar" in the feature label follows Rick's wording and source 114.
+- Closing question links to LM-18 (Autun, c. 1130-1146): about a century earlier.
+- Reims (Visitation group) was dropped from the Apprentice Late Medieval deck (Rick, 2026-10-25: "We will be eliminating Reims on this level"). No card was built; the 500 x 389 px Commons file Reims6.jpg and Rick's screenshot were not used.
+
+## LM-19 revision v02 (Rick, 2026-10-25: kind label "Polychrome (painted) statue"; Word to Know "polychrome")
+- Kind label changed from "Painted stone statue" to "Polychrome (painted) statue". Word to Know changed from "cloak" to "polychrome": "Polychrome (POL-ee-krome) means painted in many colors." The definition is literal and general; it is not sourced above, and it makes no claim about how common painted statues were. Source 114 uses the word "polychromy" for the original paint of the founder figures.
+- "Polychrome" was not used earlier in the deck. The word "stone" no longer appears in the kind label; the material (sandstone per source 114) is not stated on the card.
+- Supersedes the v01 note on "cloak" as the word to know.
+
+## LM-20 Story Bands, Earth Colors and Long Figures: main photo
+- File: public/images/artworks/SaintSavin-Vault.jpg (1,600 x 1,067 px)
+- Source: https://commons.wikimedia.org/wiki/File:Saint-Savin-120-Mittelschiff-Deckenfresken-2008-gje.jpg
+- Author: Gerd Eichmann (12 October 2008; Commons "Own work")
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Credit and licence link shown on the card.
+- Changes: Resized from the Commons file (3,072 x 2,048 px).
+
+## LM-20 Story Bands, Earth Colors and Long Figures: detail photo
+- File: public/images/artworks/SaintSavin-Ark.jpg (1,600 x 1,200 px)
+- Source: https://commons.wikimedia.org/wiki/File:Saint-savin_arche_noah1.jpg
+- Author: B. Welleschik (August 2005; Commons "Own work")
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); the page also offers the GNU Free Documentation License. Credit and licence link shown on the card.
+- Changes: Resized from the Commons file (2,016 x 1,512 px). The Commons page says this is a retouched picture: the photographer increased contrast and color saturation. The card credit says so. The colors in this detail are therefore stronger than in the main photo.
+
+## LM-20 source notes
+- Links from Rick: first he sent 1) Saint-Savin_nef.jpg and 2) Saint-Savin_fresques_nef_détails.JPG; both turned out to be GFDL-only (photographer Françoise Thurion, uploaded by Accrochoc) and were not used. Rick then sent 1) Saint-Savin_fresques_nef_détails.JPG again with 2) Saint-Savin-120-Mittelschiff-Deckenfresken-2008-gje.jpg, and, mid-turn, replaced link 1 with Saint-savin_arche_noah1.jpg. Used: the Eichmann vault photo (Rick's link 2) as the main image and the Welleschik ark photo (Rick's link 1) as the detail. Order reversed from Rick's numbering because the bands of story and the long figures can only be marked on the wide vault view; Rick's order puts the ark first. Flagged to Rick. The GFDL-only file was not used. Downloaded copies of the unused GFDL files, if any, remain in the Downloads folder only.
+- Date: Rick gave c. 1100. Source 116 gives ca. 1100; source 117 says the paintings were likely made between 1095 and 1115. The card says c. 1100 C.E.
+- Technique: Rick's brief says fresco; the card kind is "Fresco wall painting" per the standing rule. Neither source states the technique (source 116 says only "wall paintings"; source 117 mentions only trompe l'oeil on the columns). [ASSUMPTION] fresco, from Rick's brief; the Commons description of the ark photo calls it a ceiling fresco (Deckenfresko) but that is not a source.
+- Scenes: source 116 says the barrel vault holds an Old Testament cycle covering Genesis and part of Exodus, in two registers on each side of the vault, with scenes including Noah. Source 117 says there were 61 original scenes, of which 44 survive. The card says only that the ceiling is covered in painted stories and names Noah's ark in one caption (the ark identification comes from the Commons description of the file).
+- Bands: Rick's "continuous bands of story". The card says "three horizontal bands" in the alt text, which is what the photo shows (the photo shows part of the vault); source 116 says two registers on each side of the vault. Not a contradiction, but the photo's three bands include the top one on the curve of the vault. [INFERRED] from the photo.
+- Earth colors: Rick's wording. Neither source names pigments; the feature definition is visual (browns, reds, yellows, muted greens). No claim is made about the materials.
+- Long figures: Rick's wording; the card says "tall, slim figures with long bodies, shaped mostly by dark outlines", which is from the photos.
+- Size line left empty. Source 116 gives the nave as 42 x 6 m; source 117 gives the painted ceiling as about 42 m long and 11 m wide, covering 460 square metres. The widths conflict, so no size was used.
+- Vault damage: the imageNote says some paint has been lost, which is visible in the photo (patches of bare plaster).
+- Word to know "vault": general definition, findable in the main photo; not sourced above.
+- Closing question links to LM-06 (Taüll, c. 1123) because Rick flagged the closeness to Taüll.
+- Overlap with LM-18 (Autun): "Long figures" is similar to Autun's "Stretched, narrow bodies"; the labels and media differ (paint versus stone). Flagged to Rick.
+- Source 117 is an article from Medieval Histories; source 116 is an unattributed online collection page. Neither is a museum or scholarly record.
