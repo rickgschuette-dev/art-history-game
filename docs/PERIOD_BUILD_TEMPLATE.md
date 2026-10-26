@@ -121,6 +121,8 @@ Zones live separately as `XXnn.zones={clueId:[{x0,y0,x1,y1}|{cx,cy,rx,ry}]}`, in
 - Detail captions begin **"Technique detail:"**.
 - **Size line only when verified** from a credible source. An unverified size line stays empty.
 - State facts plainly. **Do not hedge on a card.** Source doubts belong in `IMAGE_CREDITS.md` and the Sources page.
+- **Hooks and features are formal elements, not fame (Rick, 2026-10-25).** The intro, the three features and the closing question point at what the player can see and compare: shapes, patterns, materials, space, figure, drapery. They never lead with a landmark's reputation (a leaning tower, a famous name). Late Medieval LM-01 was recast for this: the Pisa tower feature became "Diamond shapes".
+- **Replicas and restorations (Rick, 2026-10-25).** A photo of a replica or restored work is acceptable when it reproduces the original design (Reims west-front statues, LM-10). Buildings and architectural elements change over the centuries; the deck's purpose is to show the change in style from Early Medieval. This is separate from the earlier ruling against photographs of a copy of a painting (the Taüll replica fresco, LM-06), which stands.
 - No two cases should teach the same three concepts. Early Medieval had two basilica cards with two features in common; one was recast.
 
 ---
@@ -162,6 +164,8 @@ Zones live separately as `XXnn.zones={clueId:[{x0,y0,x1,y1}|{cx,cy,rx,ry}]}`, in
 5. Rick pushes. Do not go into GitHub Desktop without first sending, as its own single-line message, the agreed confirmation request and waiting for his reply.
 
 ### Drive naming
+
+**Saving an approved card:** write the PNG straight into the period folder on the laptop, `G:\My Drive\Art History Game\<Period>`, with `device_commit_files`. That folder is not connected by default: call `device_request_folder_access` for it once per session (Rick approves a prompt). Do not use the Drive connector or Chrome upload for the PNG: the connector cannot carry a file this size and Chrome's upload tool refuses these paths. Check the result with `device_list_dir`.
 `AHG_MS_<ID>_<Name>_v<NN>-APPROVED_<YYYY-MM-DD>.png`, with `-DRAFT` until approved. Keep the version number when a draft is approved unchanged; bump it when the content changes.
 
 ---
@@ -203,3 +207,5 @@ Vocabulary: Nimbus after 6, Interlace after 12, Composition after 16, Attribute 
 The seven traits in the Case File: pattern is the thing; gold replaces space; the round arch travels everywhere; figures face front; bodies are signs not studies; a nimbus marks the holy; artists kept looking back to Rome.
 
 Closing work: Chapel of San Zeno, Santa Prassede, Rome, about 817–824.
+
+- Standing rule (Rick, 2026-10-25): from LM-13 onward every wall painting is labelled "Fresco wall painting".
