@@ -1038,3 +1038,39 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Banner logo: public/images/art-history-game-logo.png (800 x 646 px, transparent PNG). Source: "art-history-game-logo (1).png" in Rick's Logo_Designs folder (1,254 x 1,254 px). Changes: transparent margins trimmed, resized. Shown on a light panel because the lettering is navy. Provenance and licence: supplied by Rick for this project; [ASSUMPTION] it is his own or commissioned design and needs no credit line. Not shown on the page.
 - Home page image: public/images/home-landing.jpg (1,600 x 900 px). Source: Drive file "art-history-game-landing-mona-lisa-venus.png" (1,672 x 941 px, 2,124,137 bytes); the Logo_Designs folder holds a file of the same size, which was used. Changes: converted from PNG to JPEG and resized. It depicts the Mona Lisa as a figure studying the Venus de Milo with a magnifying glass. Provenance and licence: supplied by Rick for this project; [ASSUMPTION] it is his own or commissioned image and needs no credit line. Not shown on the page. The artworks it depicts are old works in the public domain; this image is a new picture of them.
 - Replaced on the Home page: the four-image "A Sample of the Evidence" strip (The-tetrarchs.jpg, San-Vitale-apse.jpg, Hagia-Sophia.jpg, Vienna-Genesis-Joseph.jpg) and its heading. Those images are still used by their cards. The unused .mosaic and .tmg styles remain in styles.css.
+
+
+## LM-21 Chartres Cathedral, nave
+
+- Main image `Chartres-Nave.jpg` — "Chartres Notre-Dame Interior 018 2856" by Ludvig14, CC BY-SA 4.0, via Wikimedia Commons. Resized from the Commons file (original 6,087 × 7,830).
+- Detail `Chartres-Vault.jpg` — same Commons file by Ludvig14, CC BY-SA 4.0. Cropped to the nave vault bosses and resized.
+- Rick supplied a screenshot for the detail. It carried no source or licence, so the detail was cropped from the licensed original instead.
+- Date note: Rick gave c. 1194–1220. The 1194 fire began the rebuilding; Bluffton gives the nave as rebuilt 1205–1220 with vaults complete by 1220. The card states "rebuilt c. 1194–1220 C.E."
+- Height: Bluffton gives 120 ft; the card states "about 120 ft / 37 m".
+- Word to know: clerestory. Checked against all twenty earlier LM cards; `rib` is used at LM-09 and `vault` at LM-20, so neither could be reused.
+
+
+## LM-22 Beauvais Cathedral, choir
+
+- Main `Beauvais-Choir.jpg` — "Beauvais Cathédrale Saint-Pierre Innen Chor 3" by Zairon, CC BY-SA 4.0, via Wikimedia Commons, 29 May 2018. Resized (original 3,367 × 4,575).
+- Detail `Beauvais-Piers.jpg` — same Commons file by Zairon, CC BY-SA 4.0. Cropped to the paired piers and resized.
+- NOT USED: Rick supplied "Beauvais Cathédrale Saint-Pierre Innen Chor Fußboden" (also Zairon, CC BY-SA 4.0) for the detail. The choir floor in that photograph is patterned marble of a much later period, with a compass rose and scrollwork cartouches, alongside a Baroque altar. It would date the card's detail several centuries after the architecture under discussion. Flagged to Rick, who confirmed on 27 Oct 2026 that it should NOT appear on LM-22. DEFERRED TO THE BAROQUE DECK: use this image there, where the floor is in period. File: Beauvais Cathédrale Saint-Pierre Innen Chor Fußboden.jpg, Zairon, CC BY-SA 4.0, 4,494 × 3,417.
+- Height conflict: the cathedral's own site gives "nearly 47 m" and calls it the tallest Gothic stone vault in the world. English Wikipedia gives 47.5 m / 156 ft in the body and 48.5 m / 159 ft in the lead. The card uses "about 47 m / 155 ft" after the official site.
+- Date: construction began 1225; the choir was complete by about 1260–1272 depending on source; the vault fell in November 1284; rebuilding with narrower intermediate piers was complete by about 1340. The straight part of the choir went from three bays to six.
+- Word to know: pier. Checked against LM-01 to LM-21; unused.
+- Detail 2 `Beauvais-Buttresses.jpg` — "Cathédrale Saint-Pierre de Beauvais (1)" by Baidax, CC BY-SA 4.0, via Wikimedia Commons, 28 July 2020. Resized (original 6,000 × 4,000). Added 27 Oct 2026 at Rick's request.
+- Flying buttresses: Rick's brief listed these as a formal element. The interior main image cannot show them, so they are carried by detail 2. They are not a clickable feature, because zones are marked on the main image only.
+- Caution in wording: the buttresses standing today are the rebuilt ones. The detail caption says the ones standing in 1284 twisted and broke, rather than implying these are the originals.
+
+
+## LM-23 Borgund Stave Church
+
+- Main `Borgund-Church.jpg` — "Borgund stavkyrkje 2022c" by Tulipasylvestris, CC BY-SA 4.0, via Wikimedia Commons, 2 August 2022. Resized (original 4,032 × 3,024).
+- Detail `Borgund-Dragons.jpg` — "Borgund stave church exterior 20230926-5" by Bjørn Erik Pedersen, CC BY-SA 4.0, 26 September 2023 (Wiki Loves Monuments 2023). Cropped to remove a blank patch at the top right corner of the original, then resized.
+- Detail 2 `Borgund-Frame.jpg` — "Borgund Stave Church interior" by Stevan Nicholas, **CC BY 2.0** (not BY-SA, and not own work; the Commons source field points to an external site). Cropped and resized.
+- Dragon heads: Wikipedia records that the heads now in place may be 18th-century replacements, with original examples surviving at Lom and Urnes. The card's detail caption says so.
+- Roof covering: Wikipedia notes the original outer covering was probably lengthwise boards rather than the shingles seen today. Not stated on the card.
+- Dates: ICE gives "around 1180-1200"; Wikipedia gives c. 1200 in the infobox and "between 1180 and 1250" in the body. The card uses c. 1180–1200 after ICE.
+- The 11,000 wooden nails figure comes from ICE.
+- Source note: the owner's own page (Fortidsminneforeningen) is not on this session's fetch allowlist, so ICE and Wikipedia were used. Worth replacing with the owner's page later.
+- Word to know: stave. Checked against LM-01 to LM-22; unused.
