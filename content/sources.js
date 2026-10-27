@@ -121,5 +121,9 @@ window.SOURCES=[
 {"n":120,"type":"Secondary source","cite":"\"History of Beauvais Cathedral.\" Cath\u00e9drale Saint-Pierre de Beauvais, official site.","url":"https://cathedrale-beauvais.fr/en/history-of-beauvais-cathedral/"},
 {"n":121,"type":"Scholarly article","cite":"Como, Mario. \"The Collapse of the Beauvais Cathedral in 1284: The Conjecture of the Creep Buckling Piers.\" Proceedings of the Third International Congress on Construction History, 2009.","url":"https://www.medievalists.net/2010/10/the-collapse-of-the-beauvais-cathedral-in-1284-the-conjecture-of-the-creep-buckling-piers/"},
 {"n":122,"type":"Secondary source","cite":"\"Borgund Stave Church.\" Institution of Civil Engineers, Infrastructure Projects.","url":"https://ice.org.uk/what-is-civil-engineering/infrastructure-projects/borgund-stave-church"},
-{"n":123,"type":"Secondary source","cite":"\"Borgund Stave Church.\" Wikipedia (English), consulted 27 October 2026.","url":"https://en.wikipedia.org/wiki/Borgund_Stave_Church"}
+{"n":123,"type":"Secondary source","cite":"\"Borgund Stave Church.\" Wikipedia (English), consulted 27 October 2026.","url":"https://en.wikipedia.org/wiki/Borgund_Stave_Church"},
+{"n":124,"type":"Museum record","cite":"\"Doge\u2019s Palace: Museum Guide.\" Fondazione Musei Civici di Venezia, Palazzo Ducale (official guide, English edition).","url":"https://palazzoducale.visitmuve.it/wp-content/uploads/2016/02/Guida-Ducale-ENG.pdf"},
+{"n":125,"type":"Secondary source","cite":"\"Doge\u2019s Palace.\" Wikipedia (English), consulted 27 October 2026.","url":"https://en.wikipedia.org/wiki/Doge%27s_Palace"},
+{"n":126,"type":"Museum record","cite":"\"Vierge \u00e0 l\u2019Enfant.\" Dossier p\u00e9dagogique, D\u00e9partement des Objets d\u2019art, Mus\u00e9e du Louvre.","url":"https://api-www.louvre.fr/sites/default/files/2024-09/Dossier%20p%C3%A9dagogique%20Vierge%20%C3%A0%20l%27enfant%20DOA.pdf"},
+{"n":127,"type":"Secondary source","cite":"\"Virgin and Child from the Sainte-Chapelle.\" Wikipedia (English), consulted 27 October 2026.","url":"https://en.wikipedia.org/wiki/Virgin_and_Child_from_the_Sainte-Chapelle"}
 ];

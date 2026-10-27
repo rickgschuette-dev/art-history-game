@@ -1074,3 +1074,29 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - The 11,000 wooden nails figure comes from ICE.
 - Source note: the owner's own page (Fortidsminneforeningen) is not on this session's fetch allowlist, so ICE and Wikipedia were used. Worth replacing with the owner's page later.
 - Word to know: stave. Checked against LM-01 to LM-22; unused.
+
+
+## LM-24 Doge’s Palace, Venice
+
+- Main `Doges-Facade.jpg` — "Doge's Palace from Molo, Venice - Venezia 300 77" by FrDr, CC BY-SA 4.0, via Wikimedia Commons, 15 June 2024. Resized (original 6,960 × 4,640).
+- Detail `Doges-Corner.jpg` — "Venice, Palazzo Ducale, Adam and Eve, Michael" by Armin Kleiner, CC BY-SA 4.0, 13 August 2019. Resized (original 3,960 × 5,940). This is Rick's third link, and it shows the same south-west corner as the main image.
+- NOT USED, both off period. Rick supplied two further links:
+  - "Venice, Palazzo Ducale, courtyard 3" — the courtyard is largely post-1483 rebuilding; Antonio Rizzo was commissioned after that fire and the ceremonial staircase was decided in 1485. Renaissance, not the Gothic palace this card is about.
+  - "Palazzo Ducale (Venice) - Porta della carta - Doge Francesco Foscari" — the Porta della Carta is 1438–1442 by Giovanni and Bartolomeo Bon, a century after this card's date and past the deck's 1400 boundary. Worse, the Foscari figure is a 19th-century work by Luigi Ferrari replacing the original destroyed in 1797.
+  - Neither shows the inverted massing or the diamond facing the card teaches. Flagged to Rick. The Porta della Carta would suit a later-period deck.
+- Date: the official museum guide gives "around 1340 under Doge Bartolomeo Gradenigo (1339-1343)"; Wikipedia gives "around 1340". The card says "begun c. 1340 C.E."
+- The corner sculptures are 14th century; Wikipedia records an attribution to Filippo Calendario and Lombard artists, which the card does not assert.
+- Word to know: loggia. Checked against LM-01 to LM-23; unused.
+
+## LM-25 Virgin and Child from the Sainte-Chapelle
+
+- Main `SainteChapelle-Virgin.jpg` — "Louvre Virgen Sainte Chapelle" by Miguel Hermoso Cuesta, CC BY-SA 4.0, via Wikimedia Commons, photographed 9 November 2014. Resized to 1,280 wide (original 2,228 × 4,501). Rick's first link.
+- Detail `SainteChapelle-Virgin-Detail.jpg` — "Vierge à l'Enfant de la Sainte-Chapelle (Louvre, OA 57) detail2" by Tangopaso, photographed 12 June 2018. Resized to 1,280 wide (original 2,112 × 2,816). Rick's second link.
+  - Licence note: this one is **not** a Creative Commons licence. The photographer released it into the public domain himself ({{PD-self}} on Commons). The card displays "Public domain" and links to CC0 1.0, which is the closest match to an author's own dedication; the Public Domain Mark used elsewhere in this deck is for works already out of copyright and would be wrong here.
+- Object data (Louvre / Wikidata): ivory with traces of polychromy, height 41 cm, inv. OA 57, Department of Decorative Arts. From the treasury of the Sainte-Chapelle; Soltykoff sale, acquired by the Louvre in 1861.
+- Date: the Louvre cartel gives "troisième quart du 13e siècle (avant 1279)" and notes the figure appears in the earliest treasury inventory, drawn up between 1265 and 1279. Wikipedia gives the 1260s. The card says "c. 1260–1279 C.E."
+- The tusk claim is **verified** from the Louvre's own teaching dossier: the statuette "est sculptée dans une défense d'éléphant, dont elle conserve la courbure," and the dossier includes an exercise superimposing a tusk outline on the figure. Note the limit: the Louvre says the figure *keeps* the tusk's curve. It does **not** say the S-curve or hip sway is *caused* by the tusk; it presents the posture as a Gothic stylistic choice. The card's closing asks the student which came first rather than asserting an answer.
+- Clue design: an earlier draft made feature 1 "a hip pushed out." Rejected after viewing the zone overlay — the hip is under a cloak and the Child, so a student cannot locate it as distinct from the drapery. Replaced with the tilted gold belt, which is unmistakable in the photograph and is the clearest visible evidence that the hips are not level. The Louvre dossier supports this: the hanchement "est souligné par les plis de ses vêtements."
+- "Contrapposto" was considered as the word to know and rejected: it implies a weight-shift with engaged and free leg, which Gothic swaying figures generally do not have. "Ivory" was also considered and rejected — already used as the word to know on EM-14 (Lorsch Gospels).
+- Word to know: S-curve. Checked against EM-01 to EM-30 and LM-01 to LM-24; unused.
+- The Child's gold plinth and emerald ornament added by Charles V were removed during the Revolution; not visible and not mentioned on the card.
