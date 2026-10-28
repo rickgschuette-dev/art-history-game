@@ -122,7 +122,7 @@ function detailFig(d){return '<figure class="detail"'+(d.flex?' style="flex:0 0 
 function details(c){if(!c.detail)return '';if(!c.detail2)return detailFig(c.detail);return '<div class="details">'+detailFig(c.detail)+detailFig(c.detail2)+'</div>'}
 function credit(k,word){if(!k)return '';word=k.word||word;var lead=k.title?esc(k.title)+' – '+word.toLowerCase():(k.url?'<a href="'+k.url+'">'+word+'</a>':word);return '<p class="note">'+lead+' by '+esc(k.author)+', '+(k.licenseUrl?'<a href="'+k.licenseUrl+'">'+esc(k.license)+'</a>':esc(k.license))+', via Wikimedia Commons'+(k.changes?'. '+esc(k.changes):'')+'</p>'}
 function backLinks(f){var j=S.backJump;if(!j)return '';
-if(j.type==='review'&&j.deck===f.deck.id)return '<p class="backrev"><a href="#/review/'+f.deck.id+'">← Back to the Case File</a></p>';
+if(j.type==='review'&&j.deck===f.deck.id)return '<p class="backrev"><a class="btn backvoc" href="#/review/'+f.deck.id+'">← Back to Case File Wrap-Up</a></p>';
 if(j.type==='vocab'){var vv=vocabFind(j.voc);if(vv&&vv.v.example&&vv.v.example.id===f.card.id)return '<p class="backrev"><a class="btn backvoc" href="#/vocab/'+j.voc+'">← Back to Vocabulary Card</a></p>'}
 return ''}
 function card(id){var f=find(id);if(!f){location.hash='#/deck/'+DECKS[0].id;return}
