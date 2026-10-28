@@ -1182,3 +1182,60 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Wikipedia notes that the still life of the reader's and scribe's desk is missing from the preparatory drawing and was "probably added later by a workshop painter." The card's third feature is that desk. It is described, not attributed, and the card does not say Theodoric painted it himself.
 - Chapel facts in the imageNote (129 paintings; jasper and amethyst facing; gilded vault with glass stars; the imperial regalia behind four doors and nineteen locks) come from Medieval Histories.
 - Word to know: modeling (American spelling, matching the deck). Checked against EM-01 to EM-30 and LM-01 to LM-29; unused.
+
+## Late Medieval vocabulary cards and Case File review
+
+- **Stylized** (VOC-10, after case 12) and **Naturalism** (VOC-07, after case 16) reuse the existing case
+  images for LM-12 (Cimabue's Santa Trinità Maestà) and LM-13 (Giotto's Lamentation) — no new
+  files, no new sourceNums; both cite the sourceNums already on those case cards (102, 103 and 104).
+  LM-12 was picked as the Stylized example because it is already the deck's own "before" picture for
+  naturalism: both LM-13's and LM-16's closing lines independently point back to "Cimabue's throne painting."
+- **Patronage** (VOC-08, after case 26) reuses LM-26 (Eleanor of Aquitaine's tomb effigy), sourceNums
+  128–129. Chosen over the Apocalypse Tapestry's Duke of Anjou (LM-29) because Eleanor commissioning her
+  own effigy — "she chose how she would be seen for the rest of time" — reads as a sharper patronage
+  story, and keeps this card well clear of Formal Elements at the very end of the sequence.
+- **Formal Elements** (VOC-09, after case 30, the deck's last vocabulary card) reuses LM-28 (Simone
+  Martini's Annunciation), sourceNums 132–133, chosen over LM-13 (already spent on Naturalism) so the
+  four new terms each spotlight a different case.
+- **Gothic was drafted and then dropped at Rick's instruction**, in favor of Stylized: specific period-style
+  labels (Gothic, and by extension Romanesque) are being held for the High School level. A draft Gothic card
+  existed briefly, using a new photograph of Notre-Dame from the south-east ("Cathedral Notre Dame de Paris
+  (28214450822).jpg," Gary Todd, CC0) rather than LM-08's own facade image, which required a small, additive
+  app.js change (an optional `example.image`/`alt`/`credit` override on a vocabulary card). That change was
+  never carried into the real repository and the override is not present in the files described here —
+  all four vocabulary cards above use their referenced case's own image unmodified.
+
+### REV-LM, the Late Medieval Case File
+
+- Seven traits, each citing the cases that support it, modeled on REV-EM: stone letting go of weight (8
+  architecture cases, LM-04 through LM-24), bodies learning to bend, a face becoming a particular person,
+  one bright picture across four crafts (embroidery, stained glass, enamel, tapestry), a story told in more
+  than one moment, patrons entering the record, and gold holding on while the figures in front of it change.
+  No period-style names appear in any trait, consistent with the Gothic/Stylized decision above.
+- **Closing work: the Stefaneschi Triptych**, Giotto and assistants, c. 1315–1320, Pinacoteca Vaticana —
+  not one of the 30 playable cases. Three images, all verified against Commons file pages before download:
+  - Main `Stefaneschi-Peter.jpg` — "Giotto. The Stefaneschi Triptych (verso) c.1330 220x245cm. Pinacoteca,
+    Vatican..jpg," reproduction image via Wikimedia Commons, **public domain**. Resized to 1,600 wide
+    (original 3,543 × 3,106).
+  - Detail `Stefaneschi-Model.jpg` — "Giotto, polittico stefaneschi, san pietro in cattedra, 1320 ca.,
+    cardinale stefaneschi che dona il trittico, 02.jpg" by **Sailko**, **CC BY 3.0**. Resized to 1,600 tall
+    (original 3,848 × 6,240). This is the reveal image: the kneeling cardinal holding a painted model of
+    the triptych itself.
+  - Detail 2 `Stefaneschi-Christ.jpg` — "Giotto. The Stefaneschi Triptych (recto) c.1330 220x245cm.
+    Pinacoteca, Vatican..jpg," reproduction image via Wikimedia Commons, **public domain**. Resized to 1,600
+    wide (original 5,391 × 4,724).
+  - All three fetched through the connected device (Commons was rate-limiting requests from the cloud
+    session directly) and verified as matching files by their embedded camera/collection metadata before
+    use.
+- **Which side is the "front" is disputed between sources, and the card does not take a side.** Wikipedia
+  calls the St Peter side the recto; the Vatican Museums' own catalogue page calls the Christ side the front
+  and the St Peter side the back. The card and captions say "one side" / "the other side" throughout and
+  never assert which is the recto.
+- Commission, date, patron and both-sides-painted facts are from the Vatican Museums' own collection page
+  (sourceNum 138) and cross-checked against Wikipedia (sourceNum 139).
+- **Cross-deck payoff, verified against the repository, not assumed:** the altarpiece was made for the old
+  basilica of St Peter in Rome, which is Early Medieval case 24 (`window.DECKS[0].cards[23]` resolves to
+  EM-04, "Old St. Peter's Basilica (reconstruction drawing)"). The reveal's closing paragraph uses this.
+- Word to know check: none of this card's own vocabulary is new; it reveals Patronage a second time rather
+  than introducing another term.
+
