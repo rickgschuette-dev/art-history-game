@@ -1239,3 +1239,41 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Word to know check: none of this card's own vocabulary is new; it reveals Patronage a second time rather
   than introducing another term.
 
+## Late Medieval deck reordered by ascending complexity (28 October 2026)
+
+Rick asked for the LM deck to be arranged so difficulty rises for a middle-school user, with the
+vocabulary cards repositioned to match. No images changed; this was an ordering and text change only.
+
+- **Rubric used:** each case scored on how hard its three features are to spot, the vocabulary load of
+  its word-to-know, how abstract the concept is, and whether it depends on an earlier case.
+- **New order** (position: case): 1 Pisa, 2 Durham, 3 Notre-Dame, 4 Bayeux, 5 Taüll, 6 Monreale,
+  7 Saint-Savin, 8 Luttrell, 9 Sainte-Chapelle, 10 Autun, 11 Uta, 12 Bamberg Rider, 13 Conques,
+  14 Reims, 15 Pisa pulpit, 16 Cimabue, 17 Giotto, 18 Gero Cross, 19 Wilton, 20 Lorenzetti,
+  21 Chartres, 22 Borgund, 23 Eleanor, 24 Verdun, 25 Doge's Palace, 26 Martini, 27 Beauvais,
+  28 Apocalypse Tapestry, 29 Ivory Virgin, 30 Theodoric. Card IDs were **not** renumbered — the app
+  derives the displayed case number from deck position, and IDs are never shown to a player.
+- **The binding constraint was not difficulty but the comparison chain.** Twenty-one of the thirty
+  closings end by sending the player back to a specific earlier case. Every one of those was treated as
+  a fixed ordering constraint and verified by script after the reorder: **zero forward references**.
+- **Three deliberate dips in the curve**, accepted at Rick's decision rather than edited away: Cimabue
+  (16), the Gero Cross (18) and Borgund (22) are each easier than their neighbours but are chained to a
+  harder predecessor. Rewriting their closings would have freed them; Rick chose to keep the
+  comparisons and let the easier cases act as rests.
+- **Fifteen hard-coded case pointers were stripped** from twelve cards' closing text, at Rick's
+  decision. "Compare the almond frame around Christ here with the one in the Taüll painting (LM-06)"
+  now reads "…with the one in the Taüll painting." Works are named, never numbered, so the deck can
+  be reordered again without this breaking.
+- **Theodoric stays at position 30**, because its closing says "This is the last case in the file. What
+  has changed between the first case and this one?" Case 1 is still Pisa, so that comparison still holds.
+- **Vocabulary cards repositioned** to after cases 7, 17, 23 and 30 — gaps of 7, 10, 6, 7.
+  - **Stylized moved from Cimabue to Taüll** and now sits after case 7 instead of 16. Cimabue's move to
+    position 16 would otherwise have dragged this card into the back half and destroyed the spacing.
+    Its three example points were rewritten against Taüll's own verified card content (thick dark
+    outlines and flat colour; Christ drawn far larger than the surrounding figures; repeating frames,
+    rings, dots and bands in place of a real space). Its decoys are now Monreale and Saint-Savin, both
+    played by case 7, and its sourceNums changed from 102–103 to Taüll's 92–93.
+  - Naturalism (Giotto), Patronage (Eleanor) and Formal Elements (Martini) keep their approved worked
+    examples unchanged; only their `after` values moved.
+- Verified after the change: `check_data.js` passes, all four vocabulary gates hold, and the deck list
+  and the rewritten Stylized card were rendered and inspected.
+
