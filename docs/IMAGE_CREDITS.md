@@ -1277,3 +1277,192 @@ vocabulary cards repositioned to match. No images changed; this was an ordering 
 - Verified after the change: `check_data.js` passes, all four vocabulary gates hold, and the deck list
   and the rewritten Stylized card were rendered and inspected.
 
+
+## RE-01 Saint George: main photo
+- File: public/images/artworks/Donatello-St-George.jpg
+- Source: https://commons.wikimedia.org/wiki/File:St._Georg,_Donatello,_1416-17,_Bargello_Florenz-03.jpg
+- Author: Rufus46
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-01 Saint George: detail photo
+- File: public/images/artworks/Donatello-St-George-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Saint_George_Donatello.png
+- Author: Rufus46 (cropped by Muschio Di Quercia)
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-02 Ospedale degli Innocenti (Hospital of the Innocents): main photo
+- File: public/images/artworks/Innocenti-Arcade.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Ospedale_degli_Innocenti_Florenz.jpg
+- Author: Ricardalovesmonuments
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Cropped and resized from the Commons file.
+
+## RE-02 Ospedale degli Innocenti (Hospital of the Innocents): detail photo
+- File: public/images/artworks/Innocenti-Cloister.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Spedale_degli_innocenti,_chiostro_degli_uomini_01_con_scultura_di_tony_cragg,_stack,_2019-157.jpg
+- Author: Sailko (edited by MenkinAlRire)
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-02 Ospedale degli Innocenti (Hospital of the Innocents): second detail photo
+- File: public/images/artworks/Innocenti-Arches-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Ospedale_degli_Innocenti,_Particolare.jpg
+- Author: Giacomo Augusto
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-03 The Arnolfini Portrait: main photo
+- File: public/images/artworks/Arnolfini-Portrait.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_Arnolfini_Feil_w.jpg
+- Author: Jan van Eyck
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-03 The Arnolfini Portrait: detail photo
+- File: public/images/artworks/Arnolfini-Mirror-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_-_Portrait_of_Giovanni_Arnolfini_and_his_Wife_(detail)_-_WGA7695.jpg
+- Author: Jan van Eyck (Web Gallery of Art)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-04 Pietà: main photo
+- File: public/images/artworks/Michelangelo-Pieta.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Michelangelo_Pieta_ret_w.jpg
+- Author: Stanislav Traykov (retouched version)
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-04 Pietà: detail photo
+- File: public/images/artworks/Pieta-Cast-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Plaster_cast_of_the_Pieta_of_Michelangelo,_Museo_dell%27Opera_del_Duomo,_Florence,_223886.jpg
+- Author: Zde
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-04 Pietà: second detail photo
+- File: public/images/artworks/Pieta-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Dettagliopiet%C3%A0.JPG
+- Author: mia nonna
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-05 La Primavera (Spring): main photo
+- File: public/images/artworks/Primavera.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg
+- Author: Sandro Botticelli (photograph by Google Art Project)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-05 La Primavera (Spring): detail photo
+- File: public/images/artworks/Primavera-Venus-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project_-_Venus.jpg
+- Author: Sandro Botticelli (photograph by Google Art Project)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Detail extracted from the Google Art Project file on Commons.
+
+## RE-05 La Primavera (Spring): second detail photo
+- File: public/images/artworks/Primavera-Flora-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project_(cropped)_(Chloris%2BZephyrus%3DFlora).jpg
+- Author: Sandro Botticelli (photograph by Google Art Project)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Detail cropped from the Google Art Project file on Commons; resized.
+
+## RE-06 Tempietto (San Pietro in Montorio): main photo
+- File: public/images/artworks/Tempietto.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Tempietto_del_Bramante_Vorderseite.jpg
+- Author: Peter1936F
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-06 Tempietto (San Pietro in Montorio): detail photo
+- File: public/images/artworks/Tempietto-Crypt.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Tempietto_del_Bramante_(Krypta).jpg
+- Author: Peter1936F
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Resized from the Commons file.
+
+## RE-06 Tempietto (San Pietro in Montorio): second detail photo
+- File: public/images/artworks/Tempietto-Plan.png
+- Source: https://commons.wikimedia.org/wiki/File:Grundriss_vom_Tempietto_di_Bramante.svg
+- Author: JTSH26
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: carried with visible credit.
+- Changes: Converted from the SVG file to a PNG image.
+
+## RE-07 The Holy Trinity: main photo
+- File: public/images/artworks/Trinity.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Masaccio_-_Trinity_-_Santa_Maria_Novella.jpg
+- Author: Oursana (as assumed on Commons)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-07 The Holy Trinity: detail photo
+- File: public/images/artworks/Trinity-Ceiling.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Masaccio,_trinit%C3%A0,_dettaglio_2.jpg
+- Author: Masaccio (scan of a reproduction in John T. Spike, Masaccio, 2002)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-08 Hunters in the Snow: main photo
+- File: public/images/artworks/Hunters.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_-_opt.jpg
+- Author: Pieter Bruegel the Elder (retouched image)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-08 Hunters in the Snow: detail photo
+- File: public/images/artworks/Hunters-Mill.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Detail,_Mill).jpg
+- Author: Pieter Bruegel the Elder (edited by ZorróAszter)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-08 Hunters in the Snow: second detail photo
+- File: public/images/artworks/Hunters-Fire.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Hunters_in_the_snow,_1565_-_detail1.jpg
+- Author: Karmakolle
+- License: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-09 The School of Athens: main photo
+- File: public/images/artworks/School.jpg
+- Source: https://commons.wikimedia.org/wiki/File:The_School_of_Athens_by_Raphael_in_the_Apostolic_Palace.jpg
+- Author: Bradley Weber
+- License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
+- Changes: Resized from the Commons file.
+
+## RE-09 The School of Athens: detail photo
+- File: public/images/artworks/School-Pythagoras.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Cropped_image_of_Pythagoras_from_Raphael%27s_School_of_Athens.jpg
+- Author: Raphael (cropped reproduction)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-09 The School of Athens: second detail photo
+- File: public/images/artworks/School-Raphael.jpg
+- Source: https://commons.wikimedia.org/wiki/File:The_School_of_Athens_by_Raphael_in_the_Apostolic_Palace.jpg
+- Author: Bradley Weber
+- License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
+- Changes: Cropped from the Commons file, brightened and circled.
+
+## RE-10 Mona Lisa: main photo
+- File: public/images/artworks/MonaLisa.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Mona_Lisa_(Louvre,_Paris).jpg
+- Author: Leonardo da Vinci (photographic reproduction)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## RE-10 Mona Lisa: detail photo
+- File: public/images/artworks/MonaLisa-Hands.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Leonardo_di_ser_Piero_da_Vinci_-_Portrait_de_Mona_Lisa_(dite_La_Joconde)_-_Louvre_779_-_Detail_(hands).jpg
+- Author: Leonardo da Vinci (photographic reproduction)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Shown without changes.
+
+## RE-10 Mona Lisa: second detail photo
+- File: public/images/artworks/MonaLisa-Landscape.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Mona_Lisa_(detail)_-_WGA12715.jpg
+- Author: Leonardo da Vinci (via the Web Gallery of Art)
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Shown without changes.

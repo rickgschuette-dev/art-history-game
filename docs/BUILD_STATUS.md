@@ -54,3 +54,10 @@ Pushed 2026-10-24 as commit e4e3080 "Final review"; Netlify deployed it the same
 - Source 16 (Santa Sabina) link repaired to a working page. Santa Sabina size verified (nave 48.0 x 13.5 m, MIT Dome record).
 - Date spans for Late Medieval, Renaissance, Baroque and Modern; Proto-Renaissance handling. Later level names are not chosen.
 - Planned feature, not built: period case file (traits collected across cases). Needs a design pass first.
+
+## Renaissance (Novice) — first ten cases, merged 2026-10-28
+- RE-01 Saint George, RE-02 Ospedale degli Innocenti, RE-03 Arnolfini Portrait, RE-04 Pietà, RE-05 Primavera, RE-06 Tempietto, RE-07 Holy Trinity, RE-08 Hunters in the Snow, RE-09 School of Athens, RE-10 Mona Lisa, plus VOC-11 Perspective (after case 7). Cases 11 to 30 are still placeholders.
+- Approved PNGs are in the Drive folder Renaissance. All photos have entries in docs/IMAGE_CREDITS.md.
+- RE-01 to RE-10 are in play order as built (ascending complexity). Sources are not yet recorded for these cards (`sourceNums` is empty); to be filled in.
+- VOC-11's wrong answers are RE-05 and RE-03, so every option is a case already played in the deck (the check_data.js gating rule).
+- `node tools/check_data.js` passes. Every Renaissance case plays through with all features markable.
