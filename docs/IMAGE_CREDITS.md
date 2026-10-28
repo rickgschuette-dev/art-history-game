@@ -1100,3 +1100,19 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - "Contrapposto" was considered as the word to know and rejected: it implies a weight-shift with engaged and free leg, which Gothic swaying figures generally do not have. "Ivory" was also considered and rejected — already used as the word to know on EM-14 (Lorsch Gospels).
 - Word to know: S-curve. Checked against EM-01 to EM-30 and LM-01 to LM-24; unused.
 - The Child's gold plinth and emerald ornament added by Charles V were removed during the Revolution; not visible and not mentioned on the card.
+
+## LM-26 Tomb effigy of Eleanor of Aquitaine, Fontevraud
+
+- Main `Fontevraud-Eleanor.jpg` — "Gisant de l'Abbaye de Fontevraud DSC 1778" by GuyFrancis, CC BY-SA 3.0, via Wikimedia Commons, photographed 23 September 2011 (Nikon D700), uploaded for Wiki Loves Monuments 2011. Resized to 1,800 wide (original 3,084 \u00d7 1,794). Commons description: "Gisant d'Ali\u00e9nor d'Aquitaine (au premier plan)."
+- Detail `Fontevraud-Eleanor-Detail.jpg` — "2025 Abtei Fontevraud - Grabstelle (Eleonore von Aquitanien)" by Stefan Oemisch, CC BY-SA 4.0, photographed 6 May 2025. Resized to 1,600 wide (original 4,864 \u00d7 3,648).
+- NOT USED. Rick supplied three links, all by Adam Bishop, CC BY-SA 3.0, all 1,920 \u00d7 1,080 frames from the same JVC GZ-HM300 **camcorder** session on 18\u201319 October 2011:
+  - `Church of Fontevraud Abbey Eleanor of Aquitaine effigy.jpg` \u2014 not the full effigy; a dim, noisy close view of the hands and book with posterization from video compression.
+  - `Church of Fontevraud Abbey Eleanor of Aquitaine effigy detail.jpg` \u2014 her head, soft and poorly lit; hard to read.
+  - `Church of Fontevraud Abbey Eleanor of Aquitaine and Henry II effigies2.jpg` \u2014 the best of the three in composition (both effigies end to end, from the foot end) but soft and low in contrast.
+  - None is a licensing problem; all three are simply too soft for a main image a student clicks zones on. Replaced with two sharper photographs of the same monument. The pair view can be added back as a second detail if Rick wants it.
+- Identification is confirmed **in the main photograph itself**: the abbey's own floor label, legible when the image is enlarged, reads "Ali\u00e9nor d'Aquitaine, reine de France, reine d'Angleterre \u271d1204."
+- Date: Wikidata gives inception 1204. The abbey states that "before her death in 1204, the queen commissioned polychrome tufa stone recumbents for her own tomb and those of Henry II and Richard." The card says "c. 1204 C.E." and carries the commissioning claim as the abbey's statement, not as settled fact \u2014 the attribution of the commission to Eleanor is the abbey's position and is debated.
+- **Polychromy caution, carried onto the card.** The Church Monuments Society records that all four Fontevraud effigies "have been painted several times in the past," and that the paint seen today may date from an 1846 restoration at Versailles; Gaigni\u00e8res' late-17th-century and Stothard's early-19th-century drawings both record different colour schemes. The card's imageNote therefore says the colours are not a guide to how the tomb looked in 1204. Same class of problem as the Borgund dragon heads and the Foscari figure at the Porta della Carta.
+- Material: tuffeau, a pale local limestone. Isabella of Angoul\u00eame's effigy in the same group is wood; not shown and not mentioned.
+- Eleanor shown alive and reading while the others are shown in death is attested independently by the Church Monuments Society ("shown alive reading a book") and by angevinempire.org ("the perpetual study of a devotional book"). The card asserts only what is visible plus this contrast.
+- Word to know: effigy (with gisant given as the French term). Checked against EM-01 to EM-30 and LM-01 to LM-25; unused.
