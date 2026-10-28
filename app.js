@@ -80,6 +80,7 @@ document.getElementById('magon').onclick=function(){vset(true)};document.getElem
 draw()}
 function review(did){var d=DECKS.filter(function(x){return x.id===did})[0];var r=d&&d.review;
 if(!r){location.hash='#/deck/'+DECKS[0].id;return}
+var vmag=false;
 function rec(){return store.cards[r.id]||{seen:true,text:'',shown:false}}
 function put(o){store.cards[r.id]=o;localStorage.setItem(KEY,JSON.stringify(store))}
 var st=rec();st.seen=true;put(st);
@@ -95,8 +96,9 @@ var fig=function(o,cls){return '<figure class="'+cls+'"><img src="'+esc(o.image)
 app.innerHTML='<p class="note">'+esc(r.crumb)+' \u00b7 <strong>CASE FILE</strong></p><div class="vbox revbox">'
  +'<p class="vkick">Case closed</p><h1 class="vword">'+esc(r.title)+'</h1><p class="vdef">'+esc(r.lead)+'</p>'
  +'<h2 class="revh">'+esc(r.traitsHead)+'</h2><div class="traits">'+tr+'</div>'
- +'<div class="vex revwork"><h2>'+esc(w.head)+'</h2><p><strong>'+esc(w.kicker)+'</strong> '+esc(w.lede)+'</p>'
- +fig(w,'revmain')+'<div class="revdets">'+fig(w.detail,'revdet')+fig(w.detail2,'revdet')+'</div>'
+ +'<div class="vex revwork"><div class="headrow"><h2>'+esc(w.head)+'</h2><span class="magsw" role="group" aria-label="Magnifier"><span class="ml">Magnifier</span><button id="rmagon" aria-pressed="'+vmag+'">On</button><button id="rmagoff" aria-pressed="'+!vmag+'">Off</button></span></div><p><strong>'+esc(w.kicker)+'</strong> '+esc(w.lede)+'</p>'
+ +'<figure class="revmain"><div class="vart" id="revart"><img src="'+esc(w.image)+'" alt="'+esc(w.alt)+'"></div><p class="note" id="rvhint"'+(vmag?'':' hidden')+'>Move the pointer over the photo to magnify it.</p><figcaption class="note">'+esc(w.caption)+'</figcaption></figure>'
+ +'<div class="revdets">'+fig(w.detail,'revdet')+fig(w.detail2,'revdet')+'</div>'
  +'<label class="bonus"><strong>'+esc(w.prompt)+'</strong><textarea id="revtx" placeholder="'+esc(w.placeholder)+'">'+esc(rc.text||'')+'</textarea></label>'
  +(rc.shown?'<div class="reveal">'+w.reveal.map(function(t){return '<p>'+esc(t)+'</p>'}).join('')+'<p class="revclose"><strong>'+esc(w.closing)+'</strong></p></div>'
    :'<p class="btns"><button class="primary" id="revbtn">'+esc(w.revealBtn)+'</button></p>')
@@ -108,6 +110,11 @@ var tx=document.getElementById('revtx');
 if(tx)tx.oninput=function(){var o=rec();o.text=tx.value;o.seen=true;put(o)};
 var b=document.getElementById('revbtn');
 if(b)b.onclick=function(){var o=rec();o.shown=true;put(o);draw();var e=document.querySelector('.reveal');if(e&&e.scrollIntoView)e.scrollIntoView({block:'start'})}
+var ra=document.getElementById('revart');if(ra){var rl=document.createElement('div');rl.className='lens';ra.appendChild(rl);var RZ=2.5,RS=187;
+ra.onmousemove=function(e){if(!vmag){rl.style.display='none';return}var rc2=ra.getBoundingClientRect(),x=e.clientX-rc2.left,y=e.clientY-rc2.top;if(x<0||y<0||x>rc2.width||y>rc2.height){rl.style.display='none';return}var im=ra.querySelector('img');rl.style.display='block';rl.style.left=x+'px';rl.style.top=y+'px';rl.style.backgroundImage='url("'+(im.currentSrc||im.src)+'")';rl.style.backgroundSize=(rc2.width*RZ)+'px '+(rc2.height*RZ)+'px';rl.style.backgroundPosition=(RS/2-x*RZ)+'px '+(RS/2-y*RZ)+'px'};
+ra.onmouseleave=function(){rl.style.display='none'};
+function rset(on){vmag=on;document.getElementById('rmagon').setAttribute('aria-pressed',on);document.getElementById('rmagoff').setAttribute('aria-pressed',!on);document.getElementById('rvhint').hidden=!on;rl.style.display='none'}
+document.getElementById('rmagon').onclick=function(){rset(true)};document.getElementById('rmagoff').onclick=function(){rset(false)}}
 app.querySelectorAll('.tcases a').forEach(function(a){a.onclick=function(){JUMP={type:'review',deck:d.id}}})}
 draw()}
 function home(){
