@@ -133,5 +133,7 @@ window.SOURCES=[
 {"n":132,"type":"Museum record","cite":"\"Annunciation with St. Maxima and St. Ansanus.\" Gallerie degli Uffizi, official collection record.","url":"https://www.uffizi.it/en/artworks/annunciation-with-st-margaret-and-st-ansanus"},
 {"n":133,"type":"Secondary source","cite":"\"Annunciation with Saint Margaret and Saint Ansanus.\" Wikipedia (English), consulted 28 October 2026.","url":"https://en.wikipedia.org/wiki/Annunciation_with_Saint_Margaret_and_Saint_Ansanus"},
 {"n":134,"type":"Government record","cite":"\"Inscription au registre M\u00e9moire du monde de l\u2019UNESCO de la tenture de l\u2019Apocalypse \u00e0 Angers.\" Minist\u00e8re de la Culture, DRAC Pays de la Loire, 22 May 2023.","url":"https://www.culture.gouv.fr/Regions/DRAC-Pays-de-la-Loire/Vos-actualites/Inscription-au-registre-Memoire-du-monde-de-l-UNESCO-de-la-tenture-de-l-Apocalypse-a-Angers"},
-{"n":135,"type":"Secondary source","cite":"\"Apocalypse Tapestry.\" Wikipedia (English), consulted 28 October 2026.","url":"https://en.wikipedia.org/wiki/Apocalypse_Tapestry"}
+{"n":135,"type":"Secondary source","cite":"\"Apocalypse Tapestry.\" Wikipedia (English), consulted 28 October 2026.","url":"https://en.wikipedia.org/wiki/Apocalypse_Tapestry"},
+{"n":136,"type":"Secondary source","cite":"\"Saint Jerome (Master Theodoric).\" Wikipedia (English), consulted 28 October 2026.","url":"https://en.wikipedia.org/wiki/Saint_Jerome_(Master_Theodoric)"},
+{"n":137,"type":"Secondary source","cite":"\"The Castle of Karl\u0161tejn in Czechia.\" Medieval Histories.","url":"https://www.medieval.eu/the-castle-of-karlstejn/"}
 ];
