@@ -162,7 +162,7 @@ if(!hit(S.queue[0],x,y)){missed(S.queue[0],x,y);return}
 var id=S.queue.shift();S.miss[id]=0;clearGlow();
 var i=S.finds.map(function(f){return f.clue}).indexOf(id);
 var note='';if(i>=0){S.finds[i].x=x;S.finds[i].y=y}else{S.finds.push({clue:id,x:x,y:y,text:''})}
-S.msg=note||hint()||(allIn()?(c.clues.length>2?'All three features are':'Both features are')+' marked. To move one, choose its box, then click the artwork.':'');save();marks();chips();fields();msg();S.bmsg='';bm()}
+S.msg=note||hint()||'';save();marks();chips();fields();msg();S.bmsg='';bm()}
 art.onclick=function(e){var r=art.getBoundingClientRect();place(Math.round((e.clientX-r.left)/r.width*1000)/10,Math.round((e.clientY-r.top)/r.height*1000)/10);lensMove(e)};
 art.onkeydown=function(e){var d={ArrowLeft:[-2,0],ArrowRight:[2,0],ArrowUp:[0,-2],ArrowDown:[0,2]}[e.key];
 if(d){e.preventDefault();S.cur.x=Math.min(100,Math.max(0,S.cur.x+d[0]));S.cur.y=Math.min(100,Math.max(0,S.cur.y+d[1]));var u=document.getElementById('cur');u.style.left=S.cur.x+'%';u.style.top=S.cur.y+'%'}
