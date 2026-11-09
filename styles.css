@@ -67,7 +67,7 @@ a.btn{display:inline-block;text-decoration:none}a.btn.primary{background:var(--n
 main:has(.cases){padding-top:.9rem;padding-bottom:1rem}
 .tabs{margin-bottom:.6rem}.tabs a{padding:.3rem .8rem;font-size:.95rem}
 h1.ph{font-size:1.45rem;margin:.1rem 0 .2rem}
-.sub{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;margin:0 0 .5rem}.sub .prog{margin:0;font-size:.95rem}.sub .note{font-size:.85rem}.sub a.btn{padding:.2rem .8rem;font-size:.95rem}.sub .startover{background:none;border:none;padding:0;font-size:.85rem;color:#888;cursor:pointer;text-decoration:underline;text-underline-offset:2px}.sub .startover:hover{color:#c0392b}
+.sub{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;margin:0 0 .5rem}.sub .prog{margin:0;font-size:.95rem}.sub .note{font-size:.85rem}.sub a.btn{padding:.2rem .8rem;font-size:.95rem}.sub .startover{background:none;border:1px solid #c0392b;border-radius:4px;padding:.15rem .6rem;font-size:.8rem;color:#c0392b;cursor:pointer;font-family:inherit;letter-spacing:.02em}.sub .startover:hover{background:#c0392b;color:#fff}
 .cases{margin:.3rem 0;gap:.2rem}
 .cases li{border-width:1px;border-radius:7px}
 .cases a,.cases .row{grid-template-columns:1.3rem 1.6rem 1fr auto;gap:.6rem;padding:.12rem .7rem;font-size:.95rem;line-height:1.2;min-height:1.9rem}
