@@ -22,7 +22,7 @@ textarea{width:100%;font:inherit;padding:.5rem;border:1px solid var(--line);bord
 
 .q{background:var(--navy);color:#fff;border-radius:10px;padding:.8rem 1rem;font-size:1.08rem;margin:.6rem 0}
 .word{background:#f6ecd5;border-left:4px solid var(--gold);border-radius:6px;padding:.5rem .8rem;font-size:.9rem;margin:.6rem 0}.word strong{display:block;font-size:.72rem;letter-spacing:.07em;color:#7a5520;text-transform:uppercase}.word p{margin:.3rem 0 0}.word b{color:#5a3a10}
-.how{list-style:none;padding:0;margin:1rem 0;display:grid;gap:.7rem}.how li{display:grid;grid-template-columns:2rem 1fr;gap:.7rem;align-items:start}.how .n{background:var(--gold);color:#fff;width:2rem;height:2rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold}.how li>div{padding-top:.2rem}
+.how{list-style:none;padding:0;margin:1rem 0;display:grid;gap:1.4rem}.how li{display:grid;grid-template-columns:2rem 1fr;gap:.7rem;align-items:start}.how .n{background:var(--gold);color:#fff;width:2rem;height:2rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold}.how li>div{padding-top:.2rem}
 .chips{margin-top:.5rem}.chips button{border-left:10px solid var(--cc,var(--navy))}.chips button[aria-pressed=true]{background:var(--ct,#fff);border-color:var(--cc,var(--navy));box-shadow:0 0 0 2px var(--cc,var(--navy));color:var(--navy)}
 .mark{background:var(--cc,var(--navy))}
 .ans{background:#fff;border:2px solid var(--navy);border-left:10px solid var(--cc,var(--navy));border-radius:10px;padding:.6rem .8rem;margin:.7rem 0}.ans strong{color:var(--navy);font-weight:normal}.ans strong b{color:var(--cc);font-weight:bold}.ans textarea{background:#fff}.ans textarea:disabled{background:#f6f3ec}
@@ -30,7 +30,7 @@ textarea{width:100%;font:inherit;padding:.5rem;border:1px solid var(--line);bord
 .closing{background:#e8eef3;border-left:4px solid var(--navy);border-radius:6px;padding:.6rem .9rem}
 main:focus{outline:none}
 
-.chips button{display:flex;align-items:center;gap:.7rem;width:100%}.chips button strong{font-weight:normal}
+.chips button{display:flex;align-items:center;gap:.7rem;width:100%}.chips button strong{font-weight:normal}.chips button strong b{color:var(--cc,var(--navy));font-weight:bold}
 .let{flex:none;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--cc,var(--navy));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:.95rem}
 
 
