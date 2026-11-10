@@ -119,7 +119,7 @@ document.getElementById('rmagon').onclick=function(){rset(true)};document.getEle
 app.querySelectorAll('.tcases a').forEach(function(a){a.onclick=function(){JUMP={type:'review',deck:d.id}}})}
 draw()}
 function home(){
-app.innerHTML='<section class=\"hero\"><h1>Anyone Can Memorize Names and Dates.<br>Learn How to Read the Work.</h1><p class=\"lead\">Museums have taught close looking for decades, one gallery visit at a time. This is the same method, built into a sequence of cases you can work through anywhere, at your own pace \u2014 at any level from middle school to graduate study.</p><a class=\"btn primary\" href=\"#/deck/'+DECKS[0].id+'\">Begin at '+esc(LEVELS[LVLORDER[0]].title)+'</a></section>'
+app.innerHTML='<section class=\"hero\"><h1>Anyone Can Memorize Names and Dates.<br>Learn How to Read the Work.</h1><p class=\"lead\">Museums have taught close looking for decades, one gallery visit at a time. This is the same method, built into a sequence of cases you can work through anywhere, at your own pace \u2014 at any level from middle school to graduate study.</p><a class=\"btn primary\" href=\"#/novice\">Begin at '+esc(LEVELS[LVLORDER[0]].title)+'</a></section>'
 +'<h2>A Case-by-Case Investigation<br>Through the History of Western Art</h2><div class=\"lvltiles\">'+LVLORDER.map(function(k){var L=LEVELS[k];return '<a class=\"tile '+(L.status==='open'?'open':'soon')+'\" href=\"'+(L.status==='open'?L.href:'#/level/'+k)+'\"><h3>'+esc(L.title)+'</h3><p class=\"note\">'+esc(L.sub)+'</p><p>'+esc(L.blurb)+'</p><span class=\"tag\">'+(L.status==='open'?'Begin':'In development')+'</span></a>'}).join('')+'</div>'
 }
 function deck(id){var d=DECKS.filter(function(x){return x.id===id})[0];if(!d){location.hash='#/deck/'+DECKS[0].id;return}
