@@ -138,4 +138,16 @@ window.SOURCES=[
 {"n":137,"type":"Secondary source","cite":"\"The Castle of Karl\u0161tejn in Czechia.\" Medieval Histories.","url":"https://www.medieval.eu/the-castle-of-karlstejn/"},
 {"n":138,"type":"Museum record","cite":"\"Giotto di Bondone and assistants, Stefaneschi triptych.\" Musei Vaticani, official collection record.","url":"https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/la-pinacoteca/sala-ii---secolo-xiii-xv/giotto-di-bondone-e-aiuti--trittico-stefaneschi.html"},
 {"n":139,"type":"Secondary source","cite":"\"Stefaneschi Triptych.\" Wikipedia (English), consulted 28 October 2026.","url":"https://en.wikipedia.org/wiki/Stefaneschi_Triptych"}
+,
+{"n":140,"type":"Scholarship","cite":"Randolph Starn, Ambrogio Lorenzetti: The Palazzo Pubblico, Siena. New York: George Braziller, 1994."},
+{"n":141,"type":"Scholarship","cite":"Marie-Madeleine Gauthier, Émaux du moyen âge occidental. Fribourg: Office du Livre, 1972."},
+{"n":142,"type":"Scholarship","cite":"Dillian Gordon, The Wilton Diptych. London: National Gallery Company, revised ed. 2015."},
+{"n":143,"type":"Scholarship","cite":"Jean Bony, French Gothic Architecture of the 12th and 13th Centuries. Berkeley: University of California Press, 1983."},
+{"n":144,"type":"Scholarship","cite":"Stephen Murray, Beauvais Cathedral: Architecture of Transcendence. Princeton: Princeton University Press, 1989."},
+{"n":145,"type":"Scholarship","cite":"Peter Anker, The Art of Scandinavia, vol. 1. London: Hamlyn, 1970."},
+{"n":146,"type":"Scholarship","cite":"Deborah Howard, Venice and the East: The Impact of the Islamic World on Venetian Architecture, 1100–1500. New Haven: Yale University Press, 2000."},
+{"n":147,"type":"Scholarship","cite":"Ralph V. Turner, Eleanor of Aquitaine: Queen of France, Queen of England. New Haven: Yale University Press, 2009."},
+{"n":148,"type":"Scholarship","cite":"Andrew Martindale, Simone Martini: Complete Edition. Oxford: Phaidon, 1988."},
+{"n":149,"type":"Scholarship","cite":"Fabienne Joubert, La tapisserie de l’Apocalypse d’Angers. Paris: Caisse Nationale des Monuments Historiques, 1987."},
+{"n":150,"type":"Scholarship","cite":"Hans Belting, Likeness and Presence: A History of the Image before the Era of Art. Chicago: University of Chicago Press, 1994."}
 ];
