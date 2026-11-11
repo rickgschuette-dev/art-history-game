@@ -230,5 +230,5 @@ body[data-view="card"] .top .photo #lens{display:block}
 
 /* Card layout: title, intro and Word to know in a band above the two columns */
 .introband{margin:0 0 1.2rem}.introband .ctitle{margin:0 0 .5rem}
-.introrow{display:grid;grid-template-columns:1.7fr 1fr;gap:1rem;align-items:stretch}.introrow .q,.introrow .word{margin:0}.introrow .word{display:flex;flex-direction:column;justify-content:center}
+.introrow{display:grid;grid-template-columns:1.7fr 1fr;gap:1rem;align-items:start}.introrow .q,.introrow .word{margin:0}.introrow .word{display:flex;flex-direction:column;justify-content:center}
 @media(max-width:850px){.introrow{grid-template-columns:1fr}}

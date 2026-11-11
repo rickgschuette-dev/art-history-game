@@ -37,7 +37,7 @@
 
 ## Clue selection interaction (2026-10-23)
 - SUPERSEDED (Rick, 2026-10-29): the two-box queue with order badges proved confusing. The player now chooses ONE feature box, then clicks the artwork; the order in which features are marked does not matter. Choosing a different box switches the choice; clicking the chosen box again un-chooses it. No order badges. To move a placed letter, choose its box, then click the artwork.
-- Three-feature flow (Rick, 2026-10-24, replacing the two-feature flow): the player marks ALL THREE features on the artwork. Step 1: "Click a feature box below, then click where you identify the feature on the image. Identify all three features." Step 2: "Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."
+- Three-feature flow (Rick, 2026-10-24, replacing the two-feature flow): the player marks ALL THREE features on the artwork. Step 1: "Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features." (second sentence changed by Rick, 2026-11-10) Step 2: "Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."
 - Submit needs all three marks and at least four words in any two of the three answer boxes; the third answer is optional. Points are unchanged: 10 per closed case plus 5 bonus. The live prompt under the boxes still guides each click, for example "Click the artwork to place A, then B, then C."
 
 ## Magnifier and photo size (2026-10-24)

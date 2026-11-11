@@ -72,7 +72,7 @@ window.SOURCES=[
 {"n":71,"type":"Journal article","cite":"Heritage Science (2024), study of the Müstair wall paintings: describes the Carolingian cycle as of the late eighth/early ninth century.","url":"https://www.nature.com/articles/s40494-024-01465-1"},
 {"n":72,"type":"Book","cite":"Hubert, Jean, et al. Europe in the Dark Ages. London: Thames & Hudson, 1969, p. 150 (plate of the Flight into Egypt, Müstair; as credited on the Wikimedia Commons file page).","url":"https://commons.wikimedia.org/wiki/File:Meister_von_M%C3%BCstair_003.jpg"},
 {"n":73,"type":"Heritage site","cite":"“Mausoleum of Galla Placidia.” Ravenna Città del Mosaico (Comune di Ravenna).","url":"https://www.ravennacittadelmosaico.it/en/?p=3389"},
-{"n":74,"type":"Secondary source","cite":"“Visit the Mausoleum of Galla Placidia in Ravenna.” European Traveler.","url":"https://www.european-traveler.com/?p=7033"},
+{"n":74,"type":"Secondary source","cite":"\u201cMausoleum of Galla Placidia.\u201d Art and Architecture of the Middle Ages: Exploring a Connected World (Omeka S).","url":"https://artofthemiddleages.com/s/main/item/90"},
 {"n":75,"type":"Heritage listing","cite":"“Early Christian Monuments of Ravenna.” UNESCO World Heritage Centre, list no. 788.","url":"https://whc.unesco.org/en/list/788"},
 {"n":76,"type":"Secondary source","cite":"“Take a sneak peek into the upcoming Museum of the Viking Age in Norway.” The Viking Herald.","url":"https://thevikingherald.com/article/take-a-sneak-peek-into-the-upcoming-museum-of-the-viking-age-in-norway/852"},
 {"n":77,"type":"Museum glossary","cite":"“Interlace.” Lexicon, Hill Museum & Manuscript Library (HMML School).","url":"https://hmmlschool.org/lexicon/14596/"},
@@ -150,4 +150,33 @@ window.SOURCES=[
 {"n":148,"type":"Scholarship","cite":"Andrew Martindale, Simone Martini: Complete Edition. Oxford: Phaidon, 1988."},
 {"n":149,"type":"Scholarship","cite":"Fabienne Joubert, La tapisserie de l’Apocalypse d’Angers. Paris: Caisse Nationale des Monuments Historiques, 1987."},
 {"n":150,"type":"Scholarship","cite":"Hans Belting, Likeness and Presence: A History of the Image before the Era of Art. Chicago: University of Chicago Press, 1994."}
+,
+{"n":151,"type":"Scholarship","cite":"Carola Hicks, The Bayeux Tapestry: The Life Story of a Masterpiece. London: Chatto & Windus, 2006."}
+,
+{"n":152,"type":"Scholarship","cite":"Eve Borsook, Messages in Mosaic: The Royal Programmes of Norman Sicily (1130\u20131187). Oxford: Clarendon Press, 1990."}
+,
+{"n":153,"type":"Scholarship","cite":"David Brown, ed., Durham Cathedral: History, Fabric, and Culture. New Haven: Yale University Press for the Paul Mellon Centre for Studies in British Art, 2015."}
+,
+{"n":154,"type":"Cathedral heritage page","cite":"The Western Fa\u00e7ade. Notre-Dame de Paris, official cathedral website.","url":"https://notredamedeparis.fr/en/?p=3428"}
+,
+{"n":155,"type":"Encyclopedia entry","cite":"Sainte-Chapelle Upper Chapel. World History Encyclopedia.","url":"https://www.worldhistory.org/image/13177/sainte-chapelle-upper-chapel"}
+,
+{"n":156,"type":"Encyclopedia entry","cite":"Foundation of Reims Cathedral, 6 May 1211. H\u00e9rodote.net.","url":"https://www.herodote.net/histoire/evenement.php?jour=12110506"}
+,
+{"n":157,"type":"Digital collection record","cite":"Nicola Pisano, Pulpit in the Pisa Baptistery, 1260. Marble, University of Notre Dame digital collection.","url":"https://marble.nd.edu/item/dr26xw45d33"}
+,
+{"n":158,"type":"Open textbook","cite":"\"Giotto\u2019s Arena Chapel.\" In Art History II (Lumen), LibreTexts.","url":"https://human.libretexts.org/Bookshelves/Art/Art_History_II_(Lumen)/02%3A_Proto-Renaissance_(13001400)/2.04%3A_Giottos_Arena_Chapel"},
+{"n":159,"type":"College course page","cite":"The Arena (Scrovegni) Chapel, Padua. ARTH 213, SUNY Oneonta.","url":"https://www.oneonta.edu/faculty/farberas/arth/Arth213/ArenaChapel.html"},
+{"n":160,"type":"Collection page","cite":"Autun tympanum. Art of the Middle Ages.","url":"https://artofthemiddleages.com/s/main/item/140"},
+{"n":161,"type":"College course page","cite":"Autun St. Lazarus \u2013 Tympanum of the central portal. Callahan, Illinois Wesleyan University.","url":"https://sun.iwu.edu/~callahan/autun-tympanvg-e.html"},
+{"n":162,"type":"Digital library record","cite":"The Donor Figures of the Naumburg Cathedral. Google Arts & Culture story.","url":"https://artsandculture.google.com/story/qQWhRCfT_d6zIg"},
+{"n":163,"type":"Collection page","cite":"Naumburg Cathedral. Art of the Middle Ages.","url":"https://artofthemiddleages.com/s/main/item/3064"},
+{"n":164,"type":"Heritage site guide","cite":"St-Savin-Sur-Gartempe Abbey. Sacred Destinations.","url":"https://www.sacred-destinations.com/france/saint-savin-sur-gartempe"},
+{"n":165,"type":"University research page","cite":"The Bamberg Rider. Yale University, MAVCOR.","url":"https://mavcor.yale.edu/node/354"},
+{"n":166,"type":"Travel guide","cite":"Bamberg Horseman. Atlas Obscura.","url":"https://assets.atlasobscura.com/places/bamberg-horseman"},
+{"n":167,"type":"Museum essay","cite":"Chapuis, Julien. \u201cRomanesque Art.\u201d Heilbrunn Timeline of Art History, The Metropolitan Museum of Art, October 2002.","url":"https://www.metmuseum.org/toah/hd/rmsq/hd_rmsq.htm"},
+{"n":168,"type":"Museum essay","cite":"Chapuis, Julien. \u201cGothic Art.\u201d Heilbrunn Timeline of Art History, The Metropolitan Museum of Art, October 2002.","url":"https://www.metmuseum.org/essays/gothic-art"},
+{"n":169,"type":"Museum object page","cite":"\u201cAnglo-Saxon man\u201d (Spong Man, cremation urn lid). Teaching History 100, with Norwich Castle Museum.","url":"https://teachinghistory100.org/objects/about_the_object/anglo_saxon_man"},
+{"n":170,"type":"Textbook chapter","cite":"\u201cDome of the Rock.\u201d Art History I, SUNY Open Educational Resources (Lumen Learning).","url":"https://courses.lumenlearning.com/suny-arthistory1/chapter/dome-of-the-rock/"},
+{"n":171,"type":"Secondary source","cite":"\u201cConvent brings past times to life.\u201d SWI swissinfo.ch.","url":"https://www.swissinfo.ch/eng/convent-brings-past-times-to-life/7912214"}
 ];
