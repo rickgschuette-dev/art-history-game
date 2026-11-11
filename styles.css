@@ -232,3 +232,5 @@ body[data-view="card"] .top .photo #lens{display:block}
 .introband{margin:0 0 1.2rem}.introband .ctitle{margin:0 0 .5rem}
 .introrow{display:grid;grid-template-columns:1.7fr 1fr;gap:1rem;align-items:start}.introrow .q,.introrow .word{margin:0}.introrow .word{display:flex;flex-direction:column;justify-content:center}
 @media(max-width:850px){.introrow{grid-template-columns:1fr}}
+.skipnav{display:flex;gap:.6rem;margin:.7rem 0 0}
+a.btn.skipbtn{flex:0 1 calc(50% - .3rem);text-align:center;font-size:.88rem;line-height:1.25;padding:.4rem .7rem;border-width:1px}
