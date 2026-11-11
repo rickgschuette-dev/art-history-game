@@ -245,3 +245,4 @@ a.btn.skipbtn{flex:0 1 calc(50% - .3rem);text-align:center;font-size:.88rem;line
 .pholder{width:340px;height:420px;line-height:1.45;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#efe7d3 0 14px,#e6dcc3 14px 28px);color:#526575;font-size:.9rem}
 .pside{min-width:0}.ppanel .how{margin:1rem 0 0}
 @media(max-width:720px){.pfig{justify-self:center;max-width:100%}.pfig img{height:auto;max-height:420px;max-width:100%}.pholder{width:240px;max-width:100%;height:260px}}
+.clearbtn{margin-top:.4rem;font-size:.85rem;padding:.2rem .8rem;border-width:1px}
