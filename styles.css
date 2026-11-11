@@ -241,7 +241,7 @@ a.btn.skipbtn{flex:0 1 calc(50% - .3rem);text-align:center;font-size:.88rem;line
 .ppanel h2{margin:0;font-size:1.3rem}.ppanel p{margin:.4rem 0}.ppanel .how{margin:0}.ppanel .act{margin-top:1rem}
 @media(max-width:720px){.ppanel{grid-template-columns:1fr}}
 .pfig{margin:0;background:#f1ead9;border:1px solid var(--line);border-radius:8px;overflow:hidden;min-width:0;line-height:0}
-.pfig img{display:block;height:420px;width:auto;max-width:560px}
+.pfig img{display:block;height:auto;width:auto;max-width:560px;max-height:420px}
 .pholder{width:340px;height:420px;line-height:1.45;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#efe7d3 0 14px,#e6dcc3 14px 28px);color:#526575;font-size:.9rem}
 .pside{min-width:0}.ppanel .how{margin:1rem 0 0}
 @media(max-width:720px){.pfig{justify-self:center;max-width:100%}.pfig img{height:auto;max-height:420px;max-width:100%}.pholder{width:240px;max-width:100%;height:260px}}
