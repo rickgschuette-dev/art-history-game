@@ -178,5 +178,6 @@ window.SOURCES=[
 {"n":168,"type":"Museum essay","cite":"Chapuis, Julien. \u201cGothic Art.\u201d Heilbrunn Timeline of Art History, The Metropolitan Museum of Art, October 2002.","url":"https://www.metmuseum.org/essays/gothic-art"},
 {"n":169,"type":"Museum object page","cite":"\u201cAnglo-Saxon man\u201d (Spong Man, cremation urn lid). Teaching History 100, with Norwich Castle Museum.","url":"https://teachinghistory100.org/objects/about_the_object/anglo_saxon_man"},
 {"n":170,"type":"Textbook chapter","cite":"\u201cDome of the Rock.\u201d Art History I, SUNY Open Educational Resources (Lumen Learning).","url":"https://courses.lumenlearning.com/suny-arthistory1/chapter/dome-of-the-rock/"},
-{"n":171,"type":"Secondary source","cite":"\u201cConvent brings past times to life.\u201d SWI swissinfo.ch.","url":"https://www.swissinfo.ch/eng/convent-brings-past-times-to-life/7912214"}
+{"n":171,"type":"Secondary source","cite":"\u201cConvent brings past times to life.\u201d SWI swissinfo.ch.","url":"https://www.swissinfo.ch/eng/convent-brings-past-times-to-life/7912214"},
+{"n":172,"type":"Secondary source","cite":"\u201cLindisfarne Gospels.\u201d Wikipedia.","url":"https://en.wikipedia.org/wiki/Lindisfarne_Gospels"}
 ];

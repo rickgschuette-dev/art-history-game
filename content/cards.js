@@ -268,17 +268,17 @@ var EM06={id:"EM-06",kind:"Manuscript page",title:"Letters as Pictures",object:"
  alt:"A page from a hand-copied Gospel book. The first letters of the Latin word Liber are huge and curl down the left side, packed with colorful knots, spirals and tiny animal heads. The rest of the word and the lines below are tall, dark capitals set in colored panels. Rows of tiny red dots trace the letters, and a woven border frames the right and bottom edges.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Lindisfarne-Incipit.jpg",
- imageNote:"The opening of Matthew\u2019s Gospel. The first letters of the Latin word Liber, meaning \u201cbook,\u201d fill the page.",
- detail:{image:"public/images/artworks/Lindisfarne-Matthew.jpg",alt:"A page from the same book. A seated man with a gray-blue beard and a gold nimbus draws on a board. He wears a green robe marked with red fold lines and a purple sleeve, and sits on an orange cushion. A winged figure with a trumpet hovers above him, and a second figure peers out from behind a red curtain.",caption:"Technique detail: Saint Matthew from the same book, drawn with strong outlines and filled with flat color, with red strokes for the folds of his robe",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:St._Matthew_-_Lindisfarne_Gospels_(710-721),_f.25v_-_BL_Cotton_MS_Nero_D_IV.jpg",author:"Eadfrith of Lindisfarne (presumed); image from the British Library",license:"CC0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/"}},
+ imageNote:"A single upright page, about 36.5 cm (14\u00bd in) tall, from a book of 259 leaves.",
+ detail:{image:"public/images/artworks/Lindisfarne-Matthew.jpg",alt:"A page from the same book. A seated man with a gray-blue beard and a gold nimbus draws on a board. He wears a green robe marked with red fold lines and a purple sleeve, and sits on an orange cushion. A winged figure with a trumpet hovers above him, and a second figure peers out from behind a red curtain.",caption:"Detail: a different page from the same book, with Saint Matthew, a winged figure above him and a second figure behind a curtain",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:St._Matthew_-_Lindisfarne_Gospels_(710-721),_f.25v_-_BL_Cotton_MS_Nero_D_IV.jpg",author:"Eadfrith of Lindisfarne (presumed); image from the British Library",license:"CC0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/"}},
  size:"",
- intro:"This page opens the Gospel of Matthew in a hand-copied book made on Lindisfarne, an island off the coast of England, about 1,300 years ago. There is no scene here — only letters and patterns. What makes this page a work of art rather than just a page of writing?",
- context:[{term:"Interlace",def:"a pattern of ribbons that weave over and under each other, with no beginning and no end."},{term:"Illuminated",def:"decorated by hand with colors or elaborate designs. A book with pages like this is called an illuminated manuscript."}],
+ intro:"This page opens the Gospel of Matthew in a hand-copied book made on Lindisfarne, an island off the coast of England, about 700 C.E. The maker was probably Eadfrith, the island\u2019s bishop, working to honor God and Saint Cuthbert. There is no scene here, only letters and patterns: the first letters of the Latin word Liber, meaning \u201cbook,\u201d swell into giant forms packed with woven knots, spirals and tiny animal heads.",
+ context:[{term:"Manuscript",pron:"MAN-yoo-skript",def:"A book or document written out by hand."},{term:"Illuminated",pron:"ih-LOO-mih-nay-tid",def:"Decorated by hand with colors, patterns or gold."},{term:"Interlace",pron:"IN-ter-lays",def:"A pattern of ribbons or cords that weave over and under one another."}],
  clues:[{id:"giant",label:"Giant first letters",def:"The opening letters are vastly larger than the rest of the text"},{id:"interlace",label:"Interlace knots",def:"Ribbons weaving over and under in tight, continuous knots"},{id:"dots",label:"Rows of red dots",def:"Tiny red dots outlining the edges of letters and shapes"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
  closing:"Why might the maker have decorated the first words of the Gospel more richly than anything else on the page?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Giant letters, interlace knots and red dotted outlines are features a detective can carry to the next case.",
- sourceNums:[32,33],
+ sourceNums:[32,33,172],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:LindisfarneFol27rIncipitMatt.jpg",author:"Eadfrith of Lindisfarne (presumed); image from the British Library",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
 var EM15={id:"EM-15",kind:"Metalwork",title:"Patterns in Wire",object:"Ardagh Chalice (copy)",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
@@ -311,7 +311,7 @@ EM05.zones={
  roundel:[{cx:15.5,cy:9.3,rx:12.5,ry:7.4},{cx:51.7,cy:8.4,rx:13.5,ry:8},{cx:86.3,cy:8.4,rx:12.5,ry:7.6}]
 };
 EM06.zones={
- letters:[{x0:8.5,y0:2.5,x1:67,y1:43.5}],
+ giant:[{x0:8.5,y0:2.5,x1:67,y1:43.5}],
  interlace:[{x0:82.5,y0:12,x1:89,y1:80},{x0:24,y0:76,x1:88,y1:81.5},{x0:10.5,y0:40,x1:24.5,y1:80},{x0:55.5,y0:12,x1:89,y1:16}],
  dots:[{x0:33,y0:39,x1:84.5,y1:77}]
 };
