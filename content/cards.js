@@ -162,21 +162,21 @@ var EM11={id:"EM-11",kind:"Architecture",wide:true,title:"Plain Outside, Bright 
 var EM12={id:"EM-12",kind:"Architecture",wide:true,title:"A Dome That Floats",object:"Hagia Sophia",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Hagia Sophia",date:"532\u2013537 C.E. (dome rebuilt in 562 C.E.)",location:"Istanbul, T\u00fcrkiye",artist:"architects Anthemius of Tralles and Isidore of Miletus",
- headline:"Look closely at the big roof",
+ headline:"Look closely at the building",
  alt:"A huge church seen across a crowded park under a blue sky. A wide gray dome sits in the middle, with a ring of small windows around its base. Smaller domes and curved walls step down on either side, and a large red arch with rows of windows faces the viewer. Scaffolding covers part of the left side. Four tall, thin towers with pointed tops stand at the left and right edges. Palm trees and crowds of people fill the foreground.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Hagia-Sophia.jpg",
  imageNote:"The thin towers, called minarets, were added after 1453, when the building became a mosque.",
- detail:{image:"public/images/artworks/Hagia-Sophia-section.jpg",alt:"A black-and-white drawing of the church sliced down the middle, so the inside shows. A big dome with a ring of small windows at its base rises over the center. Smaller domes and half-domes step down on both sides above rows of arches and columns. At the right, a porch and a statue of a rider on a horse stand beside the building.",caption:"Technique detail: a 1908 reconstruction drawing that slices the building open to show how the domes and arches fit together",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Hagia-Sophia-Laengsschnitt.jpg",author:"Wilhelm L\u00fcbke and Max Semrau, Grundri\u00df der Kunstgeschichte (1908)",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
- size:"The dome: about 32 m / 105 ft across. A little longer than a basketball court.",
- intro:"This building went up in just five years, nearly 1,500 years ago. The enormous dome seems to float above a ring of windows, with no thick walls holding it up. How could the builders have supported so much weight without blocking the light?",
- context:[{term:"Dome",def:"a rounded vault forming a roof, rising from a circular or square base."},{term:"Pendentive",def:"a curved triangle that allows a round dome to rest on square walls. Look for them in the cross-section drawing."}],
- clues:[{id:"dome",label:"Central dome",def:"The vast, rounded roof rising over the center of the building"},{id:"windows",label:"Ring of windows",def:"A row of windows circling the base of the dome, letting light flood in"},{id:"domes",label:"Cascading half-domes",def:"Smaller domes stepping down from the central one, transferring its weight outward"}],
+ detail:{image:"public/images/artworks/Hagia-Sophia-section.jpg",alt:"A black-and-white drawing of the church sliced down the middle, so the inside shows. A big dome with a ring of small windows at its base rises over the center. Smaller domes and half-domes step down on both sides above rows of arches and columns. At the right, a porch and a statue of a rider on a horse stand beside the building.",caption:"Detail: a 1908 drawing that slices the church open to show the dome, pendentives and arches",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Hagia-Sophia-Laengsschnitt.jpg",author:"Wilhelm L\u00fcbke and Max Semrau, Grundri\u00df der Kunstgeschichte (1908)",license:"Public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
+ size:"",
+ intro:"This church in Constantinople (now Istanbul) was built from 532 to 537 C.E. for the Byzantine emperor Justinian, by the architects Anthemius of Tralles and Isidore of Miletus. Its great innovation was a huge dome carried on pendentives, with a ring of windows around its base, so that the roof seems to float on light instead of resting on heavy walls.",
+ context:[{term:"Dome",pron:"dohm",def:"A rounded vault forming a roof, rising from a circular or square base."},{term:"Half-dome",pron:"HAF-dohm",def:"A dome cut in half, with a semicircular base. Several lean against the central dome."},{term:"Pendentive",pron:"PEN-den-tiv",def:"A curved triangle of masonry that lets a round dome rest on a square space. Look for them in the cross-section drawing."}],
+ clues:[{id:"dome",label:"Central dome",def:"The wide, rounded roof at the center, resting on very little solid wall"},{id:"windows",label:"Ring of windows",def:"A band of small windows circling the base of the dome"},{id:"domes",label:"Half-domes",def:"Smaller curved roofs stepping down beside the central dome"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
  closing:"Why might a builder want a huge roof to look as if it floats?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. A big round dome, a ring of windows and domes stepping down are features a detective can carry to the next case.",
- sourceNums:[18,19,20],
+ guide:"Evidence filed. A dome, a ring of windows and half-domes are features a detective can carry to the next case.",
+ sourceNums:[18,19,20,173],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Istanbul_Hagia_Sophia_IMG_7406_1800.jpg",author:"Alexxx1979",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}};
 var EM13={id:"EM-13",kind:"Manuscript painting",wide:true,title:"Words Above, Story Below",object:"Vienna Genesis",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
@@ -274,7 +274,7 @@ var EM06={id:"EM-06",kind:"Manuscript page",title:"Letters as Pictures",object:"
  intro:"This page opens the Gospel of Matthew in a hand-copied book made on Lindisfarne, an island off the coast of England, about 700 C.E. The maker was probably Eadfrith, the island\u2019s bishop, working to honor God and Saint Cuthbert. There is no scene here, only letters and patterns: the first letters of the Latin word Liber, meaning \u201cbook,\u201d swell into giant forms packed with woven knots, spirals and tiny animal heads.",
  context:[{term:"Manuscript",pron:"MAN-yoo-skript",def:"A book or document written out by hand."},{term:"Illuminated",pron:"ih-LOO-mih-nay-tid",def:"Decorated by hand with colors, patterns or gold."},{term:"Interlace",pron:"IN-ter-lays",def:"A pattern of ribbons or cords that weave over and under one another."}],
  clues:[{id:"giant",label:"Giant first letters",def:"The opening letters are vastly larger than the rest of the text"},{id:"interlace",label:"Interlace knots",def:"Ribbons weaving over and under in tight, continuous knots"},{id:"dots",label:"Rows of red dots",def:"Tiny red dots outlining the edges of letters and shapes"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
  closing:"Why might the maker have decorated the first words of the Gospel more richly than anything else on the page?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Giant letters, interlace knots and red dotted outlines are features a detective can carry to the next case.",
@@ -442,12 +442,12 @@ var EM21={id:"EM-21",kind:"Architecture",wide:false,title:"Layers in Stone",obje
  alt:"A tall, weathered wall of tan stone blocks with a stepped, notched top edge against a blue sky. In the center is a doorway with a dark metal door. Above it, a horseshoe-shaped arch is built of alternating red and white wedge-shaped stones, set inside a rectangular carved frame. Carved stone panels are set into the wall on both sides.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Cordoba-SanEsteban.jpg",
- imageNote:"The Puerta de San Esteban, a doorway in the mosque\u2019s west wall. An inscription dates its remodeling to 855 C.E.",
- detail:{image:"public/images/artworks/Cordoba-Hall-Detail.jpg",alt:"Inside a huge hall of columns. Rows of arches, striped red and white, rise in two levels over stone columns, with pale light coming from far down the hall.",caption:"Technique detail: two levels of arches built from alternating stone and red brick, resting on reused Roman columns",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Mosque_of_Cordoba_Spain.jpg",author:"Steven J. Dunlop",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}},
+ imageNote:"The Puerta de San Esteban, a doorway in the mosque\u2019s west wall.",
+ detail:{image:"public/images/artworks/Cordoba-Hall-Detail.jpg",alt:"Inside a huge hall of columns. Rows of arches, striped red and white, rise in two levels over stone columns, with pale light coming from far down the hall.",caption:"Detail: the mosque\u2019s prayer hall, with two levels of striped horseshoe arches resting on reused Roman columns",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Mosque_of_Cordoba_Spain.jpg",author:"Steven J. Dunlop",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}},
  size:"",
- intro:"This doorway is part of a mosque begun about 1,200 years ago and remodeled in 855 C.E. The builders layered different materials — carved stone, red brick, and reused Roman columns — into one entrance. What patterns do you notice in the way these materials are arranged?",
- context:[{term:"Horseshoe arch",def:"an arch that curves inward past its widest point, narrowing before it meets the wall \u2014 a signature form in Islamic architecture."},{term:"Voussoir",def:"one of the wedge-shaped stones or bricks that fit together to form an arch. Here, alternating red and white voussoirs create the striped pattern."}],
- clues:[{id:"striped",label:"Striped arch",def:"Alternating red and white voussoirs forming a horseshoe arch over the doorway"},{id:"frame",label:"Rectangular frame",def:"A carved border that outlines the arch in a rectangle — a common element in Islamic doorways"},{id:"panels",label:"Carved stone panels",def:"Blocks of stone with intricate carved patterns set into the wall above the arch"}],
+ intro:"This doorway belongs to the Great Mosque of C\u00f3rdoba in Spain, begun about 785 C.E. for Abd al-Rahman I, the first Umayyad emir of C\u00f3rdoba. A carved inscription records that a later emir, Muhammad I, had the doorway remodeled in 855 C.E. Its builders turned structure into decoration: the arch alternates red brick with pale stone, and a rectangular frame outlines the whole entrance.",
+ context:[{term:"Horseshoe arch",pron:"HORS-shoo arch",def:"An arch that curves in past its widest point, narrowing before it meets the wall, like a horseshoe. It is a signature form of Islamic architecture in Spain."},{term:"Voussoir",pron:"voo-SWAR",def:"One of the wedge-shaped stones or bricks that fit together to form an arch."},{term:"Alfiz",pron:"al-FEEZ",def:"A rectangular frame built around an arch."}],
+ clues:[{id:"striped",label:"Striped arch",def:"Alternating red and white voussoirs forming a horseshoe arch over the doorway"},{id:"frame",label:"Rectangular frame",def:"A carved border that outlines the arch in a rectangle"},{id:"panels",label:"Carved stone panels",def:"Blocks of stone with carved patterns set into the wall beside and above the arch"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
  closing:"Why might builders have used red brick and pale stone in alternating stripes instead of plain stone?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
@@ -455,7 +455,7 @@ var EM21={id:"EM-21",kind:"Architecture",wide:false,title:"Layers in Stone",obje
  sourceNums:[50,51,52],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Puerta_de_San_Esteban_(Mezquita_de_C%C3%B3rdoba,_Espa%C3%B1a).jpg",author:"Jos\u00e9 Luis Filpo",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/"}};
 EM21.zones={
- arch:[{x0:30,y0:42,x1:70,y1:63}],
+ striped:[{x0:30,y0:42,x1:70,y1:63}],
  frame:[{x0:26,y0:38,x1:74,y1:42},{x0:25,y0:42,x1:29,y1:62},{x0:71,y0:42,x1:75,y1:62}],
  panels:[{x0:79,y0:40.5,x1:98,y1:51},{x0:3,y0:40.5,x1:22,y1:52},{x0:38,y0:29,x1:62,y1:37}]
 };
@@ -724,8 +724,8 @@ EM11.zones={
 };
 EM12.zones={
  dome:[{x0:40,y0:25,x1:61,y1:37}],
- ring:[{x0:38,y0:34,x1:62,y1:41}],
- step:[{x0:28,y0:42,x1:72,y1:58}]
+ windows:[{x0:38,y0:34,x1:62,y1:41}],
+ domes:[{x0:28,y0:42,x1:72,y1:58}]
 };
 EM13.zones={
  rows:[{x0:3,y0:20,x1:88,y1:58},{x0:3,y0:58,x1:97,y1:96}],
