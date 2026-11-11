@@ -415,6 +415,7 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Author: José-Manuel Benito
 - License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
 - Changes: Converted from GIF to PNG.
+- Note: No longer used by the card (EM-28 now has one detail photo); the file stays in the repository.
 
 ## EM-29 A Family on the Move: main photo
 - File: public/images/artworks/Mustair-Flight.jpg (1,600 x 1,391 px)

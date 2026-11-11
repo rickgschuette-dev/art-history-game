@@ -157,3 +157,10 @@ Stored under the review id in `localStorage` as `{seen, text, shown}`.
 
 ## Terminology rule: no "quiz" (2026-10-25)
 The word "quiz" is never used anywhere in this project — not in player-facing text, not in data field names, CSS classes, or docs. The game must read as a welcoming, fascinating entry point into art history as a field of study, not a testing tool. The bonus multiple-choice identification mechanic (previously called "quiz") is called **recognize** (data field `recognize`, CSS class `.vrecog`).
+
+
+## Words to Know: pronunciation guides (2026-11-11)
+- A pronunciation guide appears only for foreign words and for words used only in architecture, sculpture or art history (for example Pendentive, Voussoir, Clerestory, Tesserae).
+- If a word is pronounced the same way in any English context, the guide is left off, even when the word is used in an art-historical sense (for example Dome, Buttress, Arcade, Nimbus, Interlace).
+- In the data, an omitted guide is `pron:""`. The page then shows the term alone, with no parentheses.
+- Applies to every Words to Know box in the Early Medieval, Late Medieval and Renaissance decks, and to all later decks.
