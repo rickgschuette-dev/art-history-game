@@ -234,3 +234,9 @@ body[data-view="card"] .top .photo #lens{display:block}
 @media(max-width:850px){.introrow{grid-template-columns:1fr}}
 .skipnav{display:flex;gap:.6rem;margin:.7rem 0 0}
 a.btn.skipbtn{flex:0 1 calc(50% - .3rem);text-align:center;font-size:.88rem;line-height:1.25;padding:.4rem .7rem;border-width:1px}
+.ptabs{display:flex;flex-wrap:wrap;gap:.4rem;position:relative;z-index:1}
+.ptabs button{border-bottom:0;border-radius:10px 10px 0 0;padding:.3rem .8rem;font-size:.95rem;margin-bottom:-2px}
+.ptabs button[aria-selected=true]{background:#fffcf5;font-weight:bold;padding-bottom:calc(.3rem + 2px)}
+.ppanel{background:#fffcf5;border:2px solid var(--navy);border-radius:0 12px 12px 12px;padding:1.2rem 1.4rem;display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start}
+.ppanel h2{margin:0;font-size:1.3rem}.ppanel p{margin:.4rem 0}.ppanel .how{margin:0}.ppanel .act{margin-top:1rem}
+@media(max-width:720px){.ppanel{grid-template-columns:1fr}}
