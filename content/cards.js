@@ -197,25 +197,25 @@ var EM13={id:"EM-13",kind:"Manuscript painting",wide:true,title:"Words Above, St
  guide:"Evidence filed. Rows of figures, one person shown twice and words above the picture are features a detective can carry to the next case.",
  sourceNums:[21,22,23],
  credit:{word:"Image",url:"https://commons.wikimedia.org/wiki/File:Miniatuur_van_Jozef_en_zijn_broers.jpg",author:"Emmelinebq",license:"CC0 1.0 (public domain dedication)",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/"}};
-var EM09={id:"EM-09",kind:"Wall painting",wide:true,title:"Three in a Row",object:"Lunette from the Monastery of Bawit",playable:true,
+var EM09={id:"EM-09",kind:"Wall painting",wide:true,title:"Facing Forward",object:"Niche from the Monastery of Apa Apollo at Bawit",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. – 900 C.E.",
- work:"Lunette from the Monastery of Bawit (three seated saints and two riders)",date:"6th–7th century C.E.",location:"Coptic Museum, Cairo, Egypt",artist:"artist unknown",
- headline:"Look closely at the seated figures",
- alt:"A half-circle wall painting displayed in a museum. Three bearded men, each with a nimbus, sit side by side on a bench, each holding a book. At the left end a small rider with a nimbus sits on a dark brown horse, and at the right end another rider with a nimbus sits on a pale horse.",
+ work:"Niche from the Monastery of Apa Apollo at Bawit (Christ, the Virgin and Child, and apostles)",date:"6th–7th century C.E.",location:"Coptic Museum, Cairo, Egypt",artist:"artist unknown",
+ headline:"Look closely at the figures",
+ alt:"A half-dome wall painting in a museum. Christ sits inside a large oval of light, holding a book, with angels and winged creatures around him. Below, the Virgin and Child sit on a throne in the center of a row of standing apostles, each with a halo.",
  enlarge:"Enlarge image",
- image:"public/images/artworks/Bawit-lunette.jpg",
+ image:"public/images/artworks/Bawit-niche.jpg",
  imageNote:"Painted on a monastery wall in Egypt and now shown in a museum.",
- detail:{image:"public/images/artworks/Bawit-lunette-detail.jpg",alt:"A small rider with a nimbus sits on a dark brown horse. Dark outlines draw the face, body and horse, and lines of painted letters run above the rider’s head.",caption:"Technique detail: a rider outlined in paint, with a painted inscription",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:CairoCoptMuseumBawit12090.jpg",author:"Roland Unger",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Cropped."}},
+ detail:{image:"public/images/artworks/Bawit-apostles-detail.jpg",alt:"The Virgin and Child sit on a throne at the left, beside a row of standing men with halos who hold books. Each figure faces forward and is drawn with dark outlines.",caption:"Detail: the Virgin and Child beside a row of apostles, each facing forward and drawn with dark outlines",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Mural_from_Apa_Apollo_in_Bawit_-_Detail.jpg",author:"Votpuske",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped."}},
  size:"",
- intro:"This Coptic wall painting filled a lunette in an Egyptian monastery more than 1,300 years ago. Three saints sit side by side in nearly identical poses, staring directly outward, while two smaller riders flank them below. Every figure is defined by bold, dark outlines. What effect does this strict repetition and frontal arrangement create?",
- context:[{term:"Lunette",pron:"loo-NET",def:"a half-circle shaped area at the top of a wall or above a doorway, often used as a surface for painting or sculpture."},{term:"Frontal",def:"describing a figure shown facing directly toward the viewer, with the head, shoulders, and body aligned straight ahead."}],
- clues:[{id:"matching",label:"Matching figures",def:"Three saints of equal size, depicted side by side in nearly identical poses and garments"},{id:"frontal",label:"Frontal poses",def:"Each figure faces directly toward the viewer with a steady, wide-eyed gaze"},{id:"outlines",label:"Bold outlines",def:"Strong, dark lines defining each figure and separating areas of color"}],
+ intro:"This painted niche comes from the Monastery of Apa Apollo at Bawit in Egypt and dates to the 6th or 7th century C.E. Above, Christ sits enthroned inside a glowing oval, surrounded by angels and winged creatures. Below, the Virgin and Child sit among standing apostles who stare straight out at the viewer. Every figure is drawn with bold, dark outlines.",
+ context:[{term:"Niche",pron:"nich",def:"A recess in a wall, often half-round, that holds a painting or a statue."},{term:"Frontal",pron:"FRUN-tul",def:"Describing a figure shown facing directly toward the viewer, with the head, shoulders and body aligned straight ahead."},{term:"Nimbus",pron:"NIM-bus",def:"A disk or halo of light around the head of a holy figure."}],
+ clues:[{id:"matching",label:"Matching figures",def:"A row of apostles of similar size, standing in nearly identical poses and holding books"},{id:"frontal",label:"Frontal poses",def:"Each figure faces directly toward the viewer with a steady, wide-eyed gaze"},{id:"outlines",label:"Bold outlines",def:"Strong, dark lines defining each figure and separating areas of color"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
- closing:"Do the three saints look like portraits of three different people, or like one figure painted three times?",
+ closing:"Do the apostles look like portraits of different people, or like one figure painted many times?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Matching figures, steady stares and dark outlines are features a detective can carry to the next case.",
  sourceNums:[11,12],
- credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:CairoCoptMuseumBawit12090.jpg",author:"Roland Unger",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}};
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Mural_from_Apa_Apollo_in_Bawit_-_Detail.jpg",author:"Votpuske",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"}};
 window.DECKS=[
 {id:"early-medieval",intro:"public/intro/early-medieval.html",title:"Early Medieval",span:"circa 300 C.E. \u2013 900 C.E.",cards:placeholders('EM')},
 {id:"late-medieval",intro:"public/intro/late-medieval.html",title:"Late Medieval",span:"circa 900 C.E. \u2013 1400 C.E.",cards:placeholders('LM')},
@@ -708,9 +708,9 @@ EM08.zones={
  lead:[{x0:15,y0:22,x1:30,y1:82},{x0:66,y0:25,x1:86,y1:85},{x0:30,y0:20,x1:66,y1:30},{x0:33,y0:83,x1:67,y1:93}]
 };
 EM09.zones={
- matching:[{x0:26,y0:38,x1:70,y1:88}],
- faces:[{x0:28,y0:38,x1:68,y1:52}],
- outline:[{x0:8,y0:52,x1:32,y1:88},{x0:26,y0:38,x1:70,y1:88},{x0:70,y0:50,x1:90,y1:88}]
+ matching:[{x0:15,y0:54,x1:80,y1:83}],
+ frontal:[{x0:41,y0:22,x1:56,y1:40},{x0:43,y0:55,x1:53,y1:70},{x0:15,y0:54,x1:80,y1:67}],
+ outlines:[{x0:37,y0:20,x1:60,y1:52},{x0:15,y0:54,x1:80,y1:83}]
 };
 EM10.zones={
  boxes:[{x0:4,y0:36,x1:96,y1:62},{x0:4,y0:65,x1:96,y1:92}],

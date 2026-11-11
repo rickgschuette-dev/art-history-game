@@ -183,8 +183,8 @@ ol.src li.ph-src.hl{font-style:italic}
 
 
 body[data-view="card"] .top #frameart{display:block}
-.top a.brand{position:absolute;left:3.5%;top:50%;transform:translateY(-50%);background:none;border-radius:0;padding:0;box-shadow:none;display:block}
-.top a.brand img{display:block;height:clamp(56px,8.4vw,104px);width:auto}
+.top a.brand{position:absolute;left:5%;top:50%;transform:translateY(-50%);background:none;border-radius:0;padding:0;box-shadow:none;display:block}
+.top a.brand img{display:block;height:clamp(67px,10.08vw,125px);width:auto}
 .top .rt{position:absolute;right:14px;top:12px;display:flex;align-items:center;gap:1rem;background:rgba(10,24,38,.62);padding:.3rem .85rem;border-radius:999px;font-size:.9rem}
 .top .rt a{color:#fff;text-decoration:none}
 .top .rt a:hover{text-decoration:underline}

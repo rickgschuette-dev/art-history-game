@@ -118,19 +118,20 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 - Changes: Resized from the Commons file.
 
-## EM-09 Three in a Row: main photo
-- File: public/images/artworks/Bawit-lunette.jpg (800 x 533 px)
-- Source: https://commons.wikimedia.org/wiki/File:CairoCoptMuseumBawit12090.jpg
-- Author: Roland Unger
-- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
-- Changes: 
+## EM-09 Facing Forward: main photo
+- File: public/images/artworks/Bawit-niche.jpg (1,920 x 1,440 px)
+- Source: https://commons.wikimedia.org/wiki/File:Mural_from_Apa_Apollo_in_Bawit_-_Detail.jpg
+- Author: Votpuske
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+- Changes: Resized from the 3,724 px original.
 
-## EM-09 Three in a Row: detail photo
-- File: public/images/artworks/Bawit-lunette-detail.jpg (181 x 241 px)
-- Source: https://commons.wikimedia.org/wiki/File:CairoCoptMuseumBawit12090.jpg
-- Author: Roland Unger
-- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
-- Changes: Cropped from the photo above.
+## EM-09 Facing Forward: detail photo
+- File: public/images/artworks/Bawit-apostles-detail.jpg (760 x 420 px)
+- Source: https://commons.wikimedia.org/wiki/File:Mural_from_Apa_Apollo_in_Bawit_-_Detail.jpg
+- Author: Votpuske
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+- Changes: Cropped from the main photo above (resized copy).
+- Note: The earlier EM-09 images (Bawit-lunette.jpg and Bawit-lunette-detail.jpg, Roland Unger, CC BY-SA 3.0) are no longer used by the card.
 
 ## EM-10 Ten Stories, Two Rows: main photo
 - File: public/images/artworks/Junius-Bassus.jpg (1,600 x 1,123 px)
