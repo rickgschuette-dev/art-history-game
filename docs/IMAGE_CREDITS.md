@@ -183,26 +183,19 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC0 1.0 (public domain dedication) (https://creativecommons.org/publicdomain/zero/1.0/)
 - Changes: 
 
-## EM-13 Words Above, Story Below: detail photo
+## EM-13 Words Above, Story Below: detail photo 1 (folio 15v crop)
+- File: public/images/artworks/Vienna-Genesis-Joseph-detail.jpg (930 x 660 px)
+- Source: https://commons.wikimedia.org/wiki/File:Miniatuur_van_Jozef_en_zijn_broers.jpg
+- Author: Emmelinebq
+- License: CC0 1.0 (public domain dedication) (https://creativecommons.org/publicdomain/zero/1.0/)
+- Changes: Cropped from the main image (upper-left scene) and resized.
+
+## EM-13 Words Above, Story Below: detail photo 2 (folio 17v)
 - File: public/images/artworks/Vienna-Genesis-musicians.jpg (1,490 x 1,600 px)
 - Source: https://commons.wikimedia.org/wiki/File:Double_aulos_and_the_oksivafon,_detail_from_Vienna,_%C3%96sterreichische_Nationalbibliothek,_Theol_Greek_31,_folio_17v,_6th_century.jpg
 - Author: Unknown artist (page reproduced by the Austrian National Library)
 - License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
 - Changes: Resized from the Commons file.
-
-## EM-14 Looking Back to Rome: main photo
-- File: public/images/artworks/Lorsch-Ivory-Cover.jpg (1,164 x 1,600 px)
-- Source: https://commons.wikimedia.org/wiki/File:Ivory_back_cover_-_Codex_Aureus_of_Lorsch_(c._778-820)_Vatican_Library.jpg
-- Author: Carolingian court school (photograph from Bibliotheca Laureshamensis digital)
-- License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
-- Changes: Resized from the Commons file.
-
-## EM-14 Looking Back to Rome: detail photo
-- File: public/images/artworks/Lorsch-Angel-Detail.jpg (226 x 255 px)
-- Source: https://commons.wikimedia.org/wiki/File:Ivory_back_cover_-_Codex_Aureus_of_Lorsch_(c._778-820)_Vatican_Library.jpg
-- Author: Carolingian court school (photograph from Bibliotheca Laureshamensis digital)
-- License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
-- Changes: Cropped from the Commons file.
 
 ## EM-15 Patterns in Wire: main photo
 - File: public/images/artworks/Ardagh-Chalice.jpg (1,600 x 1,200 px)
