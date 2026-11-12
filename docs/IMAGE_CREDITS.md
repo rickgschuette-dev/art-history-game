@@ -38,57 +38,28 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
 - Changes: Resized from the original.
 
-## EM-03 Arch of Constantine: detail photo (technique detail)
-- File: public/images/artworks/Arch-of-Constantine-detail.jpg (1,200 x 1,600 px)
-- Source: https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_108.jpg
+## EM-03 Old Stone, New Wall: detail photo (Constantinian frieze, cropped from main)
+- File: public/images/artworks/Arch-of-Constantine-frieze.jpg (1,536 x 276 px)
+- Source: https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_-_102.jpg
 - Author: bradhostetler (Flickr)
 - License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
-- Changes: Resized from the original. Shows relief carving; the panel shown is not identified.
+- Changes: Cropped from the main image (narrow central band showing the Constantinian frieze).
+- Note: The earlier detail file Arch-of-Constantine-detail.jpg (bradhostetler) was a panel from an unidentified part of the arch and is no longer used by EM-03.
 
-## EM-04 Old St. Peter's: main image (drawing)
+## EM-04 Drawn From Evidence: main image (plan drawing)
 - File: public/images/artworks/Old-St-Peters-detail.jpg (1,600 x 1,027 px)
 - Source: https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg
 - Author: Internet Archive Book Images, from Walter Lowrie, Monuments of the Early Church (1901)
 - License: No known copyright restrictions (https://www.flickr.com/commons/usage/)
 - Changes: Resized from the original.
 
-## EM-04 Old St. Peter's: detail image (drawing)
-- File: public/images/artworks/Old-St-Peters.jpg (1,600 x 1,210 px)
-- Source: https://commons.wikimedia.org/wiki/File:Fig_245_Old_St_Peter%27s.jpg
-- Author: A. Rosengarten (Architectural Styles, Fig. 245)
-- License: Public domain
-- Changes: Resized from the original.
-
-## EM-07 Bewcastle Cross: main image
-- File: public/images/artworks/Bewcastle-Cross.jpg (1,200 x 1,600 px)
-- Source: https://commons.wikimedia.org/wiki/File:Bewcastle_cross_south_perspective_view.jpg
-- Author: Doug Sim
-- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
-- Changes: Resized from the original. Shows the south face of the shaft.
-
-## EM-07 Bewcastle Cross: detail image
-- File: public/images/artworks/Bewcastle-detail.jpg (480 x 640 px, original size)
-- Source: https://commons.wikimedia.org/wiki/File:The_7th_C_Bewcastle_Cross_-_St._John_the_Evangelist_-_geograph.org.uk_-_1833425.jpg
-- Author: Mike Quinn (via geograph.org.uk)
-- License: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/)
-- Changes: None. Shows a carved figure at the base of one side; used to show relief technique.
-
-## EM-08 Lorscher Kopf: main photo
-- File: public/images/artworks/Lorscher-Kopf.jpg (1,443 x 1,600 px)
-- Source: https://commons.wikimedia.org/wiki/File:Lorscher_Kopf.JPG
-- Author: Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)
-- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: flagged for Rick's decision.
-- Changes: Resized from the original.
-- Note: dated 9th/11th century by the museum; admitted to Early Medieval by Rick's explicit exception on 2026-10-22, when the cutoff was 800 C.E. The cutoff is now 900 C.E., but the museum's range (9th to 11th century) still runs past it.
-
-## EM-08 Lorscher Kopf: detail image (reconstruction)
-- File: public/images/artworks/Lorscher-Kopf-detail.jpg (1,174 x 1,600 px)
-- Source: https://commons.wikimedia.org/wiki/File:GN-F2632a-Kg-35-28a.jpg
-- Author: Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)
-- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: flagged for Rick's decision.
-- Changes: Resized from the original.
-- Note: black-and-white reconstruction of the fragmentary window (Commons description credits Heinz Merten); shows the whole face, not the surviving glass.
-
+## EM-04 Drawn From Evidence: detail image (atrium, cropped from main)
+- File: public/images/artworks/Old-St-Peters-atrium.jpg (768 x 431 px)
+- Source: https://commons.wikimedia.org/wiki/File:Monuments_of_the_early_church_(1901)_(14596792999).jpg
+- Author: Internet Archive Book Images, from Walter Lowrie, Monuments of the Early Church (1901)
+- License: No known copyright restrictions (https://www.flickr.com/commons/usage/)
+- Changes: Cropped from the main image (central area showing the atrium).
+- Note: The earlier detail file Old-St-Peters.jpg (A. Rosengarten interior cutaway) is no longer used by EM-04.
 
 ## EM-05 Face to Face: main photo
 - File: public/images/artworks/Saint-Peter-Sinai.jpg (945 x 1,600 px)
@@ -155,7 +126,14 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC BY-SA 3.0 Austria (https://creativecommons.org/licenses/by-sa/3.0/at/)
 - Changes: Resized from the original.
 
-## EM-11 Plain Outside, Bright Inside: detail photo
+## EM-11 Plain Outside, Bright Inside: detail photo 1 (clerestory, cropped)
+- File: public/images/artworks/Santa-Sabina-clerestory.jpg (830 x 340 px)
+- Source: https://commons.wikimedia.org/wiki/File:Rom,_Basilika_Santa_Sabina,_Au%C3%9Fenansicht.jpg
+- Author: Dnalor 01
+- License: CC BY-SA 3.0 Austria (https://creativecommons.org/licenses/by-sa/3.0/at/)
+- Changes: Cropped from the main image (upper wall band showing the clerestory windows).
+
+## EM-11 Plain Outside, Bright Inside: detail photo 2 (nave interior)
 - File: public/images/artworks/Santa-Sabina-nave.jpg (1,600 x 1,600 px)
 - Source: https://commons.wikimedia.org/wiki/File:Basilica_di_Santa_Sabina_Nave.jpg
 - Author: NateBergin
@@ -382,12 +360,19 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
 - Changes: Resized from the Commons file.
 
-## EM-27 Rounded Core, Pointed Edges: detail photo
+## EM-27 Rounded Core, Pointed Edges: detail photo 1 (dome, cropped from main)
+- File: public/images/artworks/Aachen-Dome-Detail.jpg (416 x 528 px)
+- Source: https://commons.wikimedia.org/wiki/File:Aachen_Cathedral_And_Palatine_Chapel,_Germany.jpg
+- Author: Jim Linwood
+- License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
+- Changes: Cropped from the main image (central domed octagon).
+
+## EM-27 Rounded Core, Pointed Edges: detail photo 2 (interior)
 - File: public/images/artworks/Aachen-Interior-Detail.jpg (1,251 x 938 px)
 - Source: https://commons.wikimedia.org/wiki/File:Cathedral_in_Aachen_7.jpg
 - Author: Leon petrosyan
 - License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-- Changes: - Note: Main and detail are both CC BY / CC BY-SA photos; credits shown on the card.
+- Changes: Resized from the Commons file.
 
 ## EM-28 A Hall Built for a King: main photo
 - File: public/images/artworks/Naranco-Exterior.jpg (1,600 x 1,359 px)
