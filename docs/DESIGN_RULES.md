@@ -84,7 +84,7 @@ These replace any earlier rule they contradict.
 - The bonus question is worth 3 points (the case bonus stays 5). Prompt: "For 3 bonus points, identify this work. You have seen it before." One try; the first answer is stored and locked.
 - The answer choices show only the letter and the case name. No thumbnails (they give the answer away). Choices are real earlier cases; placeholder options are gone.
 - The example photo on the vocabulary page has a Magnifier (On/Off switch, right-aligned in the "A good example" heading row; 2.5x lens, 187 px), the same control as the game cards.
-- Vocabulary words so far: Composition (after case 8), Nimbus (after case 16), Attribute (after case 24). Nimbus: a solid disk behind the head of a holy figure; a halo is only a thin line.
+- Vocabulary cards in the EM deck: Nimbus (after case 6), Interlace (after case 12), Composition (after case 16), Attribute (after case 20), Nave/Transept/Apse (after case 24). Nimbus definition on the card matches the WTK definition exactly.
 
 ### Early Medieval cases (final list)
 EM-01 Four Tetrarchs, EM-02 San Vitale apse, EM-03 Arch of Constantine, EM-04 Old St. Peter's, EM-05 Saint Peter icon, EM-06 Lindisfarne Matthew page, EM-07 Bewcastle Cross, EM-08 Lorscher Kopf, EM-09 Bawit lunette, EM-10 Junius Bassus sarcophagus, EM-11 Santa Sabina, EM-12 Hagia Sophia, EM-13 Vienna Genesis, EM-14 Lorsch ivory cover, EM-15 Ardagh Chalice (copy), EM-16 Kells Chi-Rho, EM-17 Ebbo Gospels Matthew, EM-18 Spong Man, EM-19 Roselle bowl, EM-20 Sutton Hoo purse lid, EM-21 Cordoba mosque, EM-22 Oseberg ship, EM-23 Franks Casket, EM-24 Dome of the Rock, EM-25 Santa Maria Antiqua, EM-26 Christ Pantocrator (Sinai), EM-27 Palatine Chapel, EM-28 Santa Maria del Naranco, EM-29 Flight into Egypt (Mustair), EM-30 Mausoleum of Galla Placidia.
@@ -162,8 +162,10 @@ The word "quiz" is never used anywhere in this project — not in player-facing 
 ## Words to Know: pronunciation guides (2026-11-11)
 - A pronunciation guide appears only for foreign words and for words used only in architecture, sculpture or art history (for example Pendentive, Voussoir, Clerestory, Tesserae).
 - If a word is pronounced the same way in any English context, the guide is left off, even when the word is used in an art-historical sense (for example Dome, Buttress, Arcade, Nimbus, Interlace).
+- If a word has two accepted English pronunciations with different senses (for example Attribute: the noun AT-ri-byoot vs. the verb uh-TRIB-yoot), the guide is shown so the student uses the noun form. Decision of 2026-11-12.
 - In the data, an omitted guide is `pron:""`. The page then shows the term alone, with no parentheses.
 - Applies to every Words to Know box in the Early Medieval, Late Medieval and Renaissance decks, and to all later decks.
 
-- Repeat vocabulary: Nimbus and Fresco are not added to any further Words to Know box (decision of 2026-11-12). Nimbus stays in EM-05, EM-09 and EM-29; Fresco stays in EM-29 and LM-20. A card whose box would have held one of them simply has two entries.
+- Repeat vocabulary: Nimbus and Fresco are not added to any further Words to Know box (decision of 2026-11-12, refined 2026-11-12 when Nimbus was moved out of EM-29). Nimbus stays in EM-05, EM-09 and EM-26; Fresco stays in EM-29 and LM-20. A card whose box would have held one of them simply has two entries.
+- Specialized Words to Know terms are not repeated on two consecutive cards in play order (Carolingian rule, decision of 2026-11-12). Terms may still repeat across the deck with at least one card of spacing between appearances.
 - Nimbus and halo are different terms in art history. Never use "halo" as a substitute for "nimbus" (or the reverse), in feature boxes, captions, alt text or definitions. Where a feature would need the word nimbus and the card has no Nimbus entry, the feature is reworded so that it does not name either term.

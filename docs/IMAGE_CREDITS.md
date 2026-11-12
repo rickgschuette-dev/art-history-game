@@ -89,6 +89,35 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - License: CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 - Changes: Resized from the Commons file.
 
+## EM-07 Vines Carved in Stone: main photo
+- File: public/images/artworks/Bewcastle-Cross.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Bewcastle_cross_south_perspective_view.jpg
+- Author: Doug Sim
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
+- Changes: Resized from the Commons file.
+
+## EM-07 Vines Carved in Stone: detail photo
+- File: public/images/artworks/Bewcastle-detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:The_7th_C_Bewcastle_Cross_-_St._John_the_Evangelist_-_geograph.org.uk_-_1833425.jpg
+- Author: Mike Quinn
+- License: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/)
+- Changes: Resized from the Commons file.
+
+## EM-08 Pieces of a Face: main photo
+- File: public/images/artworks/Lorscher-Kopf.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Lorscher_Kopf.JPG
+- Author: Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+- Changes: Resized from the Commons file.
+
+## EM-08 Pieces of a Face: detail image (reconstruction)
+- File: public/images/artworks/Lorscher-Kopf-detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:GN-F2632a-Kg-35-28a.jpg
+- Author: Fotoabteilung-HLMD (Hessisches Landesmuseum Darmstadt)
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+- Changes: Resized from the Commons file.
+- Note: This is a modern black-and-white reconstruction drawing of the complete face, used on the card to show what the broken glass fragment originally looked like.
+
 ## EM-09 Facing Forward: main photo
 - File: public/images/artworks/Bawit-niche.jpg (1,920 x 1,440 px)
 - Source: https://commons.wikimedia.org/wiki/File:Mural_from_Apa_Apollo_in_Bawit_-_Detail.jpg
@@ -174,6 +203,20 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Author: Unknown artist (page reproduced by the Austrian National Library)
 - License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
 - Changes: Resized from the Commons file.
+
+## EM-14 Looking Back to Rome: main photo
+- File: public/images/artworks/Lorsch-Ivory-Cover.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Ivory_back_cover_-_Codex_Aureus_of_Lorsch_(c._778-820)_Vatican_Library.jpg
+- Author: Carolingian court school (photograph from Bibliotheca Laureshamensis digital)
+- License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Resized from the Commons file.
+
+## EM-14 Looking Back to Rome: detail photo (leftmost angel, cropped)
+- File: public/images/artworks/Lorsch-Angel-Detail.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Ivory_back_cover_-_Codex_Aureus_of_Lorsch_(c._778-820)_Vatican_Library.jpg
+- Author: Carolingian court school (photograph from Bibliotheca Laureshamensis digital)
+- License: Public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Cropped from the main image (leftmost ivory panel).
 
 ## EM-15 Patterns in Wire: main photo
 - File: public/images/artworks/Ardagh-Chalice.jpg (1,600 x 1,200 px)
@@ -1185,6 +1228,27 @@ One entry per photo. A photo is not added to a card until its entry is complete.
   app.js change (an optional `example.image`/`alt`/`credit` override on a vocabulary card). That change was
   never carried into the real repository and the override is not present in the files described here —
   all four vocabulary cards above use their referenced case's own image unmodified.
+
+## REV-EM The Case File: review-work main photo (Chapel of San Zeno, Santa Prassede, Rome)
+- File: public/images/artworks/SanZeno-Saints.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Rom,_Santa_Prassede,_Mosaik_in_der_Zeno-Kapelle,_Bild_1.JPG
+- Author: Dguendel
+- License: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+- Changes: Resized from the Commons file.
+
+## REV-EM The Case File: review-work detail 1 (arch over reused columns)
+- File: public/images/artworks/SanZeno-Arch.jpg
+- Source: https://commons.wikimedia.org/wiki/File:Santa_Prassede_cappella_di_San_Zeno,_lato_s.JPG
+- Author: Sailko
+- License: CC BY 2.5 (https://creativecommons.org/licenses/by/2.5/)
+- Changes: Resized from the Commons file.
+
+## REV-EM The Case File: review-work detail 2 (doorway with reused Roman stone)
+- File: public/images/artworks/SanZeno-Doorway.jpg
+- Source: https://commons.wikimedia.org/wiki/File:SPrassedeSZenonePortale01.jpg
+- Author: MM
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
+- Changes: Resized from the Commons file.
 
 ### REV-LM, the Late Medieval Case File
 
