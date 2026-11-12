@@ -164,3 +164,6 @@ The word "quiz" is never used anywhere in this project — not in player-facing 
 - If a word is pronounced the same way in any English context, the guide is left off, even when the word is used in an art-historical sense (for example Dome, Buttress, Arcade, Nimbus, Interlace).
 - In the data, an omitted guide is `pron:""`. The page then shows the term alone, with no parentheses.
 - Applies to every Words to Know box in the Early Medieval, Late Medieval and Renaissance decks, and to all later decks.
+
+- Repeat vocabulary: Nimbus and Fresco are not added to any further Words to Know box (decision of 2026-11-12). Nimbus stays in EM-05, EM-09 and EM-29; Fresco stays in EM-29 and LM-20. A card whose box would have held one of them simply has two entries.
+- Nimbus and halo are different terms in art history. Never use "halo" as a substitute for "nimbus" (or the reverse), in feature boxes, captions, alt text or definitions. Where a feature would need the word nimbus and the card has no Nimbus entry, the feature is reworded so that it does not name either term.

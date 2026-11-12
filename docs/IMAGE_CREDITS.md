@@ -141,11 +141,12 @@ One entry per photo. A photo is not added to a card until its entry is complete.
 - Changes: Resized from the Commons file.
 
 ## EM-10 Ten Stories, Two Rows: detail photo
-- File: public/images/artworks/Junius-Bassus-detail.jpg (1,600 x 1,062 px)
-- Source: https://commons.wikimedia.org/wiki/File:1059_-_Roma,_Museo_d._civilt%C3%A0_Romana_-_Calco_sarcofago_Giunio_Basso_-_Foto_Giovanni_Dall%27Orto,_12-Apr-2008.jpg
-- Author: Giovanni Dall'Orto
-- License: Free to use with credit to the photographer (https://commons.wikimedia.org/wiki/File:1059_-_Roma,_Museo_d._civilt%C3%A0_Romana_-_Calco_sarcofago_Giunio_Basso_-_Foto_Giovanni_Dall%27Orto,_12-Apr-2008.jpg)
-- Changes: Resized from the original.
+- File: public/images/artworks/Junius-Bassus-detail-top.jpg (876 x 497 px)
+- Source: https://commons.wikimedia.org/wiki/File:Tesoro_di_san_pietro,_sarcofago_di_giunio_basso.JPG
+- Author: Sailko
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
+- Changes: Cropped from the original photograph of the sarcophagus shown in the main image.
+- Note: The earlier detail file Junius-Bassus-detail.jpg (Giovanni Dall'Orto) showed a plaster cast and is no longer used by EM-10.
 
 ## EM-11 Plain Outside, Bright Inside: main photo
 - File: public/images/artworks/Santa-Sabina.jpg (1,600 x 1,259 px)
