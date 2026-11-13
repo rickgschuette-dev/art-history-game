@@ -1496,7 +1496,33 @@ window.DECKS[0].review={"id": "REV-EM", "title": "The Case File", "crumb": "Earl
 
 window.DECKS[2].span="circa 1400 C.E. – 1600 C.E.";
 
-var RE01={id:"RE-01",kind:"Marble statue",title:"A Knight Who Stands Like a Real Person",object:"Saint George",playable:true,
+var RE01={id:"RE-01",kind:"Gilt bronze relief",title:"A Contest That Opened a New Age",object:"Sacrifice of Isaac",playable:true,
+ crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
+ work:"Sacrifice of Isaac (competition panel)",date:"1401 C.E.",location:"Bargello Museum, Florence",artist:"Lorenzo Ghiberti",
+ headline:"Look closely at the panel",
+ alt:"A small gilt bronze panel in the shape of a quatrefoil, a four-lobed Gothic frame. In the upper right, a bearded man raises a knife above a kneeling nude boy, while a winged angel reaches in from the upper right to stop him. A ram stands in rocks between them. Below, two servants wait with a donkey at a stream.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Ghiberti-Isaac-1401.jpg",
+ imageNote:"A gilt bronze competition panel for the Florence Baptistery’s second set of doors. The four-lobed frame was a Gothic form already in use on the Baptistery’s earlier doors; the figures inside pointed to a new age.",
+ detail:{image:"public/images/artworks/Ghiberti-North-Doors.jpg",alt:"A tall photograph of one valve of a pair of ornate bronze doors on a building in Florence. The door is divided into a vertical grid of panels. Each panel holds a four-lobed quatrefoil frame, and inside each quatrefoil is a scene from the Bible carved in low bronze relief: figures standing, kneeling and gathered in groups. Carved foliage, flowers, fruit and small human heads decorate the strips of metal between the panels.",caption:"Detail: the finished North Doors of the Florence Baptistery, the commission Ghiberti won after the 1401 contest. He spent more than twenty years casting these doors, with twenty-eight scenes from the Life of Christ, each framed in its own quatrefoil.",credit:{word:"Detail photo",url:"",author:"Deror avi",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Downloaded at original size."}},
+ detail2:{image:"public/images/artworks/Ghiberti-Isaac-1401-Detail.jpg",alt:"Very close surface view of a section of the bronze panel. Every curl of hair, fold of cloth and muscle is modeled in gleaming gilt metal. Small nicks and warm reflections show the real surface of the fire-gilded bronze.",caption:"Detail: a very close view of the gilt-bronze surface, showing the fineness of Ghiberti's modeling",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Ghiberti\u0027s_Competition_Panel_Close_Up.jpg",author:"Lorenzo Ghiberti (photograph by Eric Parker)",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Close view of the surface."}},
+ size:"Height: 45 cm / 17.7 in. Width: 38 cm / 15 in. About the size of a laptop screen.",
+ intro:"In 1401, Florence held a contest to choose a sculptor for the next bronze doors of its ancient Baptistery. Seven young artists cast small panels showing Abraham ready to sacrifice his son Isaac. The judges chose the panel by Lorenzo Ghiberti, just twenty years old. His winning design used the pointed, four-lobed frame of Gothic art, but inside it he carved bodies in the calm, muscular style of ancient Rome — a first work of a new age.",
+ context:[{term:"Renaissance",pron:"REN-uh-sahns",def:"A French word meaning ‘rebirth.’ A long period of new art, learning and science in Italy and northern Europe, from about 1400 to 1600, when artists and thinkers looked back to the ancient Greeks and Romans and worked to match or surpass them."},{term:"Quatrefoil",pron:"KWAT-ruh-foyl",def:"A frame or ornament in the shape of four joined lobes, like a four-leaf clover. The quatrefoil was a favorite shape of the Gothic Middle Ages and was still in use when Ghiberti designed this panel."},{term:"Classical revival",pron:"",def:"The Renaissance return to the art and ideas of ancient Greece and Rome. Artists studied ancient statues, buildings and writings and tried to match their calm, muscular figures and balanced forms."}],
+ clues:[{id:"frame",label:"Four-lobed Gothic frame",def:"The outer shape of the panel is a quatrefoil, four joined curves that come to four gentle points. The same shape already framed the scenes on the Baptistery’s earlier doors."},{id:"drama",label:"Abraham and the angel",def:"Abraham raises his knife above Isaac, who kneels on an altar. The angel reaches in from the upper right to stop him, and a ram waits in the rocks to be sacrificed in Isaac’s place."},{id:"figures",label:"Figures in the Classical style",def:"Ghiberti's Isaac kneels in the pose of an ancient Greek athlete, nude and muscular, with weight shifted onto one leg. His body revives the sculpture of ancient Rome inside a medieval Gothic frame."}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a young sculptor keep the old Gothic frame but fill it with figures in the style of ancient Rome?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. A four-lobed Gothic frame, the drama of Abraham and the angel, and figures in the Classical style are features a detective can carry to the next case.",
+ sourceNums:[],
+ credit:{word:"Photo",url:"",author:"Lorenzo Ghiberti",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
+RE01.zones={
+ frame:[{x0:0,y0:0,x1:99,y1:15},{x0:85,y0:15,x1:99,y1:85},{x0:0,y0:15,x1:15,y1:85},{x0:0,y0:85,x1:99,y1:99}],
+ drama:[{x0:30,y0:15,x1:95,y1:60}],
+ figures:[{x0:35,y0:30,x1:85,y1:62}]
+};
+
+var RE02={id:"RE-02",kind:"Marble statue",title:"A Knight Who Stands Like a Real Person",object:"Saint George",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"Saint George",date:"about 1415–17 C.E.",location:"Bargello National Museum, Florence (made for the Orsanmichele church)",artist:"Donatello",
  headline:"Look closely at the statue",
@@ -1507,7 +1533,7 @@ var RE01={id:"RE-01",kind:"Marble statue",title:"A Knight Who Stands Like a Real
  detail:{image:"public/images/artworks/Donatello-St-George-Detail.jpg",alt:"A close view of the knight's head and shoulders. Curls of hair are carved separately on top of the head, the brow is furrowed, and the deep-set eyes look off to one side.",caption:"Detail: curls, a furrowed brow and deep-set eyes carved in marble",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Donatello,_St._George_(cropped).jpg",author:"unknown (cropped reproduction)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the main image."}},
  size:"",
  intro:"This marble knight was carved in Florence between 1415 and 1417 by the sculptor Donatello. It stood in one of fourteen outdoor hollows on the walls of the Orsanmichele church, each holding a statue of a saint paid for by one of the city's guilds. Saint George stands with his weight shifted onto one leg, so that his body curves slightly, and his head turns as if hearing a sound. The original is now kept at the Bargello Museum in Florence.",
- context:[{term:"Renaissance",pron:"REN-uh-sahns",def:"A period of European art and learning that began in Italy around 1400 C.E. and lasted into the 1600s. Artists studied ancient Greek and Roman works and built on them. The word means 'rebirth' in French."},{term:"Contrapposto",pron:"kon-truh-POH-stoh",def:"A pose in which a figure stands with its weight resting on one leg, so the hips and shoulders tilt in opposite directions and the body curves slightly. The pose was recovered from ancient Greek and Roman sculpture."},{term:"Niche",pron:"NEESH",def:"A hollow, arched space set into a wall or building, designed to hold a statue."}],
+ context:[{term:"Guild",pron:"",def:"A trade or craft association. Fourteen Florence guilds commissioned statues of their patron saints for the outside walls of Orsanmichele."},{term:"Contrapposto",pron:"kon-truh-POH-stoh",def:"A pose in which a figure stands with its weight resting on one leg, so the hips and shoulders tilt in opposite directions and the body curves slightly. The pose was recovered from ancient Greek and Roman sculpture."},{term:"Niche",pron:"NEESH",def:"A hollow, arched space set into a wall or building, designed to hold a statue."}],
  clues:[{id:"contrapposto",label:"Contrapposto stance",def:"Weight shifted onto one leg, with the body bent slightly and the head turned"},{id:"drapery",label:"Soft drapery",def:"The cloak falling in soft folds across the shoulders"},{id:"face",label:"Watchful face",def:"Carved curls, a furrowed brow and eyes looking off to one side"}],
  steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
  closing:"Why might a sculptor want a stone knight to look relaxed and alert, as if he could move, and not stiff and still?",
@@ -1515,13 +1541,13 @@ var RE01={id:"RE-01",kind:"Marble statue",title:"A Knight Who Stands Like a Real
  guide:"Evidence filed. A contrapposto stance, soft drapery and a watchful face are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:St._Georg,_Donatello,_1416-17,_Bargello_Florenz-03.jpg",author:"Rufus46",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}};
-RE01.zones={
+RE02.zones={
  contrapposto:[{x0:26,y0:56,x1:70,y1:99.5}],
  drapery:[{x0:32,y0:20,x1:68,y1:50}],
  face:[{x0:34,y0:7,x1:56,y1:22}]
 };
 
-var RE02={id:"RE-02",kind:"Architecture",wide:true,title:"Arches in a Calm, Even Row",object:"Ospedale degli Innocenti",playable:true,
+var RE03={id:"RE-03",kind:"Architecture",wide:true,title:"Arches in a Calm, Even Row",object:"Ospedale degli Innocenti",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"Ospedale degli Innocenti (Hospital of the Innocents)",date:"begun 1419 C.E.",location:"Florence",artist:"Filippo Brunelleschi",
  headline:"Look closely at the building",
@@ -1540,13 +1566,13 @@ var RE02={id:"RE-02",kind:"Architecture",wide:true,title:"Arches in a Calm, Even
  guide:"Evidence filed. An arcade, slender columns and measured proportion are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Ospedale_degli_Innocenti_Florenz.jpg",author:"Ricardalovesmonuments",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped."}};
-RE02.zones={
+RE03.zones={
  arcade:[{x0:9,y0:57,x1:99.5,y1:78}],
  columns:[{x0:9,y0:73,x1:99.5,y1:99.5}],
  proportion:[{x0:1,y0:29,x1:99.5,y1:47},{x0:9,y0:56,x1:99.5,y1:65}]
 };
 
-var RE03={id:"RE-03",kind:"Oil painting",title:"A Room Full of Tiny Things",object:"The Arnolfini Portrait",playable:true,
+var RE04={id:"RE-04",kind:"Oil painting",title:"A Room Full of Tiny Things",object:"The Arnolfini Portrait",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"The Arnolfini Portrait",date:"1434 C.E.",location:"National Gallery, London",artist:"Jan van Eyck",
  headline:"Look closely at the painting",
@@ -1565,13 +1591,13 @@ var RE03={id:"RE-03",kind:"Oil painting",title:"A Room Full of Tiny Things",obje
  guide:"Evidence filed. Symbolic objects, oil-paint textures and soft window light are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_Arnolfini_Feil_w.jpg",author:"Jan van Eyck",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
-RE03.zones={
+RE04.zones={
  symbols:[{x0:36,y0:1,x1:65,y1:19},{x0:42,y0:24,x1:58,y1:36},{x0:0,y0:85,x1:15,y1:98},{x0:7,y0:51,x1:13,y1:56}],
  textures:[{x0:54,y0:30,x1:99,y1:98},{x0:7,y0:25,x1:50,y1:78}],
  light:[{x0:3,y0:0,x1:13,y1:48}]
 };
 
-var RE04={id:"RE-04",kind:"Marble sculpture",title:"Two Figures That Make One Triangle",object:"Pietà",playable:true,
+var RE05={id:"RE-05",kind:"Marble sculpture",title:"Two Figures That Make One Triangle",object:"Pietà",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"Pietà",date:"1498–99 C.E.",location:"St. Peter’s Basilica, Rome",artist:"Michelangelo",
  headline:"Look closely at the sculpture",
@@ -1590,13 +1616,13 @@ var RE04={id:"RE-04",kind:"Marble sculpture",title:"Two Figures That Make One Tr
  guide:"Evidence filed. A triangle composition, polished marble and deep drapery are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Michelangelo_Pieta_ret_w.jpg",author:"Stanislav Traykov (retouched version)",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}};
-RE04.zones={
+RE05.zones={
  composition:[{x0:10,y0:13,x1:90,y1:85}],
  polish:[{x0:28,y0:33,x1:84,y1:68},{x0:48,y0:18,x1:60,y1:31}],
  drapery:[{x0:22,y0:60,x1:70,y1:84}]
 };
 
-var RE05={id:"RE-05",kind:"Panel painting",title:"A Garden Where the Lines Dance",object:"Primavera",playable:true,
+var RE06={id:"RE-06",kind:"Panel painting",title:"A Garden Where the Lines Dance",object:"Primavera",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"La Primavera (Spring)",date:"about 1477–82 C.E.",location:"Uffizi Gallery, Florence",artist:"Sandro Botticelli",
  headline:"Look closely at the painting",
@@ -1616,13 +1642,13 @@ var RE05={id:"RE-05",kind:"Panel painting",title:"A Garden Where the Lines Dance
  guide:"Evidence filed. Flowing lines, a flowering grove and a row of mythic figures are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg",author:"Sandro Botticelli (photograph by Google Art Project)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
-RE05.zones={
+RE06.zones={
  outlines:[{x0:16,y0:24,x1:46,y1:90},{x0:70,y0:22,x1:97,y1:92}],
  garden:[{x0:3,y0:80,x1:99,y1:99},{x0:59,y0:30,x1:76,y1:78}],
  row:[{x0:4,y0:18,x1:98,y1:92}]
 };
 
-var RE06={id:"RE-06",kind:"Architecture",title:"A Building Worked Out Like a Puzzle",object:"Tempietto",playable:true,
+var RE07={id:"RE-07",kind:"Architecture",title:"A Building Worked Out Like a Puzzle",object:"Tempietto",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"Tempietto (San Pietro in Montorio)",date:"begun 1502 C.E.",location:"San Pietro in Montorio, Rome",artist:"Donato Bramante",
  headline:"Look closely at the building",
@@ -1642,113 +1668,114 @@ var RE06={id:"RE-06",kind:"Architecture",title:"A Building Worked Out Like a Puz
  guide:"Evidence filed. Narrowing tiers, a ringed form and a ring of Doric columns are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Tempietto_del_Bramante_Vorderseite.jpg",author:"Peter1936F",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"}};
-RE06.zones={
+RE07.zones={
  layers:[{x0:12,y0:1,x1:88,y1:99}],
  curves:[{x0:30,y0:33,x1:73,y1:41},{x0:24,y0:15,x1:76,y1:31},{x0:1,y0:88,x1:98,y1:99}],
  doric:[{x0:14,y0:57,x1:86,y1:86}]
 };
 
-var RE07={id:"RE-07",kind:"Fresco wall painting",title:"A Wall That Opens Into a Chapel",object:"The Holy Trinity",playable:true,
+var RE08={id:"RE-08",kind:"Fresco wall painting",title:"A Wall That Opens Into a Chapel",object:"The Holy Trinity",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"The Holy Trinity",date:"about 1426–28 C.E.",location:"Santa Maria Novella, Florence",artist:"Masaccio",
  headline:"Look closely at the painting",
  alt:"A tall wall painting in a pink-and-white painted frame. Two fluted columns and a round arch frame a deep, arched chapel whose ceiling is covered in rows of square boxes. Inside the chapel, a bearded man in red and blue stands behind a crucified figure. Two standing figures in purple and red robes stand beside the cross. Two kneeling figures in red and blue robes kneel outside the arch. Below, on a stone ledge, a skeleton lies on a tomb.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Trinity.jpg",
- imageNote:"A painting made directly on a wall inside a Florence church. The wall is flat, but the painter made it look like a deep chapel.",
- detail:{image:"public/images/artworks/Trinity-Ceiling.jpg",alt:"Close view of the top of the painting. A pink round arch frames a curved ceiling covered in rows of small boxes. The boxes are larger at the front and smaller and closer together toward the back, where a figure in red and blue stands.",caption:"Technique detail: the painted ceiling, where the boxes shrink and crowd together toward the back",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Masaccio,_trinit%C3%A0,_dettaglio_2.jpg",author:"Masaccio (scan of a reproduction in John T. Spike, Masaccio, 2002)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
- size:"Height: 667 cm / 21.8 ft. Width: 317 cm / 10.4 ft. About as tall as a two-story building.",
- intro:"This wall painting in a Florence church was made about 600 years ago. The wall itself is flat, yet a deep chapel seems to open into it. Compare the boxes on the painted ceiling near the front with the boxes at the back. Which figures seem closest to you, and which farthest? Which parts of the stonework look solid enough to touch?",
- context:"A coffer is a sunken, box-shaped panel in a ceiling. Find the rows of coffers in the painted ceiling. How do they change from front to back?",
- clues:[{id:"coffers",label:"Shrinking boxes",def:"Ceiling boxes that grow smaller and closer together toward the back"},{id:"stone",label:"Painted stonework",def:"Columns, an arch and a ledge shaded to look like solid stone standing out from the wall"},{id:"depth",label:"Figures at different depths",def:"People in front of, beside and behind each other, from the front ledge to the back of the chapel"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
- closing:"Why might a painter want a flat wall to feel like a deep space the viewer could step into?",
+ imageNote:"A very large wall painting in Santa Maria Novella, a Dominican church in Florence. The wall is flat, but Masaccio made it look like a deep side chapel carved into it.",
+ detail:{image:"public/images/artworks/Trinity-Ceiling.jpg",alt:"Close view of the top of the painting. A pink round arch frames a curved ceiling covered in rows of small boxes. The boxes are larger at the front and smaller and closer together toward the back, where a figure in red and blue stands.",caption:"Detail: the coffered ceiling, where the painted boxes shrink and crowd together toward the back of the chapel",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Masaccio,_trinit%C3%A0,_dettaglio_2.jpg",author:"Masaccio (scan of a reproduction in John T. Spike, Masaccio, 2002)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Close view of the ceiling area of the fresco."}},
+ detail2:{image:"public/images/artworks/Trinity-Donors-Detail.jpg",alt:"Close view of the lower half of the painting. On the left, a man in a red cloak and hood kneels with hands clasped. Inside the arch, a woman in dark purple stands beside the cross, and a young man in a rose robe stands on the other side. On the right, a woman in a dark blue veil kneels with hands clasped.",caption:"Detail: the Lenzi donors kneel outside the arch, with Mary and John the Evangelist inside, cropped from the main image",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Masaccio_-_Trinity_-_Santa_Maria_Novella.jpg",author:"Oursana (as assumed on Commons)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the main image."}},
+ size:"",
+ intro:"Masaccio finished this large wall painting in Florence around 1427, when he was in his mid-twenties. He painted it directly onto the wet plaster of a church wall, which has stayed flat for six hundred years. Yet when the viewer stands in front of it, a deep chapel seems to open into the wall: columns step back, the ceiling shrinks toward the distance, and five figures stand at clearly different depths. On the ledge below, a painted skeleton reminds the viewer that all flesh must die.",
+ context:[{term:"Fresco",pron:"",def:"A painting made directly on fresh, wet plaster. The colors soak into the plaster and dry with the wall, becoming part of the building. A fresco cannot be moved."},{term:"Linear perspective",pron:"",def:"A way of drawing on a flat surface that makes the space look deep and real. Lines that are parallel in the real world are drawn so they meet at a single point in the distance, pulling the eye into the picture."},{term:"Donor portrait",pron:"",def:"A picture of the person (or family) who paid for a religious artwork, placed within the painting as a kneeling witness to the holy scene. Here the Lenzi family kneels outside the arch at the front."}],
+ clues:[{id:"coffers",label:"Shrinking coffers",def:"Ceiling boxes that grow smaller and closer together toward the back of the chapel, pulling the eye into the distance"},{id:"architecture",label:"Painted architecture",def:"A rose arch, carved capitals and pairs of columns shaded to look like a solid stone chapel built into the wall"},{id:"donors",label:"Kneeling donors",def:"A man in red on the left and a woman in black on the right, kneeling outside the arch as witnesses to the holy scene"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a painter want a flat wall to feel like a deep chapel the viewer could step into?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. Shrinking boxes, painted stonework and figures at different depths are features a detective can carry to the next case.",
+ guide:"Evidence filed. Shrinking coffers, painted architecture and kneeling donors are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Masaccio_-_Trinity_-_Santa_Maria_Novella.jpg",author:"Oursana (as assumed on Commons)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
-RE07.zones={
+RE08.zones={
  coffers:[{x0:26,y0:17,x1:75,y1:33}],
- stone:[{x0:18,y0:11,x1:82,y1:30},{x0:8,y0:18,x1:20,y1:62},{x0:79,y0:18,x1:93,y1:62}],
- depth:[{x0:5,y0:28,x1:96,y1:73}]
+ architecture:[{x0:18,y0:11,x1:82,y1:30},{x0:8,y0:18,x1:20,y1:62},{x0:79,y0:18,x1:93,y1:62}],
+ donors:[{x0:4,y0:52,x1:22,y1:75},{x0:78,y0:52,x1:96,y1:75}]
 };
 
-var RE08={id:"RE-08",kind:"Oil painting",title:"A Winter World Seen From Above",object:"Hunters in the Snow",playable:true,
+var RE09={id:"RE-09",kind:"Oil painting",title:"A Winter World Seen From Above",object:"Hunters in the Snow",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"Hunters in the Snow",date:"1565 C.E.",location:"Kunsthistorisches Museum, Vienna",artist:"Pieter Bruegel the Elder",
  headline:"Look closely at the painting",
  alt:"A winter landscape seen from a hilltop. In the lower left, three hunters with spears and a pack of dogs trudge down a snowy slope past tall, bare, dark trees. Beside them, people gather around a fire outside a brick inn. Far below, a wide valley holds frozen ponds with many tiny skaters, a village with a church tower, a mill and a stone bridge. Jagged snowy mountains rise in the distance under a gray-green sky, and black birds fly overhead.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/Hunters.jpg",
- imageNote:"An oil painting seen from a hilltop. Hunters and dogs head downhill toward a valley of frozen ponds, a village and far mountains.",
- detail:{image:"public/images/artworks/Hunters-Mill.jpg",alt:"Close view of the lower right of the painting. A stone bridge with two arches crosses a frozen pond beside a mill with deep snow on its roofs. A tiny figure carries a bundle of sticks across the bridge. Two women in white caps stand on the ice, joined by a thin line. Dark figures stand on the ice farther back.",caption:"Technique detail: the mill and frozen pond, where tiny figures are painted with just a few careful strokes",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Detail,_Mill).jpg",author:"Pieter Bruegel the Elder (edited by ZorróAszter)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
- detail2:{image:"public/images/artworks/Hunters-Fire.jpg",alt:"Close view of the lower left of the painting. Outside a brick building, three people work around a small fire on the snow: one leans over a round object on a stand, one reaches into the fire with a long tool, and one bends over holding a bundle of straw. A small child in a dark cap stands at the right. Streaky brushstrokes show in the flames and smoke.",caption:"Technique detail: a close view of the people at work around a fire, where streaky brushstrokes make the flames and smoke",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Hunters_in_the_snow,_1565_-_detail1.jpg",author:"Karmakolle",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/"}},
- size:"Height: 117 cm / 46 in. Width: 162 cm / 63.7 in. A little wider than a queen-size mattress.",
- intro:"This winter scene was painted about 460 years ago. Imagine standing on the hilltop beside the hunters. Compare the size of a hunter with the size of a skater on the ice. What do you find as your eye moves from the dark trees to the far mountains? Then look for ordinary people busy at everyday jobs. How many can you find, and where are they?",
- context:"The foreground is the part of a picture nearest to you, and the background is the part farthest away. The middle ground lies between them. Find where each begins in this painting. Which one holds the frozen ponds?",
- clues:[{id:"slope",label:"Tilted ground",def:"A hillside that drops away from the hunters’ feet toward a valley, as if seen from high up"},{id:"shrink",label:"Shrinking figures",def:"People and animals that look large close to you and tiny far away"},{id:"work",label:"Work and play at every distance",def:"Ordinary winter activities, such as tending a fire, carrying wood and skating, shown near, in the middle and far back"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
- closing:"Why might a painter choose a high viewpoint that shows a whole village at work, and not a close view of only the hunters?",
+ imageNote:"An oil painting on wood panel, about five feet wide. Bruegel painted six such panels showing the months of the year. This one, for December and January, is kept in Vienna.",
+ detail:{image:"public/images/artworks/Hunters-Mill.jpg",alt:"Close view of the lower right of the painting. A stone bridge with two arches crosses a frozen pond beside a mill with deep snow on its roofs. A tiny figure carries a bundle of sticks across the bridge. Two women in white caps stand on the ice, joined by a thin line. Dark figures stand on the ice farther back.",caption:"Detail: the mill and frozen pond in the middle distance, where Bruegel paints the figures smaller and softer so the eye can measure how far it has traveled into the picture",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Detail,_Mill).jpg",author:"Pieter Bruegel the Elder (edited by Zorr\u00f3Aszter)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Close view, cropped from the main image."}},
+ detail2:{image:"public/images/artworks/Hunters-Fire.jpg",alt:"Close view of the lower left of the painting. Outside a brick building, three people work around a small fire on the snow: one leans over a round object on a stand, one reaches into the fire with a long tool, and one bends over holding a bundle of straw. A small child in a dark cap stands at the right. Streaky brushstrokes show in the flames and smoke.",caption:"Detail: villagers tending a small fire outside the inn, one of many scenes of everyday life Bruegel places throughout the landscape",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:Hunters_in_the_snow,_1565_-_detail1.jpg",author:"Karmakolle",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",changes:"Close view, cropped from the main image."}},
+ size:"",
+ intro:"Pieter Bruegel the Elder painted this winter scene in Antwerp in 1565, one of six panels showing the months of the year \u2014 this one for December and January. Three hunters trudge home with their dogs across a snow-covered hilltop. Below them a whole village lives through the shortest, coldest days of the year: skaters cross a frozen pond, children slide and play, people stoke a small fire outside an inn. In the distance, jagged, snow-topped mountains fade into a gray-green sky.",
+ context:[{term:"Landscape",pron:"",def:"A painting whose main subject is a stretch of natural or lived-in land \u2014 hills, fields, villages, mountains or sea \u2014 rather than a particular person or event. Bruegel's winter scene is one of the first great Northern landscapes in European art."},{term:"Atmospheric perspective",pron:"",def:"A way of showing depth by changing color rather than by drawing converging lines. As the land stretches into the distance, Bruegel paints it in paler blues and grays and softens its edges, as the eye really sees distant air and haze."},{term:"Northern Renaissance",pron:"",def:"The Renaissance as it unfolded in the Low Countries and northern Europe \u2014 Flanders, the Netherlands, Germany \u2014 from the late 1400s into the 1500s. Northern painters favored detailed landscapes, oil paint and scenes of everyday life, often without the classical mythology of the Italian South."}],
+ clues:[{id:"slope",label:"Tilted hillside",def:"The ground drops steeply from the hunters' feet into the valley below, a high vantage point that lets the whole winter scene unfold at once"},{id:"atmosphere",label:"Blue distance",def:"Mountains and sky painted in paler blues and grays, as if seen through the real haze of distant winter air"},{id:"life",label:"Villagers at every distance",def:"People working and playing throughout the painting \u2014 tending a fire at left, skating on the frozen ponds, crossing the bridge \u2014 shown at every scale from large to tiny"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a painter choose a high viewpoint that shows a whole village at work, rather than a close view of only the hunters?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. Tilted ground, shrinking figures and work at every distance are features a detective can carry to the next case.",
+ guide:"Evidence filed. A tilted hillside, blue distance and villagers at every distance are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Image",url:"https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_-_opt.jpg",author:"Pieter Bruegel the Elder (retouched image)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
-RE08.zones={
- slope:[{x0:3,y0:50,x1:62,y1:98}],
- shrink:[{x0:23,y0:55,x1:42,y1:93},{x0:56,y0:53,x1:94,y1:71}],
- work:[{x0:1,y0:55,x1:19,y1:68},{x0:56,y0:53,x1:94,y1:71},{x0:76,y0:72,x1:99,y1:99}]
+RE09.zones={
+ slope:[{x0:3,y0:45,x1:62,y1:98}],
+ atmosphere:[{x0:25,y0:8,x1:98,y1:40}],
+ life:[{x0:1,y0:55,x1:20,y1:70},{x0:20,y0:55,x1:60,y1:82},{x0:55,y0:50,x1:98,y1:72},{x0:75,y0:72,x1:99,y1:98}]
 };
 
-var RE09={id:"RE-09",kind:"Fresco wall painting",title:"A Grand Hall Full of Thinkers",object:"The School of Athens",playable:true,
+var RE10={id:"RE-10",kind:"Fresco wall painting",title:"A Grand Hall Full of Thinkers",object:"The School of Athens",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"The School of Athens",date:"1509–11 C.E.",location:"Vatican Palace, Rome",artist:"Raphael",
  headline:"Look closely at the painting",
  alt:"A huge wall painting under a curved arch in a decorated room. Inside the painting, a series of tall stone arches and vaulted ceilings recedes toward a bright blue sky. Statues stand in recesses at left and right. On a wide flight of steps, dozens of robed figures stand, lean, kneel and recline in groups. Two men in the center, one in red and one in blue, walk side by side. A patterned floor of squares and rectangles runs across the foreground.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/School.jpg",
- imageNote:"A huge wall painting inside the Vatican in Rome, photographed from a little off to one side. The painted hall looks deep, though the wall is flat.",
- detail:{image:"public/images/artworks/School-Pythagoras.jpg",alt:"Close view of the lower left of the painting. A bearded man in a pink robe and white cloak kneels beside a stone block, writing in a large book. A curly-haired boy beside him holds a small black tablet marked with a diagram. Around them stand a man in a turban-like cap, a long-haired figure in white, and a bearded man in an orange robe holding a slate.",caption:"Technique detail: figures at work in the lower left, where robes are shaded from light to dark so the folds look solid",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Cropped_image_of_Pythagoras_from_Raphael%27s_School_of_Athens.jpg",author:"Raphael (cropped reproduction)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
- detail2:{image:"public/images/artworks/School-Raphael.jpg",alt:"Close view of the far right of the painting. A young man in a black cap looks straight out of the painting, circled in yellow. Beside him, an older man in a gray-white cap looks out toward the viewer's right. In front of them, a figure in a gold and blue cloak stands with his back to us, and a bearded man in a red cap looks to the left.",caption:"Technique detail: the far right of the crowd, where Raphael is traditionally identified as the young man in the black cap, painted looking out at the viewer (circled)",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:The_School_of_Athens_by_Raphael_in_the_Apostolic_Palace.jpg",author:"Bradley Weber",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Cropped, brightened and circled."}},
- size:"Height: 550 cm / 18 ft. Width: 770 cm / 25.2 ft. About as wide as four cars parked side by side.",
- intro:"This wall painting in the Vatican was made about 515 years ago. It shows a crowd of thinkers from ancient times gathered in a grand building. You have already met rows of arches and a painted space that seems to go deep into a wall. Follow the arches from the nearest to the farthest. How does each one compare with the one before it? Then look at the crowd. Who is talking, who is working alone, and who is looking out at you?",
- context:"A niche is a hollow, arched space set into a wall to hold a statue. Find the two statues in niches, one at each side. What do they add to the building?",
- clues:[{id:"arches",label:"Receding arches",def:"A row of arches and vaults that grow smaller and lighter toward the far end, opening onto the sky"},{id:"groups",label:"Groups in conversation",def:"Clusters of figures turned toward each other, each group busy with its own idea"},{id:"floor",label:"Steps and floor lines",def:"Stairs and a patterned floor whose lines draw the eye toward the center"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
- closing:"Why might a painter place many different people in one grand building, and not paint each thinker alone?",
+ imageNote:"A very large fresco in the Stanza della Segnatura, Pope Julius II's private library in the Vatican Palace. The painted hall is eighteen feet tall and more than twenty-five feet wide.",
+ detail:{image:"public/images/artworks/School-Pythagoras.jpg",alt:"Close view of the lower left of the painting. A bearded man in a pink robe and white cloak kneels beside a stone block, writing in a large book. A curly-haired boy beside him holds a small black tablet marked with a diagram. Around them stand a man in a turban-like cap, a long-haired figure in white, and a bearded man in an orange robe holding a slate.",caption:"Detail: Pythagoras writes at the lower left, surrounded by students; the figure in the white turban behind him is the Arab philosopher Averroes",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Cropped_image_of_Pythagoras_from_Raphael%27s_School_of_Athens.jpg",author:"Raphael (cropped reproduction)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the main image."}},
+ detail2:{image:"public/images/artworks/School-Raphael.jpg",alt:"Close view of the far right of the painting. A young man in a black cap looks straight out of the painting, circled in yellow. Beside him, an older man in a gray-white cap looks out toward the viewer's right. In front of them, a figure in a gold and blue cloak stands with his back to us, and a bearded man in a red cap looks to the left.",caption:"Detail: Raphael himself (circled), traditionally identified as the young man in the black cap at the far right of the crowd, looking out at the viewer",credit:{word:"Detail photo",url:"https://commons.wikimedia.org/wiki/File:The_School_of_Athens_by_Raphael_in_the_Apostolic_Palace.jpg",author:"Bradley Weber",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Cropped, brightened and circled."}},
+ size:"",
+ intro:"Raphael painted this wall in Pope Julius II's private library between 1509 and 1511, when he was in his mid-twenties. He gathered more than fifty of the greatest Greek and Roman thinkers into a single imagined hall: Plato and Aristotle at the center, Pythagoras writing at lower left, Euclid bent over a diagram at lower right. The painter himself stands with them at the far right, looking out. Every line of the grand classical building meets at a single spot between the two central philosophers.",
+ context:[{term:"Humanism",pron:"",def:"The intellectual movement at the heart of the Renaissance, which placed human reason, dignity and the study of ancient Greek and Roman writers at the center of learning. Raphael paints the greatest ancient thinkers as if they were gathered together in a single hall."},{term:"Idealization",pron:"",def:"Showing figures or buildings not as any one real person or place looked, but as they ideally should: calm, dignified and perfectly balanced. Raphael gives every philosopher a strong, composed body and sets them in a hall more perfectly proportioned than any that existed."},{term:"Vanishing point",pron:"",def:"The single spot in a picture where all the lines that are parallel in the real world \u2014 floor edges, tops of walls, rows of arches \u2014 are drawn to meet. In this painting the vanishing point falls between the heads of Plato and Aristotle."}],
+ clues:[{id:"structure",label:"Receding classical hall",def:"Barrel vaults, round arches and coffered ceilings that recede toward the far wall, modeled on the great buildings of ancient Rome"},{id:"philosophers",label:"Groups of philosophers",def:"Clusters of thinkers scattered across the steps and the foreground, each busy with a different idea \u2014 reading, writing, arguing or lecturing"},{id:"vp",label:"A single vanishing point",def:"The spot between Plato and Aristotle where the floor lines, arches and ceiling bands all meet, pulling the whole scene together"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a painter gather so many different thinkers into one grand hall, rather than paint each one alone?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. Receding arches, groups in conversation and steps and floor lines are features a detective can carry to the next case.",
+ guide:"Evidence filed. A receding classical hall, groups of philosophers and a single vanishing point are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:The_School_of_Athens_by_Raphael_in_the_Apostolic_Palace.jpg",author:"Bradley Weber",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/"}};
-RE09.zones={
- arches:[{x0:29,y0:10,x1:57,y1:50}],
- groups:[{x0:35,y0:47,x1:49,y1:68},{x0:62,y0:64,x1:83,y1:95},{x0:2,y0:69,x1:19,y1:95}],
- floor:[{x0:20,y0:78,x1:98,y1:99},{x0:40,y0:62,x1:66,y1:80}]
+RE10.zones={
+ structure:[{x0:0,y0:5,x1:99,y1:38}],
+ philosophers:[{x0:2,y0:69,x1:19,y1:95},{x0:35,y0:47,x1:55,y1:70},{x0:40,y0:65,x1:62,y1:85},{x0:62,y0:64,x1:83,y1:95},{x0:80,y0:55,x1:99,y1:85}],
+ vp:[{x0:44,y0:30,x1:58,y1:48}]
 };
 
-var RE10={id:"RE-10",kind:"Oil painting",title:"A Smile With No Hard Edges",object:"Mona Lisa",playable:true,
+var RE11={id:"RE-11",kind:"Oil painting",title:"A Smile With No Hard Edges",object:"Mona Lisa",playable:true,
  crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
  work:"Mona Lisa",date:"about 1503–19 C.E.",location:"Louvre, Paris",artist:"Leonardo da Vinci",
  headline:"Look closely at the painting",
  alt:"A half-length portrait of a woman with long dark hair under a thin veil, seated and turned slightly to her right, with a faint smile. Her face and chest glow in warm tones against a dark dress. Her folded hands rest on the arm of a chair at the bottom. Behind her, a winding landscape of rocky hills, a path and water fades into a blue-green haze beneath a pale sky.",
  enlarge:"Enlarge image",
  image:"public/images/artworks/MonaLisa.jpg",
- imageNote:"A portrait painted in oil on a wooden panel. The woman sits in front of a wide, hazy landscape.",
- detail:{image:"public/images/artworks/MonaLisa-Hands.jpg",alt:"Close view of two folded hands resting on the arm of a chair. The skin is pale and warm, and light fades into shadow with no dark outline. The sleeves are olive-gold with soft folds.",caption:"Technique detail: the folded hands, where light fades into shadow with no outline",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Leonardo_di_ser_Piero_da_Vinci_-_Portrait_de_Mona_Lisa_(dite_La_Joconde)_-_Louvre_779_-_Detail_(hands).jpg",author:"Leonardo da Vinci (photographic reproduction)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
- detail2:{image:"public/images/artworks/MonaLisa-Landscape.jpg",alt:"Close view of part of the background landscape. Dark, softly blurred shapes of trees and hills sit above flat bands of muted green, brown and gray land and water. A web of fine cracks covers the surface, and a small, low structure that may be a bridge sits near the bottom center.",caption:"Technique detail: part of the hazy landscape behind her, painted in thin, soft layers of muted green and brown (the fine cracks come from the paint’s age)",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Mona_Lisa_(detail)_-_WGA12715.jpg",author:"Leonardo da Vinci (via the Web Gallery of Art)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}},
- size:"Height: 77 cm / 30 in. Width: 53 cm / 21 in. Much smaller than most people expect, about the size of a large bathroom mirror.",
- intro:"This small portrait was begun about 520 years ago. Look at the shape the whole figure makes, from the folded hands at the bottom to the head at the top. Then compare the edges of the face, the hands and the landscape. Is any of them drawn with a sharp outline? What happens to the color of the land as it gets farther away?",
- context:"Sfumato comes from the Italian word for “smoky.” It means painting edges so softly that one shade melts into the next. Look at the corners of the mouth and eyes. Can you find where the smile ends?",
- clues:[{id:"pyramid",label:"Pyramid-shaped pose",def:"A wide base of folded arms and hands that narrows up through the shoulders to the head, like a triangle"},{id:"soft",label:"Soft blurred edges",def:"Light that fades into shadow around the eyes, mouth and jaw, with no hard outline"},{id:"haze",label:"Hazy distant landscape",def:"Hills and water that grow paler and bluer as they recede, as if seen through mist"}],
- steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.","Choose any two features to write about. For each, write at least one sentence about your own observations or what you find most interesting."],
- closing:"Why might a painter leave the edges soft and the smile hard to pin down, and not outline everything clearly?",
+ imageNote:"A small portrait in oil on a poplar panel, only 30 inches tall \u2014 much smaller than most visitors to the Louvre expect. The sitter was Lisa Gherardini; \"Mona\" comes from an old Italian title, ma donna, meaning \"my lady.\"",
+ detail:{image:"public/images/artworks/MonaLisa-Hands.jpg",alt:"Close view of two folded hands resting on the arm of a chair. The skin is pale and warm, and light fades into shadow with no dark outline. The sleeves are olive-gold with soft folds.",caption:"Detail: the folded hands, where light fades smoothly into shadow with no hard outline anywhere",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Leonardo_di_ser_Piero_da_Vinci_-_Portrait_de_Mona_Lisa_(dite_La_Joconde)_-_Louvre_779_-_Detail_(hands).jpg",author:"Leonardo da Vinci (photographic reproduction)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the main image."}},
+ detail2:{image:"public/images/artworks/MonaLisa-Landscape.jpg",alt:"Close view of part of the background landscape. Dark, softly blurred shapes of trees and hills sit above flat bands of muted green, brown and gray land and water. A web of fine cracks covers the surface, and a small, low structure that may be a bridge sits near the bottom center.",caption:"Detail: part of the hazy landscape behind her, painted in thin, soft layers of muted green and brown (the fine cracks come from the paint's age)",credit:{word:"Detail image",url:"https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Mona_Lisa_(detail)_-_WGA12715.jpg",author:"Leonardo da Vinci (via the Web Gallery of Art)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the main image."}},
+ size:"",
+ intro:"Leonardo da Vinci began this small portrait of a Florentine silk merchant's wife, Lisa Gherardini, around 1503 and kept working on it for the rest of his life. He carried the panel with him through Italy and finally to France, where he died in 1519. Lisa sits turned partway toward the viewer, her folded hands resting on the arm of a chair. Behind her, a winding path, rocky hills and distant water fade softly into a blue-green haze.",
+ context:[{term:"Sfumato",pron:"sfoo-MAH-toh",def:"An Italian word meaning 'smoky.' A technique Leonardo made famous: edges are blurred so softly that one shade fades into the next with no hard line between them, as if seen through a thin veil of smoke."},{term:"Three-quarter view",pron:"",def:"A pose in a portrait where the sitter turns partway toward the viewer, so you see most of the face plus the side of the nose and one ear. Leonardo's Mona Lisa set this as the standard portrait pose for centuries after."}],
+ clues:[{id:"pose",label:"Three-quarter pose",def:"The body turned partway toward the viewer, with the folded hands forming a wide base that leads the eye up through the shoulders to the face"},{id:"sfumato",label:"Sfumato edges",def:"Light fading smoothly into shadow around the eyes, mouth, jaw and fingers, with no hard outline anywhere"},{id:"landscape",label:"Hazy distant landscape",def:"Rocky hills and winding water fading into blue-green haze behind her, painted so the eye reads real distance"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a painter leave the edges soft and the smile hard to pin down, rather than draw every feature in a clear line?",
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
- guide:"Evidence filed. A pyramid-shaped pose, soft blurred edges and a hazy distant landscape are features a detective can carry to the next case.",
+ guide:"Evidence filed. A three-quarter pose, sfumato edges and a hazy landscape are features a detective can carry to the next case.",
  sourceNums:[],
  credit:{word:"Image",url:"https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Mona_Lisa_(Louvre,_Paris).jpg",author:"Leonardo da Vinci (photographic reproduction)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
-RE10.zones={
- pyramid:[{x0:6,y0:11,x1:95,y1:98}],
- soft:[{x0:35,y0:22,x1:58,y1:40}],
- haze:[{x0:62,y0:18,x1:97,y1:55},{x0:3,y0:20,x1:33,y1:62}]
+RE11.zones={
+ pose:[{x0:6,y0:11,x1:95,y1:98}],
+ sfumato:[{x0:35,y0:22,x1:58,y1:40}],
+ landscape:[{x0:62,y0:18,x1:97,y1:55},{x0:3,y0:20,x1:33,y1:62}]
 };
 
 window.DECKS[2].cards[0]=RE01;
@@ -1761,5 +1788,6 @@ window.DECKS[2].cards[6]=RE07;
 window.DECKS[2].cards[7]=RE08;
 window.DECKS[2].cards[8]=RE09;
 window.DECKS[2].cards[9]=RE10;
+window.DECKS[2].cards[10]=RE11;
 
-window.DECKS[2].vocab=[{id:"VOC-11",after:7,word:"Perspective",crumb:"Renaissance Period, circa 1400 C.E. \u2013 1600 C.E.",def:"A way of painting or drawing deep space on a flat surface, so that things farther away look smaller and the lines of floors, walls and ceilings seem to run toward one spot.",look:["Do things that should be the same size look smaller the farther back they are?","Do the lines of a ceiling, floor or wall seem to run toward one spot in the picture?","Do nearer figures overlap farther ones, so you can tell which is in front?"],example:{id:"RE-07",points:["The boxes on the painted ceiling shrink and crowd together toward the back. That makes a flat wall look like a deep, curved ceiling.","The lines of the ceiling boxes and the stone ledge seem to run toward a spot near the middle of the picture. This is the pull toward one spot that gives the chapel its depth.","The kneeling figures at the front overlap nothing, while the figures behind them sit farther back. Your eye reads layers of space from the front ledge to the back of the chapel."]},sourceNums:[],recognize:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"RE-05"},{case:"RE-07"},{case:"RE-03"}]}}];
+window.DECKS[2].vocab=[{id:"VOC-11",after:8,word:"Perspective",crumb:"Renaissance Period, circa 1400 C.E. \u2013 1600 C.E.",def:"A way of painting or drawing deep space on a flat surface, so that things farther away look smaller and the lines of floors, walls and ceilings seem to run toward one spot.",look:["Do things that should be the same size look smaller the farther back they are?","Do the lines of a ceiling, floor or wall seem to run toward one spot in the picture?","Do nearer figures overlap farther ones, so you can tell which is in front?"],example:{id:"RE-08",points:["The boxes on the painted ceiling shrink and crowd together toward the back. That makes a flat wall look like a deep, curved ceiling.","The lines of the ceiling boxes and the stone ledge seem to run toward a spot near the middle of the picture. This is the pull toward one spot that gives the chapel its depth.","The kneeling figures at the front overlap nothing, while the figures behind them sit farther back. Your eye reads layers of space from the front ledge to the back of the chapel."]},sourceNums:[],recognize:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"RE-06"},{case:"RE-08"},{case:"RE-04"}]}}];
