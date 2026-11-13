@@ -1778,6 +1778,82 @@ RE11.zones={
  landscape:[{x0:62,y0:18,x1:97,y1:55},{x0:3,y0:20,x1:33,y1:62}]
 };
 
+var RE12={id:"RE-12",kind:"Architecture",wide:true,title:"A Dome That Could Not Be Built",object:"Dome of Florence Cathedral",playable:true,
+ crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
+ work:"Dome of Florence Cathedral (Santa Maria del Fiore)",date:"1420–1436 C.E.",location:"Florence",artist:"Filippo Brunelleschi",
+ headline:"Look closely at the building",
+ alt:"A view of the city of Florence from across the Arno River. The red-brick dome of the Cathedral rises above the rooftops, topped by a small white marble tower with a gold ball. Beside it stands a tall, slender bell tower (Giotto’s Campanile) and the striped marble body of the cathedral. Round windows show on the sides of the eight-sided wall below the dome. Hazy hills rise behind the city.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Florence-Dome.jpg",
+ imageNote:"The Florence Cathedral (Santa Maria del Fiore) seen from across the Arno River. The dome sits on an eight-sided base with a large round window on each side. Next to it rises Giotto’s Campanile, the free-standing bell tower built in the 1300s.",
+ detail:{image:"public/images/artworks/Florence-Dome-Detail.jpg",alt:"A close view of the dome, cropped from the main image. The eight-sided marble base below the dome shows large round windows; from the base, eight white stone ribs curve up over the red-tiled dome to a small white marble lantern crowned with a gold ball.",caption:"Detail: a close view of the dome, cropped from the main image — the red-tiled surface, the eight white stone ribs, the round windows on the base, and the marble lantern on top",credit:{word:"Photo",url:"",author:"Stefano Vigorelli",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped from the main image."}},
+ detail2:{image:"public/images/artworks/Dome-Herringbone-Detail.jpg",alt:"A ground-level brick reconstruction in a park, showing the eight-sided base of Brunelleschi’s dome at roughly life-sized scale. Red bricks laid in zig-zag diagonal lines rise up the walls; small round openings appear near the top of several faces.",caption:"Detail: a modern reconstruction in a Florence park (Parco dell’Anconella) showing the shape of Brunelleschi’s dome at ground level — the eight-sided base, round windows, and the zig-zag brickwork pattern Brunelleschi used higher up",credit:{word:"Photo",url:"",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/",changes:"Downloaded at original size."}},
+ size:"Height: about 114 m / 375 ft from the cathedral floor to the top of the lantern. Inner diameter at the base: about 42 m / 138 ft — wider than a doubles tennis court is long.",
+ intro:"Filippo Brunelleschi finished the dome of the Florence Cathedral in 1436, more than a hundred years after the cathedral itself had been begun. The church had been left with a vast hole at the top because no one had figured out how to build a dome wide enough to cover it. Brunelleschi designed an octagonal brick vault, more than 140 feet across, that rose ring by ring with no wooden scaffolding from the ground. His dome is still the largest brick-and-mortar dome ever built.",
+ context:[{term:"Drum",pron:"",def:"The tall, round or many-sided wall that holds up a dome. The Florence Cathedral’s drum is octagonal — eight-sided — with a large round window on each of its faces."},{term:"Herringbone brickwork",pron:"",def:"A brickwork pattern in which the bricks are laid in a zig-zag of diagonal lines, like the bones of a fish. Brunelleschi used it to lock millions of bricks together as the dome rose, letting each ring stay in place without wooden supports from the ground."},{term:"Oculus",pron:"OCK-yuh-lus",def:"A round window or opening in a wall or dome; Latin for ‘eye.’ The drum of the Florence dome has eight oculi, one on each face, that let daylight into the space below the dome."}],
+ clues:[{id:"drum",label:"Octagonal drum",def:"The eight-sided marble wall just below the dome, pierced with a large round window on each of its faces"},{id:"oculi",label:"Round oculi",def:"The circular windows set into the sides of the drum, bringing daylight into the space below the dome"},{id:"bricks",label:"Herringbone brick dome",def:"The red-brick dome itself, built in a zig-zag pattern that let each ring of brick hold its place without wooden supports from the ground"}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a builder borrow a brick pattern from ancient Rome to solve a problem no one else of his day could solve?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. An octagonal drum, round oculi and a herringbone brick dome are features a detective can carry to the next case.",
+ sourceNums:[],
+ credit:{word:"Photo",url:"",author:"Stefano Vigorelli",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"}};
+RE12.zones={
+ drum:[{x0:65,y0:38,x1:84,y1:53}],
+ oculi:[{x0:66,y0:38,x1:84,y1:46}],
+ bricks:[{x0:66,y0:14,x1:84,y1:38}]
+};
+
+var RE13={id:"RE-13",kind:"Gilt bronze relief",wide:true,title:"Twenty-Seven Years in Gold",object:"Gates of Paradise",playable:true,
+ crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
+ work:"Gates of Paradise (East Doors, Florence Baptistery)",date:"1425–1452 C.E.",location:"Museo dell’Opera del Duomo, Florence (replicas on the Baptistery)",artist:"Lorenzo Ghiberti",
+ headline:"Look closely at the panel",
+ alt:"A gilt bronze panel from Ghiberti’s East Doors. In the center, three tall round arches fall back into the distance over a tiled floor. Groups of robed figures stand in the foreground: an old man leaning on another, a woman between younger figures, two dogs at a trough. On the right, an elderly man sits blessing a kneeling young man. Small distant figures and a landscape are carved in the upper right, nearly flat against the background. Decorative strips of standing figures and carved heads frame the panel on either side.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Gates-Isaac-Jacob-Esau.jpg",
+ imageNote:"A single panel from Ghiberti’s East Doors (the Gates of Paradise). This panel tells the story of Isaac, Esau, and Jacob from the book of Genesis in several scenes at once, inside one deep, arched hall.",
+ detail:{image:"public/images/artworks/Gates-of-Paradise.jpg",alt:"A view of the full Gates of Paradise as installed in the Museo dell’Opera del Duomo in Florence. Two tall golden door valves stand side by side, each divided into five large square panels. Decorative strips with small standing figures and carved heads run between the panels. A group of marble statues of the Baptism of Christ stands on a shelf above the doors.",caption:"Detail: the Gates of Paradise as a whole, with Ghiberti’s ten Bible scenes arranged in two columns of five. The panel on the main image is the third panel down on the left door.",credit:{word:"Photo",url:"",author:"Yair-haklai",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Downloaded at original size."}},
+ size:"Each panel: about 79 × 79 cm (31 × 31 in). Height of the whole doors: about 5.2 m / 17 ft.",
+ intro:"Twenty-four years after winning the 1401 contest, Lorenzo Ghiberti was given a second commission: a new set of bronze doors for the east side of the Florence Baptistery. He abandoned the four-lobed Gothic frame of his North Doors and set his new scenes in ten large square panels. Each panel shows one story from the Bible, told in several moments at once. Michelangelo later called these the ‘Gates of Paradise.’ Ghiberti worked on them for twenty-seven years, finishing in 1452.",
+ context:[{term:"Schiacciato",pron:"skyaht-CHAH-toh",def:"An Italian word meaning 'squashed or flattened.' A relief carving technique in which the design is cut only very slightly into the surface."},{term:"Perspective relief",pron:"",def:"Relief sculpture that uses the rules of linear perspective, as a painting does."},{term:"Gilt bronze",pron:"",def:"Bronze that has been coated and fired with a very thin layer of gold, so the dark metal takes on a lasting golden surface."}],
+ clues:[{id:"perspective",label:"Receding Classical arches",def:"The architecture inside the panel."},{id:"schiacciato",label:"Shrinking distant figures",def:"The upper right corner of the panel."},{id:"scene",label:"Bible story",def:"The group of large figures in the foreground."}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a sculptor want a bronze panel to look like a painting that opens into real depth, rather than a flat picture in gold?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Receding Classical arches, shrinking distant figures and a Bible story are features a detective can carry to the next case.",
+ sourceNums:[],
+ credit:{word:"Photo",url:"",author:"Sailko",license:"CC BY 3.0",licenseUrl:"https://creativecommons.org/licenses/by/3.0/"}};
+RE13.zones={
+ perspective:[{x0:28,y0:15,x1:62,y1:55}],
+ schiacciato:[{x0:70,y0:12,x1:85,y1:50}],
+ scene:[{x0:25,y0:60,x1:78,y1:95}]
+};
+
+var RE14={id:"RE-14",kind:"Fresco wall painting",wide:true,title:"A Story Told Three Times at Once",object:"The Tribute Money",playable:true,
+ crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
+ work:"The Tribute Money",date:"about 1425 C.E.",location:"Brancacci Chapel, Santa Maria del Carmine, Florence",artist:"Masaccio",
+ headline:"Look closely at the fresco",
+ alt:"A horizontal wall painting. In the center, a bearded Jesus in pink and blue robes stands among his apostles, every head ringed by a flat gold disk. A young man in an orange tunic, seen from the back, points at Jesus. On the far left, a crouching figure reaches into the mouth of a fish beside a stretch of water. On the far right, the same figure in orange robes gives a coin to the man in the orange tunic in front of a stone building. Bare trees and brown mountains rise behind the group.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Tribute-Money.jpg",
+ imageNote:"A fresco on the upper left wall of the Brancacci Chapel in Santa Maria del Carmine, Florence. Masaccio painted several frescoes for the chapel.",
+ detail:{image:"public/images/artworks/Tribute-Money-Center.jpg",alt:"A close view of the central group: Jesus stands at the center in a pink tunic and blue robe, pointing with his right hand. Peter stands just to his left in a yellow and pink robe. The tax collector, seen from behind in a short orange tunic, holds out one hand toward Jesus. Several apostles with golden halos look on from behind.",caption:"Detail: the central group, cropped from the main image — Jesus, the apostles, and the tax collector in his orange tunic",credit:{word:"Detail photo",url:"",author:"Eugene_a",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Close view of the central group."}},
+ size:"Height: about 247 cm / 8 ft. Width: about 597 cm / 19.6 ft — nearly as wide as a modern garage.",
+ intro:"Masaccio was in his early twenties when he painted this scene around 1425 on the wall of the Brancacci Chapel in Florence. He was dead at twenty-six, leaving behind only a handful of works, but this fresco changed the course of painting in Italy. It shows a story from the Bible: Jesus is asked to pay a Roman tax. He tells Peter to catch a fish and find a coin in its mouth; Peter then pays the tax. Masaccio folds all three moments into one scene.",
+ context:[{term:"Classical dress",pron:"",def:"Long flowing robes modeled on the togas and tunics of ancient Greek and Roman art."},{term:"Volume",pron:"",def:"The look of three-dimensional roundness and solid weight in a figure painted on a flat surface."},{term:"Halo",pron:"",def:"The circle of light hovering over the head of a holy figure. Differs from the Medieval nimbus — the fixed gold disk placed behind the head."}],
+ clues:[{id:"robes",label:"Classical dress",def:"The robes worn by the apostles."},{id:"volume",label:"Weighted figures",def:"The central group of apostles."},{id:"halos",label:"Golden halos",def:"Above the heads of the holy figures."}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a painter dress Bible figures like ancient Romans, rather than in the clothes of his own day or earlier church art?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Classical dress, weighted figures and golden halos are features a detective can carry to the next case.",
+ sourceNums:[],
+ credit:{word:"Photo",url:"",author:"Web Gallery of Art",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
+RE14.zones={
+ robes:[{x0:18,y0:40,x1:78,y1:92}],
+ volume:[{x0:20,y0:35,x1:55,y1:85}],
+ halos:[{x0:30,y0:15,x1:68,y1:32}]
+};
+
 window.DECKS[2].cards[0]=RE01;
 window.DECKS[2].cards[1]=RE02;
 window.DECKS[2].cards[2]=RE03;
@@ -1789,5 +1865,8 @@ window.DECKS[2].cards[7]=RE08;
 window.DECKS[2].cards[8]=RE09;
 window.DECKS[2].cards[9]=RE10;
 window.DECKS[2].cards[10]=RE11;
+window.DECKS[2].cards[11]=RE12;
+window.DECKS[2].cards[12]=RE13;
+window.DECKS[2].cards[13]=RE14;
 
 window.DECKS[2].vocab=[{id:"VOC-11",after:8,word:"Perspective",crumb:"Renaissance Period, circa 1400 C.E. \u2013 1600 C.E.",def:"A way of painting or drawing deep space on a flat surface, so that things farther away look smaller and the lines of floors, walls and ceilings seem to run toward one spot.",look:["Do things that should be the same size look smaller the farther back they are?","Do the lines of a ceiling, floor or wall seem to run toward one spot in the picture?","Do nearer figures overlap farther ones, so you can tell which is in front?"],example:{id:"RE-08",points:["The boxes on the painted ceiling shrink and crowd together toward the back. That makes a flat wall look like a deep, curved ceiling.","The lines of the ceiling boxes and the stone ledge seem to run toward a spot near the middle of the picture. This is the pull toward one spot that gives the chapel its depth.","The kneeling figures at the front overlap nothing, while the figures behind them sit farther back. Your eye reads layers of space from the front ledge to the back of the chapel."]},sourceNums:[],recognize:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"RE-06"},{case:"RE-08"},{case:"RE-04"}]}}];
