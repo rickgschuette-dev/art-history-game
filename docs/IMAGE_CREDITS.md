@@ -1359,11 +1359,11 @@ vocabulary cards repositioned to match. No images changed; this was an ordering 
 - Changes: Resized from the Commons file.
 
 ## RE-03 The Arnolfini Portrait: main photo
-- File: public/images/artworks/Arnolfini-Portrait.jpg
-- Source: https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_Arnolfini_Feil_w.jpg
-- Author: Jan van Eyck
+- File: public/images/artworks/Arnolfini-Portrait.jpg (725 x 1000 px)
+- Source: https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg
+- Author: Jan van Eyck (photograph by the National Gallery Photographic Department)
 - License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
-- Changes: Resized from the Commons file.
+- Changes: Resized from the Commons file. Earlier version carried a yellow annotation arrow and was replaced with a clean National Gallery reproduction.
 
 ## RE-03 The Arnolfini Portrait: detail photo
 - File: public/images/artworks/Arnolfini-Mirror-Detail.jpg
@@ -1510,4 +1510,46 @@ vocabulary cards repositioned to match. No images changed; this was an ordering 
 - Source: https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Mona_Lisa_(detail)_-_WGA12715.jpg
 - Author: Leonardo da Vinci (via the Web Gallery of Art)
 - License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Shown without changes.
+
+## RE-15 David by Donatello: main photo
+- File: public/images/artworks/Donatello-David-WaistUp.jpg (1451 x 2022 px)
+- Source: https://commons.wikimedia.org/wiki/File:David_Donatello_01.JPG
+- Author: Miguel Hermoso Cuesta
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: flagged for Rick's decision.
+- Changes: Cropped from the original to show the figure from the waist up.
+
+## RE-15 David by Donatello: detail photo
+- File: public/images/artworks/Donatello-David-Head.jpg (1062 x 1347 px)
+- Source: https://commons.wikimedia.org/wiki/File:Donatello,_David,_(detail),_1440,_bronze.jpg
+- Author: Rufus46 (resized and lighting-adjusted by Muschio Di Quercia)
+- License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Share-alike: flagged for Rick's decision.
+- Changes: Resized from the Commons file.
+
+## RE-15 David by Donatello: second detail photo
+- File: public/images/artworks/Donatello-David-Goliath.jpg (1400 x 1157 px)
+- Source: https://commons.wikimedia.org/wiki/File:David_Donatello_06.JPG
+- Author: Miguel Hermoso Cuesta
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: flagged for Rick's decision.
+- Changes: Resized from the Commons file.
+
+## RE-16 Fra Angelico Annunciation: main photo
+- File: public/images/artworks/FraAngelico-Annunciation.jpg (1040 x 720 px)
+- Source: https://commons.wikimedia.org/wiki/File:Fra_Angelico_043.jpg
+- Author: Fra Angelico
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Shown without changes.
+
+## RE-16 Fra Angelico Annunciation: detail photo
+- File: public/images/artworks/FraAngelico-Garden-Angel.jpg (499 x 684 px)
+- Source: https://commons.wikimedia.org/wiki/File:Fra_Angelico_043.jpg
+- Author: Fra Angelico
+- License: public domain (https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: Cropped from the main image to show the hortus conclusus and the kneeling angel Gabriel.
+
+## RE-16 Fra Angelico Annunciation: second detail photo
+- File: public/images/artworks/FraAngelico-Mary.jpg (786 x 958 px)
+- Source: https://commons.wikimedia.org/wiki/File:ANGELICO,_Fra_The_Annunciation_(detail)_1450.jpg
+- Author: carulmare
+- License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
 - Changes: Shown without changes.

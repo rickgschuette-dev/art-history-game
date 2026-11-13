@@ -1590,7 +1590,7 @@ var RE04={id:"RE-04",kind:"Oil painting",title:"A Room Full of Tiny Things",obje
  bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
  guide:"Evidence filed. Symbolic objects, oil-paint textures and soft window light are features a detective can carry to the next case.",
  sourceNums:[],
- credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_Arnolfini_Feil_w.jpg",author:"Jan van Eyck",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
+ credit:{word:"Photo",url:"https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg",author:"Jan van Eyck (National Gallery Photographic Department)",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
 RE04.zones={
  symbols:[{x0:36,y0:1,x1:65,y1:19},{x0:42,y0:24,x1:58,y1:36},{x0:0,y0:85,x1:15,y1:98},{x0:7,y0:51,x1:13,y1:56}],
  textures:[{x0:54,y0:30,x1:99,y1:98},{x0:7,y0:25,x1:50,y1:78}],
@@ -1854,6 +1854,58 @@ RE14.zones={
  halos:[{x0:30,y0:15,x1:68,y1:32}]
 };
 
+var RE15={id:"RE-15",kind:"Bronze sculpture",title:"The First Nude Since Antiquity",object:"David",playable:true,
+ crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
+ work:"David",date:"about 1440 C.E.",location:"Bargello Museum, Florence",artist:"Donatello",
+ headline:"Look closely at the figure",
+ alt:"A bronze statue of a slender, bare-chested young man wearing a laurel-wreathed shepherd's hat, shown from the top of the hat down to the hip line. The figure's shoulders tilt gently and one hand rests on the left hip. The surface of the bronze has a dark brown patina.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/Donatello-David-WaistUp.jpg",
+ imageNote:"A bronze statue, about five feet tall, cast for the inner courtyard of the Medici palace in Florence. The image is cropped at the waist; the full statue stands in the Bargello Museum.",
+ detail:{image:"public/images/artworks/Donatello-David-Head.jpg",alt:"A close view of the top of the statue: a laurel-wreathed broad-brimmed hat, long curling hair, a youthful face with downcast eyes, and the top of a bare shoulder.",caption:"Detail: a close view of David's laurel-crowned hat and youthful face, showing Donatello's fine modeling of the bronze",credit:{word:"Detail photo",url:"",author:"Rufus46; resized and lighting-adjusted by Muschio Di Quercia",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",changes:"Close view of the head and hat of the same statue."}},
+ detail2:{image:"public/images/artworks/Donatello-David-Goliath.jpg",alt:"A close view of the base of the statue: David's bare foot rests on top of the severed head of the giant Goliath, with its elaborate winged helmet. The tip of David's sword lies beside Goliath's head, and an ornate bronze base with a laurel-leaf pattern sits on a marble pedestal.",caption:"Detail: the base of the statue — David's foot rests on the severed head of the giant Goliath, with the tip of David's sword beside it",credit:{word:"Detail photo",url:"",author:"Miguel Hermoso Cuesta",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Close view of the base of the same statue."}},
+ size:"Height: about 158 cm / 5.2 ft. The first freestanding nude statue cast in bronze since the fall of Rome.",
+ intro:"Donatello cast this bronze David for the inner courtyard of the Medici palace in Florence around 1440. It was the first freestanding nude statue cast in bronze since the fall of Rome, more than a thousand years earlier. David stands at ease after killing the giant Goliath — one hand on his hip, the other resting on his sword, his foot on Goliath's severed head. For a church or a public square such a figure would have been unthinkable; inside the private Medici courtyard, surrounded by collectors of ancient art, it declared that Florence had equaled the sculpture of ancient Greece and Rome.",
+ context:[{term:"Freestanding sculpture",pron:"",def:"A statue that stands on its own in the round, meant to be walked around and seen from every side, not attached to a wall or to a building."},{term:"Bronze",pron:"",def:"A hard golden-brown metal alloy of copper and tin, poured into a mold when molten and left to harden. A bronze statue is hollow inside."},{term:"Contrapposto",pron:"kon-trah-POH-stoh",def:"An Italian word meaning ‘placed opposite.’ A relaxed standing pose from ancient Greek and Roman sculpture: the weight rests on one leg, so one hip is higher than the other and the shoulders tilt the opposite way, giving the body a gentle S-curve."}],
+ clues:[{id:"contrapposto",label:"Contrapposto",def:"The shoulders and the hips."},{id:"hat",label:"Laurel-crowned hat",def:"At the top of the figure."},{id:"hand",label:"Hand on the hip",def:"The left side of the figure."}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why might a private family like the Medici have been willing to display a nude bronze statue that no church or public square would accept?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Contrapposto, laurel-crowned hat and hand on the hip are features a detective can carry to the next case.",
+ sourceNums:[],
+ credit:{word:"Photo",url:"",author:"Miguel Hermoso Cuesta",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",changes:"Cropped from the original to show the figure from the waist up."}};
+RE15.zones={
+ contrapposto:[{x0:15,y0:25,x1:85,y1:98}],
+ hat:[{x0:25,y0:3,x1:70,y1:22}],
+ hand:[{x0:60,y0:55,x1:95,y1:92}]
+};
+
+var RE16={id:"RE-16",kind:"Fresco wall painting",wide:true,title:"An Angel at the Top of the Stairs",object:"Annunciation",playable:true,
+ crumb:"Renaissance Period, circa 1400 C.E. – 1600 C.E.",
+ work:"Annunciation",date:"about 1440–1445 C.E.",location:"Convent of San Marco, Florence",artist:"Fra Angelico",
+ headline:"Look closely at the fresco",
+ alt:"A fresco set under three round arches supported by slender columns. On the left, an angel in a pink robe with iridescent wings kneels with hands crossed over the chest. On the right, the Virgin Mary sits on a wooden bench in a dark blue robe, her hands crossed over her chest and her head bowed toward the angel. Both figures have gold halos. Behind and to the left of the arcade, a fenced garden with flowers and trees is visible.",
+ enlarge:"Enlarge image",
+ image:"public/images/artworks/FraAngelico-Annunciation.jpg",
+ imageNote:"A fresco painted directly on the plaster wall at the top of the dormitory stairs at the Convent of San Marco in Florence. Fra Angelico decorated many of the convent's cells and shared spaces with similar scenes.",
+ detail:{image:"public/images/artworks/FraAngelico-Garden-Angel.jpg",alt:"A close view of the left side of the fresco: a fenced garden with flowers and trees behind the Classical columns, and the angel Gabriel in a pink robe with iridescent wings, kneeling with hands crossed over the chest.",caption:"Detail: the left side of the fresco, cropped from the main image — the fenced garden (hortus conclusus) and the kneeling angel Gabriel, with Corinthian column capitals above",credit:{word:"Detail photo",url:"",author:"Fra Angelico",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",changes:"Cropped from the main image."}},
+ detail2:{image:"public/images/artworks/FraAngelico-Mary.jpg",alt:"A close view of the Virgin Mary from the same fresco: her head bowed, a gold halo behind her, her hands crossed over her chest. A small barred window and part of a column capital are visible behind her.",caption:"Detail: a close view of the Virgin Mary from the same fresco, showing her folded hands and quiet bowed head",credit:{word:"Detail photo",url:"",author:"carulmare",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",changes:"Close view of the Virgin Mary from the same fresco."}},
+ size:"Height: about 230 cm / 7.5 ft. Width: about 321 cm / 10.5 ft.",
+ intro:"Around 1440, the Dominican friar Fra Angelico painted this fresco at the top of the dormitory stairs of his monastery of San Marco in Florence. His brother monks would pass it every morning on their way to prayer. It shows the moment when the angel Gabriel appears to the Virgin Mary with news that she will bear a son, Jesus. The two figures stand quietly inside a Classical arcade, with an enclosed garden visible on the left.",
+ context:[{term:"Annunciation",pron:"an-un-see-AY-shun",def:"The Christian subject showing the angel Gabriel announcing to the Virgin Mary that she will bear a son, Jesus. One of the most often painted scenes in Western art."},{term:"Hortus conclusus",pron:"HOR-tus kon-KLOO-sus",def:"Latin for ‘enclosed garden.’ A walled or fenced garden painted as a symbol for the Virgin Mary's purity."},{term:"Loggia",pron:"LOH-juh",def:"An open gallery along the side of a building, with columns and arches instead of a solid wall."}],
+ clues:[{id:"arches",label:"Three Classical arches",def:"The architecture framing the figures."},{id:"garden",label:"Hortus conclusus",def:"The garden on the left."},{id:"annunciation",label:"The Annunciation",def:"The two figures inside the arches."}],
+ steps:["Click a feature box below, then click where you identify the feature on the image. Examine and identify all three features.",{head:"Choose two.",body:"Write at least one sentence about the feature. Try to use a Word to Know."}],
+ closing:"Why would Fra Angelico — a Dominican friar — have painted this scene at the top of the stairs his fellow monks used every day?",
+ bonus:{points:5,prompt:"For 5 bonus points, add any additional observations about the work in general, or question(s) you would like to pursue later.",placeholder:""},
+ guide:"Evidence filed. Three Classical arches, the hortus conclusus and the Annunciation are features a detective can carry to the next case.",
+ sourceNums:[],
+ credit:{word:"Photo",url:"",author:"Fra Angelico",license:"public domain",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/"}};
+RE16.zones={
+ arches:[{x0:4,y0:0,x1:98,y1:38}],
+ garden:[{x0:0,y0:10,x1:18,y1:88}],
+ annunciation:[{x0:17,y0:22,x1:98,y1:95}]
+};
+
 window.DECKS[2].cards[0]=RE01;
 window.DECKS[2].cards[1]=RE02;
 window.DECKS[2].cards[2]=RE03;
@@ -1868,5 +1920,7 @@ window.DECKS[2].cards[10]=RE11;
 window.DECKS[2].cards[11]=RE12;
 window.DECKS[2].cards[12]=RE13;
 window.DECKS[2].cards[13]=RE14;
+window.DECKS[2].cards[14]=RE15;
+window.DECKS[2].cards[15]=RE16;
 
 window.DECKS[2].vocab=[{id:"VOC-11",after:8,word:"Perspective",crumb:"Renaissance Period, circa 1400 C.E. \u2013 1600 C.E.",def:"A way of painting or drawing deep space on a flat surface, so that things farther away look smaller and the lines of floors, walls and ceilings seem to run toward one spot.",look:["Do things that should be the same size look smaller the farther back they are?","Do the lines of a ceiling, floor or wall seem to run toward one spot in the picture?","Do nearer figures overlap farther ones, so you can tell which is in front?"],example:{id:"RE-08",points:["The boxes on the painted ceiling shrink and crowd together toward the back. That makes a flat wall look like a deep, curved ceiling.","The lines of the ceiling boxes and the stone ledge seem to run toward a spot near the middle of the picture. This is the pull toward one spot that gives the chapel its depth.","The kneeling figures at the front overlap nothing, while the figures behind them sit farther back. Your eye reads layers of space from the front ledge to the back of the chapel."]},sourceNums:[],recognize:{prompt:"For 3 bonus points, identify this work. You have seen it before.",points:3,correct:1,options:[{case:"RE-06"},{case:"RE-08"},{case:"RE-04"}]}}];
