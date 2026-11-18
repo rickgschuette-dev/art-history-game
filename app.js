@@ -84,6 +84,45 @@ document.getElementById('magon').onclick=function(){vset(true)};document.getElem
 draw()}
 function review(did){var d=DECKS.filter(function(x){return x.id===did})[0];var r=d&&d.review;
 if(!r){location.hash='#/deck/'+DECKS[0].id;return}
+if(r.capstone){
+ function rec(){return store.cards[r.id]||{seen:true,thinks:{},bonus:''}}
+ function put(o){store.cards[r.id]=o;localStorage.setItem(KEY,JSON.stringify(store))}
+ var st=rec();st.seen=true;put(st);
+ var rc=rec();var b=r.banner||{};
+ var intro=(r.intro||[]).map(function(p){return '<p>'+esc(p)+'</p>'}).join('');
+ var words=(r.words||[]).map(function(w){return '<div class="cap-word"><div class="w">'+esc(w.term)+'</div><div class="d">'+esc(w.def)+'</div></div>'}).join('');
+ var traits=(r.traits||[]).map(function(t){var tv=(rc.thinks&&rc.thinks[t.id])||'';var badge=(t.label||' ').charAt(0).toUpperCase();return '<div class="cap-trait '+esc(t.color||'')+'"><div class="cap-badge">'+esc(badge)+'</div><div class="cap-tleft"><div class="cap-label">'+esc(t.label)+'</div><div class="cap-hint">'+esc(t.hint)+'</div></div><div class="cap-tright"><div class="cap-think">Think back to&hellip;</div><textarea data-tid="'+esc(t.id)+'" class="cap-thinkbox" placeholder="">'+esc(tv)+'</textarea></div></div>'}).join('');
+ var bonusPts=(r.bonus&&r.bonus.points)||5;
+ var bonusPrompt=(r.bonus&&r.bonus.prompt)||'';
+ app.innerHTML=
+  '<div class="cap-wrap">'
+  +'<div class="cap-banner">'
+   +'<div class="cap-eyebrow">'+esc(b.eyebrow||'')+'</div>'
+   +'<h1 class="cap-title">'+esc(r.title||'')+'</h1>'
+   +'<div class="cap-closed">'+esc(b.closed||'')+'</div>'
+   +'<div class="cap-seal"><div>CASE</div><div class="big">'+esc(String(b.sealCount||''))+'</div><div>CLOSED</div></div>'
+  +'</div>'
+  +'<div class="cap-body">'
+   +'<div class="cap-intro">'+intro+'</div>'
+   +'<figure class="cap-figure"><img src="'+esc(r.image)+'" alt="'+esc(r.alt)+'"><figcaption class="note">'+esc(r.caption)+'</figcaption></figure>'
+   +'<div class="cap-divider">• · •</div>'
+   +'<div class="cap-wordsh">THREE IDEAS THAT CARRY THE WHOLE RENAISSANCE</div>'
+   +'<div class="cap-words">'+words+'</div>'
+   +'<div class="cap-divider">• · •</div>'
+   +'<div class="cap-traitsh">'+esc(r.traitsHead||'')+'</div>'
+   +'<div class="cap-traitss">'+esc(r.traitsSub||'')+'</div>'
+   +traits
+   +'<div class="cap-bonus"><div class="cap-bonush">FOR '+bonusPts+' BONUS POINTS</div><div class="cap-bonusb">'+esc(bonusPrompt)+'<textarea id="cap-bonusbox" placeholder="">'+esc(rc.bonus||'')+'</textarea></div></div>'
+   +'<div class="cap-closerow"><a class="cap-close" href="#/deck/'+d.id+'">'+esc(r.closeBtn||'CLOSE')+'</a></div>'
+   +(r.outro?'<p class="cap-outro note">'+esc(r.outro)+'</p>':'')
+   +'<footer class="credits">'+credit(r.credit,'Photo')+'</footer>'
+  +'</div>'
+  +'</div>';
+ app.querySelectorAll('textarea[data-tid]').forEach(function(ta){ta.oninput=function(){var o=rec();o.thinks=o.thinks||{};o.thinks[ta.dataset.tid]=ta.value;o.seen=true;put(o)}});
+ var bb=document.getElementById('cap-bonusbox');
+ if(bb)bb.oninput=function(){var o=rec();o.bonus=bb.value;o.seen=true;put(o)};
+ return;
+}
 var vmag=false;
 function rec(){return store.cards[r.id]||{seen:true,text:'',shown:false}}
 function put(o){store.cards[r.id]=o;localStorage.setItem(KEY,JSON.stringify(store))}

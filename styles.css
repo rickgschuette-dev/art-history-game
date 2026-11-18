@@ -250,3 +250,56 @@ a.btn.skipbtn{flex:0 1 calc(50% - .3rem);text-align:center;font-size:.88rem;line
 body[data-view="card"] main{max-width:none;padding:1.5rem 2rem}
 
 .vpron{font-size:.6em;font-weight:400;color:#6b5a3a;vertical-align:middle;margin-left:.3em;text-transform:none;letter-spacing:0}
+
+
+/* Ceremonial Capstone (REV with capstone:true) */
+.cap-wrap{max-width:874px;margin:12px auto 24px;width:100%}
+.cap-banner{background:linear-gradient(180deg,#0d2336 0%,#17324a 100%);color:#fff;padding:28px 36px 24px;border-radius:10px 10px 0 0;border-bottom:4px solid #a8742a;position:relative}
+.cap-eyebrow{font-size:10px;letter-spacing:.25em;color:#c89a4d;font-weight:bold;margin-bottom:10px}
+.cap-title{font-size:40px;color:#fff;font-weight:bold;margin:0 0 6px;line-height:1.1;font-family:Georgia,"Times New Roman",serif}
+.cap-closed{font-size:14px;letter-spacing:.2em;color:#e7d3a2;margin-top:4px;font-weight:normal}
+.cap-seal{position:absolute;top:22px;right:28px;width:72px;height:72px;border:2px solid #a8742a;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#c89a4d;font-size:9px;letter-spacing:.14em;font-weight:bold;text-align:center;line-height:1.25;background:rgba(0,0,0,.2)}
+.cap-seal .big{font-size:18px;letter-spacing:.02em;margin:2px 0;color:#a8742a}
+.cap-body{background:#fffaf0;border:1px solid #d9d0bb;border-top:none;border-radius:0 0 10px 10px;padding:28px 36px 32px}
+.cap-intro{font-size:15px;line-height:1.6;max-width:680px;margin:0 auto 24px;color:#2a3540}
+.cap-intro p{margin:0 0 12px}
+.cap-figure{margin:4px auto 10px;max-width:720px}
+.cap-figure img{width:100%;height:auto;display:block;border-radius:6px;background:#2a2320;box-shadow:0 4px 14px rgba(13,35,54,.25)}
+.cap-figure figcaption{font-size:11px;color:#555;margin-top:8px;font-style:italic;line-height:1.4;text-align:center}
+.cap-divider{text-align:center;margin:28px 0 22px;color:#a8742a;font-size:14px;letter-spacing:.3em}
+.cap-wordsh,.cap-traitsh{text-align:center;font-size:11px;letter-spacing:.3em;color:#a8742a;font-weight:bold;margin-bottom:14px}
+.cap-traitss{text-align:center;font-size:12.5px;color:#555;font-style:italic;margin-bottom:16px}
+.cap-words{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;max-width:780px;margin:0 auto 28px}
+.cap-word{background:#f6ead2;border-left:3px solid #a8742a;border-radius:6px;padding:12px 14px}
+.cap-word .w{font-size:14px;font-weight:bold;color:#17324a;margin-bottom:5px}
+.cap-word .d{font-size:11.5px;line-height:1.45;color:#333}
+.cap-trait{display:grid;grid-template-columns:36px 1fr 1fr;gap:12px;align-items:start;background:#fff;border:1px solid #c4b9a0;border-left-width:5px;border-radius:6px;padding:12px 14px;margin:0 auto 12px;max-width:780px}
+.cap-trait.teal{border-left-color:#1f6f66}
+.cap-trait.rust{border-left-color:#a8452d}
+.cap-trait.violet{border-left-color:#5b4a8f}
+.cap-badge{width:28px;height:28px;border-radius:50%;color:#fff;font-weight:bold;font-size:12px;display:flex;align-items:center;justify-content:center;margin-top:2px;background:#999}
+.cap-trait.teal .cap-badge{background:#1f6f66}
+.cap-trait.rust .cap-badge{background:#a8452d}
+.cap-trait.violet .cap-badge{background:#5b4a8f}
+.cap-label{font-size:14.5px;font-weight:bold;color:#17324a;margin-bottom:4px}
+.cap-hint{font-size:12px;color:#555;line-height:1.45}
+.cap-think{font-size:12.5px;color:#17324a;font-style:italic;line-height:1.45;margin-bottom:5px}
+.cap-thinkbox{width:100%;background:#f1ede4;border:1px solid #d7cfbd;border-radius:4px;min-height:60px;padding:7px 9px;font-size:11.5px;color:#333;resize:vertical;font-family:inherit}
+.cap-bonus{background:#fbf0cf;border:2px solid #e4c969;border-radius:8px;padding:14px 18px;max-width:780px;margin:22px auto 20px;color:#7a5316}
+.cap-bonush{font-weight:bold;font-size:12px;letter-spacing:.14em;color:#7a5316;margin-bottom:8px}
+.cap-bonusb{line-height:1.5;font-size:13px;color:#5c3f0f}
+.cap-bonusb textarea{width:100%;background:#fff;border:1px solid #ddd;border-radius:4px;min-height:48px;margin-top:8px;padding:7px 9px;font-size:12px;resize:vertical;font-family:inherit}
+.cap-closerow{text-align:center;margin-top:24px}
+.cap-close{display:inline-block;background:#0d2336;color:#fff;border-radius:6px;padding:12px 28px;font-weight:bold;font-size:14px;letter-spacing:.1em;border:2px solid #a8742a;box-shadow:0 2px 6px rgba(13,35,54,.2);text-decoration:none}
+.cap-close:hover{background:#17324a}
+.cap-outro{text-align:center;margin-top:16px;color:#555;font-style:italic}
+@media (max-width:600px){
+  .cap-banner{padding:20px 20px 18px}
+  .cap-title{font-size:30px}
+  .cap-body{padding:20px 16px 24px}
+  .cap-words{grid-template-columns:1fr}
+  .cap-trait{grid-template-columns:28px 1fr}
+  .cap-tright{grid-column:1 / -1;margin-top:8px}
+  .cap-seal{width:56px;height:56px;top:14px;right:14px;font-size:8px}
+  .cap-seal .big{font-size:14px}
+}
