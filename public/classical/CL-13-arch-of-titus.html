@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CL-13 · Arch of Titus · Case Files Art History</title>
+  <style>
+    :root{--ink:#102f45;--muted:#64707c;--paper:#fbf3e5;--rule:#dfd2bb;--teal:#0f7471;--gold:#b97e39;--navy:#10364e;--cream:#fff9ee;--words:#fff0cb;--later:#edf5eb}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.47 Georgia,"Times New Roman",serif}
+    main{max-width:700px;margin:auto;padding:22px 18px 42px}.period{color:#9a6632;font:700 9px/1.2 Georgia,"Times New Roman",serif;letter-spacing:.04em}.foundation{margin-top:4px;color:#a26c34;font:700 10px/1.2 Georgia,"Times New Roman",serif;letter-spacing:.085em;text-transform:uppercase}.case-number{float:none;display:block;margin-top:5px;color:#8b725e;font:700 9px/1.2 Georgia,"Times New Roman",serif;letter-spacing:.08em;text-transform:uppercase}
+    header{padding-bottom:8px}h1{margin:10px 0 2px;font:700 clamp(2.05rem,5vw,3.1rem)/.98 Georgia,"Times New Roman",serif;color:#0d3d62;letter-spacing:-.035em}.object-line{margin:0;color:#6d655d;font-size:11px;font-style:italic}
+    section{margin-top:23px}.image-head{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:5px}.image-head h2,.label{margin:0;color:#a7743c;font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.magnifier{border:0;background:transparent;color:#594f47;font:700 9px Georgia,"Times New Roman",serif}.magnifier button{margin-left:4px;min-width:18px;padding:2px 5px;border:1px solid #c4bbae;border-radius:2px;background:#fff;color:#735e50;font:inherit;cursor:pointer}.magnifier button.active{background:#a33532;border-color:#a33532;color:#fff}
+    figure{margin:0}.image-stage{position:relative;overflow:hidden;background:#eee1cc;box-shadow:0 3px 5px #4c38261f}.image-stage img{display:block;width:100%;max-height:480px;object-fit:contain;background:#eee1cc}.lens{display:none;position:absolute;width:130px;height:130px;border:2px solid var(--gold);border-radius:50%;pointer-events:none;background-repeat:no-repeat;box-shadow:0 3px 14px #0006;transform:translate(-50%,-50%)}.lens.show{display:block}figcaption{margin:5px 0 0;color:#756c62;font-size:9px;font-style:italic;line-height:1.28;text-align:center}
+    .detail{margin-top:22px;padding:0;border:0}.detail h2{margin:0 0 7px;text-align:center;color:#a7743c;font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.detail img{width:100%;display:block;max-height:500px;object-fit:contain;background:#eee1cc;box-shadow:0 2px 4px #4c38261a}.detail p{margin:5px 0 0;color:#756c62;font-size:9px;font-style:italic;line-height:1.28}
+    .copy{max-width:none;padding:18px 19px;background:var(--navy);color:#fffaf0;border-radius:2px}.copy p{margin:0 0 .95em;font-size:12px;line-height:1.46}.copy p:last-child{margin-bottom:0}.words{display:block;padding:13px 15px;background:var(--words);border-radius:2px}.word{padding:0;border:0;background:transparent}.word+.word{margin-top:9px}.word h3{display:block;margin:0 0 2px;color:#17445a;font:700 11px/1.1 Georgia,"Times New Roman",serif}.word h3 small{font-size:8px;font-style:italic;font-weight:400}.word p{display:block;margin:0;font-size:10px;line-height:1.34}.notice{padding:14px 16px;background:var(--cream);border:1px solid #dfd4c3;border-radius:2px}.notice .label,.later h2{display:block;margin-bottom:7px;text-align:center;color:#a7743c;font-size:9px;letter-spacing:.13em;text-transform:uppercase}.notice ul{margin:0;padding-left:1.25em}.notice li{padding-left:2px;font-size:10px;line-height:1.35}.notice li+li{margin-top:.55em}.later{padding:16px 18px;background:var(--later);border-left:3px solid #4b927e;color:#24483f;border-radius:2px}.later h2{margin:0 0 7px;color:#4a8d79}.later p{margin:0;font-size:11px;line-height:1.4}.sources{padding-top:14px;border:0;font-size:7px;line-height:1.35;text-align:center;color:#8b7e72}.sources a{color:#7f5b38}.nav{display:flex;justify-content:space-between;align-items:center;margin-top:14px;padding-top:10px;border-top:1px solid var(--rule);font:700 8px Georgia,"Times New Roman",serif;letter-spacing:.08em;text-transform:uppercase}.nav span{color:#9a806b}.nav a{padding:6px 11px;border-radius:2px;background:var(--navy);color:#fff;text-decoration:none}
+    @media (max-width:620px){main{padding:18px 14px 34px}.case-number{float:none;display:block;margin-top:5px}.lens{width:110px;height:110px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="period">Classical Period, circa 600 B.C.E. – 300 C.E.</div>
+      <div class="foundation">Foundations of Western Art · Phase E: High Imperial Rome</div>
+      <span class="case-number">Case 13 of 20</span>
+      <h1>Arch of Titus</h1>
+      <p class="object-line">Artist unknown · Rome, after 81 C.E. · Via Sacra, Roman Forum</p>
+    </header>
+
+    <section>
+      <div class="image-head"><h2>Look closely at the whole monument</h2><div class="magnifier">Magnifier <button id="on" type="button">On</button><button id="off" class="active" type="button">Off</button></div></div>
+      <figure>
+        <div class="image-stage" id="stage"><img id="mainImage" src="../images/artworks/Arch-Titus-Main.jpg" alt="The Arch of Titus seen from one corner against a bright blue sky. A single tall round opening cuts through the pale marble monument. Attached fluted columns stand at the corners and carry elaborate capitals. A deep ceiling of square coffers fills the passageway. Above it, a large Latin inscription sits in a rectangular panel."><div class="lens" id="lens"></div></div>
+        <figcaption>The Arch of Titus, Rome, after 81 C.E. A single-passage marble honorific arch on the Via Sacra, built after Titus’s death. The high rectangular attic carries the monument’s dedication; the passage contains reliefs of the Roman triumph after the destruction of Jerusalem.</figcaption>
+      </figure>
+    </section>
+
+    <section class="detail">
+      <h2>Detail · Spoils from Jerusalem</h2>
+      <img src="../images/artworks/Arch-Titus-Detail1.jpg" alt="Marble relief inside the Arch of Titus. Roman soldiers in deep carving carry objects in a procession. A large seven-branched menorah stands near the center, with sacred trumpets and other objects carried above the crowd.">
+      <p>The relief turns the passage into a record of the triumph: Roman soldiers carry treasures seized from the Temple in Jerusalem, including the seven-branched menorah.</p>
+    </section>
+
+    <section class="copy">
+      <p>After the emperor Titus died in 81 C.E., his brother and successor Domitian completed this arch on the Via Sacra, Rome’s ceremonial road through the Forum. The inscription above the opening dedicates it to the <em>deified</em> Titus. That word matters: the building does not simply remember a general. It presents him as a god and turns military victory into a permanent public message.</p>
+      <p>The arch marks the Roman victory over Jerusalem in 70 C.E. Its two great interior reliefs show the triumph that followed: one shows Titus in a four-horse chariot; the other shows soldiers carrying objects looted from the Temple in Jerusalem. The monument is an extraordinary work of Roman art, but it is also a record of conquest, displacement, and loss.</p>
+      <p>From a distance, the design is concentrated and easy to read: one large opening, attached columns, a heavy horizontal beam, then a tall rectangular attic for the inscription. Walk through it and the building changes scale. The passage becomes a carved theater where figures overlap, turn, and press forward in deep relief.</p>
+    </section>
+
+    <section>
+      <div class="label">Words to know</div>
+      <div class="words">
+        <article class="word"><h3>Triumphal arch</h3><p>A freestanding Roman monument built to honor a ruler or celebrate a military victory. It often placed an inscription and carved scenes directly in the path of people walking through the city.</p></article>
+        <article class="word"><h3>Relief</h3><p>Sculpture carved into a flat background. The forms project from the wall, but remain attached to it. Deep relief can make a crowded scene feel as if it moves into real space.</p></article>
+        <article class="word"><h3>Spolia <small>(SPOH-lee-uh)</small></h3><p>Older building parts or sculpture reused in a newer monument. This arch does not use spolia, but the Arch of Constantine later uses earlier imperial reliefs as spolia to claim Rome’s past.</p></article>
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>Detail · Carved ceiling and procession</h2>
+      <img src="../images/artworks/Arch-Titus-Detail2.jpg" alt="A view upward through the Arch of Titus. The underside of the arch is filled with a grid of deeply carved square coffers. Below it, the procession relief with the menorah is visible on the interior wall.">
+      <p>The ceiling is divided into a precise grid of coffers. Under it, the relief reads as a moving procession, joining exact architectural order to an image of victory and spoils.</p>
+    </section>
+
+    <section class="notice">
+      <div class="label">What to notice</div>
+      <ul>
+        <li>The monument has only one passage, but its attached columns, heavy beam, high attic, and inscription make it read as an imperial gateway rather than an ordinary doorway.</li>
+        <li>Inside, figures overlap and project far from the background. The deep carving creates shadow and makes the procession feel crowded and in motion.</li>
+        <li>The menorah, trumpets, and table from the Temple of Jerusalem make the triumph specific. They also make the relief an enduring visual record of Roman violence against Jerusalem.</li>
+        <li>Look up: the repeating squares of the coffered ceiling make the opening feel deeper and more carefully built than a plain stone tunnel.</li>
+        <li>The inscription calls Titus <em>divus</em>, or deified. Architecture, text, and sculpture all work together to turn political power into memory.</li>
+      </ul>
+    </section>
+
+    <section class="later">
+      <h2>Why this matters later</h2>
+      <p>The Arch of Titus establishes the visual language that the Arch of Constantine will use more than two centuries later: a freestanding triumphal arch, a central passage, an inscription in the attic, attached columns, and carved imperial reliefs. Constantine’s designers then make a pointed political choice: they set earlier Roman reliefs into their new monument as <em>spolia</em>. When you reach EM-03, look for that same Roman form—and for the older sculptures Constantine borrowed to claim the authority of earlier emperors.</p>
+    </section>
+
+    <section class="sources">
+      <strong>Sources and image credits.</strong> Historical account: <a href="https://smarthistory.org/the-arch-of-titus/">Smarthistory, “The Arch of Titus”</a>; relief context: <a href="https://smarthistory.org/the-arch-of-titus-2/">Smarthistory, “The Spoils of Jerusalem Being Brought into Rome”</a>.
+      Main image: <a href="https://commons.wikimedia.org/wiki/File:Arch_Titus,_Forum_Romanum,_Rome,_Italy.jpg">Jebulon, CC0</a>, resized. Spoils relief: <a href="https://commons.wikimedia.org/wiki/File:The_Arch_of_Titus,_Upper_Via_Sacra,_Rome_(31862188061).jpg">Carole Raddato, CC BY-SA 2.0</a>, resized. Ceiling and relief: <a href="https://commons.wikimedia.org/wiki/File:Arch_of_Titus_-_panoramio.jpg">Yooga, CC BY 3.0</a>, resized.
+    </section>
+
+    <nav class="nav"><span>Case 13 · 20</span><a href="#" aria-disabled="true">Next case →</a></nav>
+  </main>
+  <script>
+    const stage=document.getElementById('stage'), image=document.getElementById('mainImage'), lens=document.getElementById('lens'), on=document.getElementById('on'), off=document.getElementById('off');
+    let enabled=false;
+    function setMagnifier(value){enabled=value;on.classList.toggle('active',value);off.classList.toggle('active',!value);lens.classList.toggle('show',value)}
+    on.addEventListener('click',()=>setMagnifier(true));off.addEventListener('click',()=>setMagnifier(false));
+    stage.addEventListener('pointermove',event=>{if(!enabled)return;const rect=stage.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top,scale=2.5; lens.style.left=x+'px';lens.style.top=y+'px';lens.style.backgroundImage=`url(${image.currentSrc})`;lens.style.backgroundSize=`${rect.width*scale}px ${rect.height*scale}px`;lens.style.backgroundPosition=`${-(x*scale-90)}px ${-(y*scale-90)}px`});
+    stage.addEventListener('pointerleave',()=>lens.classList.remove('show'));stage.addEventListener('pointerenter',()=>{if(enabled)lens.classList.add('show')});
+  </script>
+</body>
+</html>

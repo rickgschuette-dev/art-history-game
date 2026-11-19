@@ -1553,3 +1553,47 @@ vocabulary cards repositioned to match. No images changed; this was an ordering 
 - Author: carulmare
 - License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
 - Changes: Shown without changes.
+# Classical Primer
+
+## CL-13 Arch of Titus
+
+- Main image: Jebulon, “Arch Titus, Forum Romanum, Rome, Italy” (2013), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arch_Titus,_Forum_Romanum,_Rome,_Italy.jpg), CC0. Resized to 1,600 px wide.
+- Detail 1: Carole Raddato, “The Arch of Titus, Upper Via Sacra, Rome” (2016), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Arch_of_Titus,_Upper_Via_Sacra,_Rome_(31862188061).jpg), CC BY-SA 2.0. Resized to 1,600 px wide.
+- Detail 2: Yooga, “Arch of Titus” (2009), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arch_of_Titus_-_panoramio.jpg), CC BY 3.0. Resized to 1,600 px wide.
+
+## CL-14 Pantheon
+
+- Main image: Rabax63, “Pantheon Rom 1 cropped” (2018), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pantheon_Rom_1_cropped.jpg), CC BY-SA 4.0. Resized to 1,600 px wide.
+- Detail 1: Yair Haklai, “Pantheon-Exterior-Front-Rome” (2009), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pantheon-Exterior-Front-Rome.jpg), CC BY-SA 3.0. Resized to 1,600 px wide.
+- Detail 2: John Samuel, “Pantheon (Rome) - Interior 07” (2016), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Interior_07.jpg), CC BY-SA 4.0. Resized to 1,600 px wide.
+
+## CL-15 Column of Trajan
+
+- Main image: Jean-Pol GRANDMONT, “Colonne de Trajan - Rome (1)” (2011), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Colonne_de_Trajan_-_Rome_(1).JPG), CC BY 4.0. Resized to 1,600 px wide.
+- Detail 1: MumblerJamie, “Damp Column 02” (2018), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Damp_Column_02.jpg), CC BY-SA 2.0. Resized to 1,600 px wide.
+
+## CL-16 Roman Basilica
+
+- Main image: Hiro-o, “Basilica of Maxentius2,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Basilica_of_Maxentius2.jpg), CC BY-SA 3.0. Resized to 1,600 px wide.
+- Detail 1: Nicholas Hartmann, “Roman Forum Basilica of Constantine” (2019), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Roman_Forum_Basilica_of_Constantine.jpg), CC BY-SA 4.0. Resized to 1,600 px wide.
+
+## CL-17 Portonaccio Sarcophagus
+
+- Main image: Unknown photographer, “Sarcofago di portonaccio, 01,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sarcofago_di_portonaccio,_01.jpg), CC BY-SA 3.0. Resized to 1,600 px wide.
+- Detail 1: Unknown photographer, “Sarcophagus Portonaccio Massimo2,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sarcophagus_Portonaccio_Massimo2.jpg), public domain. Resized to 1,600 px wide.
+
+## CL-18 Colossal Head of Constantine
+
+- Main image: MCAD Library / Allan T. Kohl, “Emperor Constantine, head and fragments from a colossal statue,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Emperor_Constantine,_head_and_fragments_from_a_colossal_statue_(11970811516).jpg), CC BY 2.0. Resized to 1,600 px wide.
+- Detail 1: Jonas Wegener, “Konstantin Kapitolinischen Museen,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Konstantin_Kapitolinischen_Museen.JPG), CC BY-SA 2.5. Resized to 1,600 px wide.
+
+## CL-19 Erechtheion Caryatids
+
+- Main image: Tomi Mäkitalo, “The Porch of the Caryatids, Erechtheion,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Porch_of_the_Caryatids,_Erechtheion_-_panoramio.jpg), CC BY-SA 3.0. Resized to 1,600 px wide.
+- Detail 1: Gary Todd, “Athens Acropolis Museum Caryatid from South Porch of the Erechtheion,” [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Athens_Acropolis_Museum_Caryatid_from_South_Porch_of_the_Erechtheion,_c._415_BC_(27825915434).jpg), CC0. Resized to 1,600 px wide.
+
+## CL-20 Garden Room Fresco
+
+- Main image: Richard Mortel, “Fresco from the triclinium of the villa of Livia, wife of the Emperor Augustus” (17), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Fresco_from_the_triclinium_of_the_villa_of_Livia,_wife_of_the_Emperor_Augustus,_30-20_BCE;_Palazzo_Massimo_alle_Terme,_Rome_(17).jpg), CC BY 2.0. Resized to 1,600 px wide.
+- Detail 1: Richard Mortel, “Fresco from the triclinium of the villa of Livia, wife of the Emperor Augustus” (19), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Fresco_from_the_triclinium_of_the_villa_of_Livia,_wife_of_the_Emperor_Augustus,_30-20_BCE;_Palazzo_Massimo_alle_Terme,_Rome_(19).jpg), CC BY 2.0. Resized to 1,600 px wide.
+- Detail 2: Richard Mortel, “Fresco from the triclinium of the villa of Livia, wife of the Emperor Augustus” (2), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Fresco_from_the_triclinium_of_the_villa_of_Livia,_wife_of_the_Emperor_Augustus,_30-20_BCE;_Palazzo_Massimo_alle_Terme,_Rome_(2).jpg), CC BY 2.0. Resized to 1,600 px wide.
