@@ -49,11 +49,10 @@
       </ul>
     </section>
 <section class="later"><h2>Why this matters later</h2><p>Myron’s discovery that one frozen moment can hold a whole action becomes an engine of later sculpture. Within this deck, <em>Doryphoros</em> shows the body at rest and introduces contrapposto. Much later, you will meet Michelangelo’s Sistine Chapel ceiling in the Renaissance deck and Bernini’s dramatic sculptures in the Baroque deck. Both push this sense of movement even further.</p></section>
-    <section class="sources"><strong>Image credit.</strong> <a href="https://commons.wikimedia.org/wiki/File:The_Discobolus_Lancellotti_and_a_fragmentary_statue_of_the_Lancellotti_type,_Roman_copies_of_a_5th_century_BC_Greek_original_by_Myron,_Hadrianic_period,_Palazzo_Massimo_alle_Terme_(11398126453).jpg">The Lancellotti Discobolus and a fragmentary Discobolus of the Lancellotti type</a>, Palazzo Massimo alle Terme, Rome, via Wikimedia Commons.</section>
+    <section class="sources"><strong>Image credit.</strong> Carole Raddato, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</section>
     <nav class="nav"><span>Case 2 · 20</span><a href="#" aria-disabled="true">Next case →</a></nav>
   </main>
   <script>
     const stage=document.getElementById('stage'),image=document.getElementById('mainImage'),lens=document.getElementById('lens'),on=document.getElementById('on'),off=document.getElementById('off');let enabled=false;function setMagnifier(value){enabled=value;on.classList.toggle('active',value);off.classList.toggle('active',!value);lens.classList.toggle('show',value)}on.addEventListener('click',()=>setMagnifier(true));off.addEventListener('click',()=>setMagnifier(false));stage.addEventListener('pointermove',event=>{if(!enabled)return;const rect=stage.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top,scale=2.5;lens.style.left=x+'px';lens.style.top=y+'px';lens.style.backgroundImage=`url(${image.currentSrc})`;lens.style.backgroundSize=`${rect.width*scale}px ${rect.height*scale}px`;lens.style.backgroundPosition=`${-(x*scale-90)}px ${-(y*scale-90)}px`});stage.addEventListener('pointerleave',()=>lens.classList.remove('show'));stage.addEventListener('pointerenter',()=>{if(enabled)lens.classList.add('show')});
   </script>
-</body>
-</html>
+<script src="primer-shell.js"></script></body></html>

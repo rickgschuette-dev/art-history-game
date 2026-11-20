@@ -75,7 +75,7 @@
 <section class="later"><h2>Why this matters later</h2><p>In the Early Medieval deck, you will meet <em>A Family on the Move</em> at Müstair, where a later fresco uses a wall to tell a Christian story instead of opening it onto a garden. In the Late Medieval deck, you will meet Giotto’s <em>Lamentation</em>, where natural poses and shadows make people and a rocky setting feel solid. In the Renaissance deck, you will meet Botticelli’s <em>Primavera</em> and Masaccio’s <em>Holy Trinity</em>, which each build a different kind of space.</p></section>
 
     <section class="sources">
-      <strong>Sources and image credits.</strong> Roman wall painting: <a href="https://www.metmuseum.org/essays/roman-painting">The Metropolitan Museum of Art, “Roman Painting”</a>; Villa of Livia context: <a href="https://commons.wikimedia.org/wiki/Category:Villa_di_Livia_-_Underground_garden_room">Wikimedia Commons collection</a>.
+      <strong>Sources and image credits.</strong> Roman wall painting: <a href="https://www.metmuseum.org/essays/roman-painting">The Metropolitan Museum of Art, “Roman Painting”</a>.
       Main and detail images: <a href="https://commons.wikimedia.org/wiki/File:Fresco_from_the_triclinium_of_the_villa_of_Livia,_wife_of_the_Emperor_Augustus,_30-20_BCE;_Palazzo_Massimo_alle_Terme,_Rome_(17).jpg">Richard Mortel, CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Fresco_from_the_triclinium_of_the_villa_of_Livia,_wife_of_the_Emperor_Augustus,_30-20_BCE;_Palazzo_Massimo_alle_Terme,_Rome_(19).jpg">detail 1</a>; <a href="https://commons.wikimedia.org/wiki/File:Fresco_from_the_triclinium_of_the_villa_of_Livia,_wife_of_the_Emperor_Augustus,_30-20_BCE;_Palazzo_Massimo_alle_Terme,_Rome_(2).jpg">detail 2</a>, all Richard Mortel, CC BY 2.0, resized.
     </section>
 
@@ -89,5 +89,4 @@
     stage.addEventListener('pointermove',event=>{if(!enabled)return;const rect=stage.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top,scale=2.5; lens.style.left=x+'px';lens.style.top=y+'px';lens.style.backgroundImage=`url(${image.currentSrc})`;lens.style.backgroundSize=`${rect.width*scale}px ${rect.height*scale}px`;lens.style.backgroundPosition=`${-(x*scale-90)}px ${-(y*scale-90)}px`});
     stage.addEventListener('pointerleave',()=>lens.classList.remove('show'));stage.addEventListener('pointerenter',()=>{if(enabled)lens.classList.add('show')});
   </script>
-</body>
-</html>
+<script src="primer-shell.js"></script></body></html>

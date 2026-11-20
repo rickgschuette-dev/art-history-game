@@ -86,5 +86,4 @@
     stage.addEventListener('pointermove',event=>{if(!enabled)return;const rect=stage.getBoundingClientRect(),x=event.clientX-rect.left,y=event.clientY-rect.top,scale=2.5; lens.style.left=x+'px';lens.style.top=y+'px';lens.style.backgroundImage=`url(${image.currentSrc})`;lens.style.backgroundSize=`${rect.width*scale}px ${rect.height*scale}px`;lens.style.backgroundPosition=`${-(x*scale-90)}px ${-(y*scale-90)}px`});
     stage.addEventListener('pointerleave',()=>lens.classList.remove('show'));stage.addEventListener('pointerenter',()=>{if(enabled)lens.classList.add('show')});
   </script>
-</body>
-</html>
+<script src="primer-shell.js"></script></body></html>
