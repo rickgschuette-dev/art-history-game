@@ -75,8 +75,11 @@
     'CL-19-erechtheion-caryatid.html',
     'CL-20-livia-garden-fresco-revision.html'
   ];
-  var current = decodeURIComponent(location.pathname).split('/').pop().toLowerCase();
-  var index = sequence.map(function (name) { return name.toLowerCase(); }).indexOf(current);
+  function routeName(name) {
+    return name.toLowerCase().replace(/\.html$/, '');
+  }
+  var current = routeName(decodeURIComponent(location.pathname).split('/').pop());
+  var index = sequence.map(routeName).indexOf(current);
   var next = main.querySelector('.nav a');
   if (next && index !== -1) {
     next.removeAttribute('aria-disabled');
