@@ -133,8 +133,8 @@
       next.href = sequence[index + 1];
       next.textContent = 'Next case →';
     } else {
-      next.href = '../../index.html#/novice';
-      next.textContent = 'Return to Novice';
+      next.href = 'classical-primer-complete.html';
+      next.textContent = 'Complete Classical Primer';
     }
   }
 }());
