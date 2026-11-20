@@ -51,4 +51,40 @@
     '@media(max-width:620px){.primer-tools{gap:.6rem;right:8px;top:8px;font-size:.8rem;padding:.25rem .6rem}.primer-tools span{display:none}body>main{padding:1.25rem 1rem 2.5rem!important}}';
   document.head.appendChild(style);
   shell.style.setProperty('--primer-card-art', 'url("' + image.src.replace(/"/g, '\\"') + '")');
+
+  var sequence = [
+    'CL-01-kouros-revision.html',
+    'CL-02-discobolus-revision.html',
+    'CL-03-doryphoros-revision.html',
+    'CL-04-parthenon-revision.html',
+    'CL-05-hermes-and-infant-dionysus-revision.html',
+    'CL-06-red-figure-krater-revision.html',
+    'CL-07-winged-victory-of-samothrace-revision.html',
+    'CL-08-patrician-ancestors-revision.html',
+    'CL-09-augustus-of-primaporta-revision.html',
+    'CL-10-ara-pacis-revision.html',
+    'CL-11-villa-of-mysteries-revision.html',
+    'CL-12-alexander-mosaic-revision.html',
+    'CL-13-arch-of-titus.html',
+    'CL-14-pantheon.html',
+    'CL-15-column-of-trajan-revision-2.html',
+    'CL-16-roman-basilica-codes-revision.html',
+    'CL-17-portonaccio-sarcophagus.html',
+    'CL-18-colossal-head-of-constantine.html',
+    'CL-19-erechtheion-caryatid.html',
+    'CL-20-livia-garden-fresco-revision.html'
+  ];
+  var current = decodeURIComponent(location.pathname).split('/').pop();
+  var index = sequence.indexOf(current);
+  var next = main.querySelector('.nav a');
+  if (next && index !== -1) {
+    next.removeAttribute('aria-disabled');
+    if (index < sequence.length - 1) {
+      next.href = sequence[index + 1];
+      next.textContent = 'Next case →';
+    } else {
+      next.href = '../../index.html#/novice';
+      next.textContent = 'Return to Novice';
+    }
+  }
 }());
