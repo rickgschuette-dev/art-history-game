@@ -47,9 +47,9 @@
     '.primer-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,2.5vw,2.5rem);align-items:start;margin-top:1.75rem}.primer-media-grid>section,.primer-detail-stack>section{margin-top:0!important}.primer-media-grid .image-head,.primer-media-grid section>figure{max-width:none!important}.primer-media-grid .image-stage img{max-height:min(68vh,760px)!important}.primer-detail-stack{display:grid;gap:clamp(1.25rem,2.5vw,2.5rem)}.primer-full-copy{margin-top:1.75rem!important}.primer-full-copy .copy{margin-top:0!important}' +
     'body>main .magnifier{font-size:.95rem!important;white-space:nowrap}body>main .magnifier button{min-width:3rem!important;margin-left:.35rem!important;padding:.45rem .7rem!important;font-size:.9rem!important}' +
     'body>main figcaption,body>main .detail p{font-size:1rem!important;line-height:1.5!important}' +
-    'body>main .copy{padding:1.65rem clamp(1.35rem,2.35vw,2.35rem)!important}body>main .copy p{font-size:1.15rem!important;line-height:1.6!important}' +
+    'body>main .copy{padding:1.75rem clamp(1.45rem,2.5vw,2.5rem)!important}body>main .copy p{font-size:1.3rem!important;line-height:1.62!important}' +
     'body>main .words,body>main .notice,body>main .later{padding:1.25rem clamp(1.1rem,2vw,2rem)!important}' +
-    'body>main .label,body>main .notice .label,body>main .later h2{font-size:.85rem!important}body>main .word h3{font-size:1.12rem!important}body>main .word p,body>main .notice li,body>main .later p{font-size:1.08rem!important;line-height:1.6!important}' +
+    'body>main .label,body>main .notice .label,body>main .later h2{font-size:.95rem!important}body>main .word h3{font-size:1.25rem!important}body>main .word p,body>main .notice li,body>main .later p{font-size:1.2rem!important;line-height:1.62!important}' +
     'body>main .sources{font-size:.76rem!important}body>main .nav{justify-content:center!important;gap:1rem!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important;padding-top:1.25rem!important}body>main .nav span{font-size:.78rem!important}body>main .nav a{display:inline-flex!important;align-items:center!important;min-height:44px!important;padding:.7rem 1.15rem!important;font-size:.9rem!important}' +
     '@media(max-width:920px){.primer-lead-grid,.primer-media-grid{grid-template-columns:1fr}.primer-card-art,.primer-banner-lens{display:none!important}}' +
     '@media(max-width:620px){.primer-tools{gap:.6rem;right:8px;top:8px;font-size:.8rem;padding:.25rem .6rem}.primer-tools span{display:none}body>main{padding:1.25rem 1rem 2.5rem!important}}';
@@ -129,6 +129,13 @@
   var next = main.querySelector('.nav a');
   if (next && index !== -1) {
     next.removeAttribute('aria-disabled');
+    if (index > 0) {
+      var previous = document.createElement('a');
+      previous.className = 'primer-previous-case';
+      previous.href = sequence[index - 1];
+      previous.textContent = 'Previous case';
+      next.parentNode.insertBefore(previous, next.parentNode.querySelector('span'));
+    }
     if (index < sequence.length - 1) {
       next.href = sequence[index + 1];
       next.textContent = 'Next case →';
