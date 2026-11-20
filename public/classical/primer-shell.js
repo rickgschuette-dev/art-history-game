@@ -30,7 +30,7 @@
   style.textContent =
     ':root{--primer-banner:#1b2f5e}' +
     '.primer-site-banner{position:relative;height:clamp(150px,19vw,243px);overflow:hidden;background:var(--primer-banner);font-family:Georgia,"Times New Roman",serif}' +
-    '.primer-banner-photo{position:absolute;inset:0;display:block}' +
+    '.primer-banner-photo{position:absolute;left:0;top:50%;width:100%;aspect-ratio:1932/410;transform:translateY(-50%);display:block}' +
     '.primer-gallery{display:block;width:100%;height:100%;object-fit:fill}' +
     '.primer-card-art{position:absolute;left:58%;top:0;width:42%;height:100%;object-fit:cover;object-position:50% 43%}' +
     '.primer-brand{position:absolute;left:5%;top:50%;transform:translateY(-50%);display:block}' +
@@ -42,11 +42,12 @@
     '.primer-banner-lens img{position:absolute;inset:0;width:100%;height:100%}' +
     'body>main{max-width:none!important;margin:0!important;padding:2rem clamp(1.2rem,3vw,2.4rem) 3.25rem!important}' +
     'body>main header{padding-bottom:1rem!important}body>main h1{font-size:clamp(2.25rem,4.2vw,3.7rem)!important}' +
-    'body>main section{margin-top:1.75rem!important}body>main .image-stage img{max-height:640px!important}' +
+    'body>main section{margin-top:1.75rem!important}body>main .image-head,body>main section>figure{max-width:min(100%,960px)!important}body>main .image-stage img{max-height:640px!important}' +
+    'body>main .magnifier{font-size:.95rem!important;white-space:nowrap}body>main .magnifier button{min-width:3rem!important;margin-left:.35rem!important;padding:.45rem .7rem!important;font-size:.9rem!important}' +
     'body>main .copy{padding:1.5rem clamp(1.25rem,2.2vw,2.2rem)!important}body>main .copy p{font-size:1rem!important;line-height:1.55!important}' +
     'body>main .words,body>main .notice,body>main .later{padding:1.25rem clamp(1.1rem,2vw,2rem)!important}' +
     'body>main .word h3{font-size:1rem!important}body>main .word p,body>main .notice li,body>main .later p{font-size:.95rem!important;line-height:1.5!important}' +
-    'body>main .sources{font-size:.76rem!important}' +
+    'body>main .sources{font-size:.76rem!important}body>main .nav{justify-content:center!important;gap:1rem!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important;padding-top:1.25rem!important}body>main .nav span{font-size:.78rem!important}body>main .nav a{display:inline-flex!important;align-items:center!important;min-height:44px!important;padding:.7rem 1.15rem!important;font-size:.9rem!important}' +
     '@media(max-width:820px){.primer-card-art,.primer-banner-lens{display:none!important}}' +
     '@media(max-width:620px){.primer-tools{gap:.6rem;right:8px;top:8px;font-size:.8rem;padding:.25rem .6rem}.primer-tools span{display:none}body>main{padding:1.25rem 1rem 2.5rem!important}}';
   document.head.appendChild(style);
@@ -74,8 +75,8 @@
     'CL-19-erechtheion-caryatid.html',
     'CL-20-livia-garden-fresco-revision.html'
   ];
-  var current = decodeURIComponent(location.pathname).split('/').pop();
-  var index = sequence.indexOf(current);
+  var current = decodeURIComponent(location.pathname).split('/').pop().toLowerCase();
+  var index = sequence.map(function (name) { return name.toLowerCase(); }).indexOf(current);
   var next = main.querySelector('.nav a');
   if (next && index !== -1) {
     next.removeAttribute('aria-disabled');
