@@ -26,6 +26,17 @@ var EM01={id:"EM-01",kind:"Sculpture",title:"Carved to Match",object:"The Four T
  guide:"Evidence filed. Blocky forms, identical figures and incised patterns are features a detective can carry to the next case.",
  sourceNums:[1],
  credit:{url:"https://commons.wikimedia.org/wiki/File:The-tetrarchs.jpg",author:"Wooofer",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"}};
+EM01.backward={
+  course:"Foundations of Art History",
+  unit:"Unit 1: Early Medieval (c. 300–900 C.E.)",
+  setting:"The sculpture is installed on the outside corner of St. Mark’s Basilica in Venice. Its position makes the two embracing pairs wrap around the building corner, so viewers encounter the rulers as a solid, linked group.",
+  material:"The purple-red stone is Egyptian porphyry, an exceptionally hard igneous rock associated with imperial power. Its resistance to carving favors bold planes, deep grooves, and simplified facial features instead of delicate undercut detail.",
+  synthesis:{
+    subhead:"Why Late Roman Sculptors Abandoned Realism",
+    title:"Visual Solidarity in a Fractured Empire",
+    text:["After decades of civil war in the third century C.E., Emperor Diocletian divided rule among four co-emperors: two senior Augusti and two junior Caesars. This arrangement, called the Tetrarchy, needed to persuade people across a vast and unstable empire that power could be shared without falling apart.","The sculptors deliberately moved away from classical naturalism. In rare imperial porphyry, the rulers have nearly identical blocky bodies, matching caps, and tightly embracing arms. Individual personality matters less than the message: the office of emperor is stable, unified, and larger than any one person."]
+  }
+};
 var EM02={id:"EM-02",kind:"Mosaic",wide:true,title:"Floating in Gold",object:"Apse mosaic, San Vitale",playable:true,
  crumb:"Early Medieval Period, circa 300 C.E. \u2013 900 C.E.",
  work:"Christ with Angels, Saint Vitalis and Bishop Ecclesius (apse mosaic)",date:"circa 547 C.E.",location:"Basilica of San Vitale, Ravenna",artist:"artists unknown",
@@ -680,9 +691,9 @@ EM30.zones={
  tower:[{x0:30,y0:19,x1:77,y1:53}]
 };
 EM01.zones={
- blocky:[{x0:8,y0:5,x1:82,y1:78}],
- identical:[{x0:10,y0:2,x1:78,y1:24}],
- incised:[{x0:8,y0:50,x1:78,y1:64},{x0:8,y0:30,x1:78,y1:50}]
+ blocky:[{x0:10,y0:20,x1:83,y1:81}],
+ identical:[{x0:16,y0:3,x1:80,y1:26}],
+ incised:[{x0:11,y0:31,x1:82,y1:64}]
 };
 EM02.zones={
  gold:[{x0:27,y0:9,x1:67,y1:29},{x0:70,y0:20,x1:88,y1:34}],
