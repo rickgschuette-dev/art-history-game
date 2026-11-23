@@ -252,6 +252,40 @@ body[data-view="card"] .top .photo #lens{display:block}
 
 .ta-assignment,.ta-setup,.ta-board{background:#fff;border:1px solid #ddd7cc;border-radius:14px;box-shadow:0 2px 10px rgba(45,37,27,.035)}.ta-assignment{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin:1rem 0;padding:1rem 1.15rem;border-left:5px solid #4e1d2d}.ta-assignment h2,.ta-setup h2{margin:.28rem 0;font:700 1.45rem/1.1 "Cormorant Garamond",Georgia,serif}.ta-assignment p:not(.tr-eyebrow),.ta-setup p{margin:.3rem 0 0;color:#625e57;font-size:.78rem}.ta-assignment-actions{display:flex;gap:.45rem;flex-wrap:wrap;justify-content:flex-end}.ta-setup{display:grid;grid-template-columns:1fr 1.2fr;gap:1rem;margin:-.25rem 0 1rem;padding:1rem 1.15rem;background:#f8f6f1}.ta-form{display:grid;grid-template-columns:repeat(3,1fr) auto;gap:.5rem;align-items:end}.ta-form label{display:grid;gap:.22rem;color:#625e57;font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.ta-form input{box-sizing:border-box;min-width:0;width:100%;padding:.48rem;border:1px solid #d5cec3;border-radius:6px;background:#fff;color:#34322e;font:500 .7rem Inter,sans-serif}.ta-board{padding:1rem 1.15rem;margin-bottom:1rem;overflow:auto}.ta-board-head{display:flex;justify-content:space-between;gap:.8rem;align-items:end;margin-bottom:.7rem}.ta-board-head strong,.ta-board-head span{display:block}.ta-board-head strong{font:700 1.18rem "Cormorant Garamond",Georgia,serif}.ta-board-head span{margin-top:.15rem;color:#625e57;font-size:.68rem}.ta-grid-head,.ta-row{display:grid;grid-template-columns:2.1rem minmax(130px,1fr) repeat(5,2.25rem) 3rem;gap:.35rem;align-items:center;min-width:470px}.ta-grid-head{padding:0 .55rem .38rem;color:#706b62;font-size:.59rem;font-weight:700;text-align:center}.ta-grid-head span:nth-child(2){text-align:left}.ta-grid{display:grid;gap:.35rem}.ta-row{width:100%;padding:.48rem .55rem;border:1px solid #e4dfd7;border-radius:8px;background:#fff;text-align:left;cursor:pointer}.ta-row:hover,.ta-row.is-selected{background:#f8f6f1;border-color:#c49e89}.ta-row strong{font-size:.73rem}.ta-cell,.ta-total{display:grid;place-items:center;height:1.55rem;border-radius:5px;font-size:.7rem;font-weight:700;text-align:center}.ta-cell{background:#eee9e1;color:#999087}.ta-cell.is-done{background:#edf4ea;color:#496044}.ta-total{background:#f1ede4;color:#625e57;font-size:.64rem}.ta-total.is-complete{background:#edf4ea;color:#496044}.ta-total.is-missing{background:#fbeceb;color:#9e3d32}@media(max-width:760px){.ta-assignment,.ta-board-head{align-items:stretch;flex-direction:column}.ta-assignment-actions{justify-content:flex-start}.ta-setup{grid-template-columns:1fr}.ta-form{grid-template-columns:1fr 1fr}.ta-form .tr-next{grid-column:1 / -1;justify-self:start}}
 
+/* Teacher Review uses the same generous reading scale as the curriculum cards. */
+body[data-view="teacher"] main{max-width:none;padding:1.75rem 2rem 3rem}
+body[data-view="teacher"] .tr-page{max-width:none;padding:0}
+body[data-view="teacher"] .tr-header{padding-bottom:1.35rem}
+body[data-view="teacher"] .tr-header h1{font-size:clamp(2.6rem,4vw,3.5rem)}
+body[data-view="teacher"] .tr-header>div>p:last-child{font-size:1.08rem}
+body[data-view="teacher"] .tr-summary{min-width:285px;padding:1rem 1.15rem}
+body[data-view="teacher"] .tr-summary strong{font-size:1.02rem}
+body[data-view="teacher"] .tr-summary span{font-size:.88rem}
+body[data-view="teacher"] .tr-demo{margin:1.25rem 0;padding:.75rem .95rem;font-size:.9rem}
+body[data-view="teacher"] .ta-assignment{padding:1.25rem 1.5rem}
+body[data-view="teacher"] .ta-assignment h2,.ta-setup h2{font-size:1.75rem}
+body[data-view="teacher"] .ta-assignment p:not(.tr-eyebrow),body[data-view="teacher"] .ta-setup p{font-size:1rem}
+body[data-view="teacher"] .ta-board{padding:1.35rem 1.5rem}
+body[data-view="teacher"] .ta-board-head strong{font-size:1.55rem}
+body[data-view="teacher"] .ta-board-head span{font-size:.9rem}
+body[data-view="teacher"] .ta-grid-head,body[data-view="teacher"] .ta-row{grid-template-columns:2.7rem minmax(210px,1fr) repeat(5,3.55rem) 5.2rem;gap:.5rem;min-width:650px}
+body[data-view="teacher"] .ta-grid-head{padding:0 .75rem .5rem;font-size:.76rem}
+body[data-view="teacher"] .ta-row{padding:.7rem .75rem}
+body[data-view="teacher"] .tr-avatar{width:2.35rem;height:2.35rem;font-size:.78rem}
+body[data-view="teacher"] .ta-row strong{font-size:1rem}
+body[data-view="teacher"] .ta-cell,body[data-view="teacher"] .ta-total{height:2.05rem;font-size:.9rem}
+body[data-view="teacher"] .ta-total{font-size:.82rem}
+body[data-view="teacher"] .tr-folio{padding:1.45rem 1.5rem}
+body[data-view="teacher"] .tr-folio h2{font-size:2.2rem}
+body[data-view="teacher"] .tr-folio-head>div>p:last-child{font-size:.98rem}
+body[data-view="teacher"] .tr-progress strong{font-size:1.45rem}
+body[data-view="teacher"] .tr-progress span{font-size:.78rem}
+body[data-view="teacher"] .tr-observation{padding:1rem 1.1rem}
+body[data-view="teacher"] .tr-observation h3{font-size:1.08rem}
+body[data-view="teacher"] .tr-observation p{font-size:1rem}
+body[data-view="teacher"] .tr-letter{width:1.9rem;height:1.9rem;font-size:1.05rem}
+@media(max-width:760px){body[data-view="teacher"] main{padding:1rem .8rem 2rem}body[data-view="teacher"] .tr-header h1{font-size:2.25rem}body[data-view="teacher"] .ta-assignment h2{font-size:1.4rem}}
+
 /* Card layout: title, intro and Word to know in a band above the two columns */
 .introband{margin:0 0 1.2rem}.introband .ctitle{margin:0 0 .5rem}
 .introrow{display:grid;grid-template-columns:1.7fr 1fr;gap:1rem;align-items:start}.introrow .q,.introrow .word{margin:0}.introrow .word{display:flex;flex-direction:column;justify-content:center}
