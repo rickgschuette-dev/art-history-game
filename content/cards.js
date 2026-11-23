@@ -705,11 +705,25 @@ EM03.zones={
  blocky:[{x0:8,y0:27,x1:50,y1:43}],
  two:[{x0:8,y0:45,x1:32,y1:82},{x0:68,y0:45,x1:95,y1:82},{x0:50,y0:27,x1:92,y1:43}]
 };
+// Approved Observation-First template: the shared renderer derives its notes
+// and story from this card's established research, vocabulary, images, and zones.
+EM03.backward={};
 EM04.zones={
  atrium:[{x0:33,y0:30,x1:78,y1:72}],
  transept:[{x0:8,y0:0,x1:37,y1:20}],
  steps:[{x0:40,y0:82,x1:92,y1:100}]
 };
+// Approved Observation-First template: shared renderer uses the existing data.
+EM04.backward={};
+// Batch 1: approved Observation-First curriculum cards. The shared renderer
+// uses each card's established research, vocabulary, image assets, and zones.
+EM10.backward={};
+EM11.backward={};
+EM30.backward={};
+EM12.backward={};
+EM02.backward={};
+EM26.backward={};
+EM05.backward={};
 EM07.zones={
  knotwork:[{x0:36,y0:30,x1:54,y1:40.5},{x0:35,y0:70,x1:55,y1:89}],
  vines:[{x0:39,y0:41,x1:54,y1:70},{x0:43,y0:8,x1:54,y1:29}],
