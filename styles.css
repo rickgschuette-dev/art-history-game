@@ -153,6 +153,7 @@ ol.src li.ph-src.hl{font-style:italic}
 .lvls a:nth-child(2){background:#1f6f6b;margin-top:.2rem}
 .lvls a:nth-child(3){background:#a4472b;margin-top:.4rem}
 .lvls a:nth-child(4){background:#5b4b8a;margin-top:.6rem}
+.lvls a:nth-child(5){background:#4e1d2d;margin-top:.8rem}
 .lvls a:hover,.lvls a:focus-visible{opacity:1}
 .lvls a[aria-current=page]{opacity:1;margin-top:0!important;box-shadow:0 3px 9px rgba(0,0,0,.4);z-index:2}
 .hero{max-width:760px;margin:0 auto 1.6rem}
@@ -195,6 +196,7 @@ nav.lvls a:nth-child(1){background:#a87834;margin-top:0}
 nav.lvls a:nth-child(2){background:#1f6f6b;margin-top:0}
 nav.lvls a:nth-child(3){background:#a4472b;margin-top:0}
 nav.lvls a:nth-child(4){background:#5b4b8a;margin-top:0}
+nav.lvls a:nth-child(5){background:#4e1d2d;margin-top:0}
 nav.lvls a:hover,nav.lvls a:focus-visible{opacity:1}
 nav.lvls a[aria-current=page]{opacity:1;padding-bottom:.9rem;box-shadow:0 4px 10px rgba(0,0,0,.35)}
 body[data-view="card"] nav.lvls{display:none}
