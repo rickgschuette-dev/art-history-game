@@ -263,6 +263,11 @@ document.getElementById('sub').onclick=function(){if(!allIn()){S.bmsg='Mark '+(c
 var bl=document.querySelector('label.bonus'),sl=document.getElementById('bslotL'),sp=document.getElementById('bslotP'),mq=window.matchMedia('(min-width:851px)');if(bl)sp.appendChild(bl);var bt=document.getElementById('bonus');if(bt){bt.value=S.bonus||'';bt.oninput=function(){S.bonus=bt.value;save()};if(S.done&&!S.bonusMissed){bt.disabled=true}}
 marks();chips();fields();msg();bm();bank()}
 function citedOn(n){var out=[];DECKS.forEach(function(d){d.cards.forEach(function(c){if(c.playable&&c.sourceNums&&c.sourceNums.indexOf(n)>=0)out.push('<a href="#/card/'+c.id+'">'+esc(c.id+' '+c.title)+'</a>')});(d.vocab||[]).forEach(function(v){if(v.sourceNums&&v.sourceNums.indexOf(n)>=0)out.push('<a href="#/vocab/'+v.id+'">'+esc(v.id+' '+v.word)+'</a>')})});return out.join(', ')}
+function teacherSetPassword(){
+ app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><h1>Set Your Teacher Password</h1><p>Choose a password for this curriculum account. You will use it with your email address when you return to Teacher Review.</p><form id="teacher-password-form"><label>New password<input id="teacher-new-password" type="password" autocomplete="new-password" minlength="12" required></label><label>Confirm password<input id="teacher-confirm-password" type="password" autocomplete="new-password" minlength="12" required></label><p class="teacher-login-error" id="teacher-password-error" role="alert"></p><button type="submit" class="tr-next">Set password</button></form></div></section>';
+ var form=document.getElementById('teacher-password-form'),error=document.getElementById('teacher-password-error');
+ form.onsubmit=function(e){e.preventDefault();var button=form.querySelector('button'),password=document.getElementById('teacher-new-password').value,confirm=document.getElementById('teacher-confirm-password').value;if(password!==confirm){error.textContent='The passwords do not match.';return}button.disabled=true;button.textContent='Setting password…';error.textContent='';window.teacherAuth.acceptInvite(password).then(function(){teacherGate()}).catch(function(error){button.disabled=false;button.textContent='Set password';document.getElementById('teacher-password-error').textContent=error&&error.message?error.message:'We could not set your password. Please request a new teacher invitation.'})}
+}
 function teacherSignIn(note){
  app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><h1>Teacher Sign In</h1><p>Sign in to review student folios. Student accounts cannot access this page.</p>'+(note?'<p class="teacher-login-note">'+esc(note)+'</p>':'')+'<form id="teacher-login-form"><label>Email address<input id="teacher-email" type="email" autocomplete="email" required></label><label>Password<input id="teacher-password" type="password" autocomplete="current-password" required></label><p class="teacher-login-error" id="teacher-login-error" role="alert"></p><button type="submit" class="tr-next">Sign in</button></form><p class="teacher-login-help">Need access? Ask your curriculum administrator for a teacher invitation.</p></div></section>';
  var form=document.getElementById('teacher-login-form'),error=document.getElementById('teacher-login-error');
@@ -271,14 +276,17 @@ function teacherSignIn(note){
 function teacherGate(){
  app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><p>Checking teacher access…</p></div></section>';
  if(!window.teacherAuth){teacherSignIn('Teacher sign-in is loading. Please refresh this page.');return}
- window.teacherAuth.currentUser().then(function(user){
-  if(!user){teacherSignIn();return null}
-  return fetch('/.netlify/functions/teacher-session',{credentials:'same-origin'}).then(function(response){
-   if(response.status===401){teacherSignIn('Your session has ended. Please sign in again.');return null}
-   if(response.status===403){teacherSignIn('This account does not have teacher access.');return null}
-   if(!response.ok)throw new Error('Teacher access is unavailable.');
-   return response.json();
-  }).then(function(session){if(session)teacherReview(session.teacher)})
+ window.teacherAuth.inviteToken().then(function(token){
+  if(token){teacherSetPassword();return null}
+  return window.teacherAuth.currentUser().then(function(user){
+   if(!user){teacherSignIn();return null}
+   return fetch('/.netlify/functions/teacher-session',{credentials:'same-origin'}).then(function(response){
+    if(response.status===401){teacherSignIn('Your session has ended. Please sign in again.');return null}
+    if(response.status===403){teacherSignIn('This account does not have teacher access.');return null}
+    if(!response.ok)throw new Error('Teacher access is unavailable.');
+    return response.json();
+   }).then(function(session){if(session)teacherReview(session.teacher)})
+  })
  }).catch(function(){teacherSignIn('Teacher sign-in is available after this site is deployed with Netlify Identity enabled.')})
 }
 function teacherReview(teacher){
