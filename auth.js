@@ -1,6 +1,7 @@
 (function () {
   var identity = null;
   var inviteToken = null;
+  var recoveryToken = null;
 
   window.teacherAuth = {
     ready: import('https://cdn.jsdelivr.net/npm/@netlify/identity@2.0.0/+esm')
@@ -8,6 +9,7 @@
         identity = api;
         return api.handleAuthCallback().catch(function () { return null; }).then(function (result) {
           if (result && result.type === 'invite' && result.token) inviteToken = result.token;
+          if (result && result.type === 'recovery' && result.token) recoveryToken = result.token;
           return api;
         });
       })
@@ -34,6 +36,18 @@
         if (!api || !inviteToken) throw new Error('This teacher invitation is no longer available.');
         return api.acceptInvite(inviteToken, password).then(function (user) {
           inviteToken = null;
+          return user;
+        });
+      });
+    },
+    recoveryToken: function () {
+      return window.teacherAuth.ready.then(function () { return recoveryToken; });
+    },
+    resetPassword: function (password) {
+      return window.teacherAuth.ready.then(function (api) {
+        if (!api || !recoveryToken) throw new Error('This password-reset link is no longer available.');
+        return api.recoverPassword(recoveryToken, password).then(function (user) {
+          recoveryToken = null;
           return user;
         });
       });
