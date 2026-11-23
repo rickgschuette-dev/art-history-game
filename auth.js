@@ -11,7 +11,7 @@
   }
 
   window.teacherAuth = {
-    ready: import('https://cdn.jsdelivr.net/npm/@netlify/identity@2.0.0/+esm')
+    ready: import('https://cdn.jsdelivr.net/npm/@netlify/identity@2.0.1/+esm')
       .then(function (api) {
         identity = api;
         if (passwordRecoveryToken) {
@@ -50,7 +50,9 @@
         if (!api || !inviteToken) throw new Error('This teacher invitation is no longer available.');
         return api.acceptInvite(inviteToken, password).then(function (user) {
           inviteToken = null;
-          return user;
+          // Finish with a normal login so the protected teacher endpoint gets
+          // the browser session cookie it needs on its first request.
+          return api.login(user.email, password);
         });
       });
     },
