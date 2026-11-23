@@ -287,8 +287,8 @@ function teacherGate(){
  if(!window.teacherAuth){teacherSignIn('Teacher sign-in is loading. Please refresh this page.');return}
  window.teacherAuth.inviteToken().then(function(token){
   if(token){teacherSetPassword();return null}
-  return window.teacherAuth.passwordRecoveryActive().then(function(recoveryActive){
-   if(recoveryActive){teacherResetPassword();return null}
+  return window.teacherAuth.passwordRecoveryToken().then(function(recoveryToken){
+   if(recoveryToken){teacherResetPassword();return null}
    return window.teacherAuth.currentUser().then(function(user){
    if(!user){teacherSignIn();return null}
    return fetch('/.netlify/functions/teacher-session',{credentials:'same-origin'}).then(function(response){

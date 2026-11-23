@@ -1,21 +1,27 @@
 (function () {
   var identity = null;
   var inviteToken = null;
-  var passwordRecoveryActive = false;
+  // Capture the recovery token before the router gets a chance to interpret
+  // the URL fragment.  It remains only in memory and is consumed once when a
+  // teacher saves a new password.
+  var passwordRecoveryToken = new URLSearchParams(location.hash.substring(1)).get('recovery_token');
+  if (passwordRecoveryToken) {
+    history.replaceState(null, '', location.pathname + location.search);
+    location.hash = '#/teacher';
+  }
 
   window.teacherAuth = {
     ready: import('https://cdn.jsdelivr.net/npm/@netlify/identity@2.0.0/+esm')
       .then(function (api) {
         identity = api;
+        if (passwordRecoveryToken) {
+          return api;
+        }
         return api.handleAuthCallback().catch(function () { return null; }).then(function (result) {
           if (result && result.type === 'invite' && result.token) inviteToken = result.token;
-          // Netlify signs the user in when it processes a recovery link.  There
-          // is no second token for the page to collect; record the active
-          // recovery session so the app can present the new-password form.
-          if (result && result.type === 'recovery') passwordRecoveryActive = true;
-          // Identity email links normally arrive at the site root.  Send invite
-          // and recovery visitors to the protected Teacher Review route.
-          if (result && (result.type === 'invite' || result.type === 'recovery') && location.hash.indexOf('#/teacher') !== 0) {
+          // Identity email links normally arrive at the site root. Send invite
+          // visitors to the protected Teacher Review route.
+          if (result && result.type === 'invite' && location.hash.indexOf('#/teacher') !== 0) {
             location.hash = '#/teacher';
           }
           return api;
@@ -48,8 +54,8 @@
         });
       });
     },
-    passwordRecoveryActive: function () {
-      return window.teacherAuth.ready.then(function () { return passwordRecoveryActive; });
+    passwordRecoveryToken: function () {
+      return window.teacherAuth.ready.then(function () { return passwordRecoveryToken; });
     },
     requestPasswordRecovery: function (email) {
       return window.teacherAuth.ready.then(function (api) {
@@ -59,9 +65,9 @@
     },
     resetPassword: function (password) {
       return window.teacherAuth.ready.then(function (api) {
-        if (!api || !passwordRecoveryActive) throw new Error('This password-reset link is no longer available.');
-        return api.updateUser({ password: password }).then(function (user) {
-          passwordRecoveryActive = false;
+        if (!api || !passwordRecoveryToken) throw new Error('This password-reset link is no longer available.');
+        return api.recoverPassword(passwordRecoveryToken, password).then(function (user) {
+          passwordRecoveryToken = null;
           return user;
         });
       });
