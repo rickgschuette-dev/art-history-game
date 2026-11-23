@@ -190,13 +190,14 @@ body[data-view="card"] .top #frameart{display:block}
 .top .rt a{color:#fff;text-decoration:none}
 .top .rt a:hover{text-decoration:underline}
 #bank{color:#e3d4b9;font-size:.9rem}
-nav.lvls{display:flex;align-items:flex-start;gap:.25rem;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+nav.lvls{display:flex;align-items:flex-start;gap:.25rem;max-width:none;margin:0 auto;padding:0 1.5rem}
 nav.lvls a{display:inline-block;margin-top:0;padding:.45rem 1.15rem .55rem;border-radius:0 0 8px 8px;text-decoration:none;color:#fff;font-weight:bold;font-size:.92rem;box-shadow:0 3px 6px rgba(0,0,0,.25);opacity:.92}
 nav.lvls a:nth-child(1){background:#a87834;margin-top:0}
 nav.lvls a:nth-child(2){background:#1f6f6b;margin-top:0}
 nav.lvls a:nth-child(3){background:#a4472b;margin-top:0}
 nav.lvls a:nth-child(4){background:#5b4b8a;margin-top:0}
 nav.lvls a:nth-child(5){background:#4e1d2d;margin-top:0}
+nav.lvls a[data-lvl="teacher"]{margin-left:auto}
 nav.lvls a:hover,nav.lvls a:focus-visible{opacity:1}
 nav.lvls a[aria-current=page]{opacity:1;padding-bottom:.9rem;box-shadow:0 4px 10px rgba(0,0,0,.35)}
 body[data-view="card"] nav.lvls{display:none}
