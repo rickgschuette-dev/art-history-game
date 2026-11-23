@@ -1,86 +1,28 @@
 (function () {
-  var identity = null;
-  var inviteToken = null;
-  // Capture the recovery token before the router gets a chance to interpret
-  // the URL fragment.  It remains only in memory and is consumed once when a
-  // teacher saves a new password.
-  var passwordRecoveryToken = new URLSearchParams(location.hash.substring(1)).get('recovery_token');
-  if (passwordRecoveryToken) {
-    history.replaceState(null, '', location.pathname + location.search);
-    location.hash = '#/teacher';
+  function request(path, options) {
+    return fetch(path, Object.assign({ credentials: 'same-origin' }, options || {})).then(function (response) {
+      return response.json().catch(function () { return {}; }).then(function (data) {
+        return { response: response, data: data };
+      });
+    });
   }
 
   window.teacherAuth = {
-    ready: import('https://cdn.jsdelivr.net/npm/@netlify/identity@2.0.1/+esm')
-      .then(function (api) {
-        identity = api;
-        if (passwordRecoveryToken) {
-          return api;
-        }
-        return api.handleAuthCallback().catch(function () { return null; }).then(function (result) {
-          if (result && result.type === 'invite' && result.token) inviteToken = result.token;
-          // Identity email links normally arrive at the site root. Send invite
-          // visitors to the protected Teacher Review route.
-          if (result && result.type === 'invite' && location.hash.indexOf('#/teacher') !== 0) {
-            location.hash = '#/teacher';
-          }
-          return api;
-        });
-      })
-      .catch(function (error) {
-        console.warn('Teacher sign-in is unavailable.', error);
-        return null;
-      }),
-    currentUser: function () {
-      return window.teacherAuth.ready.then(function (api) {
-        return api ? api.getUser() : null;
-      });
+    session: function () {
+      return request('/.netlify/functions/teacher-session');
     },
-    signIn: function (email, password) {
-      return window.teacherAuth.ready.then(function (api) {
-        if (!api) throw new Error('Teacher sign-in is not available yet.');
-        return api.login(email, password);
-      });
-    },
-    inviteToken: function () {
-      return window.teacherAuth.ready.then(function () { return inviteToken; });
-    },
-    acceptInvite: function (password) {
-      return window.teacherAuth.ready.then(function (api) {
-        if (!api || !inviteToken) throw new Error('This teacher invitation is no longer available.');
-        return api.acceptInvite(inviteToken, password).then(function (user) {
-          inviteToken = null;
-          // Finish with a normal login so the protected teacher endpoint gets
-          // the browser session cookie it needs on its first request.
-          return api.login(user.email, password);
-        });
-      });
-    },
-    passwordRecoveryToken: function () {
-      return window.teacherAuth.ready.then(function () { return passwordRecoveryToken; });
-    },
-    requestPasswordRecovery: function (email) {
-      return window.teacherAuth.ready.then(function (api) {
-        if (!api) throw new Error('Teacher sign-in is not available yet.');
-        return api.requestPasswordRecovery(email);
-      });
-    },
-    resetPassword: function (password) {
-      return window.teacherAuth.ready.then(function (api) {
-        if (!api || !passwordRecoveryToken) throw new Error('This password-reset link is no longer available.');
-        return api.recoverPassword(passwordRecoveryToken, password).then(function (user) {
-          passwordRecoveryToken = null;
-          // `recoverPassword()` updates the credential, but an explicit login
-          // establishes the browser cookies the protected Teacher Review
-          // endpoint uses to recognize the teacher.
-          return api.login(user.email, password);
-        });
+    signIn: function (code) {
+      return request('/.netlify/functions/teacher-access', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: code })
+      }).then(function (result) {
+        if (!result.response.ok) throw new Error(result.data.error || 'The access code could not be verified.');
+        return result.data;
       });
     },
     signOut: function () {
-      return window.teacherAuth.ready.then(function (api) {
-        return api ? api.logout() : null;
-      });
+      return request('/.netlify/functions/teacher-access', { method: 'DELETE' });
     }
   };
 }());

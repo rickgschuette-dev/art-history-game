@@ -1,8 +1,5 @@
 {
   "name": "foundations-of-art-history",
   "private": true,
-  "type": "module",
-  "dependencies": {
-    "@netlify/identity": "2.0.0"
-  }
+  "type": "module"
 }

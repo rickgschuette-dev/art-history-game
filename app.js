@@ -263,43 +263,21 @@ document.getElementById('sub').onclick=function(){if(!allIn()){S.bmsg='Mark '+(c
 var bl=document.querySelector('label.bonus'),sl=document.getElementById('bslotL'),sp=document.getElementById('bslotP'),mq=window.matchMedia('(min-width:851px)');if(bl)sp.appendChild(bl);var bt=document.getElementById('bonus');if(bt){bt.value=S.bonus||'';bt.oninput=function(){S.bonus=bt.value;save()};if(S.done&&!S.bonusMissed){bt.disabled=true}}
 marks();chips();fields();msg();bm();bank()}
 function citedOn(n){var out=[];DECKS.forEach(function(d){d.cards.forEach(function(c){if(c.playable&&c.sourceNums&&c.sourceNums.indexOf(n)>=0)out.push('<a href="#/card/'+c.id+'">'+esc(c.id+' '+c.title)+'</a>')});(d.vocab||[]).forEach(function(v){if(v.sourceNums&&v.sourceNums.indexOf(n)>=0)out.push('<a href="#/vocab/'+v.id+'">'+esc(v.id+' '+v.word)+'</a>')})});return out.join(', ')}
-function teacherSetPassword(){
- app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><h1>Set Your Teacher Password</h1><p>Choose a password for this curriculum account. You will use it with your email address when you return to Teacher Review.</p><form id="teacher-password-form"><label>New password<input id="teacher-new-password" type="text" autocomplete="new-password" minlength="12" required></label><label>Confirm password<input id="teacher-confirm-password" type="text" autocomplete="new-password" minlength="12" required></label><label class="teacher-hide-password"><input id="teacher-hide-password" type="checkbox"> Hide password</label><p class="teacher-login-error" id="teacher-password-error" role="alert"></p><button type="submit" class="tr-next">Set password</button></form></div></section>';
- var form=document.getElementById('teacher-password-form'),error=document.getElementById('teacher-password-error');
- document.getElementById('teacher-hide-password').onchange=function(){var type=this.checked?'password':'text';document.getElementById('teacher-new-password').type=type;document.getElementById('teacher-confirm-password').type=type};
- form.onsubmit=function(e){e.preventDefault();var button=form.querySelector('button'),password=document.getElementById('teacher-new-password').value,confirm=document.getElementById('teacher-confirm-password').value;if(password!==confirm){error.textContent='The passwords do not match.';return}button.disabled=true;button.textContent='Setting password…';error.textContent='';window.teacherAuth.acceptInvite(password).then(function(){teacherGate()}).catch(function(error){button.disabled=false;button.textContent='Set password';document.getElementById('teacher-password-error').textContent=error&&/user not found/i.test(error.message)?'This invitation link is no longer active. Ask your curriculum administrator to send a new invitation, then use the newest email link.':error&&error.message?error.message:'We could not set your password. Please request a new teacher invitation.'})}
-}
-function teacherResetPassword(){
- app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><h1>Reset Your Teacher Password</h1><p>Choose a new password for your curriculum account.</p><form id="teacher-reset-form"><label>New password<input id="teacher-reset-password" type="text" autocomplete="new-password" minlength="12" required></label><label>Confirm password<input id="teacher-reset-confirm" type="text" autocomplete="new-password" minlength="12" required></label><label class="teacher-hide-password"><input id="teacher-hide-password" type="checkbox"> Hide password</label><p class="teacher-login-error" id="teacher-reset-error" role="alert"></p><button type="submit" class="tr-next">Reset password</button></form></div></section>';
- var form=document.getElementById('teacher-reset-form'),error=document.getElementById('teacher-reset-error');
- document.getElementById('teacher-hide-password').onchange=function(){var type=this.checked?'password':'text';document.getElementById('teacher-reset-password').type=type;document.getElementById('teacher-reset-confirm').type=type};
- form.onsubmit=function(e){e.preventDefault();var button=form.querySelector('button'),password=document.getElementById('teacher-reset-password').value,confirm=document.getElementById('teacher-reset-confirm').value;if(password!==confirm){error.textContent='The passwords do not match.';return}button.disabled=true;button.textContent='Resetting password…';error.textContent='';window.teacherAuth.resetPassword(password).then(function(){teacherGate()}).catch(function(error){button.disabled=false;button.textContent='Reset password';error.textContent=error&&error.message?error.message:'We could not reset your password. Please request a new reset link.'})}
-}
 function teacherSignIn(note){
- app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><h1>Teacher Sign In</h1><p>Sign in to review student folios. Student accounts cannot access this page.</p>'+(note?'<p class="teacher-login-note">'+esc(note)+'</p>':'')+'<form id="teacher-login-form"><label>Email address<input id="teacher-email" type="email" autocomplete="email" required></label><label>Password<input id="teacher-password" type="text" autocomplete="current-password" required></label><label class="teacher-hide-password"><input id="teacher-hide-password" type="checkbox"> Hide password</label><p class="teacher-login-error" id="teacher-login-error" role="alert"></p><button type="submit" class="tr-next">Sign in</button><button type="button" class="teacher-reset-link" id="teacher-reset-link">Forgot your password?</button></form><p class="teacher-login-help">Need access? Ask your curriculum administrator for a teacher invitation.</p></div></section>';
+ app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><h1>Teacher Review</h1><p>Enter the private access code to review student folios.</p>'+(note?'<p class="teacher-login-note">'+esc(note)+'</p>':'')+'<form id="teacher-login-form"><label>Access code<input id="teacher-access-code" type="text" autocomplete="off" required></label><label class="teacher-hide-password"><input id="teacher-hide-code" type="checkbox"> Hide access code</label><p class="teacher-login-error" id="teacher-login-error" role="alert"></p><button type="submit" class="tr-next">Open Teacher Review</button></form></div></section>';
  var form=document.getElementById('teacher-login-form'),error=document.getElementById('teacher-login-error');
- document.getElementById('teacher-hide-password').onchange=function(){document.getElementById('teacher-password').type=this.checked?'password':'text'};
- form.onsubmit=function(e){e.preventDefault();var button=form.querySelector('button'),email=document.getElementById('teacher-email').value.trim(),password=document.getElementById('teacher-password').value;button.disabled=true;button.textContent='Signing in…';error.textContent='';window.teacherAuth.signIn(email,password).then(function(){teacherGate()}).catch(function(){button.disabled=false;button.textContent='Sign in';error.textContent='We could not sign you in. Check your email address and password, or ask your curriculum administrator for an invitation.'})}
- document.getElementById('teacher-reset-link').onclick=function(){var email=document.getElementById('teacher-email').value.trim(),link=this;if(!email){error.textContent='Enter your email address first, then select “Forgot your password?”';document.getElementById('teacher-email').focus();return}link.disabled=true;link.textContent='Sending reset email…';error.textContent='';window.teacherAuth.requestPasswordRecovery(email).then(function(){teacherSignIn('Check your email for a password-reset link. Use that link to choose a new password.');}).catch(function(){link.disabled=false;link.textContent='Forgot your password?';error.textContent='We could not send a reset email. Check the email address or ask your curriculum administrator for help.'})}
+ document.getElementById('teacher-hide-code').onchange=function(){document.getElementById('teacher-access-code').type=this.checked?'password':'text'};
+ form.onsubmit=function(e){e.preventDefault();var button=form.querySelector('button'),code=document.getElementById('teacher-access-code').value;button.disabled=true;button.textContent='Opening Teacher Review…';error.textContent='';window.teacherAuth.signIn(code).then(function(){teacherGate()}).catch(function(err){button.disabled=false;button.textContent='Open Teacher Review';error.textContent=err&&err.message?err.message:'We could not open Teacher Review.'})}
 }
 function teacherGate(){
  app.innerHTML='<section class="teacher-login"><div class="teacher-login-card"><p class="tr-eyebrow">Teacher access</p><p>Checking teacher access…</p></div></section>';
- if(!window.teacherAuth){teacherSignIn('Teacher sign-in is loading. Please refresh this page.');return}
- window.teacherAuth.inviteToken().then(function(token){
-  if(token){teacherSetPassword();return null}
-  return window.teacherAuth.passwordRecoveryToken().then(function(recoveryToken){
-   if(recoveryToken){teacherResetPassword();return null}
-   return window.teacherAuth.currentUser().then(function(user){
-   if(!user){teacherSignIn();return null}
-   return fetch('/.netlify/functions/teacher-session',{credentials:'same-origin'}).then(function(response){
-    if(response.status===401){teacherSignIn('Your session has ended. Please sign in again.');return null}
-    if(response.status===403){teacherSignIn('This account does not have teacher access.');return null}
-    if(!response.ok)throw new Error('Teacher access is unavailable.');
-    return response.json();
-   }).then(function(session){if(session)teacherReview(session.teacher)})
-   })
-  })
- }).catch(function(){teacherSignIn('Teacher sign-in is available after this site is deployed with Netlify Identity enabled.')})
+ if(!window.teacherAuth){teacherSignIn('Teacher access is loading. Please refresh this page.');return}
+ window.teacherAuth.session().then(function(result){
+  if(result.response.status===401){teacherSignIn();return}
+  if(result.response.status===503){teacherSignIn('Teacher access is being configured.');return}
+  if(!result.response.ok)throw new Error(result.data.error||'Teacher access is unavailable.');
+  teacherReview(result.data.teacher);
+ }).catch(function(err){teacherSignIn(err&&err.message?err.message:'Teacher access is unavailable.')})
 }
 function teacherReview(teacher){
 var students=[
