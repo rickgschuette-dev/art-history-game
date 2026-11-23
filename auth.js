@@ -68,7 +68,10 @@
         if (!api || !passwordRecoveryToken) throw new Error('This password-reset link is no longer available.');
         return api.recoverPassword(passwordRecoveryToken, password).then(function (user) {
           passwordRecoveryToken = null;
-          return user;
+          // `recoverPassword()` updates the credential, but an explicit login
+          // establishes the browser cookies the protected Teacher Review
+          // endpoint uses to recognize the teacher.
+          return api.login(user.email, password);
         });
       });
     },
