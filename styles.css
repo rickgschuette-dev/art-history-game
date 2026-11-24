@@ -238,9 +238,9 @@ body[data-view="card"] main:has(.be-card){max-width:1440px;padding:1.5rem 1.25re
    changes shape. */
 .top .photo{position:absolute;left:0;width:100%;aspect-ratio:1932/410;top:50%;transform:translateY(-50%);display:block}
 .top .photo .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
-.top .photo #frameart{position:absolute;left:58%;top:0;width:42%;height:100%;object-fit:cover;object-position:50% 42%;display:none}
+.top .photo #frameart{position:absolute;left:61%;top:0;width:39%;height:100%;object-fit:cover;object-position:50% 42%;display:none}
 body[data-view="card"] .top .photo #frameart{display:block}
-.top .photo #lens{position:absolute;left:56.83%;top:35.37%;width:4.92%;height:33.17%;display:none}
+.top .photo #lens{position:absolute;left:55.7%;top:35.37%;width:4.92%;height:33.17%;display:none}
 body[data-view="card"] .top .photo #lens{display:block}
 .top #lens .glass{position:absolute;inset:0;width:100%;height:100%;
  background-image:var(--art);background-size:211.8% auto;background-position:17.17% 50%;
@@ -253,6 +253,7 @@ body[data-view="card"] .top .photo #lens{display:block}
    reading; the decorative lens can step out on very narrow screens. */
 @media(max-width:820px){
  body[data-view="card"]:has(.be-card) .top .photo #frameart{display:block!important}
+ body[data-view="card"]:has(.be-card) .top .photo #lens{display:block!important}
 }
 
 /* Teacher review mock-up: local sample data only, not yet a student-record system. */
