@@ -234,12 +234,12 @@ function observationModel(c,f){
 function observationPin(c,id){var zone=((c.zones||{})[id]||[])[0];if(!zone)return{x:50,y:50};if(zone.rx!=null)return{x:zone.cx,y:zone.cy};return{x:(zone.x0+zone.x1)/2,y:(zone.y0+zone.y1)/2}}
 // Focal points for complementary crops of each card's existing main photograph.
 var companionCropPositions={
- 'EM-01':[30,58],'EM-03':[24,12],'EM-04':[25,30],'EM-10':[27,76],'EM-30':[50,48],
- 'EM-12':[50,35],'EM-02':[22,52],'EM-26':[80,74],'EM-05':[50,8],'EM-09':[50,15],
- 'EM-29':[72,45],'EM-19':[50,36],'EM-18':[48,70],'EM-20':[16,50],'EM-22':[84,40],
+ 'EM-01':[30,58],'EM-03':[24,12],'EM-04':[25,30],'EM-10':[27,76],
+ 'EM-02':[22,52],'EM-26':[80,74],'EM-05':[50,8],'EM-09':[50,15],
+ 'EM-29':[72,45],'EM-19':[50,36],'EM-18':[48,70],
  'EM-06':[30,30],'EM-07':[50,27],'EM-23':[73,65],'EM-15':[73,46],'EM-16':[30,24],
- 'EM-24':[50,22],'EM-21':[50,38],'EM-28':[30,42],'EM-14':[80,50],'EM-17':[78,14],
- 'EM-08':[50,50],'LM-01':[90,52],'LM-04':[65,50],'LM-08':[50,48],'LM-02':[75,50],
+ 'EM-28':[30,42],'EM-14':[80,50],'EM-17':[78,14],
+ 'LM-01':[90,52],'LM-04':[65,50],'LM-08':[50,48],'LM-02':[75,50],
  'LM-06':[50,82],'LM-03':[25,58],'LM-20':[53,38],'LM-07':[75,35],'LM-09':[20,40],
  'LM-18':[50,34],'LM-19':[22,36],'LM-27':[77,60],'LM-05':[16,43],'LM-10':[30,46],
  'LM-11':[53,34],'LM-12':[20,42],'LM-13':[22,75],'LM-17':[50,50],'LM-16':[29,48],'LM-14':[72,30]
@@ -269,12 +269,17 @@ function observationCard(id,f){
   grid.before(tombstone);if(wordSection)grid.before(wordSection);
   if(detail.image){var detailFigure=document.createElement('figure');detailFigure.className='be-column-detail';var detailImage=document.createElement('img');detailImage.src=detail.image;detailImage.alt=detail.alt||'';detailImage.onerror=function(){detailFigure.hidden=true};detailFigure.appendChild(detailImage);var detailCaption=(c.backward||{}).detailCaption||(c.id==='EM-30'?'Inside the building: the mosaic-covered ceiling.':'');if(detailCaption){var caption=document.createElement('figcaption');caption.textContent=detailCaption;detailFigure.appendChild(caption)}visual.appendChild(detailFigure)}
   if(c.detail2&&c.detail2.image){var secondFigure=document.createElement('figure');secondFigure.className='be-column-detail';var secondImage=document.createElement('img');secondImage.src=c.detail2.image;secondImage.alt=c.detail2.alt||'';secondImage.onerror=function(){secondFigure.hidden=true};secondFigure.appendChild(secondImage);if((c.backward||{}).detail2Caption){var secondCaption=document.createElement('figcaption');secondCaption.textContent=c.backward.detail2Caption;secondFigure.appendChild(secondCaption)}visual.appendChild(secondFigure)}
+  if(secondFigure&&c.detail3&&c.detail3.image){var interiorPair=document.createElement('div'),thirdFigure=document.createElement('figure'),thirdImage=document.createElement('img');interiorPair.className='be-detail-pair';thirdFigure.className='be-column-detail';thirdImage.src=c.detail3.image;thirdImage.alt=c.detail3.alt||'';thirdImage.onerror=function(){thirdFigure.hidden=true};thirdFigure.appendChild(thirdImage);secondFigure.before(interiorPair);interiorPair.appendChild(secondFigure);interiorPair.appendChild(thirdFigure)}
   var sourceFooter=app.querySelector('.be-credit');
   if(sourceFooter&&c.detail2&&c.detail2.credit)sourceFooter.insertAdjacentHTML('beforeend',credit(c.detail2.credit,'Detail photo'));
+  if(sourceFooter&&c.detail3&&c.detail3.credit)sourceFooter.insertAdjacentHTML('beforeend',credit(c.detail3.credit,'Additional detail photo'));
   var detailRow=null,companionCredit=null,companion=companionCropPositions[c.id];
+  if((c.id==='EM-30'||c.id==='EM-12'||c.id==='EM-13'||c.id==='EM-25'||c.id==='EM-20'||c.id==='EM-22'||c.id==='EM-24'||c.id==='EM-21'||c.id==='EM-27')&&detailFigure&&secondFigure){detailRow=document.createElement('div');detailRow.className='be-detail-pair';detailFigure.before(detailRow);detailRow.appendChild(detailFigure);detailRow.appendChild(secondFigure);if(c.id==='EM-25'){detailImage.style.aspectRatio='4 / 5';detailImage.style.objectFit='cover';detailImage.style.objectPosition='top'}}
   if(detailFigure&&!c.detail2&&c.credit&&companion){
    detailRow=document.createElement('div');detailRow.className='be-detail-pair';detailFigure.before(detailRow);detailRow.appendChild(detailFigure);
-   var cropFrame=document.createElement('figure'),cropImage=document.createElement('img');cropFrame.className='be-companion-detail';cropImage.src=c.image;cropImage.alt='Another close view from the main image of '+c.work+'.';cropImage.style.objectPosition=companion[0]+'% '+companion[1]+'%';cropImage.style.transformOrigin=companion[0]+'% '+companion[1]+'%';cropFrame.appendChild(cropImage);detailRow.appendChild(cropFrame);
+   var cropFrame=document.createElement('figure'),cropImage=document.createElement('img');cropFrame.className='be-companion-detail';cropImage.src=c.image;cropImage.alt='Another close view from the main image of '+c.work+'.';cropImage.style.objectPosition=companion[0]+'% '+companion[1]+'%';cropImage.style.transformOrigin=companion[0]+'% '+companion[1]+'%';
+   if(c.id==='LM-04'){cropImage.src='public/images/artworks/Durham-Central-Tower-Detail.jpg';cropImage.alt='A close view of Durham Cathedral’s tall central tower, showing its pointed windows and stonework.';cropImage.style.objectPosition='50% 50%';cropImage.style.transform='none'}
+   cropFrame.appendChild(cropImage);detailRow.appendChild(cropFrame);
    function matchDetailShape(){if(detailImage.naturalWidth&&detailImage.naturalHeight)cropFrame.style.aspectRatio=detailImage.naturalWidth+' / '+detailImage.naturalHeight}
    detailImage.addEventListener('load',matchDetailShape);matchDetailShape();
    if(sourceFooter){companionCredit=document.createElement('div');companionCredit.innerHTML=credit(Object.assign({},c.credit,{word:'Additional detail photo',changes:'Cropped from the main image.'}),'Additional detail photo');sourceFooter.appendChild(companionCredit)}
@@ -290,6 +295,7 @@ function observationCard(id,f){
   if(frameart){frameart.src=c.image;frameart.alt=''}
   if(bannerLens)bannerLens.style.setProperty('--art','url("'+c.image+'")');
   var stage=document.getElementById('be-stage'),lens=stage.querySelector('.be-lens'),image=stage.querySelector('img');
+  if(c.id==='EM-26'){stage.style.width='80%';stage.style.justifySelf='center'}
   // Fit tall artwork/detail columns into the page when the full visual column
   // exceeds the workspace or viewport, provided no clickable zone is obscured.
   adjustCardInset=function(){
@@ -298,6 +304,7 @@ function observationCard(id,f){
    if(detailFigure.parentNode!==detailParent){if(detailRow)detailRow.insertBefore(detailFigure,detailRow.firstChild);else visual.appendChild(detailFigure)}
    if(detailRow)detailRow.hidden=false;if(companionCredit)companionCredit.hidden=false;
    detailFigure.classList.remove('is-inset');
+   if(c.id==='EM-08'){detailFigure.classList.add('is-inset','is-reconstruction');if(caption)caption.textContent='Reconstruction';stage.appendChild(detailFigure);return}
    if(detailCaption||c.detail2||window.innerWidth<=640)return;
    var workspace=app.querySelector('.be-workspace'),width=stage.clientWidth,height=stage.clientHeight;
    if(!workspace||(visual.offsetHeight<=workspace.offsetHeight&&visual.offsetHeight<=window.innerHeight-32)||width<400||height<350)return;

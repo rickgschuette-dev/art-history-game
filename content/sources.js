@@ -198,5 +198,6 @@ window.SOURCES=[
 {"n":188,"type":"World heritage record","cite":"“Durham Castle and Cathedral.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/370/"},
 {"n":189,"type":"World heritage documentation","cite":"“Naumburg Cathedral.” Nomination documentation, UNESCO World Heritage Centre.","url":"https://whc.unesco.org/document/165547"},
 {"n":190,"type":"Art history education","cite":"“Reims Cathedral.” Smarthistory.","url":"https://smarthistory.org/reims-cathedral/"},
-{"n":191,"type":"Museum research catalogue","cite":"“The Wilton Diptych.” National Gallery, London, 2024.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/national-gallery-2024/the-wilton-diptych"}
+{"n":191,"type":"Museum research catalogue","cite":"“The Wilton Diptych.” National Gallery, London, 2024.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/national-gallery-2024/the-wilton-diptych"},
+{"n":192,"type":"Museum guide","cite":"“Hagia Sophia / Ayasofya.” Turkish Museums, Ministry of Culture and Tourism.","url":"https://muze.gen.tr/muze-detay/ayasofya"}
 ];
