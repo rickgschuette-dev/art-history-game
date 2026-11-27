@@ -130,7 +130,7 @@ function rec(){return store.cards[r.id]||{seen:true,text:'',shown:false}}
 function put(o){store.cards[r.id]=o;localStorage.setItem(KEY,JSON.stringify(store))}
 var st=rec();st.seen=true;put(st);
 function pos(cid){for(var i=0;i<d.cards.length;i++)if(d.cards[i].id===cid)return i+1;return 0}
-function draw(){var rc=rec(),w=r.work;
+function draw(){var rc=rec(),w=r.work,isEarlyReview=d.id==='early-medieval',canReveal=!isEarlyReview||!!rc.submitted,showAnswer=!!rc.shown&&canReveal;
 var tr=r.traits.map(function(t){
   var ps=t.cases.map(function(c){return {id:c,n:pos(c),done:done(find(c).card)}}).sort(function(a,b){return a.n-b.n});
   var dn=ps.filter(function(x){return x.done}).length;
@@ -144,17 +144,23 @@ app.innerHTML='<p class="note">'+esc(r.crumb)+' \u00b7 <strong>CASE FILE</strong
  +'<div class="vex revwork"><div class="headrow"><h2>'+esc(w.head)+'</h2><span class="magsw" role="group" aria-label="Magnifier"><span class="ml">Magnifier</span><button id="rmagon" aria-pressed="'+vmag+'">On</button><button id="rmagoff" aria-pressed="'+!vmag+'">Off</button></span></div><p><strong>'+esc(w.kicker)+'</strong> '+esc(w.lede)+'</p>'
  +'<figure class="revmain"><div class="vart" id="revart"><img src="'+esc(w.image)+'" alt="'+esc(w.alt)+'"></div><p class="note" id="rvhint"'+(vmag?'':' hidden')+'>Move the pointer over the photo to magnify it.</p><figcaption class="note">'+esc(w.caption)+'</figcaption></figure>'
  +'<div class="revdets">'+fig(w.detail,'revdet')+fig(w.detail2,'revdet')+'</div>'
- +'<label class="bonus"><strong>'+esc(w.prompt)+'</strong><textarea id="revtx" placeholder="'+esc(w.placeholder)+'">'+esc(rc.text||'')+'</textarea></label>'
- +(rc.shown?'<div class="reveal">'+w.reveal.map(function(t){return '<p>'+esc(t)+'</p>'}).join('')+'<p class="revclose"><strong>'+esc(w.closing)+'</strong></p></div>'
-   :'<p class="btns"><button class="primary" id="revbtn">'+esc(w.revealBtn)+'</button></p>')
+ +'<label class="bonus"><strong>'+esc(isEarlyReview?'Write at least 50 words about what you recognize. Name features you can see and connect them to works you studied earlier.':w.prompt)+'</strong><textarea id="revtx" placeholder="'+esc(w.placeholder)+'"'+(isEarlyReview&&rc.submitted?' readonly':'')+'>'+esc(rc.text||'')+'</textarea></label>'
+ +(isEarlyReview?'<p class="note" id="revcount" role="status"></p><p class="btns">'+(rc.submitted?'<strong>Response submitted.</strong>':'<button class="primary" type="button" id="revsubmit">Submit</button>')+'</p>':'')
+ +(showAnswer?'<div class="reveal">'+w.reveal.map(function(t){return '<p>'+esc(t)+'</p>'}).join('')+'<p class="revclose"><strong>'+esc(w.closing)+'</strong></p></div>'
+   :'<p class="btns"><button class="primary" id="revbtn"'+(canReveal?'':' disabled')+'>'+esc(w.revealBtn)+'</button></p>')
  +'</div><p class="vnext"><a class="btn primary" href="#/deck/'+d.id+'">Back to the list</a></p>'
- +(rc.shown&&r.outro?'<p class="note revoutro">'+esc(r.outro)+'</p>':'')
+ +(showAnswer&&r.outro?'<p class="note revoutro">'+esc(r.outro)+'</p>':'')
  +'</div><footer class="credits">'+credit(w.credit,'Photo')+credit(w.detail.credit,'Detail photo')+credit(w.detail2.credit,'Detail photo')
  +((r.sourceNums||[]).length?'<p class="note srcs">Sources: '+r.sourceNums.map(function(n){return '<a href="#/sources/'+n+'">'+n+'</a>'}).join(', ')+'</p>':'')+'</footer>';
 var tx=document.getElementById('revtx');
-if(tx)tx.oninput=function(){var o=rec();o.text=tx.value;o.seen=true;put(o)};
+var submit=document.getElementById('revsubmit'),count=document.getElementById('revcount');
+function reviewWords(text){return(text||'').trim().split(/\s+/).filter(Boolean).length}
+function updateSubmission(){if(count)count.textContent=reviewWords(tx.value)+' / 50 words minimum';if(submit)submit.disabled=reviewWords(tx.value)<50}
+if(tx)tx.oninput=function(){var o=rec();o.text=tx.value;o.seen=true;put(o);updateSubmission()};
+if(isEarlyReview)updateSubmission();
+if(submit)submit.onclick=function(){var o=rec();if(reviewWords(tx.value)<50)return;o.text=tx.value;o.submitted=true;o.shown=false;put(o);draw()};
 var b=document.getElementById('revbtn');
-if(b)b.onclick=function(){var o=rec();o.shown=true;put(o);draw();var e=document.querySelector('.reveal');if(e&&e.scrollIntoView)e.scrollIntoView({block:'start'})}
+if(b)b.onclick=function(){var o=rec();if(isEarlyReview&&!o.submitted)return;o.shown=true;put(o);draw();var e=document.querySelector('.reveal');if(e&&e.scrollIntoView)e.scrollIntoView({block:'start'})}
 var ra=document.getElementById('revart');if(ra){var rl=document.createElement('div');rl.className='lens';ra.appendChild(rl);var RZ=2.5,RS=187;
 ra.onmousemove=function(e){if(!vmag){rl.style.display='none';return}var rc2=ra.getBoundingClientRect(),x=e.clientX-rc2.left,y=e.clientY-rc2.top;if(x<0||y<0||x>rc2.width||y>rc2.height){rl.style.display='none';return}var im=ra.querySelector('img');rl.style.display='block';rl.style.left=x+'px';rl.style.top=y+'px';rl.style.backgroundImage='url("'+(im.currentSrc||im.src)+'")';rl.style.backgroundSize=(rc2.width*RZ)+'px '+(rc2.height*RZ)+'px';rl.style.backgroundPosition=(RS/2-x*RZ)+'px '+(RS/2-y*RZ)+'px'};
 ra.onmouseleave=function(){rl.style.display='none'};
