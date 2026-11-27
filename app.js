@@ -240,9 +240,9 @@ var companionCropPositions={
  'EM-06':[30,30],'EM-07':[50,27],'EM-23':[73,65],'EM-15':[73,46],'EM-16':[30,24],
  'EM-28':[30,42],'EM-14':[80,50],'EM-17':[78,14],
  'LM-01':[90,52],'LM-04':[65,50],'LM-08':[50,48],'LM-02':[75,50],
- 'LM-06':[50,82],'LM-03':[25,58],'LM-20':[53,38],'LM-07':[75,35],'LM-09':[20,40],
- 'LM-18':[50,34],'LM-19':[22,36],'LM-27':[77,60],'LM-05':[16,43],'LM-10':[30,46],
- 'LM-11':[53,34],'LM-12':[20,42],'LM-13':[22,75],'LM-17':[50,50],'LM-16':[29,48],'LM-14':[72,30]
+ 'LM-03':[25,58],'LM-20':[53,38],'LM-07':[75,35],'LM-09':[20,40],
+ 'LM-18':[50,34],'LM-19':[22,36],'LM-27':[77,60],'LM-10':[30,46],
+ 'LM-11':[53,34],'LM-12':[20,42],'LM-13':[22,75],'LM-17':[50,50],'LM-16':[29,48]
 };
 function observationCard(id,f){
  var c=f.card,b=observationModel(c,f),ids=c.clues.map(function(clue){return clue.id}),letters=['A','B','C'],active='',message='',magnify=false,detail=c.detail||{},words=Array.isArray(c.context)?c.context:[];
@@ -265,6 +265,7 @@ function observationCard(id,f){
   app.innerHTML='<div class="be-coursebar"><div><strong class="be-card-title">'+esc(c.title)+'</strong><span>'+esc(b.unit)+'</span></div><span>Folio: '+f.deck.cards.filter(done).length+' / '+f.deck.cards.length+' works examined</span></div><div class="be-card"><section class="be-visual"><div class="be-tombstone"><span>'+esc(c.kind).toUpperCase()+'</span><strong>'+esc(c.work)+'; '+esc(c.date)+'; '+esc(c.location)+'; '+esc(c.artist)+'</strong></div>'+wordBox+'<div class="be-magnifier-row">'+beMagnifierControl(magnify)+'</div><div class="be-stage" id="be-stage"><img src="'+esc(c.image)+'" alt="'+esc(c.alt)+'">'+pins+'<span class="be-lens" aria-hidden="true"></span></div><p id="be-message" class="be-message">'+esc(message)+'</p></section><section class="be-workspace">'+features+reflection+story+nav+'<button type="button" class="be-reset" id="be-reset">Reset this card</button><footer class="be-credit">'+credit(c.credit,'Photo')+(detail.credit?credit(detail.credit,'Detail photo'):'')+'</footer></section></div>';
   var numberLabel=document.createElement('span');numberLabel.className='card-sequence';numberLabel.textContent=cardNumber(f.deck,c);app.querySelector('.be-coursebar > div').prepend(numberLabel);
   var visual=app.querySelector('.be-visual'),grid=app.querySelector('.be-card');
+  if(c.id==='LM-14')grid.style.gridTemplateColumns='minmax(0, 1.8fr) minmax(0, 1fr)';
   var tombstone=visual.querySelector('.be-tombstone'),wordSection=visual.querySelector('.be-words');
   grid.before(tombstone);if(wordSection)grid.before(wordSection);
   if(detail.image){var detailFigure=document.createElement('figure');detailFigure.className='be-column-detail';var detailImage=document.createElement('img');detailImage.src=detail.image;detailImage.alt=detail.alt||'';detailImage.onerror=function(){detailFigure.hidden=true};detailFigure.appendChild(detailImage);var detailCaption=(c.backward||{}).detailCaption||(c.id==='EM-30'?'Inside the building: the mosaic-covered ceiling.':'');if(detailCaption){var caption=document.createElement('figcaption');caption.textContent=detailCaption;detailFigure.appendChild(caption)}visual.appendChild(detailFigure)}
@@ -274,7 +275,7 @@ function observationCard(id,f){
   if(sourceFooter&&c.detail2&&c.detail2.credit)sourceFooter.insertAdjacentHTML('beforeend',credit(c.detail2.credit,'Detail photo'));
   if(sourceFooter&&c.detail3&&c.detail3.credit)sourceFooter.insertAdjacentHTML('beforeend',credit(c.detail3.credit,'Additional detail photo'));
   var detailRow=null,companionCredit=null,companion=companionCropPositions[c.id];
-  if((c.id==='EM-30'||c.id==='EM-12'||c.id==='EM-13'||c.id==='EM-25'||c.id==='EM-20'||c.id==='EM-22'||c.id==='EM-24'||c.id==='EM-21'||c.id==='EM-27')&&detailFigure&&secondFigure){detailRow=document.createElement('div');detailRow.className='be-detail-pair';detailFigure.before(detailRow);detailRow.appendChild(detailFigure);detailRow.appendChild(secondFigure);if(c.id==='EM-25'){detailImage.style.aspectRatio='4 / 5';detailImage.style.objectFit='cover';detailImage.style.objectPosition='top'}}
+  if((c.id==='EM-30'||c.id==='EM-12'||c.id==='EM-13'||c.id==='EM-25'||c.id==='EM-20'||c.id==='EM-22'||c.id==='EM-24'||c.id==='EM-21'||c.id==='EM-27'||c.id==='LM-06'||c.id==='LM-05'||c.id==='LM-14'||c.id==='LM-26'||c.id==='LM-15'||c.id==='LM-24'||c.id==='LM-28')&&detailFigure&&secondFigure){detailRow=document.createElement('div');detailRow.className='be-detail-pair';detailFigure.before(detailRow);detailRow.appendChild(detailFigure);detailRow.appendChild(secondFigure);if(c.id==='EM-25'){detailImage.style.aspectRatio='4 / 5';detailImage.style.objectFit='cover';detailImage.style.objectPosition='top'}}
   if(detailFigure&&!c.detail2&&c.credit&&companion){
    detailRow=document.createElement('div');detailRow.className='be-detail-pair';detailFigure.before(detailRow);detailRow.appendChild(detailFigure);
    var cropFrame=document.createElement('figure'),cropImage=document.createElement('img');cropFrame.className='be-companion-detail';cropImage.src=c.image;cropImage.alt='Another close view from the main image of '+c.work+'.';cropImage.style.objectPosition=companion[0]+'% '+companion[1]+'%';cropImage.style.transformOrigin=companion[0]+'% '+companion[1]+'%';

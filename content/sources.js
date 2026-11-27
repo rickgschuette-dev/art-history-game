@@ -199,5 +199,15 @@ window.SOURCES=[
 {"n":189,"type":"World heritage documentation","cite":"“Naumburg Cathedral.” Nomination documentation, UNESCO World Heritage Centre.","url":"https://whc.unesco.org/document/165547"},
 {"n":190,"type":"Art history education","cite":"“Reims Cathedral.” Smarthistory.","url":"https://smarthistory.org/reims-cathedral/"},
 {"n":191,"type":"Museum research catalogue","cite":"“The Wilton Diptych.” National Gallery, London, 2024.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/national-gallery-2024/the-wilton-diptych"},
-{"n":192,"type":"Museum guide","cite":"“Hagia Sophia / Ayasofya.” Turkish Museums, Ministry of Culture and Tourism.","url":"https://muze.gen.tr/muze-detay/ayasofya"}
+{"n":192,"type":"Museum guide","cite":"“Hagia Sophia / Ayasofya.” Turkish Museums, Ministry of Culture and Tourism.","url":"https://muze.gen.tr/muze-detay/ayasofya"},
+{"n":193,"type":"Conservation documentation","cite":"Sant Climent de Taüll conservation documentation. Centre de Restauració de Béns Mobles de Catalunya.","url":"https://centrederestauracio.gencat.cat/web/.content/crbmc/pdf/arxiu/icomos_text_english.pdf"},
+{"n":194,"type":"Conservation research","cite":"“Exploring Carolingian and Romanesque cycles: a study of the detached wall paintings from the Church of St. Johann in Müstair.” Heritage Science, 2024.","url":"https://www.nature.com/articles/s40494-024-01465-1"},
+{"n":195,"type":"World heritage record","cite":"“Chartres Cathedral.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/81/"},
+{"n":196,"type":"Historic site","cite":"“Borgund Stave Church.” Fortidsminneforeningen, National Trust of Norway.","url":"https://www.stavechurch.com/churches/borgund"},
+{"n":197,"type":"Historic site","cite":"“Verduner Altar.” Stift Klosterneuburg.","url":"https://www.stift-klosterneuburg.at/kultur/highlights/verduner-altar/"},
+{"n":198,"type":"Museum guide","cite":"“Building and History.” Doge’s Palace, Fondazione Musei Civici di Venezia.","url":"https://palazzoducale.visitmuve.it/en/building-and-history/"},
+{"n":199,"type":"Historic site","cite":"“La tapisserie de l’Apocalypse : un chef-d’œuvre unique au monde.” Château d’Angers, Centre des monuments nationaux.","url":"https://www.chateau-angers.fr/decouvrir/la-tapisserie-de-l-apocalypse-un-chef-d-aeuvre-unique-au-monde"},
+{"n":200,"type":"Historic site","cite":"“About the Castle.” Karlštejn Castle, National Heritage Institute.","url":"https://www.hrad-karlstejn.cz/en/about-the-castle"},
+{"n":201,"type":"Museum guide","cite":"“The Lion of Saint Mark.” Fondazione Musei Civici di Venezia, Palazzo Ducale.","url":"https://palazzoducale.visitmuve.it/wp-content/uploads/2023/03/MUVE-Carpaccio-Download.pdf"},
+{"n":202,"type":"University image collection","cite":"“Porta della Carta, Doge's Palace.” University of North Texas Digital Library.","url":"https://digital.library.unt.edu/ark:/67531/metadc45600/"}
 ];
