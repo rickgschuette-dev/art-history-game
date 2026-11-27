@@ -244,7 +244,9 @@ function observationCard(id,f){
   var tombstone=visual.querySelector('.be-tombstone'),wordSection=visual.querySelector('.be-words');
   grid.before(tombstone);if(wordSection)grid.before(wordSection);
   if(detail.image){var detailFigure=document.createElement('figure');detailFigure.className='be-column-detail';var detailImage=document.createElement('img');detailImage.src=detail.image;detailImage.alt=detail.alt||'';detailImage.onerror=function(){detailFigure.hidden=true};detailFigure.appendChild(detailImage);var detailCaption=(c.backward||{}).detailCaption||(c.id==='EM-30'?'Inside the building: the mosaic-covered ceiling.':'');if(detailCaption){var caption=document.createElement('figcaption');caption.textContent=detailCaption;detailFigure.appendChild(caption)}visual.appendChild(detailFigure)}
+  if(c.detail2&&c.detail2.image){var secondFigure=document.createElement('figure');secondFigure.className='be-column-detail';var secondImage=document.createElement('img');secondImage.src=c.detail2.image;secondImage.alt=c.detail2.alt||'';secondImage.onerror=function(){secondFigure.hidden=true};secondFigure.appendChild(secondImage);if((c.backward||{}).detail2Caption){var secondCaption=document.createElement('figcaption');secondCaption.textContent=c.backward.detail2Caption;secondFigure.appendChild(secondCaption)}visual.appendChild(secondFigure)}
   var sourceFooter=app.querySelector('.be-credit');
+  if(sourceFooter&&c.detail2&&c.detail2.credit)sourceFooter.insertAdjacentHTML('beforeend',credit(c.detail2.credit,'Detail photo'));
   if(sourceFooter&&(c.sourceNums||[]).length){
    var sourceLine=document.createElement('p');sourceLine.className='note srcs';
    sourceLine.innerHTML='Sources: '+c.sourceNums.map(function(n){return '<a href="#/sources/'+encodeURIComponent(n)+'">'+esc(n)+'</a>'}).join(', ');
