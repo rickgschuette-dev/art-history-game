@@ -217,7 +217,7 @@ body[data-view="card"] nav.lvls{display:none}
 /* Observation-first course card (Backward Equation template). */
 body[data-view="card"]:has(.be-card){background:#f8f6f1;color:#1c1e21;font-family:Inter,system-ui,sans-serif}
 body[data-view="card"]:has(.be-card) .lvls{display:none}
-body[data-view="card"] main:has(.be-card){max-width:1440px;padding:1.5rem 1.25rem 3rem}
+body[data-view="card"] main:has(.be-card){max-width:none;padding:1.5rem 1.25rem 3rem}
 .be-coursebar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid #ddd7cc;font-size:.78rem;color:#625e57}.be-coursebar div{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}.be-coursebar strong{color:#8c4a27;text-transform:uppercase;letter-spacing:.1em}.be-coursebar span{font-weight:600}
 .be-coursebar .be-card-title{font:700 1.6rem/1 "Cormorant Garamond",Georgia,serif;letter-spacing:0;text-transform:none}
 .be-archive{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem .8rem;padding:.65rem .75rem;background:#f1ede4;border:1px solid #ddd7cc;border-radius:10px;color:#706b62;font-size:.68rem}.be-archive strong{color:#8c4a27;text-transform:uppercase;letter-spacing:.09em;font-size:.65rem}.be-archive span{white-space:nowrap}.be-archive .is-open{color:#4d7047;font-weight:700}
