@@ -265,7 +265,7 @@ body[data-view="card"] main:has(.be-card) > .be-words{margin-top:1rem}
 .be-words-list strong{font-size:1.1rem}
 .be-words-list em{font-size:.95rem}
 .be-feature-instruction{font-size:1rem;line-height:1.5}
-.be-step h2{font-size:1.55rem;line-height:1.2}
+.be-step h2{font-size:1.55rem;line-height:1.2;color:#a12540;font-weight:700}
 .be-locate,.be-record,.be-reset{font-size:.95rem}
 .be-step textarea,.be-reflection textarea{font-size:1rem;line-height:1.5}
 .be-step-foot small,.be-reflection-foot small{font-size:.9rem}
