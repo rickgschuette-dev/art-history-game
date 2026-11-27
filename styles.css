@@ -233,6 +233,27 @@ body[data-view="card"] main:has(.be-card){max-width:1440px;padding:1.5rem 1.25re
 
 
 
+/* Photo credits and numbered sources are supporting footnotes, not card text. */
+.be-credit p.note{font-size:.6rem;line-height:1.4}
+
+/* Approved observation-first layout: the artwork leads the two-column view. */
+body[data-view="card"] main:has(.be-card) > .be-tombstone,
+body[data-view="card"] main:has(.be-card) > .be-words{margin-top:1rem}
+.be-card{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:1.25rem}
+.be-stage img{max-height:none}
+.be-column-detail{margin:0;width:55%;max-width:440px}
+.be-column-detail[hidden]{display:none}
+.be-column-detail img{display:block;width:100%;height:auto;border-radius:10px}
+.be-column-detail figcaption{font-size:.75rem;line-height:1.4;color:#625e57;margin-top:.4rem}
+.be-step{padding:.85rem 1rem}
+.be-step-top{grid-template-columns:auto 1fr;gap:.65rem}
+.be-step h2{font-size:1.2rem}
+.be-locate{margin-top:.4rem}
+.be-step textarea{display:block;box-sizing:border-box;width:100%;min-height:6rem;margin-top:.75rem;padding:.6rem;border:2px solid #8c7d70;border-radius:7px;background:#fff;color:#1c1e21;font:.82rem/1.45 Inter,sans-serif;resize:vertical}
+.be-step-foot{justify-content:flex-start;flex-wrap:wrap}
+@media(max-width:900px) and (min-width:641px){.be-card{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}.be-visual{position:static}}
+@media(max-width:640px){.be-card{grid-template-columns:1fr}.be-visual{position:static}.be-column-detail{width:65%}}
+
 /* The photograph keeps its own aspect ratio inside the banner window, so every
    overlay is positioned against the photograph and cannot drift as the window
    changes shape. */

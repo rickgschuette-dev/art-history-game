@@ -180,5 +180,7 @@ window.SOURCES=[
 {"n":170,"type":"Textbook chapter","cite":"\u201cDome of the Rock.\u201d Art History I, SUNY Open Educational Resources (Lumen Learning).","url":"https://courses.lumenlearning.com/suny-arthistory1/chapter/dome-of-the-rock/"},
 {"n":171,"type":"Secondary source","cite":"\u201cConvent brings past times to life.\u201d SWI swissinfo.ch.","url":"https://www.swissinfo.ch/eng/convent-brings-past-times-to-life/7912214"},
 {"n":172,"type":"Secondary source","cite":"\u201cLindisfarne Gospels.\u201d Wikipedia.","url":"https://en.wikipedia.org/wiki/Lindisfarne_Gospels"},
-{"n":173,"type":"Secondary source","cite":"\u201cHagia Sophia.\u201d Building Big, PBS.","url":"https://www.pbs.org/wgbh/buildingbig/wonder/structure/hagia_sophia.html"}
+{"n":173,"type":"Secondary source","cite":"\u201cHagia Sophia.\u201d Building Big, PBS.","url":"https://www.pbs.org/wgbh/buildingbig/wonder/structure/hagia_sophia.html"},
+{"n":174,"type":"Secondary source","cite":"Findley, Andrew. “Arch of Constantine, Rome.” Smarthistory, November 25, 2015.","url":"https://smarthistory.org/arch-of-constantine-rome/"},
+{"n":175,"type":"Secondary source","cite":"“Old Saint Peter’s Basilica.” Smarthistory.","url":"https://smarthistory.org/old-saint-peters-basilica/"}
 ];
