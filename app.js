@@ -232,6 +232,18 @@ function observationModel(c,f){
  return {unit:custom.unit||(c.crumb||f.deck.title||'Art History').replace(' Period',''),scale:{label:(custom.scale&&custom.scale.label)||'Size Scale',heading:(custom.scale&&custom.scale.heading)||'Physical Scale & Architectural Setting',measurement:(custom.scale&&custom.scale.measurement)||c.size||'Study the work’s scale and setting in relation to the people and spaces around it.',setting:(custom.scale&&custom.scale.setting)||custom.setting||setting},material:{label:(custom.material&&custom.material.label)||'Material',heading:(custom.material&&custom.material.heading)||'Material & Technique',text:(custom.material&&custom.material.text)||(typeof custom.material==='string'?custom.material:'')||intro||'Look closely at the materials and marks that shape this work.'},synthesis:custom.synthesis||defaultSynthesis,pins:custom.pins||{}};
 }
 function observationPin(c,id){var zone=((c.zones||{})[id]||[])[0];if(!zone)return{x:50,y:50};if(zone.rx!=null)return{x:zone.cx,y:zone.cy};return{x:(zone.x0+zone.x1)/2,y:(zone.y0+zone.y1)/2}}
+// Focal points for complementary crops of each card's existing main photograph.
+var companionCropPositions={
+ 'EM-01':[30,58],'EM-03':[24,12],'EM-04':[25,30],'EM-10':[27,76],'EM-30':[50,48],
+ 'EM-12':[50,35],'EM-02':[22,52],'EM-26':[80,74],'EM-05':[50,8],'EM-09':[50,15],
+ 'EM-29':[72,45],'EM-19':[50,36],'EM-18':[48,70],'EM-20':[16,50],'EM-22':[84,40],
+ 'EM-06':[30,30],'EM-07':[50,27],'EM-23':[73,65],'EM-15':[73,46],'EM-16':[30,24],
+ 'EM-24':[50,22],'EM-21':[50,38],'EM-28':[30,42],'EM-14':[80,50],'EM-17':[78,14],
+ 'EM-08':[50,50],'LM-01':[90,52],'LM-04':[65,50],'LM-08':[50,48],'LM-02':[75,50],
+ 'LM-06':[50,82],'LM-03':[25,58],'LM-20':[53,38],'LM-07':[75,35],'LM-09':[20,40],
+ 'LM-18':[50,34],'LM-19':[22,36],'LM-27':[77,60],'LM-05':[16,43],'LM-10':[30,46],
+ 'LM-11':[53,34],'LM-12':[20,42],'LM-13':[22,75],'LM-17':[50,50],'LM-16':[29,48],'LM-14':[72,30]
+};
 function observationCard(id,f){
  var c=f.card,b=observationModel(c,f),ids=c.clues.map(function(clue){return clue.id}),letters=['A','B','C'],active='',message='',magnify=false,detail=c.detail||{},words=Array.isArray(c.context)?c.context:[];
  function record(){var r=store.cards[id]||{};r.observations=r.observations||{};ids.forEach(function(key){r.observations[key]=r.observations[key]||{located:false,text:'',completed:false}});return r}
@@ -259,6 +271,14 @@ function observationCard(id,f){
   if(c.detail2&&c.detail2.image){var secondFigure=document.createElement('figure');secondFigure.className='be-column-detail';var secondImage=document.createElement('img');secondImage.src=c.detail2.image;secondImage.alt=c.detail2.alt||'';secondImage.onerror=function(){secondFigure.hidden=true};secondFigure.appendChild(secondImage);if((c.backward||{}).detail2Caption){var secondCaption=document.createElement('figcaption');secondCaption.textContent=c.backward.detail2Caption;secondFigure.appendChild(secondCaption)}visual.appendChild(secondFigure)}
   var sourceFooter=app.querySelector('.be-credit');
   if(sourceFooter&&c.detail2&&c.detail2.credit)sourceFooter.insertAdjacentHTML('beforeend',credit(c.detail2.credit,'Detail photo'));
+  var detailRow=null,companionCredit=null,companion=companionCropPositions[c.id];
+  if(detailFigure&&!c.detail2&&c.credit&&companion){
+   detailRow=document.createElement('div');detailRow.className='be-detail-pair';detailFigure.before(detailRow);detailRow.appendChild(detailFigure);
+   var cropFrame=document.createElement('figure'),cropImage=document.createElement('img');cropFrame.className='be-companion-detail';cropImage.src=c.image;cropImage.alt='Another close view from the main image of '+c.work+'.';cropImage.style.objectPosition=companion[0]+'% '+companion[1]+'%';cropImage.style.transformOrigin=companion[0]+'% '+companion[1]+'%';cropFrame.appendChild(cropImage);detailRow.appendChild(cropFrame);
+   function matchDetailShape(){if(detailImage.naturalWidth&&detailImage.naturalHeight)cropFrame.style.aspectRatio=detailImage.naturalWidth+' / '+detailImage.naturalHeight}
+   detailImage.addEventListener('load',matchDetailShape);matchDetailShape();
+   if(sourceFooter){companionCredit=document.createElement('div');companionCredit.innerHTML=credit(Object.assign({},c.credit,{word:'Additional detail photo',changes:'Cropped from the main image.'}),'Additional detail photo');sourceFooter.appendChild(companionCredit)}
+  }
   if(sourceFooter&&(c.sourceNums||[]).length){
    var sourceLine=document.createElement('p');sourceLine.className='note srcs';
    sourceLine.innerHTML='Sources: '+c.sourceNums.map(function(n){return '<a href="#/sources/'+encodeURIComponent(n)+'">'+esc(n)+'</a>'}).join(', ');
@@ -274,7 +294,9 @@ function observationCard(id,f){
   // exceeds the workspace or viewport, provided no clickable zone is obscured.
   adjustCardInset=function(){
    if(!stage.isConnected||!detailFigure||!detailImage.complete||!detailImage.naturalWidth||!image.complete||!image.naturalWidth)return;
-   if(detailFigure.parentNode!==visual)visual.appendChild(detailFigure);
+   var detailParent=detailRow||visual;
+   if(detailFigure.parentNode!==detailParent){if(detailRow)detailRow.insertBefore(detailFigure,detailRow.firstChild);else visual.appendChild(detailFigure)}
+   if(detailRow)detailRow.hidden=false;if(companionCredit)companionCredit.hidden=false;
    detailFigure.classList.remove('is-inset');
    if(detailCaption||c.detail2||window.innerWidth<=640)return;
    var workspace=app.querySelector('.be-workspace'),width=stage.clientWidth,height=stage.clientHeight;
@@ -284,7 +306,7 @@ function observationCard(id,f){
    var left=100-(insetWidth+16)/width*100,top=100-(insetHeight+16)/height*100;
    var overlaps=ids.some(function(key){return ((c.zones||{})[key]||[]).some(function(z){var right=z.rx!=null?z.cx+z.rx:z.x1,bottom=z.ry!=null?z.cy+z.ry:z.y1;return right>=left&&bottom>=top})});
    if(overlaps)return;
-   detailFigure.classList.add('is-inset');stage.appendChild(detailFigure);
+   detailFigure.classList.add('is-inset');stage.appendChild(detailFigure);if(detailRow)detailRow.hidden=true;if(companionCredit)companionCredit.hidden=true;
   };
   if(detailFigure){detailFigure.onclick=function(e){e.stopPropagation()};detailImage.addEventListener('load',function(){requestAnimationFrame(function(){if(adjustCardInset)adjustCardInset()})});image.addEventListener('load',function(){requestAnimationFrame(function(){if(adjustCardInset)adjustCardInset()})});requestAnimationFrame(adjustCardInset)}
   stage.onclick=function(e){if(e.target.closest('button'))return;if(!active){message='Select “Locate on artwork” for a feature first.';draw();return}var box=stage.getBoundingClientRect(),x=(e.clientX-box.left)/box.width*100,y=(e.clientY-box.top)/box.height*100;if(!hit(active,x,y)){message='Not quite. Look again at the selected feature.';draw();return}var changed=record();changed.observations[active].located=true;changed.observations[active].error='';save(changed);var located=active;active='';message='Feature located. Now describe what you see.';draw();var field=document.querySelector('[data-observation="'+located+'"]');if(field)field.focus()};
