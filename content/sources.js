@@ -190,5 +190,10 @@ window.SOURCES=[
 {"n":180,"type":"Museum essay","cite":"Botchkareva, Ana. “The Dome of the Rock.” The Metropolitan Museum of Art, 2012.","url":"https://www.metmuseum.org/exhibitions/listings/2012/byzantium-and-islam/blog/where-in-the-world/posts/dome-of-the-rock"},
 {"n":181,"type":"World heritage record","cite":"“Monuments of Oviedo and the Kingdom of the Asturias.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/312/"},
 {"n":182,"type":"Museum chronology","cite":"“Central Europe (including Germany), 500–1000 A.D.” Heilbrunn Timeline of Art History, The Metropolitan Museum of Art.","url":"https://artistproject.metmuseum.org/toah/ht/06/euwc.html"},
-{"n":183,"type":"University research collection","cite":"“Lorscher Evangeliar: Lucas et Iohannes.” Bibliotheca Laureshamensis digital, Heidelberg University Library.","url":"https://bibliotheca-laureshamensis-digital.de/bav/bav_pal_lat_50?ui_lang=eng"}
+{"n":183,"type":"University research collection","cite":"“Lorscher Evangeliar: Lucas et Iohannes.” Bibliotheca Laureshamensis digital, Heidelberg University Library.","url":"https://bibliotheca-laureshamensis-digital.de/bav/bav_pal_lat_50?ui_lang=eng"},
+{"n":184,"type":"Museum research","cite":"“The Bayeux Tapestry is an embroidery.” Bayeux Museum.","url":"https://www.bayeuxmuseum.com/en/the-bayeux-tapestry/discover-the-bayeux-tapestry/tapestry-or-embroidery/"},
+{"n":185,"type":"Museum collection record","cite":"“Apse of Sant Climent de Taüll.” Museu Nacional d’Art de Catalunya.","url":"https://www.museunacional.cat/en/colleccio/apse-sant-climent-de-taull/master-taull/015966-000"},
+{"n":186,"type":"World heritage record","cite":"“Abbey Church of Saint-Savin sur Gartempe.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/230/"},
+{"n":187,"type":"Historic monument","cite":"“History of the Sainte-Chapelle.” Centre des monuments nationaux.","url":"https://www.sainte-chapelle.fr/en/discover/history-of-the-sainte-chapelle"},
+{"n":188,"type":"World heritage record","cite":"“Durham Castle and Cathedral.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/370/"}
 ];
