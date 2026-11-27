@@ -106,7 +106,7 @@ if(r.capstone){
   +'</div>'
   +'<div class="cap-body">'
    +'<div class="cap-intro">'+intro+'</div>'
-   +'<figure class="cap-figure"><img src="'+esc(r.image)+'" alt="'+esc(r.alt)+'"><figcaption class="note">'+esc(r.caption)+'</figcaption></figure>'
+   +'<figure class="cap-figure"><div class="cap-magnifier-row"><span class="magsw" role="group" aria-label="Magnifier"><span class="ml">Magnifier</span><button type="button" id="cap-magon" aria-pressed="false">On</button><button type="button" id="cap-magoff" aria-pressed="true">Off</button></span></div><div class="vart" id="cap-art"><img src="'+esc(r.image)+'" alt="'+esc(r.alt)+'"><span class="lens" aria-hidden="true"></span></div><figcaption class="note">'+esc(r.caption)+'</figcaption></figure>'
    +'<div class="cap-divider">• · •</div>'
    +'<div class="cap-wordsh">THREE IDEAS THAT CARRY THE WHOLE RENAISSANCE</div>'
    +'<div class="cap-words">'+words+'</div>'
@@ -123,6 +123,10 @@ if(r.capstone){
  app.querySelectorAll('textarea[data-tid]').forEach(function(ta){ta.oninput=function(){var o=rec();o.thinks=o.thinks||{};o.thinks[ta.dataset.tid]=ta.value;o.seen=true;put(o)}});
  var bb=document.getElementById('cap-bonusbox');
  if(bb)bb.oninput=function(){var o=rec();o.bonus=bb.value;o.seen=true;put(o)};
+ var capArt=document.getElementById('cap-art'),capLens=capArt.querySelector('.lens'),capImage=capArt.querySelector('img'),capMagnify=false;
+ function capSetMagnifier(on){capMagnify=on;document.getElementById('cap-magon').setAttribute('aria-pressed',on);document.getElementById('cap-magoff').setAttribute('aria-pressed',!on);if(!on)capLens.style.display='none'}
+ document.getElementById('cap-magon').onclick=function(){capSetMagnifier(true)};document.getElementById('cap-magoff').onclick=function(){capSetMagnifier(false)};
+ capArt.onmousemove=function(e){if(!capMagnify)return;var box=capArt.getBoundingClientRect(),x=e.clientX-box.left,y=e.clientY-box.top,size=187,zoom=2.5;capLens.style.display='block';capLens.style.left=x+'px';capLens.style.top=y+'px';capLens.style.backgroundImage='url("'+(capImage.currentSrc||capImage.src)+'")';capLens.style.backgroundSize=(box.width*zoom)+'px '+(box.height*zoom)+'px';capLens.style.backgroundPosition=(size/2-x*zoom)+'px '+(size/2-y*zoom)+'px'};capArt.onmouseleave=function(){capLens.style.display='none'};
  return;
 }
 var vmag=false;

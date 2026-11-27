@@ -195,5 +195,8 @@ window.SOURCES=[
 {"n":185,"type":"Museum collection record","cite":"“Apse of Sant Climent de Taüll.” Museu Nacional d’Art de Catalunya.","url":"https://www.museunacional.cat/en/colleccio/apse-sant-climent-de-taull/master-taull/015966-000"},
 {"n":186,"type":"World heritage record","cite":"“Abbey Church of Saint-Savin sur Gartempe.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/230/"},
 {"n":187,"type":"Historic monument","cite":"“History of the Sainte-Chapelle.” Centre des monuments nationaux.","url":"https://www.sainte-chapelle.fr/en/discover/history-of-the-sainte-chapelle"},
-{"n":188,"type":"World heritage record","cite":"“Durham Castle and Cathedral.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/370/"}
+{"n":188,"type":"World heritage record","cite":"“Durham Castle and Cathedral.” UNESCO World Heritage Centre.","url":"https://whc.unesco.org/en/list/370/"},
+{"n":189,"type":"World heritage documentation","cite":"“Naumburg Cathedral.” Nomination documentation, UNESCO World Heritage Centre.","url":"https://whc.unesco.org/document/165547"},
+{"n":190,"type":"Art history education","cite":"“Reims Cathedral.” Smarthistory.","url":"https://smarthistory.org/reims-cathedral/"},
+{"n":191,"type":"Museum research catalogue","cite":"“The Wilton Diptych.” National Gallery, London, 2024.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/national-gallery-2024/the-wilton-diptych"}
 ];
