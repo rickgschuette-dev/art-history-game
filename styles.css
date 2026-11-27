@@ -269,7 +269,7 @@ body[data-view="card"] main:has(.be-card) > .be-words{margin-top:1rem}
 .be-locate,.be-record,.be-reset{font-size:.95rem}
 .be-step textarea,.be-reflection textarea{font-size:1rem;line-height:1.5}
 .be-step-foot small,.be-reflection-foot small{font-size:.9rem}
-.be-reflection .be-reflection-question{font-size:1.05rem}
+.be-reflection>p.be-reflection-question{font-size:1.05rem}
 .be-synthesis>p:not(.be-eyebrow),.be-layer p,.be-final-locked p{font-size:1rem;line-height:1.6}
 .be-object-notes summary,.be-card-nav a{font-size:1rem}
 .be-stagebar-tools button,.be-stagebar-tools button:first-child{font-size:.95rem}
