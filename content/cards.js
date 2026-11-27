@@ -2378,6 +2378,9 @@ LM09.sourceNums.push(187);
 LM04.sourceNums.push(188);
 
 // Observation-first pivots: Late Medieval cards 11–20 in deck order.
+LM19.detail.image='public/images/artworks/Uta-Face-Collar-Detail.jpg';
+LM19.detail.alt='A close view of Uta’s painted face, gold-colored crown, raised collar and upper cloak. Traces of color and worn patches are visible.';
+LM19.detail.credit.changes='Cropped.';
 LM19.context=LM19.context.map(function(w){return w.term==='Polychrome'?Object.assign({},w,{def:'Painted in multiple colors. Some coloring remains on Uta, including later repainting.'}):w});
 LM19.backward={scale:{measurement:'Uta is one of twelve approximately life-size founder figures in the cathedral’s west choir.',setting:'The figure stands in Naumburg Cathedral in Germany.'},material:{text:'The sculpture is carved stone. The founder figures were painted, and some color remains; they were also repainted later.'},synthesis:{subhead:'Can a sculpture look individual without being a likeness?',title:'Remembering Uta',text:['The Naumburg Master and workshop created founder figures for the cathedral in the thirteenth century. Uta and her husband Ekkehard II had lived generations before the sculptures were made.','The artist gave the figure individual features and a gesture, but we do not know what Uta actually looked like. Her clothing reflects the time when the sculpture was made.']}};
 LM27.clues[0].label='Crown';
