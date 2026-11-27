@@ -254,6 +254,27 @@ body[data-view="card"] main:has(.be-card) > .be-words{margin-top:1rem}
 @media(max-width:900px) and (min-width:641px){.be-card{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}.be-visual{position:static}}
 @media(max-width:640px){.be-card{grid-template-columns:1fr}.be-visual{position:static}.be-column-detail{width:65%}}
 
+/* Reading and interaction text for the classroom card; credits remain small. */
+.be-coursebar{font-size:1rem}
+.be-coursebar .be-card-title{font-size:2rem}
+.be-tombstone span,.be-eyebrow{font-size:.85rem}
+.be-tombstone strong{font-size:1.55rem;line-height:1.3}
+.be-words-title{font-size:.9rem}
+.be-words-list{grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.65rem}
+.be-words-list p{font-size:1rem;line-height:1.5;padding:.75rem .85rem}
+.be-words-list strong{font-size:1.1rem}
+.be-words-list em{font-size:.95rem}
+.be-feature-instruction{font-size:1rem;line-height:1.5}
+.be-step h2{font-size:1.55rem;line-height:1.2}
+.be-locate,.be-record,.be-reset{font-size:.95rem}
+.be-step textarea,.be-reflection textarea{font-size:1rem;line-height:1.5}
+.be-step-foot small,.be-reflection-foot small{font-size:.9rem}
+.be-reflection .be-reflection-question{font-size:1.05rem}
+.be-synthesis>p:not(.be-eyebrow),.be-layer p,.be-final-locked p{font-size:1rem;line-height:1.6}
+.be-object-notes summary,.be-card-nav a{font-size:1rem}
+.be-stagebar-tools button,.be-stagebar-tools button:first-child{font-size:.95rem}
+.be-column-detail figcaption{font-size:.95rem}
+
 /* The photograph keeps its own aspect ratio inside the banner window, so every
    overlay is positioned against the photograph and cannot drift as the window
    changes shape. */
