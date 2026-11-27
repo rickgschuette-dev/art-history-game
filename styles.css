@@ -275,6 +275,12 @@ body[data-view="card"] main:has(.be-card) > .be-words{margin-top:1rem}
 .be-stagebar-tools button,.be-stagebar-tools button:first-child{font-size:.95rem}
 .be-column-detail figcaption{font-size:.95rem}
 
+/* Visible card numbers follow the current deck sequence, not stored IDs. */
+.cases li:not(.vocab)>a,.cases li:not(.vocab)>.row{grid-template-columns:1.3rem 6.5rem minmax(0,1fr) auto}
+.cases li:not(.vocab) .num{white-space:nowrap}
+.card-sequence{display:inline-block;color:#625e57;font-size:.9rem;font-weight:700;white-space:nowrap}
+.legacy-sequence{margin:0 0 .3rem}
+
 /* The photograph keeps its own aspect ratio inside the banner window, so every
    overlay is positioned against the photograph and cannot drift as the window
    changes shape. */

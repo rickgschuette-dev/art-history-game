@@ -182,5 +182,8 @@ window.SOURCES=[
 {"n":172,"type":"Secondary source","cite":"\u201cLindisfarne Gospels.\u201d Wikipedia.","url":"https://en.wikipedia.org/wiki/Lindisfarne_Gospels"},
 {"n":173,"type":"Secondary source","cite":"\u201cHagia Sophia.\u201d Building Big, PBS.","url":"https://www.pbs.org/wgbh/buildingbig/wonder/structure/hagia_sophia.html"},
 {"n":174,"type":"Secondary source","cite":"Findley, Andrew. “Arch of Constantine, Rome.” Smarthistory, November 25, 2015.","url":"https://smarthistory.org/arch-of-constantine-rome/"},
-{"n":175,"type":"Secondary source","cite":"“Old Saint Peter’s Basilica.” Smarthistory.","url":"https://smarthistory.org/old-saint-peters-basilica/"}
+{"n":175,"type":"Secondary source","cite":"“Old Saint Peter’s Basilica.” Smarthistory.","url":"https://smarthistory.org/old-saint-peters-basilica/"},
+{"n":176,"type":"Conservation scholarship","cite":"The Vienna Genesis: Material Analysis and Conservation of a Late Antique Illuminated Manuscript on Purple Parchment. Austrian National Library; digital copy at the Library of Congress.","url":"https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/84/94/2020718494/2020718494.pdf"},
+{"n":177,"type":"Museum record","cite":"“The Serpent’s Head Exhibited for the Very First Time.” Museum of Cultural History, University of Oslo.","url":"https://www.khm.uio.no/english/news/see-the-serpents-head-at-historical-museum.html"},
+{"n":178,"type":"University collection record","cite":"“Cairo, Coptic Museum: fresco of the niche of Chapel VI at Bawit.” University of Bologna, Historica.","url":"https://historica.unibo.it/entities/publication/b39c59f9-9d23-43ac-990f-35af99e87732"}
 ];
