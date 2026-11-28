@@ -231,5 +231,16 @@ window.SOURCES=[
 {"n":221,"type":"Museum collection","cite":"“Portrait de Lisa Gherardini, dite Monna Lisa.” Musée du Louvre.","url":"https://collections.louvre.fr/en/ark:/53355/cl010062370"},
 {"n":222,"type":"Museum collection","cite":"“Spring.” Uffizi Galleries, Florence.","url":"https://www.uffizi.it/en/artworks/botticelli-spring"},
 {"n":223,"type":"Museum collection","cite":"“Nascita di Venere.” Gallerie degli Uffizi, Florence.","url":"https://www.uffizi.it/opere/nascita-di-venere"},
-{"n":224,"type":"Museum guide","cite":"“Last Supper Museum and Santa Maria delle Grazie.” Museo del Cenacolo Vinciano, Milan.","url":"https://cenacolovinciano.org/wp-content/uploads/2024/11/Depliant-Cenacolo-ENG.pdf"}
+{"n":224,"type":"Museum guide","cite":"“Last Supper Museum and Santa Maria delle Grazie.” Museo del Cenacolo Vinciano, Milan.","url":"https://cenacolovinciano.org/wp-content/uploads/2024/11/Depliant-Cenacolo-ENG.pdf"},
+{"n":225,"type":"Museum art history","cite":"“Architecture in Renaissance Italy.” The Metropolitan Museum of Art.","url":"https://www.metmuseum.org/essays/architecture-in-renaissance-italy"},
+{"n":226,"type":"Museum collection","cite":"“Villa Almerico (Villa Rotunda), from I quattro libri dell’architettura.” The Metropolitan Museum of Art.","url":"https://www.metmuseum.org/art/collection/search/698054"},
+{"n":227,"type":"Art history education","cite":"“Albrecht Dürer, Self-Portrait (1498).” Smarthistory.","url":"https://smarthistory.org/durer-self-portrait-1498/"},
+{"n":228,"type":"Museum collection","cite":"“The Four Horsemen, from The Apocalypse.” The Metropolitan Museum of Art.","url":"https://www.metmuseum.org/art/collection/search/336215"},
+{"n":229,"type":"Museum collection","cite":"“The Arnolfini Portrait.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"},
+{"n":230,"type":"Art history education","cite":"“Rogier van der Weyden, The Descent from the Cross.” Smarthistory.","url":"https://smarthistory.org/rogier-van-der-weyden-deposition/"},
+{"n":231,"type":"Museum collection","cite":"“Hunters in the Snow.” Kunsthistorisches Museum, Vienna.","url":"https://www.khm.at/en/visit/only-in-vienna"},
+{"n":232,"type":"Art history education","cite":"“Titian, Assumption of the Virgin.” Smarthistory.","url":"https://smarthistory.org/titian-assumption-of-the-virgin/"},
+{"n":233,"type":"Museum collection","cite":"“Madonna and Child with Angels (Madonna with the long neck).” Uffizi Galleries, Florence.","url":"https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck"},
+{"n":234,"type":"Art history education","cite":"“Jacopo Pontormo, Entombment (or Deposition from the Cross).” Smarthistory.","url":"https://smarthistory.org/jacopo-pontormo-entombment-or-deposition-from-the-cross/"},
+{"n":235,"type":"Museum research catalogue","cite":"“The Ambassadors.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/foister-2024/the-ambassadors"}
 ];
