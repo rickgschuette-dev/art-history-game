@@ -243,5 +243,18 @@ window.SOURCES=[
 {"n":233,"type":"Museum collection","cite":"“Madonna and Child with Angels (Madonna with the long neck).” Uffizi Galleries, Florence.","url":"https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck"},
 {"n":234,"type":"Art history education","cite":"“Jacopo Pontormo, Entombment (or Deposition from the Cross).” Smarthistory.","url":"https://smarthistory.org/jacopo-pontormo-entombment-or-deposition-from-the-cross/"},
 {"n":235,"type":"Museum research catalogue","cite":"“The Ambassadors.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/foister-2024/the-ambassadors"},
-{"n":236,"type":"Museum collection","cite":"“School of Athens” and “Room of the Segnatura.” Vatican Museums.","url":"https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html"}
+{"n":236,"type":"Museum collection","cite":"“School of Athens” and “Room of the Segnatura.” Vatican Museums.","url":"https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html"},
+{"n":237,"type":"Museum technical research","cite":"Rachel Billinge and Lorne Campbell, “The Infra-red Reflectograms of Jan van Eyck’s Portrait of Giovanni(?) Arnolfini and his Wife Giovanna Cenami(?).” National Gallery Technical Bulletin 16 (1995).","url":"https://www.nationalgallery.org.uk/research/publications/technical-bulletin/the-infra-red-reflectograms-of-jan-van-eyck-s-portrait-of-giovanni-arnolfini-and-his-wife-giovanna-cenami"},
+{"n":238,"type":"Museum art education","cite":"“Understanding Formal Analysis.” Getty Museum.","url":"https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html"},
+{"n":239,"type":"Art terminology","cite":"“Mise-en-scène.” Getty Research Institute, Art & Architecture Thesaurus.","url":"https://www.getty.edu/vow/AATFullDisplay?find=dye&logic=AND&note=&subjectid=300375136"},
+{"n":240,"type":"Museum art terminology","cite":"“Facture.” Getty Research Institute, Categories for the Description of Works of Art.","url":"https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/11/"},
+{"n":241,"type":"Art terminology","cite":"“Repoussoir.” Getty Research Institute, Art & Architecture Thesaurus.","url":"https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=clay&subjectid=300133088"},
+{"n":242,"type":"Museum art history","cite":"“The Hunters in the Snow.” Weston Museum.","url":"https://westonmuseum.org/the-hunters-in-the-snow/"},
+{"n":243,"type":"Art terminology","cite":"“Iconology.” Getty Research Institute, Art & Architecture Thesaurus.","url":"https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=clay&subjectid=300054235"},
+{"n":244,"type":"Museum collection","cite":"“Spring.” Uffizi Galleries.","url":"https://www.uffizi.it/en/artworks/botticelli-spring"},
+{"n":245,"type":"Museum glossary","cite":"“Vanitas.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/glossary/vanitas"},
+{"n":246,"type":"Museum glossary","cite":"“Memento mori.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/glossary/memento-mori"},
+{"n":247,"type":"Museum collection research","cite":"“After Albrecht Dürer, The Painter’s Father.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/after-albrecht-durer-the-painter-s-father"},
+{"n":248,"type":"Museum provenance research","cite":"“Research on Museum Collection Provenance.” Getty Museum.","url":"https://www.getty.edu/museum/provenance/"},
+{"n":249,"type":"Art history education","cite":"“Introduction: Learning to Look and Think Critically.” Smarthistory.","url":"https://smarthistory.org/reframing-art-history/introduction-learning-to-look/"}
 ];
