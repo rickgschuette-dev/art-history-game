@@ -2616,3 +2616,12 @@ var RE34={id:'RE-34',kind:'Fresco',title:'A Judgment Under Debate',work:'The Las
 window.DECKS[2].cards.push(RE34);
 renaissanceReview.lead='Thirty-four Renaissance cases are closed. Across this file, you have seen artists look closely at the world, revisit ancient ideas, and find new ways to make images. Here is what your evidence adds up to.';
 renaissanceReview.traits.filter(function(trait){return trait.id==='reform'})[0].cases.push('RE-34');
+
+// Higher-resolution versions of the same photographs used in the Late Medieval Case Review.
+var lateReviewWork=window.DECKS[1].review.work;
+lateReviewWork.image='public/images/artworks/Stefaneschi-Peter-highres.jpg';
+lateReviewWork.detail.image='public/images/artworks/Stefaneschi-Model-highres.jpg';
+lateReviewWork.detail.credit.changes='Resized from the original photograph.';
+lateReviewWork.detail2.image='public/images/artworks/Stefaneschi-Christ-highres.jpg';
+lateReviewWork.credit.url='https://commons.wikimedia.org/wiki/File:Giotto._The_Stefaneschi_Triptych_(verso)_c.1330_220x245cm._Pinacoteca,_Vatican..jpg';
+lateReviewWork.detail2.credit.url='https://commons.wikimedia.org/wiki/File:Giotto._The_Stefaneschi_Triptych_(recto)_c.1330_220x245cm._Pinacoteca,_Vatican..jpg';

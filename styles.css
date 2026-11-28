@@ -145,6 +145,8 @@ body[data-view="vocab"] .vbox,body[data-view="review"] .vbox,body[data-view="rev
 .revwork figure{margin:0 0 1rem}
 .revwork img{display:block;width:100%;height:auto;border-radius:4px}
 .revdets{display:grid;gap:1rem;grid-template-columns:1fr 1fr;align-items:start}
+.revwork-lm .revmain img{width:auto;height:auto;max-width:100%;max-height:85vh}
+.revwork-lm .revdet img{width:auto;height:auto;max-width:100%;max-height:70vh}
 .reveal{margin-top:1rem;border-top:2px solid #c9bda4;padding-top:.9rem}
 .revclose{margin-top:.9rem}
 .revoutro{margin-top:1rem;text-align:center;font-style:italic}
