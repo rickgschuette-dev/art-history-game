@@ -256,5 +256,12 @@ window.SOURCES=[
 {"n":246,"type":"Museum glossary","cite":"“Memento mori.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/glossary/memento-mori"},
 {"n":247,"type":"Museum collection research","cite":"“After Albrecht Dürer, The Painter’s Father.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/after-albrecht-durer-the-painter-s-father"},
 {"n":248,"type":"Museum provenance research","cite":"“Research on Museum Collection Provenance.” Getty Museum.","url":"https://www.getty.edu/museum/provenance/"},
-{"n":249,"type":"Art history education","cite":"“Introduction: Learning to Look and Think Critically.” Smarthistory.","url":"https://smarthistory.org/reframing-art-history/introduction-learning-to-look/"}
+{"n":249,"type":"Art history education","cite":"“Introduction: Learning to Look and Think Critically.” Smarthistory.","url":"https://smarthistory.org/reframing-art-history/introduction-learning-to-look/"},
+{"n":250,"type":"Art history education","cite":"“Il Gesù, Rome.” Smarthistory.","url":"https://smarthistory.org/il-gesu-rome/"},
+{"n":251,"type":"Museum collection","cite":"“The Lamentation,” Scipione Pulzone. The Metropolitan Museum of Art.","url":"https://www.metmuseum.org/art/collection/search/437342"},
+{"n":252,"type":"Art history education","cite":"“The Council of Trent and the Call to Reform Art.” Smarthistory.","url":"https://smarthistory.org/the-council-of-trent-and-the-call-to-reform-art/"},
+{"n":253,"type":"Museum collection","cite":"“Convito in casa di Levi,” Paolo Veronese. Gallerie dell’Accademia di Venezia.","url":"https://www.gallerieaccademia.it/en/opera/convito-in-casa-di-levi/"},
+{"n":254,"type":"Art history education","cite":"“Paolo Veronese, Feast in the House of Levi.” Smarthistory.","url":"https://smarthistory.org/paolo-veronese-feast-in-the-house-of-levi/"},
+{"n":255,"type":"Museum collection","cite":"“The Last Judgement.” Vatican Museums.","url":"https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/giudizio-universale.html"},
+{"n":256,"type":"Art history education","cite":"“Michelangelo, Last Judgment.” Smarthistory.","url":"https://smarthistory.org/michelangelo-last-judgment/"}
 ];
