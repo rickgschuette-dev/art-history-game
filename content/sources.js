@@ -242,5 +242,6 @@ window.SOURCES=[
 {"n":232,"type":"Art history education","cite":"“Titian, Assumption of the Virgin.” Smarthistory.","url":"https://smarthistory.org/titian-assumption-of-the-virgin/"},
 {"n":233,"type":"Museum collection","cite":"“Madonna and Child with Angels (Madonna with the long neck).” Uffizi Galleries, Florence.","url":"https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck"},
 {"n":234,"type":"Art history education","cite":"“Jacopo Pontormo, Entombment (or Deposition from the Cross).” Smarthistory.","url":"https://smarthistory.org/jacopo-pontormo-entombment-or-deposition-from-the-cross/"},
-{"n":235,"type":"Museum research catalogue","cite":"“The Ambassadors.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/foister-2024/the-ambassadors"}
+{"n":235,"type":"Museum research catalogue","cite":"“The Ambassadors.” National Gallery, London.","url":"https://www.nationalgallery.org.uk/paintings/catalogues/foister-2024/the-ambassadors"},
+{"n":236,"type":"Museum collection","cite":"“School of Athens” and “Room of the Segnatura.” Vatican Museums.","url":"https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html"}
 ];

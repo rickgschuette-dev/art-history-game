@@ -135,7 +135,7 @@ function rec(){return store.cards[r.id]||{seen:true,text:'',shown:false}}
 function put(o){store.cards[r.id]=o;localStorage.setItem(KEY,JSON.stringify(store))}
 var st=rec();st.seen=true;put(st);
 function pos(cid){for(var i=0;i<d.cards.length;i++)if(d.cards[i].id===cid)return i+1;return 0}
-function draw(){var rc=rec(),w=r.work,isEarlyReview=d.id==='early-medieval',canReveal=!isEarlyReview||!!rc.submitted,showAnswer=!!rc.shown&&canReveal;
+function draw(){var rc=rec(),w=r.work,isEarlyReview=d.id==='early-medieval'||d.id==='renaissance',canReveal=!isEarlyReview||!!rc.submitted,showAnswer=!!rc.shown&&canReveal;
 var tr=r.traits.map(function(t){
   var ps=t.cases.map(function(c){return {id:c,n:pos(c),done:done(find(c).card)}}).sort(function(a,b){return a.n-b.n});
   var dn=ps.filter(function(x){return x.done}).length;
@@ -148,14 +148,14 @@ app.innerHTML='<p class="note">'+esc(r.crumb)+' \u00b7 <strong>CASE FILE</strong
  +'<h2 class="revh">'+esc(r.traitsHead)+'</h2><div class="traits">'+tr+'</div>'
  +'<div class="vex revwork"><div class="headrow"><h2>'+esc(w.head)+'</h2><span class="magsw" role="group" aria-label="Magnifier"><span class="ml">Magnifier</span><button id="rmagon" aria-pressed="'+vmag+'">On</button><button id="rmagoff" aria-pressed="'+!vmag+'">Off</button></span></div><p><strong>'+esc(w.kicker)+'</strong> '+esc(w.lede)+'</p>'
  +'<figure class="revmain"><div class="vart" id="revart"><img src="'+esc(w.image)+'" alt="'+esc(w.alt)+'"></div><p class="note" id="rvhint"'+(vmag?'':' hidden')+'>Move the pointer over the photo to magnify it.</p><figcaption class="note">'+esc(w.caption)+'</figcaption></figure>'
- +'<div class="revdets">'+fig(w.detail,'revdet')+fig(w.detail2,'revdet')+'</div>'
+ +((w.detail||w.detail2)?'<div class="revdets">'+(w.detail?fig(w.detail,'revdet'):'')+(w.detail2?fig(w.detail2,'revdet'):'')+'</div>':'')
  +'<label class="bonus"><strong>'+esc(isEarlyReview?'Write at least 50 words about what you recognize. Name features you can see and connect them to works you studied earlier.':w.prompt)+'</strong><textarea id="revtx" placeholder="'+esc(w.placeholder)+'"'+(isEarlyReview&&rc.submitted?' readonly':'')+'>'+esc(rc.text||'')+'</textarea></label>'
  +(isEarlyReview?'<p class="note" id="revcount" role="status"></p><p class="btns">'+(rc.submitted?'<strong>Response submitted.</strong>':'<button class="primary" type="button" id="revsubmit">Submit</button>')+'</p>':'')
  +(showAnswer?'<div class="reveal">'+w.reveal.map(function(t){return '<p>'+esc(t)+'</p>'}).join('')+'<p class="revclose"><strong>'+esc(w.closing)+'</strong></p></div>'
    :'<p class="btns"><button class="primary" id="revbtn"'+(canReveal?'':' disabled')+'>'+esc(w.revealBtn)+'</button></p>')
  +'</div><p class="vnext"><a class="btn primary" href="#/deck/'+d.id+'">Back to the list</a></p>'
  +(showAnswer&&r.outro?'<p class="note revoutro">'+esc(r.outro)+'</p>':'')
- +'</div><footer class="credits">'+credit(w.credit,'Photo')+credit(w.detail.credit,'Detail photo')+credit(w.detail2.credit,'Detail photo')
+ +'</div><footer class="credits">'+credit(w.credit,'Photo')+(w.detail?credit(w.detail.credit,'Detail photo'):'')+(w.detail2?credit(w.detail2.credit,'Detail photo'):'')
  +((r.sourceNums||[]).length?'<p class="note srcs">Sources: '+r.sourceNums.map(function(n){return '<a href="#/sources/'+n+'">'+n+'</a>'}).join(', ')+'</p>':'')+'</footer>';
 var tx=document.getElementById('revtx');
 var submit=document.getElementById('revsubmit'),count=document.getElementById('revcount');
